@@ -159,7 +159,7 @@ const goToPage = ref(1);
   <div class="text-center text-muted small mt-2" v-if="filteredSongs.length > 0">
     {{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件
     <!-- 页面跳转 -->
-    <div class="d-flex justify-content-center align-items-center gap-2 mt-2">
+    <div class="d-flex justify-content-center align-items-center gap-2 mt-2" v-if="totalPages > 1">
       <input
           type="number"
           v-model.number="goToPage"
