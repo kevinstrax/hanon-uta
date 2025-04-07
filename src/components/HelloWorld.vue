@@ -38,24 +38,26 @@ const changePage = (page: number) => {
     currentPage.value = page
   }
 }
-const getPageRange = computed(() => {
-  const range = [];
-  const start = Math.max(2, currentPage.value - 2);
-  const end = Math.min(totalPages.value - 1, currentPage.value + 2);
-
-  for (let i = start; i <= end; i++) {
-    range.push(i);
-  }
-  return range;
-});
 
 const goToPage = ref(1);
+const paginationList = computed(() => {
+  if (totalPages.value < 7) {
+    return [1, 2, 3, 4, 5, 6];
+  }
+  if (currentPage.value <4) {
+    return [1, 2, 3, 4, 0, totalPages.value];
+  }
+  if (currentPage.value < totalPages.value - 3) {
+    return [1, 0, currentPage.value - 1, currentPage.value, currentPage.value + 1, 0, totalPages.value];
+  }
+  return [1, -1, totalPages.value - 3, totalPages.value - 2, totalPages.value - 1, totalPages.value];
+})
 
 </script>
 
 <template>
   <!-- 搜索框 -->
-  <div class="row mb-4">
+  <div class="row my-4">
     <div class="input-group">
       <span class="input-group-text bg-light">
         <i class="fas fa-search"></i>
@@ -73,11 +75,11 @@ const goToPage = ref(1);
   <!-- 歌曲列表 -->
   <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2">
     <div v-for="(song, index) in paginatedSongs" :key="index">
-      <div class="card h-100 hover-bg-light">
-        <div class="card-img-top">
+      <div class="card h-100 hover-bg-light ">
+        <div class="card-img-top ratio ratio-16x9">
           <a :href="song.ref_video_url"
              target="_blank"><img class="img-fluid" :src="song.ref_video_thumbnail_url" :alt="song.song_title"
-                                  :title="song.song_title"/></a>
+                                  :title="song.song_title" loading="lazy"/></a>
         </div>
 
         <div class="card-body text-start">
@@ -106,57 +108,32 @@ const goToPage = ref(1);
   <!-- 分页控件 -->
   <nav aria-label="ページネーション" class="mt-4" v-if="totalPages > 1">
     <ul class="pagination justify-content-center flex-wrap">
-      <li class="page-item" :class="{ disabled: currentPage === 1 }">
-        <a class="page-link" href="#" @click.prevent="changePage(1)" aria-label="最初のページ">
-          &laquo;
-        </a>
-      </li>
-      <li class="page-item" :class="{ disabled: currentPage === 1 }">
+
+      <li class="page-item" :class="{ disabled: currentPage === 1 }" v-if="currentPage > 1">
         <a class="page-link" href="#" @click.prevent="changePage(currentPage - 1)" aria-label="前のページ">
           &lsaquo;
         </a>
       </li>
 
-      <!-- 总是显示第1页 -->
-      <li class="page-item" :class="{ active: currentPage === 1 }">
-        <a class="page-link" href="#" @click.prevent="changePage(1)">1</a>
+      <li v-for="i in paginationList" class="page-item" :class="{ active: currentPage === i }">
+        <template v-if="i <= 0">
+          <span class="page-link">...</span>
+        </template>
+        <template v-else>
+          <a class="page-link" href="#" @click.prevent="changePage(i)">{{i}}</a>
+        </template>
       </li>
 
-      <!-- 当前页附近范围 -->
-      <li class="page-item disabled" v-if="currentPage > 4">
-        <span class="page-link">...</span>
-      </li>
-
-      <template v-for="page in getPageRange" :key="page">
-        <li class="page-item" v-if="page > 1 && page < totalPages" :class="{ active: currentPage === page }">
-          <a class="page-link" href="#" @click.prevent="changePage(page)">{{ page }}</a>
-        </li>
-      </template>
-
-      <li class="page-item disabled" v-if="currentPage < totalPages - 3">
-        <span class="page-link">...</span>
-      </li>
-
-      <!-- 总是显示最后一页 -->
-      <li class="page-item" v-if="totalPages > 1" :class="{ active: currentPage === totalPages }">
-        <a class="page-link" href="#" @click.prevent="changePage(totalPages)">{{ totalPages }}</a>
-      </li>
-
-      <li class="page-item" :class="{ disabled: currentPage === totalPages }">
+      <li class="page-item" :class="{ disabled: currentPage === totalPages }" v-if="currentPage < totalPages">
         <a class="page-link" href="#" @click.prevent="changePage(currentPage + 1)" aria-label="次のページ">
           &rsaquo;
-        </a>
-      </li>
-      <li class="page-item" :class="{ disabled: currentPage === totalPages }">
-        <a class="page-link" href="#" @click.prevent="changePage(totalPages)" aria-label="最後のページ">
-          &raquo;
         </a>
       </li>
     </ul>
   </nav>
 
   <!-- 显示当前页码和总数 -->
-  <div class="text-center text-muted small mt-2" v-if="filteredSongs.length > 0">
+  <div class="text-center text-muted small mt-2 mb-4" v-if="filteredSongs.length > 0">
     {{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件
     <!-- 页面跳转 -->
     <div class="d-flex justify-content-center align-items-center gap-2 mt-2" v-if="totalPages > 1">
