@@ -54,20 +54,20 @@ const n="【歌枠｜KARAOKE】珍しく朝活✨寝起きボイスでもさわ�
 0:00:00 OP\r
 0:03:21 はのは～\r
 \r
-0:05:46 ~ 0:11:07 Pretender / Official髭男dism\r
-0:13:13 ~ 0:17:43 夜に駆ける / YOASOBI\r
-0:20:21 ~ 0:24:08 怪獣の花唄 / Vaundy\r
-0:26:37 ~ 0:32:43 たばこ / コレサワ\r
-0:34:57 ~ 0:39:30 風になる / つじあやの\r
+0:05:46；0:11:07 Pretender / Official髭男dism\r
+0:13:13；0:17:43 夜に駆ける / YOASOBI\r
+0:20:21；0:24:08 怪獣の花唄 / Vaundy\r
+0:26:37；0:32:43 たばこ / コレサワ\r
+0:34:57；0:39:30 風になる / つじあやの\r
 ∟0:35:04 同接200人達成\r
-0:43:13 ~ 0:46:45 SUMMER SONG / Yui\r
-0:48:22 ~ 0:51:38 少年時代 / 井上陽水\r
-0:53:26 ~ 0:58:29 Tomorrow never knows / Mr.Children\r
+0:43:13；0:46:45 SUMMER SONG / Yui\r
+0:48:22；0:51:38 少年時代 / 井上陽水\r
+0:53:26；0:58:29 Tomorrow never knows / Mr.Children\r
 \r
-0:59:41 ~ 1:04:03 天体観測 / BUMP OF CHICKEN\r
-1:04:54 ~ 1:08:58 青いベンチ / サスケ\r
-1:14:35 ~ 1:18:40 気まぐれロマンティック / いきものがかり\r
-1:21:39 ~ 1:26:35 ヒカリへ / miwa\r
+0:59:41；1:04:03 天体観測 / BUMP OF CHICKEN\r
+1:04:54；1:08:58 青いベンチ / サスケ\r
+1:14:35；1:18:40 気まぐれロマンティック / いきものがかり\r
+1:21:39；1:26:35 ヒカリへ / miwa\r
 \r
 1:29:57 スパチャ読み\r
 1:38:16 エンドカード`,po={video_title:g,video_artist:p,video_id:$,video_publish_date_str:m,song_timeline:h},K1=Object.freeze(Object.defineProperty({__proto__:null,default:po,song_timeline:h,video_artist:p,video_id:$,video_publish_date_str:m,video_title:g},Symbol.toStringTag,{value:"Module"})),O="【歌枠｜KARAOKE】「カラオケJOYSOUND for STREAMER」でアイドルソング縛り歌枠🎤💞【パレプロ / 香鳴ハノン】",S="Hanon Ch. 香鳴ハノン【パレプロ】",A="1CCTVPvdJTQ",C="2024-10-04",y=`0:03:20 はのは〜！
