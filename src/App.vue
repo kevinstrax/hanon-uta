@@ -6,7 +6,7 @@ import type { Song } from '@/types/song'
 
 const songs = ref<Song[]>([]);
 onMounted(async () => {
-  songs.value = await loadSongs(await loadVideos());
+  songs.value = await loadSongs(await loadVideos('hanon'));
 });
 
 </script>

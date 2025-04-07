@@ -10,7 +10,19 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src')
     }
-  },optimizeDeps: {
+  },
+  optimizeDeps: {
     include: ['bootstrap']
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('/data/')) {
+            if (id.includes('/hanon/')) return 'hanon-data'
+          }
+        }
+      }
+    }
   }
 })

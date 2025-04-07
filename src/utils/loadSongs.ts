@@ -2,15 +2,18 @@
 import type {Song} from '@/types/song';
 import type {Video} from "@/types/video";
 
-export async function loadVideos(): Promise<Video[]> {
-    const modules = import.meta.glob('@/assets/data/*.json');
-    const videos: Video[] = [];
+export async function loadVideos(v: string): Promise<Video[]> {
+    const modules = import.meta.glob(`@/assets/data/**/*.json`);
 
-    for (const path in modules) {
-        const module = (await modules[path]()) as { default: Video };
-        videos.push(module.default);
-    }
-    return videos;
+    // 过滤出属于该 vtuber 的文件
+    return await Promise.all(
+        Object.entries(modules)
+            .filter(([path]) => path.includes(`/${v}/`)) // 只匹配当前 vtuber
+            .map(async ([_, module]) => {
+                const data = (await module()) as { default: Video };
+                return data.default;
+            })
+    );
 }
 
 export async function loadSongs(videos: Video[]): Promise<Song[]> {
