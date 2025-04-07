@@ -55,14 +55,17 @@ export async function loadSongs(videos: Video[]): Promise<Song[]> {
 function parseSongTimeline(timelineStr: string): any {
     const lines = timelineStr.split('\n').filter(line => line.trim() !== '');
     const songs = [];
-    const timeRegex = /^(\d+:\d{2}:\d{2})\s+(.+)/; // 匹配时间格式
+    //const timeRegex = /^(\d+:\d{2}:\d{2})\s+(.+)/; // 匹配时间格式
+    const timeRegex = /^(\d+:\d{2}:\d{2})(?:[；;]\d+:\d{2}:\d{2})*\s+(.+)/;
 
     for (const line of lines) {
         const match = line.match(timeRegex);
         if (!match) continue; // 跳过没有时间戳的行
-
-        const time = match[1];
+        console.log(match)
+        const time = match[1]; // 只取第一个时间戳
+        if (time === '0:00:00') continue;
         let songInfo = match[2];
+
 
         // 处理序号（如 "01. 鉄腕アトム" → "鉄腕アトム"）
         songInfo = songInfo.replace(/^\d+\.\s*/, '');
