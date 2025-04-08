@@ -64,7 +64,7 @@ export async function loadSongs(videos: Video[]): Promise<Song[]> {
 
 function validSong(song: Song): boolean {
     if (!song.song_origin_artist) return false;
-    if (song.song_origin_artist === 'Cパート' && song.song_title === 'END') return false;
+    if (song.song_origin_artist === 'Cパート' && (song.song_title === 'END' || song.song_title === 'ED')) return false;
     return true;
 }
 
