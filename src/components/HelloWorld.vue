@@ -9,6 +9,7 @@ const props = defineProps<{
 const searchQuery = ref('')
 const currentPage = ref(1)
 const itemsPerPage = ref(10) // 每页显示10个项目
+const goToPage = ref(1);
 
 // 搜索功能
 const filteredSongs = computed(() => {
@@ -39,7 +40,6 @@ const changePage = (page: number) => {
   }
 }
 
-const goToPage = ref(1);
 const paginationList = computed(() => {
   const r = [];
   if (totalPages.value < 7) {
@@ -119,7 +119,7 @@ const paginationList = computed(() => {
         </a>
       </li>
 
-      <li v-for="i in paginationList" class="page-item" :class="{ active: currentPage === i }">
+      <li v-for="i in paginationList" class="page-item" :class="{ active: currentPage === i, disabled: i <=0 }">
         <template v-if="i <= 0">
           <span class="page-link">...</span>
         </template>
