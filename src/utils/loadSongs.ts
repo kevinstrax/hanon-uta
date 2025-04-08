@@ -28,12 +28,22 @@ export async function loadSongs(videos: Video[]): Promise<Song[]> {
                 ref_video_embed_url: 'https://www.youtube.com/embed/' + video.video_id,
                 ref_video_thumbnail_url: 'https://img.youtube.com/vi/' + video.video_id + '/maxresdefault.jpg',
                 ref_video_publish_date_ts: Date.parse(video.video_publish_date_str) / 1000,
-                song_origin_artist: songMeta.artist || video.video_artist,
+                song_origin_artist: songMeta.artist,
                 song_title: songMeta.title,
                 song_start_time: songMeta.time,
                 video_offset_ts: timeToSeconds(songMeta.time)
             };
-            songs.push(song);
+            if (validSong(song)) {
+                songs.push(song);
+            } else {
+                if (song.song_title.includes('はのは')
+                    || song.song_title.includes('スパチャ読み')
+                    || song.song_title.includes('エンドカード')
+                    || song.song_title.includes('END')
+                    || song.song_title.includes('こんばんは')) return;
+                console.log("filtered song: %s", song.song_title)
+            }
+
         });
     });
     // 排序逻辑
@@ -52,6 +62,12 @@ export async function loadSongs(videos: Video[]): Promise<Song[]> {
     return songs;
 }
 
+function validSong(song: Song): boolean {
+    if (!song.song_origin_artist) return false;
+    if (song.song_origin_artist === 'Cパート' && song.song_title === 'END') return false;
+    return true;
+}
+
 function parseSongTimeline(timelineStr: string): any {
     const lines = timelineStr.split('\n').filter(line => line.trim() !== '');
     const songs = [];
@@ -62,7 +78,6 @@ function parseSongTimeline(timelineStr: string): any {
     for (const line of lines) {
         const match = line.match(timeRegex);
         if (!match) continue; // 跳过没有时间戳的行
-        console.log(match)
         const time = match[1]; // 只取第一个时间戳
         if (time === '0:00:00') continue;
         let songInfo = match[2];

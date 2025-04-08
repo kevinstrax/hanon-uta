@@ -13,7 +13,7 @@ const itemsPerPage = ref(10) // 每页显示10个项目
 // 搜索功能
 const filteredSongs = computed(() => {
   if (!searchQuery.value) return props.songs
-  const query = searchQuery.value.toLowerCase()
+  const query = searchQuery.value.trim().toLowerCase()
   return props.songs.filter(song =>
       song.song_title.toLowerCase().includes(query) ||
       song.song_origin_artist.toLowerCase().includes(query)
