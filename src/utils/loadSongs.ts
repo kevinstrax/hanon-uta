@@ -64,32 +64,34 @@ export async function loadSongs(videos: Video[]): Promise<Song[]> {
 
 function validSong(song: Song): boolean {
     if (!song.song_origin_artist) return false;
-    if (song.song_origin_artist === 'Cパート' && (song.song_title === 'END' || song.song_title === 'ED')) return false;
+    if (song.song_origin_artist.includes('Cパート') && (song.song_title === 'END' || song.song_title === 'ED')) return false;
+    if (song.song_title === '雑談') return false;
     return true;
 }
 
 function parseSongTimeline(timelineStr: string): any {
     const lines = timelineStr.split('\n').filter(line => line.trim() !== '');
     const songs = [];
-    //const timeRegex = /^(\d+:\d{2}:\d{2})\s+(.+)/; // 匹配时间格式
-    //const timeRegex = /^(\d+:\d{2}:\d{2})(?:[；;]\d+:\d{2}:\d{2})*\s+(.+)/;
     const timeRegex = /^((?:\d+:\d{2}:\d{2})(?:\s*~\s*\d+:\d{2}:\d{2})?)(?:[;；]\s*(?:\d+:\d{2}:\d{2})(?:\s*~\s*\d+:\d{2}:\d{2})?)*\s+(.+)/;
 
     for (const line of lines) {
         const match = line.match(timeRegex);
-        if (!match) continue; // 跳过没有时间戳的行
-        const time = match[1]; // 只取第一个时间戳
-        if (time === '0:00:00') continue;
+        if (!match) continue;
+        const time = match[1];
         let songInfo = match[2];
 
-
-        // 处理序号（如 "01. 鉄腕アトム" → "鉄腕アトム"）
+        // Remove numbering
         songInfo = songInfo.replace(/^\d+\.\s*/, '');
 
-        // 分割歌曲和艺术家
-        const [title, artist] = songInfo.includes('/')
+        // Split song and artist
+        let [title, artist] = songInfo.includes('/')
             ? songInfo.split('/').map(part => part.trim())
             : [songInfo.trim(), ''];
+
+        // Remove duration timestamp and anything after it from artist
+        if (artist) {
+            artist = artist.replace(/\s*~?\d+:\d{2}:\d{2}.*$/, '').trim();
+        }
 
         songs.push({
             time,
