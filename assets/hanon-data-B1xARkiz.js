@@ -1,4 +1,367 @@
-const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセトリ🎤💗【#パレプロ #香鳴ハノン】",e="Hanon Ch. 香鳴ハノン【パレプロ】",t="6jDomuGjUVg",i="2024-07-26",o=`0:01:54 はのはー！
+const n="【歌枠 / KARAOKE】田淵智也さん作曲アニソン縛り歌枠！#ぴよノン【#江波キョウカ #香鳴ハノン】",e="Hanon Ch. 香鳴ハノン【パレプロ】",t="biEDVnne0rY",i="2024-05-20",o=`0:01:58 こんばんはー！
+0:04:06 01. 桜のあと (all quartets lead to the?) / UNISON SQUARE GARDEN
+0:15:54 02. Q&A リサイタル! / 戸松遥
+0:24:20 03. Rising Hope / LiSA
+0:34:16 04. Catch the Moment / LiSA
+0:42:21 05. おもいでしりとり / DIALOGUE+
+0:50:25 06. シュガーソングとビターステップ / UNISON SQUARE GARDEN
+0:57:09 07. オリオンをなぞる / UNISON SQUARE GARDEN
+
+アンコール
+1:10:46 08. Q&A リサイタル! / 戸松遥
+1:17:12 09. Rising Hope / LiSA
+1:24:47 10. おもいでしりとり / DIALOGUE+
+
+1:31:40 スパチャ読み
+1:37:05 おつぴよのん！ 
+1:37:12 END / Cパート`,A2={video_title:n,video_artist:e,video_id:t,video_publish_date_str:i,song_timeline:o},bd=Object.freeze(Object.defineProperty({__proto__:null,default:A2,song_timeline:o,video_artist:e,video_id:t,video_publish_date_str:i,video_title:n},Symbol.toStringTag,{value:"Module"})),_="【歌枠 / KARAOKE】ロリ！？かわいい！？キュートボイスに全振り歌枠🎤🎀【#パレプロ #香鳴ハノン】",s="Hanon Ch. 香鳴ハノン【パレプロ】",d="F8PF-hXbIek",r="2024-05-24",l=`0:02:21 はのはー！
+0:04:41 01. いぬねこ。青春真っ盛り / わーすた
+0:09:40 02. 可愛くてごめん / HoneyWorks
+0:15:09 03. だいしきゅーだいしゅき / femme fatale
+0:19:05 04. わたしの一番かわいいところ / FRUITS ZIPPER
+0:24:41 05. すきっ！ / 超ときめき宣伝部
+
+0:32:01 06. トリセツ / 西野カナ
+0:40:29 07. おもいでしりとり / DIALOGUE+
+0:48:15 08. シル・ヴ・プレジデント / P丸様。
+0:52:47 09. プラチナ / 坂本真綾
+1:01:55 10. 白金ディスコ / 阿良々木月火(井口裕香)
+
+1:06:41 11. 恋愛サーキュレーション / 千石撫子(花澤香菜)
+1:11:20 12. 世界は恋に落ちている / CHiCO with HoneyWorks
+1:17:40 セリフパート（リベンジ）
+1:19:03 ばかばかばーか！
+1:20:08 13. 帰り道 / 八九寺真宵(加藤英美里)
+1:25:38 14. ファンサ / mona(夏川椎菜)
+
+1:30:22 スパチャ読み
+1:35:30 はのはー！`,S2={video_title:_,video_artist:s,video_id:d,video_publish_date_str:r,song_timeline:l},gd=Object.freeze(Object.defineProperty({__proto__:null,default:S2,song_timeline:l,video_artist:s,video_id:d,video_publish_date_str:r,video_title:_},Symbol.toStringTag,{value:"Module"})),a="【歌枠 / KARAOKE】かっこいい！？クールボイスに全振り歌枠🎤🎸【#パレプロ #香鳴ハノン】",v="Hanon Ch. 香鳴ハノン【パレプロ】",c="Lm9ERKX4nJQ",u="2024-05-28",b=`0:01:25 はのはー！
+0:03:46 01. 唱 / Ado
+0:08:54 02. Cry Baby / Official髭男dism
+0:14:25 03. Rising Hope / LiSA
+0:19:45 04. 神っぽいな / ピノキオピー
+0:24:25 05. 残響散歌 / Aimer
+
+0:31:27 06. ともに / WANIMA
+0:38:09 07. ダンスホール / Mrs. GREEN APPLE
+0:42:45 08. Butter-Fly / 和田光司
+0:49:25 09. 群青日和 / 東京事変
+0:53:34 10. 怪獣の花唄 / Vaundy
+
+0:59:06 11. 星座になれたら / 結束バンド
+1:04:53 12. だから僕は音楽を辞めた / ヨルシカ
+1:10:21 13. crossing field / LiSA
+1:16:24 14. Catch the Moment / LiSA
+1:22:49 15. KING / Kanaria
+
+1:29:07 16. Don't say "lazy" / 桜高軽音部
+1:34:32 17. 唱 / Ado
+
+1:39:18 スパチャ読み
+1:46:34 はのはー！
+1:47:20 END / Cパート`,y2={video_title:a,video_artist:v,video_id:c,video_publish_date_str:u,song_timeline:b},pd=Object.freeze(Object.defineProperty({__proto__:null,default:y2,song_timeline:b,video_artist:v,video_id:c,video_publish_date_str:u,video_title:a},Symbol.toStringTag,{value:"Module"})),g="【歌枠 / KARAOKE】アニソン14曲ノンストップ歌枠🎤🎸BGMにどうぞ【#パレプロ #香鳴ハノン】",p="Hanon Ch. 香鳴ハノン【パレプロ】",m="66-J8xU2WMo",$="2024-05-31",h=`今回のタイムスタンプ＆セトリ\r
+0:00:00 OP\r
+0:02:38 はのはー\r
+\r
+0:04:02 怪物 / YOASOBI  \r
+0:07:29 Believe / Folder5 \r
+0:11:19 オリオンをなぞる / UNISON SQUARE GARDEN\r
+0:15:40 ミックスナッツ / Official髭男dism\r
+0:19:14 花になって / 緑黄色社会\r
+0:22:33 星座になれたら / 結束バンド\r
+0:26:52 ヒトリゴト / ClariS\r
+0:30:51 ナイショの話 / ClariS\r
+0:35:14 カサブタ / 千綿偉功\r
+0:38:30 残酷な天使のテーゼ / 高橋洋子\r
+0:42:42 星間飛行 / 中島愛\r
+0:46:34 放課後オーバーフロウ / 中島愛\r
+0:51:55 創聖のアクエリオン / AKINO\r
+0:56:35 HoneyCome!! / 小倉唯\r
+\r
+1:00:43 エンドトーク\r
+1:02:14 スパチャ読み\r
+1:05:41 エンドカード\r
+1:09:00 6月生写真紹介\r
+\r
+※今回はほぼノンストップで曲間MCがほぼ無いので曲の頭のみになります`,C2={video_title:g,video_artist:p,video_id:m,video_publish_date_str:$,song_timeline:h},md=Object.freeze(Object.defineProperty({__proto__:null,default:C2,song_timeline:h,video_artist:p,video_id:m,video_publish_date_str:$,video_title:g},Symbol.toStringTag,{value:"Module"})),O="【歌枠 / KARAOKE】ピアノカラオケでこそこそささやき歌枠🐏🌙【#パレプロ #香鳴ハノン】",A="Hanon Ch. 香鳴ハノン【パレプロ】",S="JmfVDJ-obGc",y="2024-06-04",C=`0:03:50 はのはー！
+
+0:06:18 01. いつか / Saucy Dog
+0:10:52 02. なんでもないよ、 / マカロニえんぴつ
+0:14:38 03. わたがし / back number
+0:19:01 04. 花束 / back number
+0:25:19 05. 高嶺の花子さん / back number
+
+0:30:12 06. 少女レイ / みきとP feat.初音ミク
+0:35:03 07. ただ君に晴れ / ヨルシカ
+0:42:32 08. 115万キロのフィルム / Official髭男dism
+0:48:00 09. I LOVE... / Official髭男dism
+0:53:13 10. カタオモイ / Aimer
+
+0:56:58 11. たばこ / コレサワ
+1:07:31 12. 夜に駆ける / YOASOBI
+1:11:56 13. アイノカタチ feat. HIDE / MISIA
+1:16:32 14. なんでもないや / RADWIMPS
+1:22:23 15. スパークル / RADWIMPS
+
+1:31:32 16. 怪獣の花唄 / Vaundy
+1:37:00 17. 群青 / YOASOBI
+1:41:22 18. ドライフラワー / 優里
+
+1:48:11 スパチャ読み
+
+1:55:33 19. Pale Blue / 米津玄師
+2:00:25 ばいばーい！`,f2={video_title:O,video_artist:A,video_id:S,video_publish_date_str:y,song_timeline:C},$d=Object.freeze(Object.defineProperty({__proto__:null,default:f2,song_timeline:C,video_artist:A,video_id:S,video_publish_date_str:y,video_title:O},Symbol.toStringTag,{value:"Module"})),f="【歌枠 / KARAOKE】楽しく歌う！喋る！歌枠💗【#パレプロ #香鳴ハノン】",E="Hanon Ch. 香鳴ハノン【パレプロ】",R="zj9HBoXh10k",P="2024-06-10",M=`0:02:28 はのはー！
+
+0:04:06 01. わたしの一番かわいいところ / FRUITS ZIPPER
+0:10:15 02. 言い訳Maybe / AKB48
+0:17:31 03. 大声ダイヤモンド / AKB48
+0:29:28 04. 10年桜 / AKB48
+0:36:46 05. 涙サプライズ！ / AKB48
+
+0:42:46 06. サインはB New Arrange Ver. / B小町 ルビー(CV:伊駒ゆりえ) 有馬かな(CV:潘めぐみ) MEMちょ(CV:大久保瑠美)
+0:48:31 07 No brand girls / μ's
+0:54:05 08. Snow halation / μ's
+1:01:00 09. おもいでしりとり / DIALOGUE+
+1:10:19 10. Make you happy / NiziU
+
+1:24:05 11. Q&Aリサイタル！ / 戸松遥
+1:38:23 12. 可愛くてごめん / HoneyWorks
+1:46:24 13. ダダダダ天使 / ナナヲアカリ
+1:51:34 14. 粛聖!! ロリ神レクイエム☆ / しぐれうい
+1:58:30 15. シル・ヴ・プレジデント / P丸様。
+
+2:13:27 16. アイドル / YOASOBI
+2:19:16 17. ファンサ / mona（CV：夏川椎菜）
+2:26:41 18. #超絶かわいい / mona（CV：夏川椎菜）
+
+2:36:20 スパチャ読み
+2:45:20 はのはー！
+2:45:41 END / Cパート`,E2={video_title:f,video_artist:E,video_id:R,video_publish_date_str:P,song_timeline:M},hd=Object.freeze(Object.defineProperty({__proto__:null,default:E2,song_timeline:M,video_artist:E,video_id:R,video_publish_date_str:P,video_title:f},Symbol.toStringTag,{value:"Module"})),K="【歌枠 / KARAOKE】お姉さんな歌声で歌う✨【#パレプロ #香鳴ハノン】",N="Hanon Ch. 香鳴ハノン【パレプロ】",T="1nBxHOUStHY",j="2024-06-14",H=`0:02:19 はのはー！
+
+0:06:30 01. 愛のうた / 倖田來未
+0:14:28 02. マリーゴールド / あいみょん
+0:22:23 03. 貴方の恋人になりたいのです / 阿部真央
+0:28:32 04. カタオモイ / Aimer
+0:33:58 05. 風になる / つじあやの
+
+0:39:45 06. BLUE BIRD / 浜崎あゆみ
+0:44:40 07. 茜色の約束 / いきものがかり
+0:51:08 08. コイスルオトメ / いきものがかり
+0:58:15 09. 影 / 柴咲コウ
+1:02:47 10. ひと恋めぐり / 柴咲コウ
+
+1:08:40 11. Best Friend / Kiroro
+1:16:10 12. Can You Keep A Secret? / 宇多田ヒカル
+1:22:33 13. ラムのラブソング / 松谷祐子
+1:26:58 14. 少女レイ / みきとP
+1:32:17 15. だから僕は音楽を辞めた / ヨルシカ
+
+1:37:23 16. ただ君に晴れ / ヨルシカ
+1:40:54 17. 春泥棒 / ヨルシカ
+1:47:35 18. 言って。 / ヨルシカ
+1:57:10 19. Yeah! めっちゃホリディ / 松浦亜弥
+2:02:09 20. LOVEマシーン / モーニング娘。
+
+2:13:42 21. たばこ / コレサワ
+2:20:47 22. トリセツ / 西野カナ
+2:27:20 23. オトナブルー / 新しい学校のリーダーズ
+2:32:00 24. 渡月橋 ～君 想ふ～ / 倉木麻衣
+2:42:13 25. ダイアモンド クレバス / シェリル・ノーム starring May'n
+
+2:48:53 26. トライアングラー / 坂本真綾
+2:57:23 27. レット・イット・ゴー～ありのままで～ / 松たか子
+
+3:05:22 スパチャ読み
+3:08:12 はのはー！
+3:08:23 END / Cパート`,R2={video_title:K,video_artist:N,video_id:T,video_publish_date_str:j,song_timeline:H},Od=Object.freeze(Object.defineProperty({__proto__:null,default:R2,song_timeline:H,video_artist:N,video_id:T,video_publish_date_str:j,video_title:K},Symbol.toStringTag,{value:"Module"})),D="【 #昭和レトロ歌枠リレー 】歌って踊る令和のVアイドルが色っぽく歌う…！？💗【#パレプロ #香鳴ハノン】",I="Hanon Ch. 香鳴ハノン【パレプロ】",B="Gj-0sJZ6oS8",L="2024-06-15",V=`0:01:15 はのはー！
+
+0:04:38 01. MUGO・ん・・・色っぽい / 工藤 静香
+0:10:24 02. ペッパー警部 / ピンク・レディー
+0:16:25 03. S・O・S / ピンク・レディー
+0:19:19 04. セカンド・ラブ / 中森明菜
+0:25:43 05. 瑠璃色の地球 / 松田聖子
+
+0:30:24 はのはー！`,P2={video_title:D,video_artist:I,video_id:B,video_publish_date_str:L,song_timeline:V},Ad=Object.freeze(Object.defineProperty({__proto__:null,default:P2,song_timeline:V,video_artist:I,video_id:B,video_publish_date_str:L,video_title:D},Symbol.toStringTag,{value:"Module"})),U="【歌枠 / KARAOKE】かわいいアニソン縛り歌枠💗【#パレプロ #香鳴ハノン】",z="Hanon Ch. 香鳴ハノン【パレプロ】",k="Y1IQ1WyBQgM",G="2024-06-18",Y=`0:01:47 はのはー！
+
+0:05:12 01. 恋は渾沌の隷也 / 後ろから這いより隊Ｇ
+0:11:15 02. Baby Sweet Berry Love / 小倉唯
+0:17:40 03. HoneyCome!! / 小倉唯
+0:23:41 04. 星間飛行 / ランカ・リー＝中島愛
+0:27:51 05. ハレ晴レユカイ / 平野綾(涼宮ハルヒ)・茅原実里(長門有希)・後藤邑子(朝比奈みくる) 
+
+0:33:10 06. ふわふわ時間 / 桜高軽音部
+0:38:40 07. ごはんはおかず / 放課後ティータイム
+0:42:00 08. 天使にふれたよ / 放課後ティータイム
+0:48:28 09. ちゅ、多様性。 / ano
+0:53:14 10. 恋は渾沌の隷也 / 後ろから這いより隊Ｇ
+
+1:02:38 11. Q&A リサイタル! / 戸松遥
+
+1:09:20 スパチャ読み
+1:14:00 はのはー！
+1:14:09 END / Cパート`,M2={video_title:U,video_artist:z,video_id:k,video_publish_date_str:G,song_timeline:Y},Sd=Object.freeze(Object.defineProperty({__proto__:null,default:M2,song_timeline:Y,video_artist:z,video_id:k,video_publish_date_str:G,video_title:U},Symbol.toStringTag,{value:"Module"})),W="【歌枠 / KARAOKE】1曲聴いていきませんか？アニソン中心に色々歌う✨【#パレプロ #香鳴ハノン】",F="Hanon Ch. 香鳴ハノン【パレプロ】",w="W_OLTm30V7I",Q="2024-06-23",J=`0:02:32 はのはー！
+
+0:06:46 01. ステラブリーズ / 春奈るな
+0:12:12 02. アイヲウタエ / 春奈るな
+0:19:54 03. 君の知らない物語 / supercell
+0:27:21 04. 青春コンプレックス / 結束バンド
+0:31:06 05. 星座になれたら / 結束バンド
+
+0:40:26 06. U&I / 放課後ティータイム
+0:48:49 07. Unmei♪wa♪Endless! / 放課後ティータイム
+0:52:56 08. GO! GO! MANIAC / 放課後ティータイム
+0:58:37 09. ぴゅあぴゅあはーと / 放課後ティータイム
+1:03:26 10. ギー太に首ったけ / 平沢唯(CV:豊崎愛生)
+
+1:07:10 11. ふでペン ～ボールペン～ / 放課後ティータイム
+1:13:10 12. ミックスナッツ / Official髭男dism
+1:17:51 13. 恋は渾沌の隷也 / 後ろから這いより隊G
+1:22:46 14. 恋は渾沌の隷也 / 後ろから這いより隊G
+1:27:08 15. 恋は渾沌の隷也 / 後ろから這いより隊G
+
+1:35:02 16. かくしん的☆めたまるふぉ～ぜっ! / 土間うまる(田中あいみ)
+1:46:35 17. ふ・れ・ん・ど・し・た・い / 学園生活部
+1:51:30 18. アンハッピーエンドワールド / 直樹美紀(高橋李依)＆恵飛須沢胡桃(小澤亜李) ※アカペラ歌唱
+1:56:47 19. クラクラ / Ado
+2:01:00 20. 色彩 / yama
+
+2:07:02 21. 小さな魔法 / ステレオポニー
+2:12:19 22. ないない / ReoNa
+2:17:04 23. Rising Hope / LiSA
+2:22:30 24. アイドル / YOASOBI
+2:29:07 25. Together / あきよしふみえ
+
+2:37:30 26. 星間飛行 / ランカ・リー＝中島愛
+
+2:44:10 スパチャ読み
+2:54:01 はのはー！`,K2={video_title:W,video_artist:F,video_id:w,video_publish_date_str:Q,song_timeline:J},yd=Object.freeze(Object.defineProperty({__proto__:null,default:K2,song_timeline:J,video_artist:F,video_id:w,video_publish_date_str:Q,video_title:W},Symbol.toStringTag,{value:"Module"})),Z="【歌枠 / KARAOKE】ずっと真夜中でいいのに。縛り歌枠🌙【#パレプロ #香鳴ハノン】",q="Hanon Ch. 香鳴ハノン【パレプロ】",X="hkLrFFMDKwA",x="2024-06-28",nn=`0:02:25 はのはー！
+
+0:03:58 01. 低血ボルト / ずっと真夜中でいいのに。
+0:08:19 02. あいつら全員同窓会 / ずっと真夜中でいいのに。
+0:14:54 03. ヒューマノイド / ずっと真夜中でいいのに。
+0:21:02 04. 勘冴えて悔しいわ / ずっと真夜中でいいのに。
+0:25:45 05. MILABO / ずっと真夜中でいいのに。
+
+0:31:59 06. 勘ぐれい / ずっと真夜中でいいのに。
+0:37:54 07. 脳裏上のクラッカー / ずっと真夜中でいいのに。
+0:43:21 08. お勉強しといてよ / ずっと真夜中でいいのに。
+0:51:29 09. 正しくなれない / ずっと真夜中でいいのに。
+0:55:55 10. 秒針を噛む / ずっと真夜中でいいのに。
+
+1:06:15 はのはー！（２周目スタート）
+
+1:07:07 11. 低血ボルト / ずっと真夜中でいいのに。
+1:10:57 12. あいつら全員同窓会 / ずっと真夜中でいいのに。 ※パソコンくんの不調により中断あり
+1:13:53 おかえりー！
+1:16:38 12. あいつら全員同窓会 / ずっと真夜中でいいのに。
+1:21:58 13. ヒューマノイド / ずっと真夜中でいいのに。
+1:26:40 14. 勘冴えて悔しいわ / ずっと真夜中でいいのに。
+1:30:54 15. MILABO / ずっと真夜中でいいのに。
+
+1:35:35 16. 勘ぐれい / ずっと真夜中でいいのに。
+1:40:09 17. 脳裏上のクラッカー / ずっと真夜中でいいのに。
+1:45:05 18. お勉強しといてよ / ずっと真夜中でいいのに。
+1:50:42 19. 正しくなれない / ずっと真夜中でいいのに。
+1:57:30 20. 秒針を噛む / ずっと真夜中でいいのに。
+
+2:03:35 雑談（配信欲がすごいハノンちゃん、オール？？？）
+2:15:00 スパチャ読み
+2:18:00 はのはー！
+2:18:30 END / Cパート
+2:19:07 7月生写真サンプル公開`,N2={video_title:Z,video_artist:q,video_id:X,video_publish_date_str:x,song_timeline:nn},Cd=Object.freeze(Object.defineProperty({__proto__:null,default:N2,song_timeline:nn,video_artist:q,video_id:X,video_publish_date_str:x,video_title:Z},Symbol.toStringTag,{value:"Module"})),en="【歌枠 / KARAOKE】ウエディングソング＆ラブソング縛り歌枠🌙【#パレプロ #香鳴ハノン】",tn="Hanon Ch. 香鳴ハノン【パレプロ】",on="Tp0AqHmYt3I",_n="2024-06-29",sn=`0:01:21 はのはー！
+
+0:05:56 01. 愛の花 / あいみょん
+0:11:59 02. 永遠にともに / コブクロ
+0:17:19 03. 結婚闘魂行進曲「マブダチ」 / 氣志團
+0:24:12 04. CAN YOU CELEBRATE? / 安室奈美恵 ※ワンコーラス
+0:29:49 05. 虹 / 菅田将暉 ※サビだけ
+
+0:31:59 06. バンザイ〜好きでよかった〜 / ウルフルズ
+0:37:17 07. ハッピーウェディング前ソング / ヤバイTシャツ屋さん
+0:42:36 08. Million Films / コブクロ
+0:48:30 09. OCEAN / B'z
+0:57:45 10. スターラブレイション / ケラケラ
+
+1:03:55 11. 超めでたいソング 〜こんなに幸せでいいのかな？〜 / FRUITS ZIPPER
+1:10:04 12. 恋文 / Every Little Thing
+1:17:41 13. Lovers / sumika
+1:22:45 14. Familia / sumika
+1:29:36 15. 恋 / 星野源
+
+1:35:20 16. 糸 / 中島みゆき
+1:40:16 17. 愛をこめて花束を / Superfly
+1:46:40 18. Lovers / sumika
+
+1:51:36 スパチャ読み
+1:58:26 はのはー！
+1:58:46 END / Cパート`,T2={video_title:en,video_artist:tn,video_id:on,video_publish_date_str:_n,song_timeline:sn},fd=Object.freeze(Object.defineProperty({__proto__:null,default:T2,song_timeline:sn,video_artist:tn,video_id:on,video_publish_date_str:_n,video_title:en},Symbol.toStringTag,{value:"Module"})),dn="【歌枠｜KARAOKE】夏曲縛り！夏祭りに行きたくなる歌枠🍧【#パレプロ #香鳴ハノン】",rn="Hanon Ch. 香鳴ハノン【パレプロ】",ln="yNW8Ry_8frk",an="2024-07-19",vn=`🎀🎶今回のタイムスタンプ＆セトリ🎀🎶
+※編集後対応版(ほぼハノンちゃんの作ったチャプターと同じものになります)
+0:00:00 OP
+0:03:00 はのは～
+
+0:06:16 マイリッチサマーブルース / Sumika 
+0:14:30 世界は恋に落ちている / CHiCO 
+0:22:12 東京サマーセッション / HoneyWorks 
+0:28:03 うたかた花火 / Supercell 
+0:35:14 SUMMER SONG / YUI   
+0:39:58 夏祭り / Whiteberry 
+0:44:31 夏色 / ゆず 
+0:48:45 わたがし / Back number 
+1:01:43 マイリッチサマーブルース / Sumika 
+1:06:51 ミュージック・アワー / ポルノグラフィティ 
+1:17:31 青と夏 / Mrs. GREEN APPLE 
+1:29:28 東京サマーセッション / HoneyWorks
+1:35:00 スパチャ読み
+
+1:38:00 ツイッターのインプが爆のびした話
+1:43:16 エンドカード`,j2={video_title:dn,video_artist:rn,video_id:ln,video_publish_date_str:an,song_timeline:vn},Ed=Object.freeze(Object.defineProperty({__proto__:null,default:j2,song_timeline:vn,video_artist:rn,video_id:ln,video_publish_date_str:an,video_title:dn},Symbol.toStringTag,{value:"Module"})),cn="【縦型歌雑】初見さんのコメントで「世界一可愛い私」を歌える雑談歌枠💗【香鳴ハノン/パレプロ】",un="Hanon Ch. 香鳴ハノン【パレプロ】",bn="cUW9LSiyCiI",gn="2024-07-21",pn=`今回のタイムスタンプ＆セトリ\r
+0:00:00 OP\r
+0:04:58 はのはー
+\r
+0:14:30 ~0:18:34 世界一可愛い私 / 藤田ことね\r
+0:25:04 ~0:28:59 世界一可愛い私 / 藤田ことね\r
+0:29:08 ~0:33:08 世界一可愛い私 / 藤田ことね\r
+0:33:15 学マスの話\r
+0:46:35 shiny smile(アカペラ)\r
+0:50:37 何の話しようか\r
+0:53:55 ~0:57:56 世界一可愛い私 / 藤田ことね\r
+0:59:31 学マス楽曲あれこれ歌いたいよね\r
+1:32:28 学校の給食の話\r
+1:36:28 ほんとに言ってる！？
+\r
+1:48:56  ~1:52:56 世界一可愛い私 / 藤田ことね\r
+1:55:01  ~1:59:04 世界一可愛い私 / 藤田ことね\r
+2:12:20  ~2:16:19 世界一可愛い私 / 藤田ことね\r
+2:18:08  ~2:22:09 世界一可愛い私 / 藤田ことね\r
+2:28:24  ~2:32:25 世界一可愛い私 / 藤田ことね\r
+2:32:55  ~2:36:54 世界一可愛い私 / 藤田ことね\r
+\r
+2:39:02 スパチャ読み\r
+\r
+2:42:36  ~2:46:43 世界一可愛い私 / 藤田ことね\r
+2:49:52 エンドカード`,H2={video_title:cn,video_artist:un,video_id:bn,video_publish_date_str:gn,song_timeline:pn},Rd=Object.freeze(Object.defineProperty({__proto__:null,default:H2,song_timeline:pn,video_artist:un,video_id:bn,video_publish_date_str:gn,video_title:cn},Symbol.toStringTag,{value:"Module"})),mn="【歌枠｜KARAOKE】同接200人目指して！オールジャンル歌う🎤✨【#パレプロ #香鳴ハノン】",$n="Hanon Ch. 香鳴ハノン【パレプロ】",hn="FCVw8lVUwN0",On="2024-07-24",An=`0:01:28 はのはー！
+
+0:08:19 01. 群青日和 / 東京事変
+0:18:22 02. Everyday、カチューシャ / AKB48
+0:24:55 03. いぬねこ。青春真っ盛り / わーすた
+0:33:34 04. すきっ！ / 超ときめき宣伝部
+0:40:11 05. 世界一可愛い私 / 藤田ことね
+
+0:46:51 06. #超絶かわいい / mona（CV：夏川椎菜）
+0:51:26 07. わたしの一番かわいいところ / FRUITS ZIPPER
+0:57:34 08. うたかた花火 / supercell
+1:04:29 09. 君の知らない物語 / supercell
+1:11:30 10. 唱 / Ado
+
+1:17:54 11. Good-bye days / YUI for 雨音薫
+1:23:55 12. 星座になれたら / 結束バンド
+1:34:44 13. 怪獣の花唄 / Vaundy
+1:41:54 14. ダンスホール / Mrs. GREEN APPLE
+
+1:49:45 8月生写真サンプル公開
+2:00:02 スパチャ読み
+2:06:24 はのはー！
+2:07:22 END / Cパート`,D2={video_title:mn,video_artist:$n,video_id:hn,video_publish_date_str:On,song_timeline:An},Pd=Object.freeze(Object.defineProperty({__proto__:null,default:D2,song_timeline:An,video_artist:$n,video_id:hn,video_publish_date_str:On,video_title:mn},Symbol.toStringTag,{value:"Module"})),Sn="【歌枠｜KARAOKE】学園アイドルマスターオンリーセトリ🎤💗【#パレプロ #香鳴ハノン】",yn="Hanon Ch. 香鳴ハノン【パレプロ】",Cn="6jDomuGjUVg",fn="2024-07-26",En=`0:01:54 はのはー！
 
 0:04:54 01. 初 / 初星学園
 0:13:07 02. Fighting My Way / 花海咲季
@@ -24,7 +387,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:10:54 スパチャ読み
 2:20:28 はのはー！
-2:20:46 END / Cパート`,n_={video_title:n,video_artist:e,video_id:t,video_publish_date_str:i,song_timeline:o},T2=Object.freeze(Object.defineProperty({__proto__:null,default:n_,song_timeline:o,video_artist:e,video_id:t,video_publish_date_str:i,video_title:n},Symbol.toStringTag,{value:"Module"})),_="【歌枠｜KARAOKE】平成アニソンといえば！？有名＆懐かしい曲をたくさん歌う🎤✨【#パレプロ #香鳴ハノン】",s="Hanon Ch. 香鳴ハノン【パレプロ】",d="WiABilUXp-A",r="2024-07-30",l=`0:03:20 はのはー！
+2:20:46 END / Cパート`,I2={video_title:Sn,video_artist:yn,video_id:Cn,video_publish_date_str:fn,song_timeline:En},Md=Object.freeze(Object.defineProperty({__proto__:null,default:I2,song_timeline:En,video_artist:yn,video_id:Cn,video_publish_date_str:fn,video_title:Sn},Symbol.toStringTag,{value:"Module"})),Rn="【歌枠｜KARAOKE】平成アニソンといえば！？有名＆懐かしい曲をたくさん歌う🎤✨【#パレプロ #香鳴ハノン】",Pn="Hanon Ch. 香鳴ハノン【パレプロ】",Mn="WiABilUXp-A",Kn="2024-07-30",Nn=`0:03:20 はのはー！
 
 0:12:17 01. カサブタ / 千綿偉功
 0:22:01 02. 檄! 帝国華撃団 / 真宮寺さくら(横山智佐)&帝国歌劇団
@@ -53,7 +416,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 2:59:14 スパチャ読み
 3:25:33 はのはー！
 3:25:41 END / Cパート
-3:26:34 8月生写真一挙公開`,e_={video_title:_,video_artist:s,video_id:d,video_publish_date_str:r,song_timeline:l},j2=Object.freeze(Object.defineProperty({__proto__:null,default:e_,song_timeline:l,video_artist:s,video_id:d,video_publish_date_str:r,video_title:_},Symbol.toStringTag,{value:"Module"})),a="【歌枠｜KARAOKE】アイドル全開歌枠💗アイドルソング中心に歌う🎤✨学マスも！？【#パレプロ #香鳴ハノン】",v="Hanon Ch. 香鳴ハノン【パレプロ】",c="0zowYftP2OE",u="2024-08-03",b=`0:04:26 はのはー！
+3:26:34 8月生写真一挙公開`,B2={video_title:Rn,video_artist:Pn,video_id:Mn,video_publish_date_str:Kn,song_timeline:Nn},Kd=Object.freeze(Object.defineProperty({__proto__:null,default:B2,song_timeline:Nn,video_artist:Pn,video_id:Mn,video_publish_date_str:Kn,video_title:Rn},Symbol.toStringTag,{value:"Module"})),Tn="【歌枠｜KARAOKE】アイドル全開歌枠💗アイドルソング中心に歌う🎤✨学マスも！？【#パレプロ #香鳴ハノン】",jn="Hanon Ch. 香鳴ハノン【パレプロ】",Hn="0zowYftP2OE",Dn="2024-08-03",In=`0:04:26 はのはー！
 
 0:07:28 01. だいしきゅーだいしゅき / femme fatale
 0:16:39 02. プロミスザスター / BiSH
@@ -75,7 +438,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:03:50 スパチャ読み
 2:08:12 はのはー！
-2:09:45 END / Cパート`,t_={video_title:a,video_artist:v,video_id:c,video_publish_date_str:u,song_timeline:b},H2=Object.freeze(Object.defineProperty({__proto__:null,default:t_,song_timeline:b,video_artist:v,video_id:c,video_publish_date_str:u,video_title:a},Symbol.toStringTag,{value:"Module"})),g="【耐久歌枠】10人初見さん来てくれるまで寝れない！？雑談歌枠💗【#パレプロ #香鳴ハノン】",p="Hanon Ch. 香鳴ハノン【パレプロ】",m="OfNSAsHXfR0",$="2024-08-04",h=`0:02:20 はのはー！
+2:09:45 END / Cパート`,L2={video_title:Tn,video_artist:jn,video_id:Hn,video_publish_date_str:Dn,song_timeline:In},Nd=Object.freeze(Object.defineProperty({__proto__:null,default:L2,song_timeline:In,video_artist:jn,video_id:Hn,video_publish_date_str:Dn,video_title:Tn},Symbol.toStringTag,{value:"Module"})),Bn="【耐久歌枠】10人初見さん来てくれるまで寝れない！？雑談歌枠💗【#パレプロ #香鳴ハノン】",Ln="Hanon Ch. 香鳴ハノン【パレプロ】",Vn="OfNSAsHXfR0",Un="2024-08-04",zn=`0:02:20 はのはー！
 
 0:11:22 01. 白線 / 葛城リーリヤ
 0:23:13 02. Snow halation / μ's
@@ -95,7 +458,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:04:28 スパチャ読み
 2:09:04 はのはー！
-2:09:14 END / Cパート`,i_={video_title:g,video_artist:p,video_id:m,video_publish_date_str:$,song_timeline:h},D2=Object.freeze(Object.defineProperty({__proto__:null,default:i_,song_timeline:h,video_artist:p,video_id:m,video_publish_date_str:$,video_title:g},Symbol.toStringTag,{value:"Module"})),O="【歌枠｜KARAOKE】初見さんも大歓迎！オールジャンル歌う夏曲歌枠👙✨【#パレプロ #香鳴ハノン】",A="Hanon Ch. 香鳴ハノン【パレプロ】",S="bzl27VqJq5k",y="2024-08-08",C=`0:01:05 はのはー！
+2:09:14 END / Cパート`,V2={video_title:Bn,video_artist:Ln,video_id:Vn,video_publish_date_str:Un,song_timeline:zn},Td=Object.freeze(Object.defineProperty({__proto__:null,default:V2,song_timeline:zn,video_artist:Ln,video_id:Vn,video_publish_date_str:Un,video_title:Bn},Symbol.toStringTag,{value:"Module"})),kn="【歌枠｜KARAOKE】初見さんも大歓迎！オールジャンル歌う夏曲歌枠👙✨【#パレプロ #香鳴ハノン】",Gn="Hanon Ch. 香鳴ハノン【パレプロ】",Yn="bzl27VqJq5k",Wn="2024-08-08",Fn=`0:01:05 はのはー！
 
 0:08:17 01. 真夏のSounds good / AKB48
 0:18:47 02. 夢見る 15歳 / スマイレージ
@@ -117,7 +480,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:48:44 スパチャ読み
 1:51:33 はのはー！
-1:51:52 END / Cパート`,o_={video_title:O,video_artist:A,video_id:S,video_publish_date_str:y,song_timeline:C},L2=Object.freeze(Object.defineProperty({__proto__:null,default:o_,song_timeline:C,video_artist:A,video_id:S,video_publish_date_str:y,video_title:O},Symbol.toStringTag,{value:"Module"})),f="【歌枠｜KARAOKE】盛り上がる！有名アニソンを歌う！初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",E="Hanon Ch. 香鳴ハノン【パレプロ】",P="DHzcNIkS7hk",R="2024-08-15",M=`0:02:37 はのはー！
+1:51:52 END / Cパート`,U2={video_title:kn,video_artist:Gn,video_id:Yn,video_publish_date_str:Wn,song_timeline:Fn},jd=Object.freeze(Object.defineProperty({__proto__:null,default:U2,song_timeline:Fn,video_artist:Gn,video_id:Yn,video_publish_date_str:Wn,video_title:kn},Symbol.toStringTag,{value:"Module"})),wn="【歌枠｜KARAOKE】盛り上がる！有名アニソンを歌う！初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",Qn="Hanon Ch. 香鳴ハノン【パレプロ】",Jn="DHzcNIkS7hk",Zn="2024-08-15",qn=`0:02:37 はのはー！
 
 0:08:17 01. 残酷な天使のテーゼ / 高橋洋子
 0:13:53 02. コネクト / ClariS
@@ -140,7 +503,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:58:59 実家の子供達かわいいエピソード
 2:01:48 スパチャ読み
 2:21:00 はのはー！
-2:21:42 END / Cパート`,__={video_title:f,video_artist:E,video_id:P,video_publish_date_str:R,song_timeline:M},B2=Object.freeze(Object.defineProperty({__proto__:null,default:__,song_timeline:M,video_artist:E,video_id:P,video_publish_date_str:R,video_title:f},Symbol.toStringTag,{value:"Module"})),K="【#世界で1番かわいい歌枠リレー】Vアイドル全力のかわいいをお届け💗【#パレプロ #香鳴ハノン】",N="Hanon Ch. 香鳴ハノン【パレプロ】",T="XnU-DC7zR8o",j="2024-08-17",H=`0:01:27 はのはー！
+2:21:42 END / Cパート`,z2={video_title:wn,video_artist:Qn,video_id:Jn,video_publish_date_str:Zn,song_timeline:qn},Hd=Object.freeze(Object.defineProperty({__proto__:null,default:z2,song_timeline:qn,video_artist:Qn,video_id:Jn,video_publish_date_str:Zn,video_title:wn},Symbol.toStringTag,{value:"Module"})),Xn="【#世界で1番かわいい歌枠リレー】Vアイドル全力のかわいいをお届け💗【#パレプロ #香鳴ハノン】",xn="Hanon Ch. 香鳴ハノン【パレプロ】",ne="XnU-DC7zR8o",ee="2024-08-17",te=`0:01:27 はのはー！
 
 0:04:27 01. 世界一可愛い私 / 藤田ことね
 0:10:26 02. irony / ClariS
@@ -148,7 +511,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:22:59 04. 太陽曰く燃えよカオス / 後ろから這いより隊G
 0:27:01 05. HoneyCome!! / 小倉唯
 
-0:31:04 はのはー！`,s_={video_title:K,video_artist:N,video_id:T,video_publish_date_str:j,song_timeline:H},V2=Object.freeze(Object.defineProperty({__proto__:null,default:s_,song_timeline:H,video_artist:N,video_id:T,video_publish_date_str:j,video_title:K},Symbol.toStringTag,{value:"Module"})),D="【歌枠｜KARAOKE】活動5年目もよろしくね✨深夜のピアノカラオケ歌枠🌙J-POP・バラード中心【#パレプロ #香鳴ハノン】",L="Hanon Ch. 香鳴ハノン【パレプロ】",B="Da9-XONRwgs",V="2024-08-19",I=`0:04:31 はのはー！
+0:31:04 はのはー！`,k2={video_title:Xn,video_artist:xn,video_id:ne,video_publish_date_str:ee,song_timeline:te},Dd=Object.freeze(Object.defineProperty({__proto__:null,default:k2,song_timeline:te,video_artist:xn,video_id:ne,video_publish_date_str:ee,video_title:Xn},Symbol.toStringTag,{value:"Module"})),ie="【歌枠｜KARAOKE】活動5年目もよろしくね✨深夜のピアノカラオケ歌枠🌙J-POP・バラード中心【#パレプロ #香鳴ハノン】",oe="Hanon Ch. 香鳴ハノン【パレプロ】",_e="Da9-XONRwgs",se="2024-08-19",de=`0:04:31 はのはー！
 
 0:12:34 01. 猫 / DISH//
 0:19:48 02. マリーゴールド / あいみょん
@@ -170,7 +533,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:59:36 スパチャ読み
 2:29:36 はのはー！
-2:30:04 END / Cパート`,d_={video_title:D,video_artist:L,video_id:B,video_publish_date_str:V,song_timeline:I},I2=Object.freeze(Object.defineProperty({__proto__:null,default:d_,song_timeline:I,video_artist:L,video_id:B,video_publish_date_str:V,video_title:D},Symbol.toStringTag,{value:"Module"})),U="【歌枠｜KARAOKE】明るい気持ちになれる歌を歌う🎤✨【#パレプロ #香鳴ハノン】",z="Hanon Ch. 香鳴ハノン【パレプロ】",k="n8hn4PimJpA",G="2024-08-22",Y=`0:01:54 はのはー！
+2:30:04 END / Cパート`,G2={video_title:ie,video_artist:oe,video_id:_e,video_publish_date_str:se,song_timeline:de},Id=Object.freeze(Object.defineProperty({__proto__:null,default:G2,song_timeline:de,video_artist:oe,video_id:_e,video_publish_date_str:se,video_title:ie},Symbol.toStringTag,{value:"Module"})),re="【歌枠｜KARAOKE】明るい気持ちになれる歌を歌う🎤✨【#パレプロ #香鳴ハノン】",le="Hanon Ch. 香鳴ハノン【パレプロ】",ae="n8hn4PimJpA",ve="2024-08-22",ce=`0:01:54 はのはー！
 
 0:05:16 01. 風になる / つじあやの
 0:10:49 02. SUMMER SONG / YUI
@@ -192,7 +555,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:39:23 スパチャ読み
 1:42:14 はのはー！
-1:42:41 END / Cパート`,r_={video_title:U,video_artist:z,video_id:k,video_publish_date_str:G,song_timeline:Y},U2=Object.freeze(Object.defineProperty({__proto__:null,default:r_,song_timeline:Y,video_artist:z,video_id:k,video_publish_date_str:G,video_title:U},Symbol.toStringTag,{value:"Module"})),W="【#パレプロ感謝祭直前歌枠リレー】6番手💗パワフルな歌声で魅せちゃうぞ！【#パレプロ #香鳴ハノン】",w="Hanon Ch. 香鳴ハノン【パレプロ】",F="9He-662gsAY",J="2024-08-25",Q=`今回のタイムスタンプ＆セトリ\r
+1:42:41 END / Cパート`,Y2={video_title:re,video_artist:le,video_id:ae,video_publish_date_str:ve,song_timeline:ce},Bd=Object.freeze(Object.defineProperty({__proto__:null,default:Y2,song_timeline:ce,video_artist:le,video_id:ae,video_publish_date_str:ve,video_title:re},Symbol.toStringTag,{value:"Module"})),ue="【#パレプロ感謝祭直前歌枠リレー】6番手💗パワフルな歌声で魅せちゃうぞ！【#パレプロ #香鳴ハノン】",be="Hanon Ch. 香鳴ハノン【パレプロ】",ge="9He-662gsAY",pe="2024-08-25",me=`今回のタイムスタンプ＆セトリ\r
 0:00:00 OP
 0:01:39 白線 / 初星学園と葛城リーリヤ
 0:09:13 Catch You Catch Me / グミ
@@ -200,7 +563,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:20:48 ALIVE / ClariS
 0:24:23 花の塔 / さユり
 
-おつのんでしたー`,l_={video_title:W,video_artist:w,video_id:F,video_publish_date_str:J,song_timeline:Q},z2=Object.freeze(Object.defineProperty({__proto__:null,default:l_,song_timeline:Q,video_artist:w,video_id:F,video_publish_date_str:J,video_title:W},Symbol.toStringTag,{value:"Module"})),Z="【歌枠｜KARAOKE】学マス廃課金Vアイドルによる学マスオリ曲オンリーセトリ歌枠🎤💗【#パレプロ #香鳴ハノン】",q="Hanon Ch. 香鳴ハノン【パレプロ】",X="OckRsZaSMFU",x="2024-08-30",nn=`0:04:49 はのはー！
+おつのんでしたー`,W2={video_title:ue,video_artist:be,video_id:ge,video_publish_date_str:pe,song_timeline:me},Ld=Object.freeze(Object.defineProperty({__proto__:null,default:W2,song_timeline:me,video_artist:be,video_id:ge,video_publish_date_str:pe,video_title:ue},Symbol.toStringTag,{value:"Module"})),$e="【歌枠｜KARAOKE】学マス廃課金Vアイドルによる学マスオリ曲オンリーセトリ歌枠🎤💗【#パレプロ #香鳴ハノン】",he="Hanon Ch. 香鳴ハノン【パレプロ】",Oe="OckRsZaSMFU",Ae="2024-08-30",Se=`0:04:49 はのはー！
 
 0:09:11 01. 初 / 初星学園
 0:18:21 02. Fighting My Way / 花海咲季
@@ -228,7 +591,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:11:35 スパチャ読み
 2:18:00 はのはー！
-2:18:21 END / Cパート`,a_={video_title:Z,video_artist:q,video_id:X,video_publish_date_str:x,song_timeline:nn},k2=Object.freeze(Object.defineProperty({__proto__:null,default:a_,song_timeline:nn,video_artist:q,video_id:X,video_publish_date_str:x,video_title:Z},Symbol.toStringTag,{value:"Module"})),en="【歌枠｜KARAOKE】オールジャンル！リクエスト曲を歌う長時間歌枠🎤✨【#パレプロ #香鳴ハノン】",tn="Hanon Ch. 香鳴ハノン【パレプロ】",on="xEek0CuiqiQ",_n="2024-09-02",sn=`0:03:49 はのはー！
+2:18:21 END / Cパート`,F2={video_title:$e,video_artist:he,video_id:Oe,video_publish_date_str:Ae,song_timeline:Se},Vd=Object.freeze(Object.defineProperty({__proto__:null,default:F2,song_timeline:Se,video_artist:he,video_id:Oe,video_publish_date_str:Ae,video_title:$e},Symbol.toStringTag,{value:"Module"})),ye="【歌枠｜KARAOKE】オールジャンル！リクエスト曲を歌う長時間歌枠🎤✨【#パレプロ #香鳴ハノン】",Ce="Hanon Ch. 香鳴ハノン【パレプロ】",fe="xEek0CuiqiQ",Ee="2024-09-02",Re=`0:03:49 はのはー！
 
 0:16:48 01. 星座になれたら / 結束バンド
 0:24:37 02. ALIVE / ClariS
@@ -265,7 +628,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 4:03:44 スパチャ読み
 4:27:52 はのはー！
 4:28:02 END / Cパート
-4:28:58 9月生写真サンプル公開`,v_={video_title:en,video_artist:tn,video_id:on,video_publish_date_str:_n,song_timeline:sn},G2=Object.freeze(Object.defineProperty({__proto__:null,default:v_,song_timeline:sn,video_artist:tn,video_id:on,video_publish_date_str:_n,video_title:en},Symbol.toStringTag,{value:"Module"})),dn="【歌枠｜KARAOKE】アニソン縛りで楽しく歌う歌枠🎤✨【#パレプロ #香鳴ハノン】",rn="Hanon Ch. 香鳴ハノン【パレプロ】",ln="PiDVIGcZbKs",an="2024-09-04",vn=`0:04:24 はのはー！
+4:28:58 9月生写真サンプル公開`,w2={video_title:ye,video_artist:Ce,video_id:fe,video_publish_date_str:Ee,song_timeline:Re},Ud=Object.freeze(Object.defineProperty({__proto__:null,default:w2,song_timeline:Re,video_artist:Ce,video_id:fe,video_publish_date_str:Ee,video_title:ye},Symbol.toStringTag,{value:"Module"})),Pe="【歌枠｜KARAOKE】アニソン縛りで楽しく歌う歌枠🎤✨【#パレプロ #香鳴ハノン】",Me="Hanon Ch. 香鳴ハノン【パレプロ】",Ke="PiDVIGcZbKs",Ne="2024-09-04",Te=`0:04:24 はのはー！
 
 0:12:04 01. 月並みに輝け / 結束バンド
 0:18:30 02. 青春コンプレックス / 結束バンド
@@ -293,7 +656,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:53:21 スパチャ読み
 3:04:20 はのはー！
-3:04:46 END / Cパート`,c_={video_title:dn,video_artist:rn,video_id:ln,video_publish_date_str:an,song_timeline:vn},Y2=Object.freeze(Object.defineProperty({__proto__:null,default:c_,song_timeline:vn,video_artist:rn,video_id:ln,video_publish_date_str:an,video_title:dn},Symbol.toStringTag,{value:"Module"})),cn="【歌枠｜KARAOKE】初見さんが来ないと歌えない！？セットリストも初見さんに全委ね歌枠🎤✨【#パレプロ #香鳴ハノン】",un="Hanon Ch. 香鳴ハノン【パレプロ】",bn="kPs8Y5XX76w",gn="2024-09-06",pn=`0:03:20 はのはー！
+3:04:46 END / Cパート`,Q2={video_title:Pe,video_artist:Me,video_id:Ke,video_publish_date_str:Ne,song_timeline:Te},zd=Object.freeze(Object.defineProperty({__proto__:null,default:Q2,song_timeline:Te,video_artist:Me,video_id:Ke,video_publish_date_str:Ne,video_title:Pe},Symbol.toStringTag,{value:"Module"})),je="【歌枠｜KARAOKE】初見さんが来ないと歌えない！？セットリストも初見さんに全委ね歌枠🎤✨【#パレプロ #香鳴ハノン】",He="Hanon Ch. 香鳴ハノン【パレプロ】",De="kPs8Y5XX76w",Ie="2024-09-06",Be=`0:03:20 はのはー！
 
 0:15:29 01. SHAMROCK / UVERworld
 0:20:45 02. ミックスナッツ / Official髭男dism
@@ -319,7 +682,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 3:00:47 スパチャ読み
 3:04:21 はのはー！
-3:04:38 END / Cパート`,u_={video_title:cn,video_artist:un,video_id:bn,video_publish_date_str:gn,song_timeline:pn},W2=Object.freeze(Object.defineProperty({__proto__:null,default:u_,song_timeline:pn,video_artist:un,video_id:bn,video_publish_date_str:gn,video_title:cn},Symbol.toStringTag,{value:"Module"})),mn="【歌枠｜KARAOKE】アニソン縛りでかっこかわいく歌う歌枠🎤💫【パレプロ / 香鳴ハノン】",$n="Hanon Ch. 香鳴ハノン【パレプロ】",hn="22zTmN4cRQQ",On="2024-09-11",An=`0:03:22 はのはー！
+3:04:38 END / Cパート`,J2={video_title:je,video_artist:He,video_id:De,video_publish_date_str:Ie,song_timeline:Be},kd=Object.freeze(Object.defineProperty({__proto__:null,default:J2,song_timeline:Be,video_artist:He,video_id:De,video_publish_date_str:Ie,video_title:je},Symbol.toStringTag,{value:"Module"})),Le="【歌枠｜KARAOKE】アニソン縛りでかっこかわいく歌う歌枠🎤💫【パレプロ / 香鳴ハノン】",Ve="Hanon Ch. 香鳴ハノン【パレプロ】",Ue="22zTmN4cRQQ",ze="2024-09-11",ke=`0:03:22 はのはー！
 
 0:04:15 01. 忘れてやらない / 結束バンド
 0:08:01 02. 青春コンプレックス / 結束バンド
@@ -349,7 +712,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:01:44 スパチャ読み
 2:03:40 はのはー！
-2:04:14 ED / Cパート`,b_={video_title:mn,video_artist:$n,video_id:hn,video_publish_date_str:On,song_timeline:An},w2=Object.freeze(Object.defineProperty({__proto__:null,default:b_,song_timeline:An,video_artist:$n,video_id:hn,video_publish_date_str:On,video_title:mn},Symbol.toStringTag,{value:"Module"})),Sn="【歌枠｜KARAOKE】バンドリ縛りコラボ歌枠！かわいい編💗【#パレプロ #常磐カナメ #香鳴ハノン】",yn="Hanon Ch. 香鳴ハノン【パレプロ】",Cn="Nm6PBbb7JLI",fn="2024-09-12",En=`0:02:04 こんばんはー！
+2:04:14 ED / Cパート`,Z2={video_title:Le,video_artist:Ve,video_id:Ue,video_publish_date_str:ze,song_timeline:ke},Gd=Object.freeze(Object.defineProperty({__proto__:null,default:Z2,song_timeline:ke,video_artist:Ve,video_id:Ue,video_publish_date_str:ze,video_title:Le},Symbol.toStringTag,{value:"Module"})),Ge="【歌枠｜KARAOKE】バンドリ縛りコラボ歌枠！かわいい編💗【#パレプロ #常磐カナメ #香鳴ハノン】",Ye="Hanon Ch. 香鳴ハノン【パレプロ】",We="Nm6PBbb7JLI",Fe="2024-09-12",we=`0:02:04 こんばんはー！
 
 0:05:25 01. 天下卜ーイツA to Z☆ / Pastel*Palettes
 0:15:17 02. しゅわりん☆どり～みん / Pastel*Palettes
@@ -360,7 +723,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:50:23 06. キズナミュージック♪ / Poppin'Party
 
 0:57:01 Sputrip4周年ライブのお知らせ
-0:57:38 ありがとうございましたー！`,g_={video_title:Sn,video_artist:yn,video_id:Cn,video_publish_date_str:fn,song_timeline:En},F2=Object.freeze(Object.defineProperty({__proto__:null,default:g_,song_timeline:En,video_artist:yn,video_id:Cn,video_publish_date_str:fn,video_title:Sn},Symbol.toStringTag,{value:"Module"})),Pn="【歌枠｜KARAOKE】全力のカワボ歌枠💗かわいい声ってどうやって出すんだっけ！？【パレプロ / 香鳴ハノン】",Rn="Hanon Ch. 香鳴ハノン【パレプロ】",Mn="LG1Rh-gnDY0",Kn="2024-09-16",Nn=`0:03:39 はのはー！
+0:57:38 ありがとうございましたー！`,q2={video_title:Ge,video_artist:Ye,video_id:We,video_publish_date_str:Fe,song_timeline:we},Yd=Object.freeze(Object.defineProperty({__proto__:null,default:q2,song_timeline:we,video_artist:Ye,video_id:We,video_publish_date_str:Fe,video_title:Ge},Symbol.toStringTag,{value:"Module"})),Qe="【歌枠｜KARAOKE】全力のカワボ歌枠💗かわいい声ってどうやって出すんだっけ！？【パレプロ / 香鳴ハノン】",Je="Hanon Ch. 香鳴ハノン【パレプロ】",Ze="LG1Rh-gnDY0",qe="2024-09-16",Xe=`0:03:39 はのはー！
 
 0:06:40 01. GO MY WAY!! / THE IDOLM@STER
 0:12:42 02. Cutie Panther / BiBi
@@ -385,7 +748,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:06:14 スパチャ読み
 2:13:11 はのはー！
-2:13:17 END / Cパート`,p_={video_title:Pn,video_artist:Rn,video_id:Mn,video_publish_date_str:Kn,song_timeline:Nn},J2=Object.freeze(Object.defineProperty({__proto__:null,default:p_,song_timeline:Nn,video_artist:Rn,video_id:Mn,video_publish_date_str:Kn,video_title:Pn},Symbol.toStringTag,{value:"Module"})),Tn="【歌枠｜KARAOKE】アニソン縛りでテンションあげてこ🎤💫【パレプロ / 香鳴ハノン】",jn="Hanon Ch. 香鳴ハノン【パレプロ】",Hn="Pj6m2JEm3M4",Dn="2024-09-18",Ln=`0:04:15 はのはー！
+2:13:17 END / Cパート`,X2={video_title:Qe,video_artist:Je,video_id:Ze,video_publish_date_str:qe,song_timeline:Xe},Wd=Object.freeze(Object.defineProperty({__proto__:null,default:X2,song_timeline:Xe,video_artist:Je,video_id:Ze,video_publish_date_str:qe,video_title:Qe},Symbol.toStringTag,{value:"Module"})),xe="【歌枠｜KARAOKE】アニソン縛りでテンションあげてこ🎤💫【パレプロ / 香鳴ハノン】",nt="Hanon Ch. 香鳴ハノン【パレプロ】",et="Pj6m2JEm3M4",tt="2024-09-18",it=`0:04:15 はのはー！
 
 0:07:25 01. サインはB / B小町 アイ(高橋李依)
 0:15:48 02. アイドル / YOASOBI
@@ -420,7 +783,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 2:50:07 26. God knows... / 涼宮ハルヒ(平野綾)
 
 2:57:49 スパチャ読み
-3:04:39 はのはー！`,m_={video_title:Tn,video_artist:jn,video_id:Hn,video_publish_date_str:Dn,song_timeline:Ln},Q2=Object.freeze(Object.defineProperty({__proto__:null,default:m_,song_timeline:Ln,video_artist:jn,video_id:Hn,video_publish_date_str:Dn,video_title:Tn},Symbol.toStringTag,{value:"Module"})),Bn="【歌枠｜KARAOKE】珍しく朝活✨寝起きボイスでもさわやかに歌える…はず？【パレプロ / 香鳴ハノン】",Vn="Hanon Ch. 香鳴ハノン【パレプロ】",In="xuTySpDKoww",Un="2024-09-23",zn=`0:02:35 はのはー！
+3:04:39 はのはー！`,x2={video_title:xe,video_artist:nt,video_id:et,video_publish_date_str:tt,song_timeline:it},Fd=Object.freeze(Object.defineProperty({__proto__:null,default:x2,song_timeline:it,video_artist:nt,video_id:et,video_publish_date_str:tt,video_title:xe},Symbol.toStringTag,{value:"Module"})),ot="【歌枠｜KARAOKE】珍しく朝活✨寝起きボイスでもさわやかに歌える…はず？【パレプロ / 香鳴ハノン】",_t="Hanon Ch. 香鳴ハノン【パレプロ】",st="xuTySpDKoww",dt="2024-09-23",rt=`0:02:35 はのはー！
 
 0:14:58 01. パプリカ / Foorin
 0:19:12 02. チェリー / スピッツ
@@ -441,7 +804,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:02:14 スパチャ読み
 2:03:25 はのはー！
-2:03:39 END / Cパート`,$_={video_title:Bn,video_artist:Vn,video_id:In,video_publish_date_str:Un,song_timeline:zn},Z2=Object.freeze(Object.defineProperty({__proto__:null,default:$_,song_timeline:zn,video_artist:Vn,video_id:In,video_publish_date_str:Un,video_title:Bn},Symbol.toStringTag,{value:"Module"})),kn="【歌枠｜KARAOKE】#ぴよノン 学マスオリ曲オンリーセトリ歌枠💗Vアイドルの歌聴いてって✨【#江波キョウカ #香鳴ハノン】",Gn="Hanon Ch. 香鳴ハノン【パレプロ】",Yn="8Zpvfud2XWw",Wn="2024-09-27",wn=`0:01:50 こんばんはー！
+2:03:39 END / Cパート`,ns={video_title:ot,video_artist:_t,video_id:st,video_publish_date_str:dt,song_timeline:rt},wd=Object.freeze(Object.defineProperty({__proto__:null,default:ns,song_timeline:rt,video_artist:_t,video_id:st,video_publish_date_str:dt,video_title:ot},Symbol.toStringTag,{value:"Module"})),lt="【歌枠｜KARAOKE】#ぴよノン 学マスオリ曲オンリーセトリ歌枠💗Vアイドルの歌聴いてって✨【#江波キョウカ #香鳴ハノン】",at="Hanon Ch. 香鳴ハノン【パレプロ】",vt="8Zpvfud2XWw",ct="2024-09-27",ut=`0:01:50 こんばんはー！
 
 0:13:34 01. 初 / 初星学園
 0:21:49 02. 世界一可愛い私 / 藤田ことね
@@ -458,7 +821,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:52:55 スパチャ読み
 1:57:44 番外編：アイマスの推しを探そう！
 2:57:09 おつぴよのん！
-2:57:23 END`,h_={video_title:kn,video_artist:Gn,video_id:Yn,video_publish_date_str:Wn,song_timeline:wn},q2=Object.freeze(Object.defineProperty({__proto__:null,default:h_,song_timeline:wn,video_artist:Gn,video_id:Yn,video_publish_date_str:Wn,video_title:kn},Symbol.toStringTag,{value:"Module"})),Fn="【歌枠｜KARAOKE】昭和にタイムスリップ！晩酌のおともにいかが？✨#なっとうぷりん【#暁月クララ #香鳴ハノン】",Jn="Hanon Ch. 香鳴ハノン【パレプロ】",Qn="MKO82yznn7o",Zn="2024-09-30",qn=`0:02:20 こんばんはー！
+2:57:23 END`,es={video_title:lt,video_artist:at,video_id:vt,video_publish_date_str:ct,song_timeline:ut},Qd=Object.freeze(Object.defineProperty({__proto__:null,default:es,song_timeline:ut,video_artist:at,video_id:vt,video_publish_date_str:ct,video_title:lt},Symbol.toStringTag,{value:"Module"})),bt="【歌枠｜KARAOKE】昭和にタイムスリップ！晩酌のおともにいかが？✨#なっとうぷりん【#暁月クララ #香鳴ハノン】",gt="Hanon Ch. 香鳴ハノン【パレプロ】",pt="MKO82yznn7o",mt="2024-09-30",$t=`0:02:20 こんばんはー！
 
 0:10:11 01. 少女A / 中森明菜
 0:18:02 02. M / プリンセス プリンセス
@@ -472,7 +835,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:15:29 09. M / プリンセス プリンセス
 
 1:28:20 ぴょこはのは〜！
-1:28:42 END`,O_={video_title:Fn,video_artist:Jn,video_id:Qn,video_publish_date_str:Zn,song_timeline:qn},X2=Object.freeze(Object.defineProperty({__proto__:null,default:O_,song_timeline:qn,video_artist:Jn,video_id:Qn,video_publish_date_str:Zn,video_title:Fn},Symbol.toStringTag,{value:"Module"})),Xn="【歌枠｜KARAOKE】同接200人目指して✨有名なJ-POP中心に歌う🎤💞【パレプロ / 香鳴ハノン】",xn="Hanon Ch. 香鳴ハノン【パレプロ】",ne="fkohTL_nlfY",ee="2024-10-01",te=`今回のタイムスタンプ＆セトリ\r
+1:28:42 END`,ts={video_title:bt,video_artist:gt,video_id:pt,video_publish_date_str:mt,song_timeline:$t},Jd=Object.freeze(Object.defineProperty({__proto__:null,default:ts,song_timeline:$t,video_artist:gt,video_id:pt,video_publish_date_str:mt,video_title:bt},Symbol.toStringTag,{value:"Module"})),ht="【歌枠｜KARAOKE】同接200人目指して✨有名なJ-POP中心に歌う🎤💞【パレプロ / 香鳴ハノン】",Ot="Hanon Ch. 香鳴ハノン【パレプロ】",At="fkohTL_nlfY",St="2024-10-01",yt=`今回のタイムスタンプ＆セトリ\r
 0:00:00 OP\r
 0:03:21 はのは～\r
 \r
@@ -492,7 +855,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:21:39；1:26:35 ヒカリへ / miwa\r
 \r
 1:29:57 スパチャ読み\r
-1:38:16 エンドカード`,A_={video_title:Xn,video_artist:xn,video_id:ne,video_publish_date_str:ee,song_timeline:te},x2=Object.freeze(Object.defineProperty({__proto__:null,default:A_,song_timeline:te,video_artist:xn,video_id:ne,video_publish_date_str:ee,video_title:Xn},Symbol.toStringTag,{value:"Module"})),ie="【歌枠｜KARAOKE】「カラオケJOYSOUND for STREAMER」でアイドルソング縛り歌枠🎤💞【パレプロ / 香鳴ハノン】",oe="Hanon Ch. 香鳴ハノン【パレプロ】",_e="1CCTVPvdJTQ",se="2024-10-04",de=`0:03:20 はのは〜！
+1:38:16 エンドカード`,is={video_title:ht,video_artist:Ot,video_id:At,video_publish_date_str:St,song_timeline:yt},Zd=Object.freeze(Object.defineProperty({__proto__:null,default:is,song_timeline:yt,video_artist:Ot,video_id:At,video_publish_date_str:St,video_title:ht},Symbol.toStringTag,{value:"Module"})),Ct="【歌枠｜KARAOKE】「カラオケJOYSOUND for STREAMER」でアイドルソング縛り歌枠🎤💞【パレプロ / 香鳴ハノン】",ft="Hanon Ch. 香鳴ハノン【パレプロ】",Et="1CCTVPvdJTQ",Rt="2024-10-04",Pt=`0:03:20 はのは〜！
 
 0:06:29 01. 青春のラップタイム / NMB48
 0:12:21 02. 君のことが好きだから / AKB48
@@ -528,7 +891,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 2:51:41 26. それでも好きだよ / 指原莉乃
 
 2:59:00 スパチャ読み
-3:11:23 はのは〜！`,S_={video_title:ie,video_artist:oe,video_id:_e,video_publish_date_str:se,song_timeline:de},ns=Object.freeze(Object.defineProperty({__proto__:null,default:S_,song_timeline:de,video_artist:oe,video_id:_e,video_publish_date_str:se,video_title:ie},Symbol.toStringTag,{value:"Module"})),re="【歌枠｜KARAOKE】学マス大好きアイドルの学マスオリ曲オンリーセトリ歌枠🎤💗【#パレプロ #香鳴ハノン】",le="Hanon Ch. 香鳴ハノン【パレプロ】",ae="_HhebizPio8",ve="2024-10-05",ce=`0:03:48 はのは〜！
+3:11:23 はのは〜！`,os={video_title:Ct,video_artist:ft,video_id:Et,video_publish_date_str:Rt,song_timeline:Pt},qd=Object.freeze(Object.defineProperty({__proto__:null,default:os,song_timeline:Pt,video_artist:ft,video_id:Et,video_publish_date_str:Rt,video_title:Ct},Symbol.toStringTag,{value:"Module"})),Mt="【歌枠｜KARAOKE】学マス大好きアイドルの学マスオリ曲オンリーセトリ歌枠🎤💗【#パレプロ #香鳴ハノン】",Kt="Hanon Ch. 香鳴ハノン【パレプロ】",Nt="_HhebizPio8",Tt="2024-10-05",jt=`0:03:48 はのは〜！
 
 0:09:19 01. 初 / 初星学園
 0:15:42 02. Fighting My Way / 花海咲季
@@ -556,7 +919,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:23:48 スパチャ読み
 2:27:33 はのは〜！
-2:27:48 END / Cパート`,y_={video_title:re,video_artist:le,video_id:ae,video_publish_date_str:ve,song_timeline:ce},es=Object.freeze(Object.defineProperty({__proto__:null,default:y_,song_timeline:ce,video_artist:le,video_id:ae,video_publish_date_str:ve,video_title:re},Symbol.toStringTag,{value:"Module"})),ue="【歌枠｜KARAOKE】だいすきなみちゃとコラボ歌枠💞#ハノミレ てぇてぇしてって✨【Mirea Sheltzs / 香鳴ハノン】",be="Hanon Ch. 香鳴ハノン【パレプロ】",ge="YA1GTZJEmTQ",pe="2024-10-11",me=`0:03:15 こんばんはー！
+2:27:48 END / Cパート`,_s={video_title:Mt,video_artist:Kt,video_id:Nt,video_publish_date_str:Tt,song_timeline:jt},Xd=Object.freeze(Object.defineProperty({__proto__:null,default:_s,song_timeline:jt,video_artist:Kt,video_id:Nt,video_publish_date_str:Tt,video_title:Mt},Symbol.toStringTag,{value:"Module"})),Ht="【歌枠｜KARAOKE】だいすきなみちゃとコラボ歌枠💞#ハノミレ てぇてぇしてって✨【Mirea Sheltzs / 香鳴ハノン】",Dt="Hanon Ch. 香鳴ハノン【パレプロ】",It="YA1GTZJEmTQ",Bt="2024-10-11",Lt=`0:03:15 こんばんはー！
 
 0:30:56 01. 三日月 / 絢香
 0:53:09 02. だから僕は音楽を辞めた / ヨルシカ
@@ -565,7 +928,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:32:37 05. タッチ / 岩崎良美
 
 2:07:15 はのは〜！
-2:07:54 END`,C_={video_title:ue,video_artist:be,video_id:ge,video_publish_date_str:pe,song_timeline:me},ts=Object.freeze(Object.defineProperty({__proto__:null,default:C_,song_timeline:me,video_artist:be,video_id:ge,video_publish_date_str:pe,video_title:ue},Symbol.toStringTag,{value:"Module"})),$e="【歌枠｜KARAOKE】新3D✨お披露目歌枠🎤💗【#パレプロ / #香鳴ハノン】",he="Hanon Ch. 香鳴ハノン【パレプロ】",Oe="iwjfCBbO_H8",Ae="2024-10-17",Se=`0:02:38 はのは〜！
+2:07:54 END`,ss={video_title:Ht,video_artist:Dt,video_id:It,video_publish_date_str:Bt,song_timeline:Lt},xd=Object.freeze(Object.defineProperty({__proto__:null,default:ss,song_timeline:Lt,video_artist:Dt,video_id:It,video_publish_date_str:Bt,video_title:Ht},Symbol.toStringTag,{value:"Module"})),Vt="【歌枠｜KARAOKE】新3D✨お披露目歌枠🎤💗【#パレプロ / #香鳴ハノン】",Ut="Hanon Ch. 香鳴ハノン【パレプロ】",zt="iwjfCBbO_H8",kt="2024-10-17",Gt=`0:02:38 はのは〜！
 
 0:10:26 01. いぬねこ。青春真っ盛り / わーすた
 0:21:29 02. アイドル / YOASOBI
@@ -577,7 +940,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:19:59 スクショタイム
 1:39:24 スパチャ読み
 1:47:30 はのは〜！
-1:48:00 END / Cパート`,f_={video_title:$e,video_artist:he,video_id:Oe,video_publish_date_str:Ae,song_timeline:Se},is=Object.freeze(Object.defineProperty({__proto__:null,default:f_,song_timeline:Se,video_artist:he,video_id:Oe,video_publish_date_str:Ae,video_title:$e},Symbol.toStringTag,{value:"Module"})),ye="【歌枠｜KARAOKE】男性アーティスト楽曲縛り歌枠🎤💗【#パレプロ / #香鳴ハノン】",Ce="Hanon Ch. 香鳴ハノン【パレプロ】",fe="Wbh8G1QO3ro",Ee="2024-10-21",Pe=`0:04:15 はのは〜！
+1:48:00 END / Cパート`,ds={video_title:Vt,video_artist:Ut,video_id:zt,video_publish_date_str:kt,song_timeline:Gt},nr=Object.freeze(Object.defineProperty({__proto__:null,default:ds,song_timeline:Gt,video_artist:Ut,video_id:zt,video_publish_date_str:kt,video_title:Vt},Symbol.toStringTag,{value:"Module"})),Yt="【歌枠｜KARAOKE】男性アーティスト楽曲縛り歌枠🎤💗【#パレプロ / #香鳴ハノン】",Wt="Hanon Ch. 香鳴ハノン【パレプロ】",Ft="Wbh8G1QO3ro",wt="2024-10-21",Qt=`0:04:15 はのは〜！
 
 0:08:45 01. ヤングアダルト / マカロニえんぴつ
 0:16:26 02. なんでもないよ、 / マカロニえんぴつ
@@ -601,7 +964,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:25:49 スパチャ読み
 2:40:52 はのは〜！
-2:41:25 END / Cパート`,E_={video_title:ye,video_artist:Ce,video_id:fe,video_publish_date_str:Ee,song_timeline:Pe},os=Object.freeze(Object.defineProperty({__proto__:null,default:E_,song_timeline:Pe,video_artist:Ce,video_id:fe,video_publish_date_str:Ee,video_title:ye},Symbol.toStringTag,{value:"Module"})),Re="【歌枠｜KARAOKE】平成ヒットソング縛り歌枠🎤💗【#パレプロ / #香鳴ハノン】",Me="Hanon Ch. 香鳴ハノン【パレプロ】",Ke="pYR-dfurtRg",Ne="2024-10-24",Te=`0:02:53 はのは〜！
+2:41:25 END / Cパート`,rs={video_title:Yt,video_artist:Wt,video_id:Ft,video_publish_date_str:wt,song_timeline:Qt},er=Object.freeze(Object.defineProperty({__proto__:null,default:rs,song_timeline:Qt,video_artist:Wt,video_id:Ft,video_publish_date_str:wt,video_title:Yt},Symbol.toStringTag,{value:"Module"})),Jt="【歌枠｜KARAOKE】平成ヒットソング縛り歌枠🎤💗【#パレプロ / #香鳴ハノン】",Zt="Hanon Ch. 香鳴ハノン【パレプロ】",qt="pYR-dfurtRg",Xt="2024-10-24",xt=`0:02:53 はのは〜！
 
 0:04:28 01. ありがとう / いきものがかり
 0:10:51 02. 空も飛べるはず / スピッツ
@@ -623,7 +986,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:57:31 スパチャ読み
 2:12:30 はのは〜！
-2:12:48 END / Cパート`,P_={video_title:Re,video_artist:Me,video_id:Ke,video_publish_date_str:Ne,song_timeline:Te},_s=Object.freeze(Object.defineProperty({__proto__:null,default:P_,song_timeline:Te,video_artist:Me,video_id:Ke,video_publish_date_str:Ne,video_title:Re},Symbol.toStringTag,{value:"Module"})),je="【歌枠｜KARAOKE】スナックハノン！？昭和の名曲縛り歌枠🎤💗【#パレプロ / #香鳴ハノン】",He="Hanon Ch. 香鳴ハノン【パレプロ】",De="9kei_kHIBA4",Le="2024-10-26",Be=`0:03:19 はのは〜！
+2:12:48 END / Cパート`,ls={video_title:Jt,video_artist:Zt,video_id:qt,video_publish_date_str:Xt,song_timeline:xt},tr=Object.freeze(Object.defineProperty({__proto__:null,default:ls,song_timeline:xt,video_artist:Zt,video_id:qt,video_publish_date_str:Xt,video_title:Jt},Symbol.toStringTag,{value:"Module"})),ni="【歌枠｜KARAOKE】スナックハノン！？昭和の名曲縛り歌枠🎤💗【#パレプロ / #香鳴ハノン】",ei="Hanon Ch. 香鳴ハノン【パレプロ】",ti="9kei_kHIBA4",ii="2024-10-26",oi=`0:03:19 はのは〜！
 
 0:05:25 01. 待つわ / あみん
 0:10:49 02. 桃色吐息 / 髙橋真梨子
@@ -649,7 +1012,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:00:13 スパチャ読み（後半））
 2:06:20 はのは〜！
-2:06:45 END / Cパート`,R_={video_title:je,video_artist:He,video_id:De,video_publish_date_str:Le,song_timeline:Be},ss=Object.freeze(Object.defineProperty({__proto__:null,default:R_,song_timeline:Be,video_artist:He,video_id:De,video_publish_date_str:Le,video_title:je},Symbol.toStringTag,{value:"Module"})),Ve="【歌枠｜KARAOKE】オンゲキ収録曲オンリー歌枠🎤🎶全曲初めて歌うよ✨【#パレプロ #香鳴ハノン】",Ie="Hanon Ch. 香鳴ハノン【パレプロ】",Ue="5yVskYRBP34",ze="2024-10-29",ke=`0:02:40 はのは〜！
+2:06:45 END / Cパート`,as={video_title:ni,video_artist:ei,video_id:ti,video_publish_date_str:ii,song_timeline:oi},ir=Object.freeze(Object.defineProperty({__proto__:null,default:as,song_timeline:oi,video_artist:ei,video_id:ti,video_publish_date_str:ii,video_title:ni},Symbol.toStringTag,{value:"Module"})),_i="【歌枠｜KARAOKE】オンゲキ収録曲オンリー歌枠🎤🎶全曲初めて歌うよ✨【#パレプロ #香鳴ハノン】",si="Hanon Ch. 香鳴ハノン【パレプロ】",di="5yVskYRBP34",ri="2024-10-29",li=`0:02:40 はのは〜！
 
 0:07:23 01. GranFatalité / 柏木咲姫(CV:石見舞菜香)
 0:14:35 02. No Limit RED Force / 星咲あかり(CV:赤尾ひかる)、藍原椿(CV:橋本ちなみ)、早乙女彩華(CV:中島唯)、柏木咲姫(CV:石見舞菜香)、柏木美亜(CV:和氣あず未)
@@ -667,7 +1030,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:58:07 スパチャ読み
 2:04:55 はのは〜！
-2:05:09 END / Cパート`,M_={video_title:Ve,video_artist:Ie,video_id:Ue,video_publish_date_str:ze,song_timeline:ke},ds=Object.freeze(Object.defineProperty({__proto__:null,default:M_,song_timeline:ke,video_artist:Ie,video_id:Ue,video_publish_date_str:ze,video_title:Ve},Symbol.toStringTag,{value:"Module"})),Ge="【歌枠｜KARAOKE】ハノンちゃんとカラオケ来てる風！学マスオリ曲オンリーセトリ歌枠🎤💗ALL初歌い！【#パレプロ #香鳴ハノン】",Ye="Hanon Ch. 香鳴ハノン【パレプロ】",We="ooLiDnGb2E0",we="2024-10-30",Fe=`0:02:56 はのは〜！
+2:05:09 END / Cパート`,vs={video_title:_i,video_artist:si,video_id:di,video_publish_date_str:ri,song_timeline:li},or=Object.freeze(Object.defineProperty({__proto__:null,default:vs,song_timeline:li,video_artist:si,video_id:di,video_publish_date_str:ri,video_title:_i},Symbol.toStringTag,{value:"Module"})),ai="【歌枠｜KARAOKE】ハノンちゃんとカラオケ来てる風！学マスオリ曲オンリーセトリ歌枠🎤💗ALL初歌い！【#パレプロ #香鳴ハノン】",vi="Hanon Ch. 香鳴ハノン【パレプロ】",ci="ooLiDnGb2E0",ui="2024-10-30",bi=`0:02:56 はのは〜！
 
 0:08:38 01. 仮装狂騒曲 / 初星学園
 0:13:35 02. 仮装狂騒曲 / 初星学園
@@ -706,7 +1069,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 3:35:00 スパチャ読み
 3:40:25 はのは〜！ 
-3:40:40 END / Cパート`,K_={video_title:Ge,video_artist:Ye,video_id:We,video_publish_date_str:we,song_timeline:Fe},rs=Object.freeze(Object.defineProperty({__proto__:null,default:K_,song_timeline:Fe,video_artist:Ye,video_id:We,video_publish_date_str:we,video_title:Ge},Symbol.toStringTag,{value:"Module"})),Je="【歌枠｜KARAOKE】11月新衣装で💞ラブソング歌枠💗【#パレプロ #香鳴ハノン】",Qe="Hanon Ch. 香鳴ハノン【パレプロ】",Ze="zoRT1N2JRMg",qe="2024-11-01",Xe=`0:03:05 はのは〜！
+3:40:40 END / Cパート`,cs={video_title:ai,video_artist:vi,video_id:ci,video_publish_date_str:ui,song_timeline:bi},_r=Object.freeze(Object.defineProperty({__proto__:null,default:cs,song_timeline:bi,video_artist:vi,video_id:ci,video_publish_date_str:ui,video_title:ai},Symbol.toStringTag,{value:"Module"})),gi="【歌枠｜KARAOKE】11月新衣装で💞ラブソング歌枠💗【#パレプロ #香鳴ハノン】",pi="Hanon Ch. 香鳴ハノン【パレプロ】",mi="zoRT1N2JRMg",$i="2024-11-01",hi=`0:03:05 はのは〜！
 
 0:07:04 01. CHE.R.RY / YUI
 0:13:30 02. One Love / 嵐
@@ -721,7 +1084,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:07:43 スパチャ読み
 1:10:16 はのは〜！
-1:10:55 END / Cパート`,N_={video_title:Je,video_artist:Qe,video_id:Ze,video_publish_date_str:qe,song_timeline:Xe},ls=Object.freeze(Object.defineProperty({__proto__:null,default:N_,song_timeline:Xe,video_artist:Qe,video_id:Ze,video_publish_date_str:qe,video_title:Je},Symbol.toStringTag,{value:"Module"})),xe="【歌枠｜KARAOKE】ボカロ歌枠！✨高音中心だけどがんばるぞ～！【#パレプロ #香鳴ハノン】",nt="Hanon Ch. 香鳴ハノン【パレプロ】",et="wcDOtq5wRck",tt="2024-11-04",it=`Today's Set List\r
+1:10:55 END / Cパート`,us={video_title:gi,video_artist:pi,video_id:mi,video_publish_date_str:$i,song_timeline:hi},sr=Object.freeze(Object.defineProperty({__proto__:null,default:us,song_timeline:hi,video_artist:pi,video_id:mi,video_publish_date_str:$i,video_title:gi},Symbol.toStringTag,{value:"Module"})),Oi="【歌枠｜KARAOKE】ボカロ歌枠！✨高音中心だけどがんばるぞ～！【#パレプロ #香鳴ハノン】",Ai="Hanon Ch. 香鳴ハノン【パレプロ】",Si="wcDOtq5wRck",yi="2024-11-04",Ci=`Today's Set List\r
 0:00:00 OP\r
 0:03:11 はのは～\r
 \r
@@ -738,7 +1101,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:10:03 ~ 1:12:26 強風オールバック / ゆこぴ\r
 \r
 1:13:02 スパチャ読み\r
-1:15:21 エンドカード 11月衣装生写真紹介`,T_={video_title:xe,video_artist:nt,video_id:et,video_publish_date_str:tt,song_timeline:it},as=Object.freeze(Object.defineProperty({__proto__:null,default:T_,song_timeline:it,video_artist:nt,video_id:et,video_publish_date_str:tt,video_title:xe},Symbol.toStringTag,{value:"Module"})),ot="【歌枠｜KARAOKE】オールジャンル歌枠！最近のことをお話しながら✨【#パレプロ #香鳴ハノン】",_t="Hanon Ch. 香鳴ハノン【パレプロ】",st="_rlhD293m4A",dt="2024-11-07",rt=`0:02:50 はのは〜！
+1:15:21 エンドカード 11月衣装生写真紹介`,bs={video_title:Oi,video_artist:Ai,video_id:Si,video_publish_date_str:yi,song_timeline:Ci},dr=Object.freeze(Object.defineProperty({__proto__:null,default:bs,song_timeline:Ci,video_artist:Ai,video_id:Si,video_publish_date_str:yi,video_title:Oi},Symbol.toStringTag,{value:"Module"})),fi="【歌枠｜KARAOKE】オールジャンル歌枠！最近のことをお話しながら✨【#パレプロ #香鳴ハノン】",Ei="Hanon Ch. 香鳴ハノン【パレプロ】",Ri="_rlhD293m4A",Pi="2024-11-07",Mi=`0:02:50 はのは〜！
 
 0:16:26 01. Butter-Fly / 和田光司
 0:28:28 02. Together / あきよしふみえ
@@ -757,7 +1120,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 2:07:55 スパチャ読み
 2:14:02 はのは〜！
 2:14:24 END / Cパート
-2:19:12 11月生写真サンプル公開`,j_={video_title:ot,video_artist:_t,video_id:st,video_publish_date_str:dt,song_timeline:rt},vs=Object.freeze(Object.defineProperty({__proto__:null,default:j_,song_timeline:rt,video_artist:_t,video_id:st,video_publish_date_str:dt,video_title:ot},Symbol.toStringTag,{value:"Module"})),lt="【歌枠｜KARAOKE】バンド縛り歌枠！かっこよく魅せる🎸✨【#パレプロ #香鳴ハノン】",at="Hanon Ch. 香鳴ハノン【パレプロ】",vt="9CkukWQb8jY",ct="2024-11-11",ut=`0:03:09 はのは〜！
+2:19:12 11月生写真サンプル公開`,gs={video_title:fi,video_artist:Ei,video_id:Ri,video_publish_date_str:Pi,song_timeline:Mi},rr=Object.freeze(Object.defineProperty({__proto__:null,default:gs,song_timeline:Mi,video_artist:Ei,video_id:Ri,video_publish_date_str:Pi,video_title:fi},Symbol.toStringTag,{value:"Module"})),Ki="【歌枠｜KARAOKE】バンド縛り歌枠！かっこよく魅せる🎸✨【#パレプロ #香鳴ハノン】",Ni="Hanon Ch. 香鳴ハノン【パレプロ】",Ti="9CkukWQb8jY",ji="2024-11-11",Hi=`0:03:09 はのは〜！
 
 0:05:31 01. シルエット / KANA-BOON
 0:14:04 02. 瞬間センチメンタル / SCANDAL
@@ -771,7 +1134,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:05:39 09. オリオンをなぞる / UNISON SQUARE GARDEN
 
 1:15:19 はのは〜！
-1:15:50 END / Cパート`,H_={video_title:lt,video_artist:at,video_id:vt,video_publish_date_str:ct,song_timeline:ut},cs=Object.freeze(Object.defineProperty({__proto__:null,default:H_,song_timeline:ut,video_artist:at,video_id:vt,video_publish_date_str:ct,video_title:lt},Symbol.toStringTag,{value:"Module"})),bt="【歌枠｜KARAOKE】初見さんにセットリストを決めてもらう歌枠✨【#パレプロ #香鳴ハノン】",gt="Hanon Ch. 香鳴ハノン【パレプロ】",pt="qAVXNRet4lY",mt="2024-11-15",$t=`0:03:39 はのは〜！
+1:15:50 END / Cパート`,ps={video_title:Ki,video_artist:Ni,video_id:Ti,video_publish_date_str:ji,song_timeline:Hi},lr=Object.freeze(Object.defineProperty({__proto__:null,default:ps,song_timeline:Hi,video_artist:Ni,video_id:Ti,video_publish_date_str:ji,video_title:Ki},Symbol.toStringTag,{value:"Module"})),Di="【歌枠｜KARAOKE】初見さんにセットリストを決めてもらう歌枠✨【#パレプロ #香鳴ハノン】",Ii="Hanon Ch. 香鳴ハノン【パレプロ】",Bi="qAVXNRet4lY",Li="2024-11-15",Vi=`0:03:39 はのは〜！
 
 0:13:27 01. 月光花 / Janne Da Arc
 0:23:06 02. サウダージ / ポルノグラフィティ
@@ -781,7 +1144,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:37:50 スパチャ読み
 1:44:25 はのは〜！
-1:44:45 END / Cパート`,D_={video_title:bt,video_artist:gt,video_id:pt,video_publish_date_str:mt,song_timeline:$t},us=Object.freeze(Object.defineProperty({__proto__:null,default:D_,song_timeline:$t,video_artist:gt,video_id:pt,video_publish_date_str:mt,video_title:bt},Symbol.toStringTag,{value:"Module"})),ht="【歌枠｜KARAOKE】超有名アニソン歌いまくる歌枠～～！！【#パレプロ #香鳴ハノン】",Ot="Hanon Ch. 香鳴ハノン【パレプロ】",At="npR9-zrnOy4",St="2024-11-19",yt=`0:02:05 はのは〜！
+1:44:45 END / Cパート`,ms={video_title:Di,video_artist:Ii,video_id:Bi,video_publish_date_str:Li,song_timeline:Vi},ar=Object.freeze(Object.defineProperty({__proto__:null,default:ms,song_timeline:Vi,video_artist:Ii,video_id:Bi,video_publish_date_str:Li,video_title:Di},Symbol.toStringTag,{value:"Module"})),Ui="【歌枠｜KARAOKE】超有名アニソン歌いまくる歌枠～～！！【#パレプロ #香鳴ハノン】",zi="Hanon Ch. 香鳴ハノン【パレプロ】",ki="npR9-zrnOy4",Gi="2024-11-19",Yi=`0:02:05 はのは〜！
 
 0:06:05 01. Butter-Fly / 和田光司
 0:11:02 02. カサブタ / 千綿偉功
@@ -809,7 +1172,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:58:08 スパチャ読み
 2:00:42 Live2D新衣装お披露目 サムネ公開（※新衣装成分2%含む）
 2:08:16 はのは〜！
-2:08:32 END / Cパート`,L_={video_title:ht,video_artist:Ot,video_id:At,video_publish_date_str:St,song_timeline:yt},bs=Object.freeze(Object.defineProperty({__proto__:null,default:L_,song_timeline:yt,video_artist:Ot,video_id:At,video_publish_date_str:St,video_title:ht},Symbol.toStringTag,{value:"Module"})),Ct="【歌枠｜KARAOKE】新米オンゲキーズによるオンゲキ収録曲オンリー歌枠🎶【#パレプロ #香鳴ハノン】",ft="Hanon Ch. 香鳴ハノン【パレプロ】",Et="4_Cg-qLiwy8",Pt="2024-11-22",Rt=`0:03:25 はのは〜！
+2:08:32 END / Cパート`,$s={video_title:Ui,video_artist:zi,video_id:ki,video_publish_date_str:Gi,song_timeline:Yi},vr=Object.freeze(Object.defineProperty({__proto__:null,default:$s,song_timeline:Yi,video_artist:zi,video_id:ki,video_publish_date_str:Gi,video_title:Ui},Symbol.toStringTag,{value:"Module"})),Wi="【歌枠｜KARAOKE】新米オンゲキーズによるオンゲキ収録曲オンリー歌枠🎶【#パレプロ #香鳴ハノン】",Fi="Hanon Ch. 香鳴ハノン【パレプロ】",wi="4_Cg-qLiwy8",Qi="2024-11-22",Ji=`0:03:25 はのは〜！
 
 0:11:33 01. UTAKATA / 九條 楓(CV：佳村はるか)
 0:17:47 02. シャノワール / シュガーポケッツ「ラピスリライツ」
@@ -838,7 +1201,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 3:06:48 スパチャ読み
 3:19:27 はのは〜！
-3:19:52 END / Cパート`,B_={video_title:Ct,video_artist:ft,video_id:Et,video_publish_date_str:Pt,song_timeline:Rt},gs=Object.freeze(Object.defineProperty({__proto__:null,default:B_,song_timeline:Rt,video_artist:ft,video_id:Et,video_publish_date_str:Pt,video_title:Ct},Symbol.toStringTag,{value:"Module"})),Mt="【#1人1アニメ歌枠リレー】トップバッター！選んだのは推しの子💖アイドル力見せてくよ～！🎤🌟【#パレプロ #香鳴ハノン】",Kt="Hanon Ch. 香鳴ハノン【パレプロ】",Nt="_cMjlIrv3EE",Tt="2024-11-30",jt=`Today's Set List\r
+3:19:52 END / Cパート`,hs={video_title:Wi,video_artist:Fi,video_id:wi,video_publish_date_str:Qi,song_timeline:Ji},cr=Object.freeze(Object.defineProperty({__proto__:null,default:hs,song_timeline:Ji,video_artist:Fi,video_id:wi,video_publish_date_str:Qi,video_title:Wi},Symbol.toStringTag,{value:"Module"})),Zi="【#1人1アニメ歌枠リレー】トップバッター！選んだのは推しの子💖アイドル力見せてくよ～！🎤🌟【#パレプロ #香鳴ハノン】",qi="Hanon Ch. 香鳴ハノン【パレプロ】",Xi="_cMjlIrv3EE",xi="2024-11-30",n0=`Today's Set List\r
 0:00:00 OP\r
 0:01:14 はのは～\r
 \r
@@ -852,7 +1215,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 28:51 エンドカード？\r
 29:52 エンドカード\r
 \r
-1人1アニメ歌枠リレートップバッターおつのんでした！`,V_={video_title:Mt,video_artist:Kt,video_id:Nt,video_publish_date_str:Tt,song_timeline:jt},ps=Object.freeze(Object.defineProperty({__proto__:null,default:V_,song_timeline:jt,video_artist:Kt,video_id:Nt,video_publish_date_str:Tt,video_title:Mt},Symbol.toStringTag,{value:"Module"})),Ht="【歌枠｜KARAOKE】ほのかチャンと初めてのコラボ歌枠💗平成楽曲で聴かせます✨【#陽茅ほのか #香鳴ハノン】",Dt="Hanon Ch. 香鳴ハノン【パレプロ】",Lt="NcgR9fC6ScU",Bt="2024-12-06",Vt=`0:03:58 こんばんは〜！
+1人1アニメ歌枠リレートップバッターおつのんでした！`,Os={video_title:Zi,video_artist:qi,video_id:Xi,video_publish_date_str:xi,song_timeline:n0},ur=Object.freeze(Object.defineProperty({__proto__:null,default:Os,song_timeline:n0,video_artist:qi,video_id:Xi,video_publish_date_str:xi,video_title:Zi},Symbol.toStringTag,{value:"Module"})),e0="【歌枠｜KARAOKE】ほのかチャンと初めてのコラボ歌枠💗平成楽曲で聴かせます✨【#陽茅ほのか #香鳴ハノン】",t0="Hanon Ch. 香鳴ハノン【パレプロ】",i0="NcgR9fC6ScU",o0="2024-12-06",_0=`0:03:58 こんばんは〜！
 
 0:08:26 01. スパークル / RADWIMPS
 0:23:06 02. ボクノート / スキマスイッチ
@@ -863,7 +1226,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:05:25 07. 世界は恋に落ちている / CHiCO with HoneyWorks
 
 1:16:25 ほのはのは〜！
-1:17:33 END`,I_={video_title:Ht,video_artist:Dt,video_id:Lt,video_publish_date_str:Bt,song_timeline:Vt},ms=Object.freeze(Object.defineProperty({__proto__:null,default:I_,song_timeline:Vt,video_artist:Dt,video_id:Lt,video_publish_date_str:Bt,video_title:Ht},Symbol.toStringTag,{value:"Module"})),It="【#オンゲキ歌枠リレー】トリは紫譜面ABFB視野の新米オンゲキーズ！全力で盛り上げてくぞ🎤✨【#パレプロ #香鳴ハノン】",Ut="Hanon Ch. 香鳴ハノン【パレプロ】",zt="gO1wLFQe0UI",kt="2024-12-08",Gt=`0:01:07 はのは〜！
+1:17:33 END`,As={video_title:e0,video_artist:t0,video_id:i0,video_publish_date_str:o0,song_timeline:_0},br=Object.freeze(Object.defineProperty({__proto__:null,default:As,song_timeline:_0,video_artist:t0,video_id:i0,video_publish_date_str:o0,video_title:e0},Symbol.toStringTag,{value:"Module"})),s0="【#オンゲキ歌枠リレー】トリは紫譜面ABFB視野の新米オンゲキーズ！全力で盛り上げてくぞ🎤✨【#パレプロ #香鳴ハノン】",d0="Hanon Ch. 香鳴ハノン【パレプロ】",r0="gO1wLFQe0UI",l0="2024-12-08",a0=`0:01:07 はのは〜！
 
 0:07:59 01. ポケットからぬりつぶせ！ / マーチングポケッツ [日向千夏(CV:岡咲美保)、柏木美亜(CV:和氣あず未)、東雲つむぎ(CV:和泉風花)]
 0:16:02 02. タテマエと本心の大乱闘 / 藍原椿(CV：橋本ちなみ)
@@ -876,7 +1239,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:54:41 08. GranFatalité / 柏木咲姫(CV：石見舞菜香)
 
 0:59:01 告知
-1:00:50 はのは〜！`,U_={video_title:It,video_artist:Ut,video_id:zt,video_publish_date_str:kt,song_timeline:Gt},$s=Object.freeze(Object.defineProperty({__proto__:null,default:U_,song_timeline:Gt,video_artist:Ut,video_id:zt,video_publish_date_str:kt,video_title:It},Symbol.toStringTag,{value:"Module"})),Yt="【3Dカラオケ】アイドル縛りでわちゃわちゃカラオケ女子会💗✨【#海月シェル #白玖ウタノ #香鳴ハノン #暁月クララ】",Wt="Hanon Ch. 香鳴ハノン【パレプロ】",wt="6vLYrjCuLfc",Ft="2024-12-11",Jt=`今回のタイムスタンプ＆セトリ
+1:00:50 はのは〜！`,Ss={video_title:s0,video_artist:d0,video_id:r0,video_publish_date_str:l0,song_timeline:a0},gr=Object.freeze(Object.defineProperty({__proto__:null,default:Ss,song_timeline:a0,video_artist:d0,video_id:r0,video_publish_date_str:l0,video_title:s0},Symbol.toStringTag,{value:"Module"})),v0="【3Dカラオケ】アイドル縛りでわちゃわちゃカラオケ女子会💗✨【#海月シェル #白玖ウタノ #香鳴ハノン #暁月クララ】",c0="Hanon Ch. 香鳴ハノン【パレプロ】",u0="6vLYrjCuLfc",b0="2024-12-11",g0=`今回のタイムスタンプ＆セトリ
 0:00:00 OP 
 0:02:03 わたしの一番かわいいところ / FRUITS ZIPPER(全員)
 
@@ -901,7 +1264,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:10:05 エンドカード
 
 コラボ女子会歌枠おつかれさまでした
-みんな楽しそうで何より`,z_={video_title:Yt,video_artist:Wt,video_id:wt,video_publish_date_str:Ft,song_timeline:Jt},hs=Object.freeze(Object.defineProperty({__proto__:null,default:z_,song_timeline:Jt,video_artist:Wt,video_id:wt,video_publish_date_str:Ft,video_title:Yt},Symbol.toStringTag,{value:"Module"})),Qt="【歌枠｜KARAOKE】その場でもらったリクエスト曲を歌う🎤💗初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",Zt="Hanon Ch. 香鳴ハノン【パレプロ】",qt="A-rIFyV_8N8",Xt="2024-12-12",xt=`0:06:19 はのは〜！
+みんな楽しそうで何より`,ys={video_title:v0,video_artist:c0,video_id:u0,video_publish_date_str:b0,song_timeline:g0},pr=Object.freeze(Object.defineProperty({__proto__:null,default:ys,song_timeline:g0,video_artist:c0,video_id:u0,video_publish_date_str:b0,video_title:v0},Symbol.toStringTag,{value:"Module"})),p0="【歌枠｜KARAOKE】その場でもらったリクエスト曲を歌う🎤💗初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",m0="Hanon Ch. 香鳴ハノン【パレプロ】",$0="A-rIFyV_8N8",h0="2024-12-12",O0=`0:06:19 はのは〜！
 
 0:09:29 01. フォニイ / ツミキ
 0:15:42 02. なんでもないよ / マカロニえんぴつ
@@ -938,7 +1301,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 3:07:31 スパチャ読み
 3:23:55 はのは〜！
-3:24:04 END / Cパート`,k_={video_title:Qt,video_artist:Zt,video_id:qt,video_publish_date_str:Xt,song_timeline:xt},Os=Object.freeze(Object.defineProperty({__proto__:null,default:k_,song_timeline:xt,video_artist:Zt,video_id:qt,video_publish_date_str:Xt,video_title:Qt},Symbol.toStringTag,{value:"Module"})),ni="【歌枠｜KARAOKE】ほぼ(ココ大事)みんなの前ではじめて歌う曲縛り🎤✨歌えるかな…？？【#パレプロ #香鳴ハノン】",ei="Hanon Ch. 香鳴ハノン【パレプロ】",ti="V5bsu8nc9jI",ii="2024-12-20",oi=`0:02:00 はのは〜！
+3:24:04 END / Cパート`,Cs={video_title:p0,video_artist:m0,video_id:$0,video_publish_date_str:h0,song_timeline:O0},mr=Object.freeze(Object.defineProperty({__proto__:null,default:Cs,song_timeline:O0,video_artist:m0,video_id:$0,video_publish_date_str:h0,video_title:p0},Symbol.toStringTag,{value:"Module"})),A0="【歌枠｜KARAOKE】ほぼ(ココ大事)みんなの前ではじめて歌う曲縛り🎤✨歌えるかな…？？【#パレプロ #香鳴ハノン】",S0="Hanon Ch. 香鳴ハノン【パレプロ】",y0="V5bsu8nc9jI",C0="2024-12-20",f0=`0:02:00 はのは〜！
 
 0:05:39 01. Overfly / 春奈るな
 0:12:54 02. それは小さな光のような / さユり
@@ -980,7 +1343,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 3:26:46 スパチャ読み
 4:00:40 はのは〜！
-4:00:51 END / Cパート`,G_={video_title:ni,video_artist:ei,video_id:ti,video_publish_date_str:ii,song_timeline:oi},As=Object.freeze(Object.defineProperty({__proto__:null,default:G_,song_timeline:oi,video_artist:ei,video_id:ti,video_publish_date_str:ii,video_title:ni},Symbol.toStringTag,{value:"Module"})),_i="【歌枠｜KARAOKE】久々のアニソン歌枠🎤✨初見さんも大歓迎💕【#パレプロ #香鳴ハノン】",si="Hanon Ch. 香鳴ハノン【パレプロ】",di="-q10x-fvLkM",ri="2024-12-22",li=`Today's Set List\r
+4:00:51 END / Cパート`,fs={video_title:A0,video_artist:S0,video_id:y0,video_publish_date_str:C0,song_timeline:f0},$r=Object.freeze(Object.defineProperty({__proto__:null,default:fs,song_timeline:f0,video_artist:S0,video_id:y0,video_publish_date_str:C0,video_title:A0},Symbol.toStringTag,{value:"Module"})),E0="【歌枠｜KARAOKE】久々のアニソン歌枠🎤✨初見さんも大歓迎💕【#パレプロ #香鳴ハノン】",R0="Hanon Ch. 香鳴ハノン【パレプロ】",P0="-q10x-fvLkM",M0="2024-12-22",K0=`Today's Set List\r
 0:00:00 OP\r
 0:04:09 はのは～\r
 \r
@@ -1021,7 +1384,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 3:40:02；3:45:12 トライアングラー / 坂本真綾\r
 3:48:11；3:53:11 ライオン / May'n、中島愛\r
 \r
-3:55:34 スクショ＆スパチャ読みタイム`,Y_={video_title:_i,video_artist:si,video_id:di,video_publish_date_str:ri,song_timeline:li},Ss=Object.freeze(Object.defineProperty({__proto__:null,default:Y_,song_timeline:li,video_artist:si,video_id:di,video_publish_date_str:ri,video_title:_i},Symbol.toStringTag,{value:"Module"})),ai="【歌枠｜KARAOKE】クリスマス一緒に過ごそ？歌枠🎤💖初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",vi="Hanon Ch. 香鳴ハノン【パレプロ】",ci="_Uod6rpfyPo",ui="2024-12-25",bi=`0:04:22 はのは〜！
+3:55:34 スクショ＆スパチャ読みタイム`,Es={video_title:E0,video_artist:R0,video_id:P0,video_publish_date_str:M0,song_timeline:K0},hr=Object.freeze(Object.defineProperty({__proto__:null,default:Es,song_timeline:K0,video_artist:R0,video_id:P0,video_publish_date_str:M0,video_title:E0},Symbol.toStringTag,{value:"Module"})),N0="【歌枠｜KARAOKE】クリスマス一緒に過ごそ？歌枠🎤💖初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",T0="Hanon Ch. 香鳴ハノン【パレプロ】",j0="_Uod6rpfyPo",H0="2024-12-25",D0=`0:04:22 はのは〜！
 
 0:07:27 01. サンタさん / ももいろクローバーZ
 0:17:20 02. ロマンスの神様 / 広瀬香美
@@ -1039,7 +1402,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:34:20 スクショタイム
 1:42:15 スパチャ読み
-1:47:01 はのは〜！`,W_={video_title:ai,video_artist:vi,video_id:ci,video_publish_date_str:ui,song_timeline:bi},ys=Object.freeze(Object.defineProperty({__proto__:null,default:W_,song_timeline:bi,video_artist:vi,video_id:ci,video_publish_date_str:ui,video_title:ai},Symbol.toStringTag,{value:"Module"})),gi="【歌枠｜KARAOKE】学マスオリ曲オンリーセトリ歌枠🎤💗初めて歌う曲もあるよ✨【#パレプロ #香鳴ハノン】",pi="Hanon Ch. 香鳴ハノン【パレプロ】",mi="RKW0lhyaHFc",$i="2024-12-26",hi=`Today's Set List\r
+1:47:01 はのは〜！`,Rs={video_title:N0,video_artist:T0,video_id:j0,video_publish_date_str:H0,song_timeline:D0},Or=Object.freeze(Object.defineProperty({__proto__:null,default:Rs,song_timeline:D0,video_artist:T0,video_id:j0,video_publish_date_str:H0,video_title:N0},Symbol.toStringTag,{value:"Module"})),I0="【歌枠｜KARAOKE】学マスオリ曲オンリーセトリ歌枠🎤💗初めて歌う曲もあるよ✨【#パレプロ #香鳴ハノン】",B0="Hanon Ch. 香鳴ハノン【パレプロ】",L0="RKW0lhyaHFc",V0="2024-12-26",U0=`Today's Set List\r
 0:00:00 OP\r
 0:04:55 はのはー\r
 \r
@@ -1082,7 +1445,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 3:32:05；3:36:50 憧れをいっぱい / 倉本千奈\r
 \r
 3:41:13 スパチャ読み\r
-3:50:18 エンドカード`,w_={video_title:gi,video_artist:pi,video_id:mi,video_publish_date_str:$i,song_timeline:hi},Cs=Object.freeze(Object.defineProperty({__proto__:null,default:w_,song_timeline:hi,video_artist:pi,video_id:mi,video_publish_date_str:$i,video_title:gi},Symbol.toStringTag,{value:"Module"})),Oi="【歌枠｜KARAOKE】オンゲキオリ曲オンリーで20曲！譜面を思い出しながら歌う🎶【#パレプロ #香鳴ハノン】",Ai="Hanon Ch. 香鳴ハノン【パレプロ】",Si="T_-vS1ogeSs",yi="2024-12-28 00:00:02",Ci=`0:03:20 はのは〜！
+3:50:18 エンドカード`,Ps={video_title:I0,video_artist:B0,video_id:L0,video_publish_date_str:V0,song_timeline:U0},Ar=Object.freeze(Object.defineProperty({__proto__:null,default:Ps,song_timeline:U0,video_artist:B0,video_id:L0,video_publish_date_str:V0,video_title:I0},Symbol.toStringTag,{value:"Module"})),z0="【歌枠｜KARAOKE】オンゲキオリ曲オンリーで20曲！譜面を思い出しながら歌う🎶【#パレプロ #香鳴ハノン】",k0="Hanon Ch. 香鳴ハノン【パレプロ】",G0="T_-vS1ogeSs",Y0="2024-12-28 00:00:02",W0=`0:03:20 はのは〜！
 
 0:11:39 01. シンデレラディスコ / 藍原 椿(CV：橋本 ちなみ)、早乙女 彩華(CV：中島 唯)
 0:17:06 02. みんな Happy!! / 藤沢 柚子(CV:久保田 梨沙)
@@ -1114,7 +1477,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:43:33 スパチャ読み
 2:54:19 はのは〜！
-2:54:32 END / Cパート`,F_={video_title:Oi,video_artist:Ai,video_id:Si,video_publish_date_str:yi,song_timeline:Ci},fs=Object.freeze(Object.defineProperty({__proto__:null,default:F_,song_timeline:Ci,video_artist:Ai,video_id:Si,video_publish_date_str:yi,video_title:Oi},Symbol.toStringTag,{value:"Module"})),fi="【耐久歌枠】登録者33333人目指して歌い続ける✨制限時間7時間…！【 #香鳴ハノン33333人耐久 】",Ei="Hanon Ch. 香鳴ハノン【パレプロ】",Pi="FtqISd_alKs",Ri="2024-12-28 00:00:01",Mi=`Today's Set List\r
+2:54:32 END / Cパート`,Ms={video_title:z0,video_artist:k0,video_id:G0,video_publish_date_str:Y0,song_timeline:W0},Sr=Object.freeze(Object.defineProperty({__proto__:null,default:Ms,song_timeline:W0,video_artist:k0,video_id:G0,video_publish_date_str:Y0,video_title:z0},Symbol.toStringTag,{value:"Module"})),F0="【耐久歌枠】登録者33333人目指して歌い続ける✨制限時間7時間…！【 #香鳴ハノン33333人耐久 】",w0="Hanon Ch. 香鳴ハノン【パレプロ】",Q0="FtqISd_alKs",J0="2024-12-28 00:00:01",Z0=`Today's Set List\r
 0:00:00 OP\r
 0:03:42 はのは～\r
 \r
@@ -1176,7 +1539,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 \r
 5:28:57 スパチャ読み\r
 5:32:02 助かる\r
-5:45:42 エンドカード`,J_={video_title:fi,video_artist:Ei,video_id:Pi,video_publish_date_str:Ri,song_timeline:Mi},Es=Object.freeze(Object.defineProperty({__proto__:null,default:J_,song_timeline:Mi,video_artist:Ei,video_id:Pi,video_publish_date_str:Ri,video_title:fi},Symbol.toStringTag,{value:"Module"})),Ki="【#オンゲキ歌枠リレー】8番手！神曲セトリ全曲ABFBしてきました【#香鳴ハノン/#パレプロ】",Ni="Hanon Ch. 香鳴ハノン【パレプロ】",Ti="v1OdzHqxfnw",ji="2025-01-11",Hi=`Today's Set List\r
+5:45:42 エンドカード`,Ks={video_title:F0,video_artist:w0,video_id:Q0,video_publish_date_str:J0,song_timeline:Z0},yr=Object.freeze(Object.defineProperty({__proto__:null,default:Ks,song_timeline:Z0,video_artist:w0,video_id:Q0,video_publish_date_str:J0,video_title:F0},Symbol.toStringTag,{value:"Module"})),q0="【#オンゲキ歌枠リレー】8番手！神曲セトリ全曲ABFBしてきました【#香鳴ハノン/#パレプロ】",X0="Hanon Ch. 香鳴ハノン【パレプロ】",x0="v1OdzHqxfnw",no="2025-01-11",eo=`Today's Set List\r
 0:00:00 OP\r
 0:01:30 はのはー\r
 \r
@@ -1186,7 +1549,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:22:14 STORIA / トロワアンジュ\r
 0:26:58；0:30:57 STARRED HEART / 星咲あかり、結城莉玖、九條楓、珠洲島有栖、東雲つむぎ\r
 \r
-31:35 エンドカード`,Q_={video_title:Ki,video_artist:Ni,video_id:Ti,video_publish_date_str:ji,song_timeline:Hi},Ps=Object.freeze(Object.defineProperty({__proto__:null,default:Q_,song_timeline:Hi,video_artist:Ni,video_id:Ti,video_publish_date_str:ji,video_title:Ki},Symbol.toStringTag,{value:"Module"})),Di="【歌枠｜KARAOKE】アニソンを歌う🎤💖初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",Li="Hanon Ch. 香鳴ハノン【パレプロ】",Bi="quCJh7QwddA",Vi="2025-01-12",Ii=`0:05:47 はのは〜！
+31:35 エンドカード`,Ns={video_title:q0,video_artist:X0,video_id:x0,video_publish_date_str:no,song_timeline:eo},Cr=Object.freeze(Object.defineProperty({__proto__:null,default:Ns,song_timeline:eo,video_artist:X0,video_id:x0,video_publish_date_str:no,video_title:q0},Symbol.toStringTag,{value:"Module"})),to="【歌枠｜KARAOKE】アニソンを歌う🎤💖初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",io="Hanon Ch. 香鳴ハノン【パレプロ】",oo="quCJh7QwddA",_o="2025-01-12",so=`0:05:47 はのは〜！
 
 0:23:16 01. Startear / 春奈るな
 0:30:03 02. Overfly / 春奈るな
@@ -1201,7 +1564,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:31:00 スパチャ読み
 2:48:13 はのは〜！
-2:48:53 END / Cパート`,Z_={video_title:Di,video_artist:Li,video_id:Bi,video_publish_date_str:Vi,song_timeline:Ii},Rs=Object.freeze(Object.defineProperty({__proto__:null,default:Z_,song_timeline:Ii,video_artist:Li,video_id:Bi,video_publish_date_str:Vi,video_title:Di},Symbol.toStringTag,{value:"Module"})),Ui="【歌枠｜KARAOKE】ボカロを歌う🎤💖初めて歌う曲も！初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",zi="Hanon Ch. 香鳴ハノン【パレプロ】",ki="7Zk0XmuwgDQ",Gi="2025-01-17",Yi=`Today's Set List\r
+2:48:53 END / Cパート`,Ts={video_title:to,video_artist:io,video_id:oo,video_publish_date_str:_o,song_timeline:so},fr=Object.freeze(Object.defineProperty({__proto__:null,default:Ts,song_timeline:so,video_artist:io,video_id:oo,video_publish_date_str:_o,video_title:to},Symbol.toStringTag,{value:"Module"})),ro="【歌枠｜KARAOKE】ボカロを歌う🎤💖初めて歌う曲も！初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",lo="Hanon Ch. 香鳴ハノン【パレプロ】",ao="7Zk0XmuwgDQ",vo="2025-01-17",co=`Today's Set List\r
 0:00:00 OP\r
 0:01:31 はのは～\r
 \r
@@ -1233,7 +1596,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:52:24；1:55:59 ラヴィット / ピノキオピー\r
 1:57:18；1:58:42 ラヴィット / ピノキオピー\r
 \r
-2:00:20 エンドカード`,q_={video_title:Ui,video_artist:zi,video_id:ki,video_publish_date_str:Gi,song_timeline:Yi},Ms=Object.freeze(Object.defineProperty({__proto__:null,default:q_,song_timeline:Yi,video_artist:zi,video_id:ki,video_publish_date_str:Gi,video_title:Ui},Symbol.toStringTag,{value:"Module"})),Wi="【#ユニパレ歌枠リレー】3番手！アイドルらしくかわいく✨盛り上げるぞっ💗【#香鳴ハノン/#パレプロ】",wi="Hanon Ch. 香鳴ハノン【パレプロ】",Fi="PaUibOzOXFs",Ji="2025-01-18 00:00:02",Qi=`Today's Set List\r
+2:00:20 エンドカード`,js={video_title:ro,video_artist:lo,video_id:ao,video_publish_date_str:vo,song_timeline:co},Er=Object.freeze(Object.defineProperty({__proto__:null,default:js,song_timeline:co,video_artist:lo,video_id:ao,video_publish_date_str:vo,video_title:ro},Symbol.toStringTag,{value:"Module"})),uo="【#ユニパレ歌枠リレー】3番手！アイドルらしくかわいく✨盛り上げるぞっ💗【#香鳴ハノン/#パレプロ】",bo="Hanon Ch. 香鳴ハノン【パレプロ】",go="PaUibOzOXFs",po="2025-01-18 00:00:02",mo=`Today's Set List\r
 0:00:00 OP\r
 0:01:25 はのはー\r
 \r
@@ -1243,8 +1606,8 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:19:58；0:24:47 Q&A リサイタル! / 戸松遥\r
 0:24:52；0:29:06 Campus mode!! / 初星学園\r
 \r
-0:30:57 エンドカード`,X_={video_title:Wi,video_artist:wi,video_id:Fi,video_publish_date_str:Ji,song_timeline:Qi},Ks=Object.freeze(Object.defineProperty({__proto__:null,default:X_,song_timeline:Qi,video_artist:wi,video_id:Fi,video_publish_date_str:Ji,video_title:Wi},Symbol.toStringTag,{value:"Module"})),Zi="【#ユニパレ歌枠リレー】開会式はMCハノウタノン✨歌も歌います✊🎤🔥【#白玖ウタノ #香鳴ハノン】",qi="Hanon Ch. 香鳴ハノン【パレプロ】",Xi="wMrA0Y4iMOA",xi="2025-01-18 00:00:01",n0=`0:04:03；0:07:51  ギターと孤独と蒼い惑星 / 結束バンド
-0:21:16；0:25:29 空色デイズ / 中川翔子`,x_={video_title:Zi,video_artist:qi,video_id:Xi,video_publish_date_str:xi,song_timeline:n0},Ns=Object.freeze(Object.defineProperty({__proto__:null,default:x_,song_timeline:n0,video_artist:qi,video_id:Xi,video_publish_date_str:xi,video_title:Zi},Symbol.toStringTag,{value:"Module"})),e0="【歌枠｜KARAOKE】オールジャンルで自由に歌っていく🎤🎶【#香鳴ハノン/#パレプロ】",t0="Hanon Ch. 香鳴ハノン【パレプロ】",i0="ozddO_2kihc",o0="2025-01-23",_0=`0:02:14 はのは〜！
+0:30:57 エンドカード`,Hs={video_title:uo,video_artist:bo,video_id:go,video_publish_date_str:po,song_timeline:mo},Rr=Object.freeze(Object.defineProperty({__proto__:null,default:Hs,song_timeline:mo,video_artist:bo,video_id:go,video_publish_date_str:po,video_title:uo},Symbol.toStringTag,{value:"Module"})),$o="【#ユニパレ歌枠リレー】開会式はMCハノウタノン✨歌も歌います✊🎤🔥【#白玖ウタノ #香鳴ハノン】",ho="Hanon Ch. 香鳴ハノン【パレプロ】",Oo="wMrA0Y4iMOA",Ao="2025-01-18 00:00:01",So=`0:04:03；0:07:51  ギターと孤独と蒼い惑星 / 結束バンド
+0:21:16；0:25:29 空色デイズ / 中川翔子`,Ds={video_title:$o,video_artist:ho,video_id:Oo,video_publish_date_str:Ao,song_timeline:So},Pr=Object.freeze(Object.defineProperty({__proto__:null,default:Ds,song_timeline:So,video_artist:ho,video_id:Oo,video_publish_date_str:Ao,video_title:$o},Symbol.toStringTag,{value:"Module"})),yo="【歌枠｜KARAOKE】オールジャンルで自由に歌っていく🎤🎶【#香鳴ハノン/#パレプロ】",Co="Hanon Ch. 香鳴ハノン【パレプロ】",fo="ozddO_2kihc",Eo="2025-01-23",Ro=`0:02:14 はのは〜！
 
 0:07:29 01. 少女レイ / みきとP
 0:12:40 02. 世界は恋に落ちている / CHiCO with HoneyWorks
@@ -1264,7 +1627,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:38:05 スパチャ読み
 1:49:15 はのは〜！
-1:49:30 END / Cパート`,n2={video_title:e0,video_artist:t0,video_id:i0,video_publish_date_str:o0,song_timeline:_0},Ts=Object.freeze(Object.defineProperty({__proto__:null,default:n2,song_timeline:_0,video_artist:t0,video_id:i0,video_publish_date_str:o0,video_title:e0},Symbol.toStringTag,{value:"Module"})),s0="【#世界で1番かわいい歌枠リレー】1番手！全力でかわいく💗元気が出る歌をお届けするアイドル✨【#香鳴ハノン/#パレプロ】",d0="Hanon Ch. 香鳴ハノン【パレプロ】",r0="IaEhA9u5NxM",l0="2025-01-25",a0=`0:01:01 はのは〜！
+1:49:30 END / Cパート`,Is={video_title:yo,video_artist:Co,video_id:fo,video_publish_date_str:Eo,song_timeline:Ro},Mr=Object.freeze(Object.defineProperty({__proto__:null,default:Is,song_timeline:Ro,video_artist:Co,video_id:fo,video_publish_date_str:Eo,video_title:yo},Symbol.toStringTag,{value:"Module"})),Po="【#世界で1番かわいい歌枠リレー】1番手！全力でかわいく💗元気が出る歌をお届けするアイドル✨【#香鳴ハノン/#パレプロ】",Mo="Hanon Ch. 香鳴ハノン【パレプロ】",Ko="IaEhA9u5NxM",No="2025-01-25",To=`0:01:01 はのは〜！
 
 0:03:58 01. 僕らは今のなかで / μ's
 0:08:36 02. ラブノベルス / BiBi
@@ -1273,8 +1636,8 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:22:22 05. 白線 / 葛城リーリヤ
 
 0:29:16 はのは〜！
-0:30:02 END`,e2={video_title:s0,video_artist:d0,video_id:r0,video_publish_date_str:l0,song_timeline:a0},js=Object.freeze(Object.defineProperty({__proto__:null,default:e2,song_timeline:a0,video_artist:d0,video_id:r0,video_publish_date_str:l0,video_title:s0},Symbol.toStringTag,{value:"Module"})),v0="【企画雑談＆歌】#はのまはろん 初コラボ！お悩み相談や疑似1on1トークも🐳💬💗【#夏渚まはろ #香鳴ハノン】",c0="Hanon Ch. 香鳴ハノン【パレプロ】",u0="D9Y9eg8m2j8",b0="2025-01-27",g0=`1:57:09；2:00:30 ただ君に晴れ / ヨルシカ
-2:01:40；2:06:12 風になる / つじあやの`,t2={video_title:v0,video_artist:c0,video_id:u0,video_publish_date_str:b0,song_timeline:g0},Hs=Object.freeze(Object.defineProperty({__proto__:null,default:t2,song_timeline:g0,video_artist:c0,video_id:u0,video_publish_date_str:b0,video_title:v0},Symbol.toStringTag,{value:"Module"})),p0="【歌枠｜KARAOKE】#ぴよノン 学マスオリ曲オンリーセトリ歌枠🎤💗初めて歌う曲も🎄✨【#江波キョウカ #香鳴ハノン】",m0="Hanon Ch. 香鳴ハノン【パレプロ】",$0="Ncf3PtXRxts",h0="2025-01-29",O0=`今回のタイムスタンプ\r
+0:30:02 END`,Bs={video_title:Po,video_artist:Mo,video_id:Ko,video_publish_date_str:No,song_timeline:To},Kr=Object.freeze(Object.defineProperty({__proto__:null,default:Bs,song_timeline:To,video_artist:Mo,video_id:Ko,video_publish_date_str:No,video_title:Po},Symbol.toStringTag,{value:"Module"})),jo="【企画雑談＆歌】#はのまはろん 初コラボ！お悩み相談や疑似1on1トークも🐳💬💗【#夏渚まはろ #香鳴ハノン】",Ho="Hanon Ch. 香鳴ハノン【パレプロ】",Do="D9Y9eg8m2j8",Io="2025-01-27",Bo=`1:57:09；2:00:30 ただ君に晴れ / ヨルシカ
+2:01:40；2:06:12 風になる / つじあやの`,Ls={video_title:jo,video_artist:Ho,video_id:Do,video_publish_date_str:Io,song_timeline:Bo},Nr=Object.freeze(Object.defineProperty({__proto__:null,default:Ls,song_timeline:Bo,video_artist:Ho,video_id:Do,video_publish_date_str:Io,video_title:jo},Symbol.toStringTag,{value:"Module"})),Lo="【歌枠｜KARAOKE】#ぴよノン 学マスオリ曲オンリーセトリ歌枠🎤💗初めて歌う曲も🎄✨【#江波キョウカ #香鳴ハノン】",Vo="Hanon Ch. 香鳴ハノン【パレプロ】",Uo="Ncf3PtXRxts",zo="2025-01-29",ko=`今回のタイムスタンプ\r
 0:00:00 OP\r
 0:03:50 こんばんはー\r
 \r
@@ -1300,7 +1663,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 2:15:58 エンドカード\r
 \r
 学マス歌枠おつぴよノンでしたー\r
-次回アイマス歌枠も楽しみにしてますね`,i2={video_title:p0,video_artist:m0,video_id:$0,video_publish_date_str:h0,song_timeline:O0},Ds=Object.freeze(Object.defineProperty({__proto__:null,default:i2,song_timeline:O0,video_artist:m0,video_id:$0,video_publish_date_str:h0,video_title:p0},Symbol.toStringTag,{value:"Module"})),A0="【歌枠｜KARAOKE】今月のオンゲキ歌枠！初めて歌う曲もあるよ✨初見さんも大歓迎💗【#香鳴ハノン/#パレプロ】",S0="Hanon Ch. 香鳴ハノン【パレプロ】",y0="zeRLk1tpSvg",C0="2025-01-31",f0=`Today's Set List\r
+次回アイマス歌枠も楽しみにしてますね`,Vs={video_title:Lo,video_artist:Vo,video_id:Uo,video_publish_date_str:zo,song_timeline:ko},Tr=Object.freeze(Object.defineProperty({__proto__:null,default:Vs,song_timeline:ko,video_artist:Vo,video_id:Uo,video_publish_date_str:zo,video_title:Lo},Symbol.toStringTag,{value:"Module"})),Go="【歌枠｜KARAOKE】今月のオンゲキ歌枠！初めて歌う曲もあるよ✨初見さんも大歓迎💗【#香鳴ハノン/#パレプロ】",Yo="Hanon Ch. 香鳴ハノン【パレプロ】",Wo="zeRLk1tpSvg",Fo="2025-01-31",wo=`Today's Set List\r
 0:00:00 OP\r
 0:02:25 はのはー\r
 \r
@@ -1334,7 +1697,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 \r
 3:10:20 スパチャ読み\r
 3:17:36 エンドカード\r
-∟3:20:45 2月生写真紹介`,o2={video_title:A0,video_artist:S0,video_id:y0,video_publish_date_str:C0,song_timeline:f0},Ls=Object.freeze(Object.defineProperty({__proto__:null,default:o2,song_timeline:f0,video_artist:S0,video_id:y0,video_publish_date_str:C0,video_title:A0},Symbol.toStringTag,{value:"Module"})),E0="【歌枠｜KARAOKE】平成ヒットソング歌枠🎤🎶あなたの思い出の曲は？初見さんも大歓迎✨【#香鳴ハノン/#パレプロ】",P0="Hanon Ch. 香鳴ハノン【パレプロ】",R0="7SCq8emh0DE",M0="2025-02-01",K0=`Today's Set List\r
+∟3:20:45 2月生写真紹介`,Us={video_title:Go,video_artist:Yo,video_id:Wo,video_publish_date_str:Fo,song_timeline:wo},jr=Object.freeze(Object.defineProperty({__proto__:null,default:Us,song_timeline:wo,video_artist:Yo,video_id:Wo,video_publish_date_str:Fo,video_title:Go},Symbol.toStringTag,{value:"Module"})),Qo="【歌枠｜KARAOKE】平成ヒットソング歌枠🎤🎶あなたの思い出の曲は？初見さんも大歓迎✨【#香鳴ハノン/#パレプロ】",Jo="Hanon Ch. 香鳴ハノン【パレプロ】",Zo="7SCq8emh0DE",qo="2025-02-01",Xo=`Today's Set List\r
 0:00:00 OP\r
 0:02:22 はのは～\r
 \r
@@ -1370,7 +1733,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 2:57:55；3:02:24 出逢った頃のように / Every Little Thing\r
 \r
 3:11:10 スパチャ読み\r
-3:16:42 エンドカード`,_2={video_title:E0,video_artist:P0,video_id:R0,video_publish_date_str:M0,song_timeline:K0},Bs=Object.freeze(Object.defineProperty({__proto__:null,default:_2,song_timeline:K0,video_artist:P0,video_id:R0,video_publish_date_str:M0,video_title:E0},Symbol.toStringTag,{value:"Module"})),N0="【歌枠｜KARAOKE】あまくてとろけちゃうかもしれない歌枠🍯💗初見さんも大歓迎✨【#香鳴ハノン/#パレプロ】",T0="Hanon Ch. 香鳴ハノン【パレプロ】",j0="nl6XwhtSEPI",H0="2025-02-07",D0=`0:05:12 はのは〜！
+3:16:42 エンドカード`,zs={video_title:Qo,video_artist:Jo,video_id:Zo,video_publish_date_str:qo,song_timeline:Xo},Hr=Object.freeze(Object.defineProperty({__proto__:null,default:zs,song_timeline:Xo,video_artist:Jo,video_id:Zo,video_publish_date_str:qo,video_title:Qo},Symbol.toStringTag,{value:"Module"})),xo="【歌枠｜KARAOKE】あまくてとろけちゃうかもしれない歌枠🍯💗初見さんも大歓迎✨【#香鳴ハノン/#パレプロ】",n1="Hanon Ch. 香鳴ハノン【パレプロ】",e1="nl6XwhtSEPI",t1="2025-02-07",i1=`0:05:12 はのは〜！
 
 0:13:05 01. 可愛くてごめん / HoneyWorks
 0:20:52 02. Familia / sumika
@@ -1384,7 +1747,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:14:26 スパチャ読み
 1:33:28 はのは〜！
-1:33:46 END / Cパート`,s2={video_title:N0,video_artist:T0,video_id:j0,video_publish_date_str:H0,song_timeline:D0},Vs=Object.freeze(Object.defineProperty({__proto__:null,default:s2,song_timeline:D0,video_artist:T0,video_id:j0,video_publish_date_str:H0,video_title:N0},Symbol.toStringTag,{value:"Module"})),L0="【#胸キュンラブソング歌枠リレー】7番手！ハノンはアイドル縛り✨一緒にバレンタインしよ？🍫💗【#香鳴ハノン #パレプロ】",B0="Hanon Ch. 香鳴ハノン【パレプロ】",V0="iLjYjiKdb4o",I0="2025-02-14",U0=`Today's Set List\r
+1:33:46 END / Cパート`,ks={video_title:xo,video_artist:n1,video_id:e1,video_publish_date_str:t1,song_timeline:i1},Dr=Object.freeze(Object.defineProperty({__proto__:null,default:ks,song_timeline:i1,video_artist:n1,video_id:e1,video_publish_date_str:t1,video_title:xo},Symbol.toStringTag,{value:"Module"})),o1="【#胸キュンラブソング歌枠リレー】7番手！ハノンはアイドル縛り✨一緒にバレンタインしよ？🍫💗【#香鳴ハノン #パレプロ】",_1="Hanon Ch. 香鳴ハノン【パレプロ】",s1="iLjYjiKdb4o",d1="2025-02-14",r1=`Today's Set List\r
 0:00:00 OP\r
 0:01:51；0:05:50 ハピチョコ / FRUITS ZIPPER\r
 0:09:29；0:15:05 もぎゅっと“love”で接近中! / μ's\r
@@ -1394,7 +1757,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:25:27；0:29:08 キス・ミー・パティシエ / CANDY TUNE\r
 0:30:56 エンドカード
 
-歌枠リレーラストお疲れ様でした！`,d2={video_title:L0,video_artist:B0,video_id:V0,video_publish_date_str:I0,song_timeline:U0},Is=Object.freeze(Object.defineProperty({__proto__:null,default:d2,song_timeline:U0,video_artist:B0,video_id:V0,video_publish_date_str:I0,video_title:L0},Symbol.toStringTag,{value:"Module"})),z0="【歌枠｜KARAOKE】ボカロ＆アニソンを歌う！初めて歌う曲アリ✨初見さんも大歓迎💗【#パレプロ #香鳴ハノン】",k0="Hanon Ch. 香鳴ハノン【パレプロ】",G0="FrVB_N62pMY",Y0="2025-02-15",W0=`Today's Set List\r
+歌枠リレーラストお疲れ様でした！`,Gs={video_title:o1,video_artist:_1,video_id:s1,video_publish_date_str:d1,song_timeline:r1},Ir=Object.freeze(Object.defineProperty({__proto__:null,default:Gs,song_timeline:r1,video_artist:_1,video_id:s1,video_publish_date_str:d1,video_title:o1},Symbol.toStringTag,{value:"Module"})),l1="【歌枠｜KARAOKE】ボカロ＆アニソンを歌う！初めて歌う曲アリ✨初見さんも大歓迎💗【#パレプロ #香鳴ハノン】",a1="Hanon Ch. 香鳴ハノン【パレプロ】",v1="FrVB_N62pMY",c1="2025-02-15",u1=`Today's Set List\r
 0:00:00 OP\r
 0:03:35 はのはー\r
 \r
@@ -1425,7 +1788,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 2:54:07；2:58:06 踊れオーケストラ / YASUHIRO\r
 \r
 2:59:30 スクショタイム　スパチャ読み\r
-3:08:01 エンドカード`,r2={video_title:z0,video_artist:k0,video_id:G0,video_publish_date_str:Y0,song_timeline:W0},Us=Object.freeze(Object.defineProperty({__proto__:null,default:r2,song_timeline:W0,video_artist:k0,video_id:G0,video_publish_date_str:Y0,video_title:z0},Symbol.toStringTag,{value:"Module"})),w0="【歌枠｜KARAOKE】邦ロック縛りで歌う！初めて歌う曲も✨初見さんも大歓迎💗【#パレプロ #香鳴ハノン】",F0="Hanon Ch. 香鳴ハノン【パレプロ】",J0="1cXO383nJ54",Q0="2025-02-17",Z0=`0:02:22 はのは〜！
+3:08:01 エンドカード`,Ys={video_title:l1,video_artist:a1,video_id:v1,video_publish_date_str:c1,song_timeline:u1},Br=Object.freeze(Object.defineProperty({__proto__:null,default:Ys,song_timeline:u1,video_artist:a1,video_id:v1,video_publish_date_str:c1,video_title:l1},Symbol.toStringTag,{value:"Module"})),b1="【歌枠｜KARAOKE】邦ロック縛りで歌う！初めて歌う曲も✨初見さんも大歓迎💗【#パレプロ #香鳴ハノン】",g1="Hanon Ch. 香鳴ハノン【パレプロ】",p1="1cXO383nJ54",m1="2025-02-17",$1=`0:02:22 はのは〜！
 
 0:04:02 01. ハンマーソングと痛みの塔 / BUMP OF CHICKEN
 0:10:30 02. R.I.P. / BUMP OF CHICKEN
@@ -1455,7 +1818,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:57:03 スパチャ読み
 2:04:42 はのは〜！
-2:04:52 END / Cパート`,l2={video_title:w0,video_artist:F0,video_id:J0,video_publish_date_str:Q0,song_timeline:Z0},zs=Object.freeze(Object.defineProperty({__proto__:null,default:l2,song_timeline:Z0,video_artist:F0,video_id:J0,video_publish_date_str:Q0,video_title:w0},Symbol.toStringTag,{value:"Module"})),q0="【歌枠｜KARAOKE】ゲリラで採点ゲームにチャレンジ！何点取れる…！？✨初見さんも大歓迎💗【#パレプロ #香鳴ハノン】",X0="Hanon Ch. 香鳴ハノン【パレプロ】",x0="QMcUvgdYk4A",no="2025-02-21",eo=`0:02:22 はのは〜！
+2:04:52 END / Cパート`,Ws={video_title:b1,video_artist:g1,video_id:p1,video_publish_date_str:m1,song_timeline:$1},Lr=Object.freeze(Object.defineProperty({__proto__:null,default:Ws,song_timeline:$1,video_artist:g1,video_id:p1,video_publish_date_str:m1,video_title:b1},Symbol.toStringTag,{value:"Module"})),h1="【歌枠｜KARAOKE】ゲリラで採点ゲームにチャレンジ！何点取れる…！？✨初見さんも大歓迎💗【#パレプロ #香鳴ハノン】",O1="Hanon Ch. 香鳴ハノン【パレプロ】",A1="QMcUvgdYk4A",S1="2025-02-21",y1=`0:02:22 はのは〜！
 
 0:06:15 01. 残響散歌 / Aimer
 0:11:35 02. なんでもないよ / マカロニえんぴつ
@@ -1498,7 +1861,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 2:27:31 33. 君が代 / 日本国国歌
 
 2:30:25 はのは〜！
-2:31:03 END / Cパート`,a2={video_title:q0,video_artist:X0,video_id:x0,video_publish_date_str:no,song_timeline:eo},ks=Object.freeze(Object.defineProperty({__proto__:null,default:a2,song_timeline:eo,video_artist:X0,video_id:x0,video_publish_date_str:no,video_title:q0},Symbol.toStringTag,{value:"Module"})),to="【歌枠｜KARAOKE】学マスオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと7日💕【#パレプロ #香鳴ハノン】",io="Hanon Ch. 香鳴ハノン【パレプロ】",oo="Th74QhZ4nrg",_o="2025-02-23",so=`0:02:33 はのは〜！
+2:31:03 END / Cパート`,Fs={video_title:h1,video_artist:O1,video_id:A1,video_publish_date_str:S1,song_timeline:y1},Vr=Object.freeze(Object.defineProperty({__proto__:null,default:Fs,song_timeline:y1,video_artist:O1,video_id:A1,video_publish_date_str:S1,video_title:h1},Symbol.toStringTag,{value:"Module"})),C1="【歌枠｜KARAOKE】学マスオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと7日💕【#パレプロ #香鳴ハノン】",f1="Hanon Ch. 香鳴ハノン【パレプロ】",E1="Th74QhZ4nrg",R1="2025-02-23",P1=`0:02:33 はのは〜！
 
 0:04:40 01. L.U.V / 姫崎莉波
 0:12:34 02. L.U.V / 姫崎莉波
@@ -1523,7 +1886,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:50:40 香鳴ハノン生誕ライブのお知らせ
 2:18:16 はのは〜！
-2:19:09 END / Cパート`,v2={video_title:to,video_artist:io,video_id:oo,video_publish_date_str:_o,song_timeline:so},Gs=Object.freeze(Object.defineProperty({__proto__:null,default:v2,song_timeline:so,video_artist:io,video_id:oo,video_publish_date_str:_o,video_title:to},Symbol.toStringTag,{value:"Module"})),ro="【歌枠｜KARAOKE】リステオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと6日💕【#パレプロ #香鳴ハノン】",lo="Hanon Ch. 香鳴ハノン【パレプロ】",ao="A1R60k05zgc",vo="2025-02-24",co=`0:04:40 はのは〜！
+2:19:09 END / Cパート`,ws={video_title:C1,video_artist:f1,video_id:E1,video_publish_date_str:R1,song_timeline:P1},Ur=Object.freeze(Object.defineProperty({__proto__:null,default:ws,song_timeline:P1,video_artist:f1,video_id:E1,video_publish_date_str:R1,video_title:C1},Symbol.toStringTag,{value:"Module"})),M1="【歌枠｜KARAOKE】リステオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと6日💕【#パレプロ #香鳴ハノン】",K1="Hanon Ch. 香鳴ハノン【パレプロ】",N1="A1R60k05zgc",T1="2025-02-24",j1=`0:04:40 はのは〜！
 
 0:14:36 01. OvertuRe: / KiRaRe
 0:25:23 02. 恋はフュージョン / Stellamaris
@@ -1531,7 +1894,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:42:41 04. Like the Sun, Like the Moon / Stellamaris
 0:48:26 05. 宣誓センセーション / KiRaRe
 
-0:57:17 はのは〜！`,c2={video_title:ro,video_artist:lo,video_id:ao,video_publish_date_str:vo,song_timeline:co},Ys=Object.freeze(Object.defineProperty({__proto__:null,default:c2,song_timeline:co,video_artist:lo,video_id:ao,video_publish_date_str:vo,video_title:ro},Symbol.toStringTag,{value:"Module"})),uo="【歌枠｜KARAOKE】ユメステオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと6日💕【#パレプロ #香鳴ハノン】",bo="Hanon Ch. 香鳴ハノン【パレプロ】",go="dK_D7VZMpyM",po="2025-02-24 00:00:01",mo=`0:01:27 はのは〜！
+0:57:17 はのは〜！`,Qs={video_title:M1,video_artist:K1,video_id:N1,video_publish_date_str:T1,song_timeline:j1},zr=Object.freeze(Object.defineProperty({__proto__:null,default:Qs,song_timeline:j1,video_artist:K1,video_id:N1,video_publish_date_str:T1,video_title:M1},Symbol.toStringTag,{value:"Module"})),H1="【歌枠｜KARAOKE】ユメステオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと6日💕【#パレプロ #香鳴ハノン】",D1="Hanon Ch. 香鳴ハノン【パレプロ】",I1="dK_D7VZMpyM",B1="2025-02-24 00:00:01",L1=`0:01:27 はのは〜！
 
 0:06:42 01. シリウスの輝きのように / シリウス
 0:15:00 02. 夢のステラリウム / 鳳ここな, 静香, カトリナ・グリーベル, 新妻八恵, 柳場ぱんだ, 流石知冴
@@ -1543,7 +1906,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:14:19 香鳴ハノンバースデーライブのお知らせ
 1:20:49 はのは〜！ 
-1:21:01 END / Cパート`,u2={video_title:uo,video_artist:bo,video_id:go,video_publish_date_str:po,song_timeline:mo},Ws=Object.freeze(Object.defineProperty({__proto__:null,default:u2,song_timeline:mo,video_artist:bo,video_id:go,video_publish_date_str:po,video_title:uo},Symbol.toStringTag,{value:"Module"})),$o="【歌枠｜KARAOKE】バンドリオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと5日💕【#パレプロ #香鳴ハノン】",ho="Hanon Ch. 香鳴ハノン【パレプロ】",Oo="zzDDf2chH1w",Ao="2025-02-25",So=`0:04:02 はのは〜！
+1:21:01 END / Cパート`,Js={video_title:H1,video_artist:D1,video_id:I1,video_publish_date_str:B1,song_timeline:L1},kr=Object.freeze(Object.defineProperty({__proto__:null,default:Js,song_timeline:L1,video_artist:D1,video_id:I1,video_publish_date_str:B1,video_title:H1},Symbol.toStringTag,{value:"Module"})),V1="【歌枠｜KARAOKE】バンドリオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと5日💕【#パレプロ #香鳴ハノン】",U1="Hanon Ch. 香鳴ハノン【パレプロ】",z1="zzDDf2chH1w",k1="2025-02-25",G1=`0:04:02 はのは〜！
 
 0:11:31 01. えがお･シング･あ･ソング / ハロー、ハッピーワールド!
 0:22:38 02. キズナミュージック♪ / Poppin'Party
@@ -1557,7 +1920,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:27:47 スパチャ読み
 1:36:38 はのは〜！ 
-1:36:51 END / Cパート`,b2={video_title:$o,video_artist:ho,video_id:Oo,video_publish_date_str:Ao,song_timeline:So},ws=Object.freeze(Object.defineProperty({__proto__:null,default:b2,song_timeline:So,video_artist:ho,video_id:Oo,video_publish_date_str:Ao,video_title:$o},Symbol.toStringTag,{value:"Module"})),yo="【歌枠｜KARAOKE】アイプラオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと3日💕【#パレプロ #香鳴ハノン】",Co="Hanon Ch. 香鳴ハノン【パレプロ】",fo="ctl-46JhT20",Eo="2025-02-27",Po=`0:01:51 はのは〜！
+1:36:51 END / Cパート`,Zs={video_title:V1,video_artist:U1,video_id:z1,video_publish_date_str:k1,song_timeline:G1},Gr=Object.freeze(Object.defineProperty({__proto__:null,default:Zs,song_timeline:G1,video_artist:U1,video_id:z1,video_publish_date_str:k1,video_title:V1},Symbol.toStringTag,{value:"Module"})),Y1="【歌枠｜KARAOKE】アイプラオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと3日💕【#パレプロ #香鳴ハノン】",W1="Hanon Ch. 香鳴ハノン【パレプロ】",F1="ctl-46JhT20",w1="2025-02-27",Q1=`0:01:51 はのは〜！
 
 0:11:39 01. IDOLY PRIDE / 星見プロダクション
 0:20:05 02. Darkness sympathizer / LizNoir
@@ -1577,7 +1940,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:57:57 スパチャ読み
 2:05:30 はのは〜！
 2:06:22 END / Cパート
-2:06:43 3月生写真サンプル`,g2={video_title:yo,video_artist:Co,video_id:fo,video_publish_date_str:Eo,song_timeline:Po},Fs=Object.freeze(Object.defineProperty({__proto__:null,default:g2,song_timeline:Po,video_artist:Co,video_id:fo,video_publish_date_str:Eo,video_title:yo},Symbol.toStringTag,{value:"Module"})),Ro="【歌枠｜KARAOKE】アイマスオリ曲オンリーセトリ #ぴよノン 歌枠🎤✨【#江波キョウカ #香鳴ハノン】",Mo="Hanon Ch. 香鳴ハノン【パレプロ】",Ko="o-MfdRPCKsE",No="2025-02-28",To=`0:03:16 こんばんは〜！
+2:06:43 3月生写真サンプル`,qs={video_title:Y1,video_artist:W1,video_id:F1,video_publish_date_str:w1,song_timeline:Q1},Yr=Object.freeze(Object.defineProperty({__proto__:null,default:qs,song_timeline:Q1,video_artist:W1,video_id:F1,video_publish_date_str:w1,video_title:Y1},Symbol.toStringTag,{value:"Module"})),J1="【歌枠｜KARAOKE】アイマスオリ曲オンリーセトリ #ぴよノン 歌枠🎤✨【#江波キョウカ #香鳴ハノン】",Z1="Hanon Ch. 香鳴ハノン【パレプロ】",q1="o-MfdRPCKsE",X1="2025-02-28",x1=`0:03:16 こんばんは〜！
 
 0:10:15 01. shiny smile / THE IDOLM@STER
 0:21:27 02. Twilight Sky / 多田李衣菜
@@ -1591,7 +1954,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:21:54 スパチャ読み
 1:26:10 おつぴよのん！ 
-1:26:23 END`,p2={video_title:Ro,video_artist:Mo,video_id:Ko,video_publish_date_str:No,song_timeline:To},Js=Object.freeze(Object.defineProperty({__proto__:null,default:p2,song_timeline:To,video_artist:Mo,video_id:Ko,video_publish_date_str:No,video_title:Ro},Symbol.toStringTag,{value:"Module"})),jo="【歌枠｜KARAOKE】オンゲキオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと2日💕【#パレプロ #香鳴ハノン】",Ho="Hanon Ch. 香鳴ハノン【パレプロ】",Do="_idGblkF3mU",Lo="2025-02-28 00:00:01",Bo=`0:02:14 はのは〜！
+1:26:23 END`,Xs={video_title:J1,video_artist:Z1,video_id:q1,video_publish_date_str:X1,song_timeline:x1},Wr=Object.freeze(Object.defineProperty({__proto__:null,default:Xs,song_timeline:x1,video_artist:Z1,video_id:q1,video_publish_date_str:X1,video_title:J1},Symbol.toStringTag,{value:"Module"})),n_="【歌枠｜KARAOKE】オンゲキオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと2日💕【#パレプロ #香鳴ハノン】",e_="Hanon Ch. 香鳴ハノン【パレプロ】",t_="_idGblkF3mU",i_="2025-02-28 00:00:01",o_=`0:02:14 はのは〜！
 
 0:07:39 01. UTAKATA / 九條楓
 0:16:45 02. GranFatalité / 柏木咲姫
@@ -1607,7 +1970,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:15:25 ハノ誕2025バースデーライブのお知らせ
 1:23:20 スパチャ読み
 1:29:03 はのは〜！
-1:29:29 END / Cパート`,m2={video_title:jo,video_artist:Ho,video_id:Do,video_publish_date_str:Lo,song_timeline:Bo},Qs=Object.freeze(Object.defineProperty({__proto__:null,default:m2,song_timeline:Bo,video_artist:Ho,video_id:Do,video_publish_date_str:Lo,video_title:jo},Symbol.toStringTag,{value:"Module"})),Vo="【#Vアイドルが歌う2次元アイドル歌枠リレー】6番手！学マスやシャインポストetc..元気に盛り上げます🎤✨【#香鳴ハノン #パレプロ】",Io="Hanon Ch. 香鳴ハノン【パレプロ】",Uo="hlRGqaeKuGk",zo="2025-03-01",ko=`0:01:16 はのは〜！
+1:29:29 END / Cパート`,xs={video_title:n_,video_artist:e_,video_id:t_,video_publish_date_str:i_,song_timeline:o_},Fr=Object.freeze(Object.defineProperty({__proto__:null,default:xs,song_timeline:o_,video_artist:e_,video_id:t_,video_publish_date_str:i_,video_title:n_},Symbol.toStringTag,{value:"Module"})),__="【#Vアイドルが歌う2次元アイドル歌枠リレー】6番手！学マスやシャインポストetc..元気に盛り上げます🎤✨【#香鳴ハノン #パレプロ】",s_="Hanon Ch. 香鳴ハノン【パレプロ】",d_="hlRGqaeKuGk",r_="2025-03-01",l_=`0:01:16 はのは〜！
 
 0:03:30 01. 初 / 初星学園
 0:08:43 02. ワンダー・スターター / TINGS
@@ -1615,7 +1978,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:21:23 04. Yellow Big Bang! / 藤田ことね
 0:25:23 05. 宣誓センセーション / KiRaRe
 
-0:30:14 はのは〜！`,$2={video_title:Vo,video_artist:Io,video_id:Uo,video_publish_date_str:zo,song_timeline:ko},Zs=Object.freeze(Object.defineProperty({__proto__:null,default:$2,song_timeline:ko,video_artist:Io,video_id:Uo,video_publish_date_str:zo,video_title:Vo},Symbol.toStringTag,{value:"Module"})),Go="【3D LIVE】香鳴ハノンバースデーライブ💗ソシャゲ&音ゲー楽曲オンリー！【#ハノ誕2025/パレプロ】",Yo="Palette Project Channel",Wo="QoORyB1SQmA",wo="2025-03-02",Fo=`0:00:56 開演前アナウンス
+0:30:14 はのは〜！`,nd={video_title:__,video_artist:s_,video_id:d_,video_publish_date_str:r_,song_timeline:l_},wr=Object.freeze(Object.defineProperty({__proto__:null,default:nd,song_timeline:l_,video_artist:s_,video_id:d_,video_publish_date_str:r_,video_title:__},Symbol.toStringTag,{value:"Module"})),a_="【3D LIVE】香鳴ハノンバースデーライブ💗ソシャゲ&音ゲー楽曲オンリー！【#ハノ誕2025/パレプロ】",v_="Palette Project Channel",c_="QoORyB1SQmA",u_="2025-03-02",b_=`0:00:56 開演前アナウンス
 
 0:03:13 01. シリウスの輝きのように / シリウス
 0:07:26 02. Daytime Moon / 月のテンペスト
@@ -1645,7 +2008,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:07:26 香鳴ハノン誕生日グッズのお知らせ
 1:18:28 はのは〜！
-1:18:49 ENDカード`,h2={video_title:Go,video_artist:Yo,video_id:Wo,video_publish_date_str:wo,song_timeline:Fo},qs=Object.freeze(Object.defineProperty({__proto__:null,default:h2,song_timeline:Fo,video_artist:Yo,video_id:Wo,video_publish_date_str:wo,video_title:Go},Symbol.toStringTag,{value:"Module"})),Jo="【#ぴゅあぴゅあ歌枠リレー】VアイドルグループPalette Projectの清楚担当、ぴゅあな歌声響かせます✨【#パレプロ #香鳴ハノン】",Qo="Hanon Ch. 香鳴ハノン【パレプロ】",Zo="EjhnDfq__n0",qo="2025-03-09",Xo=`0:00:00 OP
+1:18:49 ENDカード`,ed={video_title:a_,video_artist:v_,video_id:c_,video_publish_date_str:u_,song_timeline:b_},Qr=Object.freeze(Object.defineProperty({__proto__:null,default:ed,song_timeline:b_,video_artist:v_,video_id:c_,video_publish_date_str:u_,video_title:a_},Symbol.toStringTag,{value:"Module"})),g_="【#ぴゅあぴゅあ歌枠リレー】VアイドルグループPalette Projectの清楚担当、ぴゅあな歌声響かせます✨【#パレプロ #香鳴ハノン】",p_="Hanon Ch. 香鳴ハノン【パレプロ】",m_="EjhnDfq__n0",$_="2025-03-09",h_=`0:00:00 OP
 0:01:41  白線 / 葛城リーリヤ
 0:08:57  明日への扉 / I WiSH
 0:14:20 パレプロの紹介
@@ -1654,7 +2017,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:30:21 エンドカード
 
 ぴゅあぴゅあ歌枠リレー2番手お疲れ様でした
-清楚でピュアでした！`,O2={video_title:Jo,video_artist:Qo,video_id:Zo,video_publish_date_str:qo,song_timeline:Xo},Xs=Object.freeze(Object.defineProperty({__proto__:null,default:O2,song_timeline:Xo,video_artist:Qo,video_id:Zo,video_publish_date_str:qo,video_title:Jo},Symbol.toStringTag,{value:"Module"})),xo="【歌枠｜KARAOKE】#ほのはの 歌コラボ！アイドル系💗でかわいく😊✨【#陽茅ほのか #香鳴ハノン】",n1="Hanon Ch. 香鳴ハノン【パレプロ】",e1="5MI_klkkKIc",t1="2025-03-12",i1=`0:02:50 ほのはのは〜！
+清楚でピュアでした！`,td={video_title:g_,video_artist:p_,video_id:m_,video_publish_date_str:$_,song_timeline:h_},Jr=Object.freeze(Object.defineProperty({__proto__:null,default:td,song_timeline:h_,video_artist:p_,video_id:m_,video_publish_date_str:$_,video_title:g_},Symbol.toStringTag,{value:"Module"})),O_="【歌枠｜KARAOKE】#ほのはの 歌コラボ！アイドル系💗でかわいく😊✨【#陽茅ほのか #香鳴ハノン】",A_="Hanon Ch. 香鳴ハノン【パレプロ】",S_="5MI_klkkKIc",y_="2025-03-12",C_=`0:02:50 ほのはのは〜！
 
 0:05:44 01. シル・ヴ・プレジデント / P丸様。
 0:11:38 02. アナタボシ / MilkyWay
@@ -1665,7 +2028,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:54:10 06. 恋愛サーキュレーション / 花澤香菜
 
 1:04:02 ほのはのは〜！
-1:04:28 END`,A2={video_title:xo,video_artist:n1,video_id:e1,video_publish_date_str:t1,song_timeline:i1},xs=Object.freeze(Object.defineProperty({__proto__:null,default:A2,song_timeline:i1,video_artist:n1,video_id:e1,video_publish_date_str:t1,video_title:xo},Symbol.toStringTag,{value:"Module"})),o1="【#めちゃすぷ 歌枠】えるすりー9直前！3人の歌、聴いてみませんか？💫【左から #常磐カナメ #暁月クララ #香鳴ハノン】",_1="Hanon Ch. 香鳴ハノン【パレプロ】",s1="oV-RusOOs1s",d1="2025-03-13",r1=`0:02:09 こんばんは〜！
+1:04:28 END`,id={video_title:O_,video_artist:A_,video_id:S_,video_publish_date_str:y_,song_timeline:C_},Zr=Object.freeze(Object.defineProperty({__proto__:null,default:id,song_timeline:C_,video_artist:A_,video_id:S_,video_publish_date_str:y_,video_title:O_},Symbol.toStringTag,{value:"Module"})),f_="【#めちゃすぷ 歌枠】えるすりー9直前！3人の歌、聴いてみませんか？💫【左から #常磐カナメ #暁月クララ #香鳴ハノン】",E_="Hanon Ch. 香鳴ハノン【パレプロ】",R_="oV-RusOOs1s",P_="2025-03-13",M_=`0:02:09 こんばんは〜！
 
 0:07:17 01. 星間飛行 / ランカ・リー＝中島愛 - 常磐カナメ＆暁月クララ＆香鳴ハノン
 0:16:13 02. 彗星ハネムーン / ナユタン星人 - 常磐カナメ
@@ -1679,7 +2042,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:13:18 スパチャ読み
 1:17:44 ありがとうございました！
-1:18:11 END`,S2={video_title:o1,video_artist:_1,video_id:s1,video_publish_date_str:d1,song_timeline:r1},nd=Object.freeze(Object.defineProperty({__proto__:null,default:S2,song_timeline:r1,video_artist:_1,video_id:s1,video_publish_date_str:d1,video_title:o1},Symbol.toStringTag,{value:"Module"})),l1="【初見リクエスト歌枠｜KARAOKE】初見さんがセットリストを決める！？10曲目標～✨【#パレプロ #香鳴ハノン】",a1="Hanon Ch. 香鳴ハノン【パレプロ】",v1="QMbirZ_Vfko",c1="2025-03-18",u1=`0:02:28 はのは〜！
+1:18:11 END`,od={video_title:f_,video_artist:E_,video_id:R_,video_publish_date_str:P_,song_timeline:M_},qr=Object.freeze(Object.defineProperty({__proto__:null,default:od,song_timeline:M_,video_artist:E_,video_id:R_,video_publish_date_str:P_,video_title:f_},Symbol.toStringTag,{value:"Module"})),K_="【初見リクエスト歌枠｜KARAOKE】初見さんがセットリストを決める！？10曲目標～✨【#パレプロ #香鳴ハノン】",N_="Hanon Ch. 香鳴ハノン【パレプロ】",T_="QMbirZ_Vfko",j_="2025-03-18",H_=`0:02:28 はのは〜！
 
 0:29:09 01. irony / ClariS
 0:44:32 02. 星座になれたら / 結束バンド
@@ -1696,7 +2059,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 2:32:52 11. 電脳スペクタクル / 猫足蕾、阿岐留カミラ
 
 2:52:03 スパチャ読み
-3:26:02 はのは〜！`,y2={video_title:l1,video_artist:a1,video_id:v1,video_publish_date_str:c1,song_timeline:u1},ed=Object.freeze(Object.defineProperty({__proto__:null,default:y2,song_timeline:u1,video_artist:a1,video_id:v1,video_publish_date_str:c1,video_title:l1},Symbol.toStringTag,{value:"Module"})),b1="【歌枠｜KARAOKE】オールジャンルで癒しの歌を届ける✨初見さんも大歓迎💗【#パレプロ #香鳴ハノン】",g1="香鳴ハノン",p1="rP1VbLJErTM",m1="2025-03-10",$1=`0:04:00 はのは〜！
+3:26:02 はのは〜！`,_d={video_title:K_,video_artist:N_,video_id:T_,video_publish_date_str:j_,song_timeline:H_},Xr=Object.freeze(Object.defineProperty({__proto__:null,default:_d,song_timeline:H_,video_artist:N_,video_id:T_,video_publish_date_str:j_,video_title:K_},Symbol.toStringTag,{value:"Module"})),D_="【歌枠｜KARAOKE】オールジャンルで癒しの歌を届ける✨初見さんも大歓迎💗【#パレプロ #香鳴ハノン】",I_="香鳴ハノン",B_="rP1VbLJErTM",L_="2025-03-10",V_=`0:04:00 はのは〜！
 
 0:07:06 01. 春になったら / miwa
 0:14:17 02. めぐろ川 / miwa
@@ -1726,7 +2089,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:34:37 スパチャ読み
 2:54:11 はのは〜！ 
-2:54:30 END / Cパート`,C2={video_title:b1,video_artist:g1,video_id:p1,video_publish_date_str:m1,song_timeline:$1},td=Object.freeze(Object.defineProperty({__proto__:null,default:C2,song_timeline:$1,video_artist:g1,video_id:p1,video_publish_date_str:m1,video_title:b1},Symbol.toStringTag,{value:"Module"})),h1="【#魅力オンパレ歌枠リレー】七色の歌声で聴かせます✨かわいいもキレイもかっこいいもお任せあれ💕【#パレプロ #香鳴ハノン】",O1="香鳴ハノン",A1="WALfqMKedrs",S1="2025-03-29",y1=`🎀🎶Today's Set List🎀🎶
+2:54:30 END / Cパート`,sd={video_title:D_,video_artist:I_,video_id:B_,video_publish_date_str:L_,song_timeline:V_},xr=Object.freeze(Object.defineProperty({__proto__:null,default:sd,song_timeline:V_,video_artist:I_,video_id:B_,video_publish_date_str:L_,video_title:D_},Symbol.toStringTag,{value:"Module"})),U_="【#魅力オンパレ歌枠リレー】七色の歌声で聴かせます✨かわいいもキレイもかっこいいもお任せあれ💕【#パレプロ #香鳴ハノン】",z_="香鳴ハノン",k_="WALfqMKedrs",G_="2025-03-29",Y_=`🎀🎶Today's Set List🎀🎶
 0:00:00 OP
 0:01:15 はのはー
 
@@ -1740,7 +2103,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 0:30:58 エンドカード
 
 魅力オンパレ歌枠リレートリ前おつのんでしたー
-どのハノンちゃんもいいぞ！`,f2={video_title:h1,video_artist:O1,video_id:A1,video_publish_date_str:S1,song_timeline:y1},id=Object.freeze(Object.defineProperty({__proto__:null,default:f2,song_timeline:y1,video_artist:O1,video_id:A1,video_publish_date_str:S1,video_title:h1},Symbol.toStringTag,{value:"Module"})),C1="【歌枠｜KARAOKE】ギャップで風邪引かせるかも…！？見た目から歌声想像できる？【#パレプロ #香鳴ハノン】",f1="香鳴ハノン",E1="XJh-6tPbAEg",P1="2025-03-30",R1=`0:02:58 はのは〜！
+どのハノンちゃんもいいぞ！`,dd={video_title:U_,video_artist:z_,video_id:k_,video_publish_date_str:G_,song_timeline:Y_},nl=Object.freeze(Object.defineProperty({__proto__:null,default:dd,song_timeline:Y_,video_artist:z_,video_id:k_,video_publish_date_str:G_,video_title:U_},Symbol.toStringTag,{value:"Module"})),W_="【歌枠｜KARAOKE】ギャップで風邪引かせるかも…！？見た目から歌声想像できる？【#パレプロ #香鳴ハノン】",F_="香鳴ハノン",w_="XJh-6tPbAEg",Q_="2025-03-30",J_=`0:02:58 はのは〜！
 
 0:09:57 01. ふでペン ～ボールペン～ / 放課後ティータイム
 0:16:22 02. Don't say "lazy" / 桜高軽音部
@@ -1756,7 +2119,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 1:24:08 スパチャ読み
 1:42:25 はのは〜！
-1:42:48 END / Cパート`,E2={video_title:C1,video_artist:f1,video_id:E1,video_publish_date_str:P1,song_timeline:R1},od=Object.freeze(Object.defineProperty({__proto__:null,default:E2,song_timeline:R1,video_artist:f1,video_id:E1,video_publish_date_str:P1,video_title:C1},Symbol.toStringTag,{value:"Module"})),M1="【歌枠｜KARAOKE】制服で🌸学マスオリ曲オンリーセトリ歌枠🎤初歌い曲あり✨【#パレプロ #香鳴ハノン】",K1="香鳴ハノン",N1="KkiFM2UeKcs",T1="2025-04-01",j1=`0:02:01 はのは〜！
+1:42:48 END / Cパート`,rd={video_title:W_,video_artist:F_,video_id:w_,video_publish_date_str:Q_,song_timeline:J_},el=Object.freeze(Object.defineProperty({__proto__:null,default:rd,song_timeline:J_,video_artist:F_,video_id:w_,video_publish_date_str:Q_,video_title:W_},Symbol.toStringTag,{value:"Module"})),Z_="【歌枠｜KARAOKE】制服で🌸学マスオリ曲オンリーセトリ歌枠🎤初歌い曲あり✨【#パレプロ #香鳴ハノン】",q_="香鳴ハノン",X_="KkiFM2UeKcs",x_="2025-04-01",n2=`0:02:01 はのは〜！
 
 0:05:25 01. コンテンポラリのダンス / 篠澤広
 0:17:24 02. L.U.V / 姫崎莉波
@@ -1778,7 +2141,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 2:15:06 スパチャ読み
 2:37:16 はのは〜！
-2:37:55 END / Cパート`,P2={video_title:M1,video_artist:K1,video_id:N1,video_publish_date_str:T1,song_timeline:j1},_d=Object.freeze(Object.defineProperty({__proto__:null,default:P2,song_timeline:j1,video_artist:K1,video_id:N1,video_publish_date_str:T1,video_title:M1},Symbol.toStringTag,{value:"Module"})),H1="【#耐久歌枠 (前編)】登録者34000人&同接300人達成まで歌い続ける耐久歌枠🎤🎶【#ハノンノオト #香鳴ハノン】",D1="香鳴ハノン",L1="VcYRulUgoww",B1="2025-04-02",V1=`0:01:34 はのは〜！
+2:37:55 END / Cパート`,ld={video_title:Z_,video_artist:q_,video_id:X_,video_publish_date_str:x_,song_timeline:n2},tl=Object.freeze(Object.defineProperty({__proto__:null,default:ld,song_timeline:n2,video_artist:q_,video_id:X_,video_publish_date_str:x_,video_title:Z_},Symbol.toStringTag,{value:"Module"})),e2="【#耐久歌枠 (前編)】登録者34000人&同接300人達成まで歌い続ける耐久歌枠🎤🎶【#ハノンノオト #香鳴ハノン】",t2="香鳴ハノン",i2="VcYRulUgoww",o2="2025-04-02",_2=`0:01:34 はのは〜！
 
 0:08:13 01. SUN / 星野源
 0:16:24 02. ドラえもん / 星野源
@@ -1826,7 +2189,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 5:19:09 40. Catch the Moment / LiSA
 5:25:44 41. crossing field / LiSA
 5:34:27 42. 紅蓮華 / LiSA
-5:38:53 43. 炎 / LiSA`,R2={video_title:H1,video_artist:D1,video_id:L1,video_publish_date_str:B1,song_timeline:V1},sd=Object.freeze(Object.defineProperty({__proto__:null,default:R2,song_timeline:V1,video_artist:D1,video_id:L1,video_publish_date_str:B1,video_title:H1},Symbol.toStringTag,{value:"Module"})),I1="【#耐久歌枠(後編)】達成ありがとう💕登録者34000人&同接300人目標の耐久歌枠🎤🎶老人会セトリ✨【#ハノンノオト #香鳴ハノン】",U1="香鳴ハノン",z1="sYMJ9rAljNg",k1="2025-04-02 00:00:01",G1=`0:00:58 はのは〜！
+5:38:53 43. 炎 / LiSA`,ad={video_title:e2,video_artist:t2,video_id:i2,video_publish_date_str:o2,song_timeline:_2},il=Object.freeze(Object.defineProperty({__proto__:null,default:ad,song_timeline:_2,video_artist:t2,video_id:i2,video_publish_date_str:o2,video_title:e2},Symbol.toStringTag,{value:"Module"})),s2="【#耐久歌枠(後編)】達成ありがとう💕登録者34000人&同接300人目標の耐久歌枠🎤🎶老人会セトリ✨【#ハノンノオト #香鳴ハノン】",d2="香鳴ハノン",r2="sYMJ9rAljNg",l2="2025-04-02 00:00:01",a2=`0:00:58 はのは〜！
 
 ※番号は前半戦からの通し番号
 0:18:43 44. おジャ魔女カーニバル!! / MAHO堂
@@ -1852,7 +2215,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 2:11:00 57. 瑠璃色の地球 / 松田聖子
 
 2:19:49 はのは〜！
-2:20:39 END / Cパート`,M2={video_title:I1,video_artist:U1,video_id:z1,video_publish_date_str:k1,song_timeline:G1},dd=Object.freeze(Object.defineProperty({__proto__:null,default:M2,song_timeline:G1,video_artist:U1,video_id:z1,video_publish_date_str:k1,video_title:I1},Symbol.toStringTag,{value:"Module"})),Y1="【歌枠｜KARAOKE】音ゲー楽曲縛り歌枠✨ラブライブ！&プロセカ&ユメステのオリ曲メイン！版権曲も…？【#パレプロ #香鳴ハノン】",W1="香鳴ハノン",w1="zUAX4RUs-jI",F1="2025-04-04",J1=`0:03:28 はのは〜！
+2:20:39 END / Cパート`,vd={video_title:s2,video_artist:d2,video_id:r2,video_publish_date_str:l2,song_timeline:a2},ol=Object.freeze(Object.defineProperty({__proto__:null,default:vd,song_timeline:a2,video_artist:d2,video_id:r2,video_publish_date_str:l2,video_title:s2},Symbol.toStringTag,{value:"Module"})),v2="【歌枠｜KARAOKE】音ゲー楽曲縛り歌枠✨ラブライブ！&プロセカ&ユメステのオリ曲メイン！版権曲も…？【#パレプロ #香鳴ハノン】",c2="香鳴ハノン",u2="zUAX4RUs-jI",b2="2025-04-04",g2=`0:03:28 はのは〜！
 
 0:07:25 01. プラネタリウム・レヴュー / 千寿 暦 (CV.鳥部万里子)、ラモーナ・ウォルフ (CV.田中美海)、王 雪(CV.花井美春)、リリヤ・クルトベイ (CV.安齋由香里)、与那国緋花里 (CV.下地紫野)
 0:13:44 02. 電脳スペクタクル / 猫足 蕾 (CV.芹澤 優)、阿岐留カミラ (CV.若井友希)
@@ -1882,7 +2245,7 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 
 3:18:18 スパチャ読み
 3:41:38 はのは〜！
-3:43:13 END / Cパート`,K2={video_title:Y1,video_artist:W1,video_id:w1,video_publish_date_str:F1,song_timeline:J1},rd=Object.freeze(Object.defineProperty({__proto__:null,default:K2,song_timeline:J1,video_artist:W1,video_id:w1,video_publish_date_str:F1,video_title:Y1},Symbol.toStringTag,{value:"Module"})),Q1="【歌枠｜KARAOKE】ロボソン縛り歌枠🤖✨キテレツ大百科・ガンダム・マクロスなど！【#パレプロ #香鳴ハノン】",Z1="香鳴ハノン",q1="8bMDoq_i5ss",X1="2025-04-05",x1=`0:01:49 はのは〜！
+3:43:13 END / Cパート`,cd={video_title:v2,video_artist:c2,video_id:u2,video_publish_date_str:b2,song_timeline:g2},_l=Object.freeze(Object.defineProperty({__proto__:null,default:cd,song_timeline:g2,video_artist:c2,video_id:u2,video_publish_date_str:b2,video_title:v2},Symbol.toStringTag,{value:"Module"})),p2="【歌枠｜KARAOKE】ロボソン縛り歌枠🤖✨キテレツ大百科・ガンダム・マクロスなど！【#パレプロ #香鳴ハノン】",m2="香鳴ハノン",$2="8bMDoq_i5ss",h2="2025-04-05",O2=`0:01:49 はのは〜！
 
 0:03:19 01. 鉄腕アトム / 上高田少年合唱団
 0:07:50 02. お料理行進曲 / YUKA
@@ -1905,4 +2268,4 @@ const n="【歌枠｜KARAOKE】学園アイドルマスターオンリーセト�
 1:20:05 14. ダイアモンド クレバス / シェリル・ノーム starring May'n
 1:22:23 15. ライオン / シェリル・ノーム starring May'n,ランカ・リー=中島愛
 
-1:27:17 はのは〜！`,N2={video_title:Q1,video_artist:Z1,video_id:q1,video_publish_date_str:X1,song_timeline:x1},ld=Object.freeze(Object.defineProperty({__proto__:null,default:N2,song_timeline:x1,video_artist:Z1,video_id:q1,video_publish_date_str:X1,video_title:Q1},Symbol.toStringTag,{value:"Module"}));export{Ns as $,_s as A,ss as B,ds as C,rs as D,ls as E,as as F,vs as G,cs as H,us as I,bs as J,gs as K,ps as L,ms as M,$s as N,hs as O,Os as P,As as Q,Ss as R,ys as S,Cs as T,fs as U,Es as V,Ps as W,Rs as X,Ms as Y,Ks as Z,T2 as _,j2 as a,Ts as a0,js as a1,Hs as a2,Ds as a3,Ls as a4,Bs as a5,Vs as a6,Is as a7,Us as a8,zs as a9,ks as aa,Gs as ab,Ys as ac,Ws as ad,ws as ae,Fs as af,Js as ag,Qs as ah,Zs as ai,qs as aj,Xs as ak,xs as al,nd as am,ed as an,td as ao,id as ap,od as aq,_d as ar,sd as as,dd as at,rd as au,ld as av,H2 as b,D2 as c,L2 as d,B2 as e,V2 as f,I2 as g,U2 as h,z2 as i,k2 as j,G2 as k,Y2 as l,W2 as m,w2 as n,F2 as o,J2 as p,Q2 as q,Z2 as r,q2 as s,X2 as t,x2 as u,ns as v,es as w,ts as x,is as y,os as z};
+1:27:17 はのは〜！`,ud={video_title:p2,video_artist:m2,video_id:$2,video_publish_date_str:h2,song_timeline:O2},sl=Object.freeze(Object.defineProperty({__proto__:null,default:ud,song_timeline:O2,video_artist:m2,video_id:$2,video_publish_date_str:h2,video_title:p2},Symbol.toStringTag,{value:"Module"}));export{ur as $,zd as A,kd as B,Gd as C,Yd as D,Wd as E,Fd as F,wd as G,Qd as H,Jd as I,Zd as J,qd as K,Xd as L,xd as M,nr as N,er as O,tr as P,ir as Q,or as R,_r as S,sr as T,dr as U,rr as V,lr as W,ar as X,vr as Y,cr as Z,bd as _,gd as a,br as a0,gr as a1,pr as a2,mr as a3,$r as a4,hr as a5,Or as a6,Ar as a7,Sr as a8,yr as a9,Zr as aA,qr as aB,Xr as aC,xr as aD,nl as aE,el as aF,tl as aG,il as aH,ol as aI,_l as aJ,sl as aK,Cr as aa,fr as ab,Er as ac,Rr as ad,Pr as ae,Mr as af,Kr as ag,Nr as ah,Tr as ai,jr as aj,Hr as ak,Dr as al,Ir as am,Br as an,Lr as ao,Vr as ap,Ur as aq,zr as ar,kr as as,Gr as at,Yr as au,Wr as av,Fr as aw,wr as ax,Qr as ay,Jr as az,pd as b,md as c,$d as d,hd as e,Od as f,Ad as g,Sd as h,yd as i,Cd as j,fd as k,Ed as l,Rd as m,Pd as n,Md as o,Kd as p,Nd as q,Td as r,jd as s,Hd as t,Dd as u,Id as v,Bd as w,Ld as x,Vd as y,Ud as z};
