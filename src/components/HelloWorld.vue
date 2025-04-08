@@ -41,8 +41,12 @@ const changePage = (page: number) => {
 
 const goToPage = ref(1);
 const paginationList = computed(() => {
+  const r = [];
   if (totalPages.value < 7) {
-    return [1, 2, 3, 4, 5, 6];
+    for (let i = 1; i <= totalPages.value; i++) {
+      r.push(i);
+    }
+    return r;
   }
   if (currentPage.value <4) {
     return [1, 2, 3, 4, 0, totalPages.value];

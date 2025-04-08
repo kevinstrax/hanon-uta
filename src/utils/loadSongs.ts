@@ -56,7 +56,8 @@ function parseSongTimeline(timelineStr: string): any {
     const lines = timelineStr.split('\n').filter(line => line.trim() !== '');
     const songs = [];
     //const timeRegex = /^(\d+:\d{2}:\d{2})\s+(.+)/; // 匹配时间格式
-    const timeRegex = /^(\d+:\d{2}:\d{2})(?:[；;]\d+:\d{2}:\d{2})*\s+(.+)/;
+    //const timeRegex = /^(\d+:\d{2}:\d{2})(?:[；;]\d+:\d{2}:\d{2})*\s+(.+)/;
+    const timeRegex = /^((?:\d+:\d{2}:\d{2})(?:\s*~\s*\d+:\d{2}:\d{2})?)(?:[;；]\s*(?:\d+:\d{2}:\d{2})(?:\s*~\s*\d+:\d{2}:\d{2})?)*\s+(.+)/;
 
     for (const line of lines) {
         const match = line.match(timeRegex);
