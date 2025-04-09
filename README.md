@@ -31,6 +31,10 @@
 - YouTube該当動画が新しいタブで開く
 - 指定した時間位置から自動再生開始
 
+## 🚀 オンラインデモ
+GitHub Pagesにデプロイ済み、すぐにアクセス可能：
+→ [https://kevinstrax.github.io/hanon-uta/](https://kevinstrax.github.io/hanon-uta/)
+
 ## 🛠️ 技術スタック
 - **Frontend**: Vue 3 + Vite
 - **Hosting**: GitHub Pages

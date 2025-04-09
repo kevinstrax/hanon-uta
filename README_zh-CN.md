@@ -31,6 +31,10 @@
 - 在新标签页打开对应YouTube视频
 - 自动从指定时间点开始播放
 
+## 🚀 在线体验
+项目已部署至GitHub Pages，可直接在线访问：
+→ [https://kevinstrax.github.io/hanon-uta/](https://kevinstrax.github.io/hanon-uta/)
+
 ## 🛠️ 技术栈
 - **前端**: Vue 3 + Vite
 - **部署**: GitHub Pages
