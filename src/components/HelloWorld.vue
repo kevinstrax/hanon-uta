@@ -60,6 +60,24 @@ const paginationList = computed(() => {
 </script>
 
 <template>
+  <div class="dropdown mt-4">
+    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+      <i class="fa-solid fa-language fa-fw me-1"></i>
+      説明書
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li>
+        <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-file-lines fa-fw me-2"></i> 日本語
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README_zh-CN.md" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-file-lines fa-fw me-2"></i> 简体中文
+        </a>
+      </li>
+    </ul>
+  </div>
   <!-- 搜索框 -->
   <div class="row my-4">
     <div class="input-group">
