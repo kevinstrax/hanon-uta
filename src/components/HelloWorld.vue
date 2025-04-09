@@ -80,9 +80,9 @@ const paginationList = computed(() => {
   <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2">
     <div v-for="(song, index) in paginatedSongs" :key="index">
       <div class="card h-100 hover-bg-light ">
-        <div class="card-img-top ratio ratio-16x9">
-          <a :href="song.ref_video_url"
-             target="_blank"><img class="img-fluid" :src="song.ref_video_thumbnail_url" :alt="song.song_title"
+        <div class="card-img-top ratio ratio-16x9 ">
+          <a :href="song.ref_video_url" class="d-flex align-items-center justify-content-center"
+             target="_blank"><img class="img-fluid w-100" :src="song.ref_video_thumbnail_url" :alt="song.song_title"
                                   :title="song.song_title" loading="lazy"/></a>
         </div>
 
@@ -204,6 +204,7 @@ const paginationList = computed(() => {
 }
 
 .card-img-top img {
+  transform: scale(1.01);
   transition: transform 0.3s ease;
 }
 
@@ -229,7 +230,7 @@ const paginationList = computed(() => {
 }
 
 /* 分页样式增强 */
-.page-item.active .page-link {
+/*.page-item.active .page-link {
   background-color: var(--bs-primary);
   border-color: var(--bs-primary);
 }
@@ -240,7 +241,7 @@ const paginationList = computed(() => {
 
 .page-link:hover {
   background-color: var(--bs-light);
-}
+}*/
 /* 小屏幕下隐藏部分页码 */
 /*@media (max-width: 576px) {
   .page-item .page-link {

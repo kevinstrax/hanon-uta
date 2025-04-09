@@ -26,7 +26,14 @@ export async function loadSongs(videos: Video[]): Promise<Song[]> {
                 ref_video_artist: video.video_artist,
                 ref_video_url: 'https://www.youtube.com/watch?v=' + video.video_id + '&t=' + timeToSeconds(songMeta.time) + 's',
                 ref_video_embed_url: 'https://www.youtube.com/embed/' + video.video_id,
-                ref_video_thumbnail_url: 'https://img.youtube.com/vi/' + video.video_id + '/mqdefault.jpg',
+                /**
+                 * maxresdefault.jpg - 最高分辨率（可能不存在于所有视频）
+                 * sddefault.jpg - 标准清晰度
+                 * hqdefault.jpg - 高质量
+                 * mqdefault.jpg - 中等质量
+                 * default.jpg - 默认质量
+                 */
+                ref_video_thumbnail_url: 'https://img.youtube.com/vi/' + video.video_id + '/hqdefault.jpg',
                 ref_video_publish_date_ts: Date.parse(video.video_publish_date_str) / 1000,
                 song_origin_artist: songMeta.artist,
                 song_title: songMeta.title,
