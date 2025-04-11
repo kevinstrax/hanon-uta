@@ -1,17 +1,11 @@
 <script setup lang="ts">
-import type { Song } from '@/types/song'
-import { onMounted, ref } from 'vue'
-import { loadSongs } from '@/utils/loadSongs';
 import HelloWorld from './HelloWorld.vue'
+import { KANARU_HANON } from '@/config/constants';
 
-const songs = ref<Song[]>([]);
-onMounted(async () => {
-  songs.value = await loadSongs('hanon');
-});
 </script>
 
 <template>
-  <HelloWorld :songs="songs" />
+  <HelloWorld :vtuber="KANARU_HANON" />
 </template>
 
 <style scoped>

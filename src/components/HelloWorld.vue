@@ -1,21 +1,25 @@
 <script setup lang="ts">
-import {ref, computed } from 'vue'
-import type {Song} from '@/types/song'
+import type { Song } from '@/types/song'
+import { ref, onMounted, computed } from 'vue'
+import { loadSongs } from '@/utils/loadSongs';
+import { DEFAULT_PAGE_SIZE } from '@/config/constants';
 
-const props = defineProps<{
-  songs: Song[]
-}>()
+const props = defineProps<{ vtuber: string }>();
+const songs = ref<Song[]>([]);
+onMounted(async () => {
+  songs.value = await loadSongs(props.vtuber);
+})
 
 const searchQuery = ref('')
 const currentPage = ref(1)
-const itemsPerPage = ref(10) // each page displays 10 items
+const itemsPerPage = ref(DEFAULT_PAGE_SIZE) // each page displays 10 items
 const goToPage = ref(1);
 
 // search function
 const filteredSongs = computed(() => {
-  if (!searchQuery.value) return props.songs
+  if (!searchQuery.value) return songs.value
   const query = searchQuery.value.trim().toLowerCase()
-  return props.songs.filter(song =>
+  return songs.value.filter(song =>
       song.song_title.toLowerCase().includes(query) ||
       song.song_origin_artist.toLowerCase().includes(query)
   )
@@ -48,7 +52,7 @@ const paginationList = computed(() => {
     }
     return r;
   }
-  if (currentPage.value <4) {
+  if (currentPage.value < 4) {
     return [1, 2, 3, 4, 0, totalPages.value];
   }
   if (currentPage.value < totalPages.value - 3) {

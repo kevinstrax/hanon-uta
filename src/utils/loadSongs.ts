@@ -25,11 +25,12 @@ function parseSong(videos: Video[]): Song[] {
 
     videos.forEach((video) => {
         parseSongTimeline(video.song_timeline).forEach((songMeta: any) => {
+            let offsetSec = timeToSeconds(songMeta.time);
             let song: Song = {
                 ref_video_title: video.video_title,
                 ref_video_artist: video.video_artist,
-                ref_video_url: 'https://www.youtube.com/watch?v=' + video.video_id + '&t=' + timeToSeconds(songMeta.time) + 's',
-                ref_video_embed_url: 'https://www.youtube.com/embed/' + video.video_id,
+                ref_video_url: `https://www.youtube.com/watch?v=${ video.video_id }&t=${ offsetSec }s`,
+                ref_video_embed_url: `https://www.youtube.com/embed/${ video.video_id }`,
                 /**
                  * maxresdefault.jpg - Highest resolution (may not be present in all videos)
                  * sddefault.jpg - Standard clarity
@@ -37,12 +38,12 @@ function parseSong(videos: Video[]): Song[] {
                  * mqdefault.jpg - Medium quality
                  * default.jpg - Default quality
                  */
-                ref_video_thumbnail_url: 'https://img.youtube.com/vi/' + video.video_id + '/hqdefault.jpg',
+                ref_video_thumbnail_url: `https://img.youtube.com/vi/${ video.video_id }/hqdefault.jpg`,
                 ref_video_publish_date_ts: Date.parse(video.video_publish_date_str) / 1000,
                 song_origin_artist: songMeta.artist,
                 song_title: songMeta.title,
                 song_start_time: songMeta.time,
-                video_offset_ts: timeToSeconds(songMeta.time)
+                video_offset_ts: offsetSec
             };
             if (validSong(song)) {
                 songs.push(song);
