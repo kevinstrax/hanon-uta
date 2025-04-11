@@ -1,1 +1,0 @@
-import{H as o}from"./HelloWorld-3e7eolLc.js";import{d as s,r as e,o as n,l as t,a as r,c as l,b as c}from"./index-D9-j7t4y.js";const m=s({__name:"Gabu",setup(u){const a=e([]);return n(async()=>{a.value=await t(await r("gabu"))}),(d,p)=>(c(),l(o,{songs:a.value},null,8,["songs"]))}});export{m as default};
