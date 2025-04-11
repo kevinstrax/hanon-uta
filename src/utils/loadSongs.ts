@@ -2,7 +2,11 @@
 import type {Song} from '@/types/song';
 import type {Video} from "@/types/video";
 
-export async function loadVideos(v: string): Promise<Video[]> {
+export async function loadSongs(v: string): Promise<Song[]> {
+    return parseSong(await loadVideos(v))
+}
+
+async function loadVideos(v: string): Promise<Video[]> {
     const modules = import.meta.glob(`@/assets/data/**/*.json`);
 
     // Filter out files that belong to the vtuber
@@ -16,7 +20,7 @@ export async function loadVideos(v: string): Promise<Video[]> {
     );
 }
 
-export async function loadSongs(videos: Video[]): Promise<Song[]> {
+function parseSong(videos: Video[]): Song[] {
     const songs: Song[] = [];
 
     videos.forEach((video) => {
