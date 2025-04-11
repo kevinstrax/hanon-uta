@@ -9,7 +9,8 @@ const menuRoutes = computed(() => {
 })
 
 const currentRouteTitle = computed(() => {
-  return `${router.currentRoute.value.meta.title}${router.currentRoute.value.meta.mark ?? ''}` || 'ページを選択'
+  return (router.currentRoute.value.meta.title || 'ページを選択')
+      + (router.currentRoute.value.meta.mark ?? '')
 })
 </script>
 
