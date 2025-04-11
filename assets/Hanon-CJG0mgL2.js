@@ -1,0 +1,1 @@
+import{H as a}from"./HelloWorld-DIydYVhU.js";import{d as s,r as n,o as e,l as t,a as r,c as l,b as c}from"./index-Bg3Ij8ji.js";const m=s({__name:"Hanon",setup(d){const o=n([]);return e(async()=>{o.value=await t(await r("hanon"))}),(p,u)=>(c(),l(a,{songs:o.value},null,8,["songs"]))}});export{m as default};
