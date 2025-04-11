@@ -2,12 +2,19 @@
 import type { Song } from '@/types/song'
 import { ref, onMounted, computed } from 'vue'
 import { loadSongs } from '@/utils/loadSongs';
+import { useLoadingStore } from '@/stores/loading'
 import { DEFAULT_PAGE_SIZE } from '@/config/constants';
 
 const props = defineProps<{ vtuber: string }>();
 const songs = ref<Song[]>([]);
+const loadingStore = useLoadingStore()
+
 onMounted(async () => {
-  songs.value = await loadSongs(props.vtuber);
+  try {
+    songs.value = await loadSongs(props.vtuber);
+  } finally {
+    loadingStore.completeLoading();
+  }
 })
 
 const searchQuery = ref('')
