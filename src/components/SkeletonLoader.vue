@@ -18,7 +18,7 @@ defineProps({
         </div>
 
         <!-- Content area skeleton -->
-        <div class="card-body">
+        <div class="card-body" style="box-sizing: border-box;">
           <h6 class="card-title placeholder-glow">
             <span class="placeholder col-8"></span>
           </h6>
@@ -30,7 +30,7 @@ defineProps({
           <p class="card-text placeholder-glow">
             <small class="text-muted d-block">
               <span class="placeholder col-10"></span>
-              <span class="placeholder col-12 mt-1"></span>
+              <span class="placeholder col-12"></span>
             </small>
           </p>
           <p class="card-text placeholder-glow">

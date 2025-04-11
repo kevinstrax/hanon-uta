@@ -14,7 +14,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
                                   :title="song.song_title" loading="lazy"/></a>
         </div>
 
-        <div class="card-body text-start">
+        <div class="card-body">
           <h6 class="card-title hover-text-light text-truncate" :title="song.song_title">
             <i class="fas fa-music"></i>
             {{ song.song_title }}</h6>
@@ -27,7 +27,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
             </small>
           </p>
           <p class="card-text hover-text-light"><small class="text-muted">
-            <a class="text-decoration-none text-secondary d-block" :href="song.ref_video_url"
+            <a class="text-decoration-none text-secondary" :href="song.ref_video_url"
                :title="song.song_title"
                target="_blank">⤷ {{ song.song_start_time }}</a>
           </small>
