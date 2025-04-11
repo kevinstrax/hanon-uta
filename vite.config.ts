@@ -20,6 +20,7 @@ export default defineConfig({
         manualChunks(id) {
           if (id.includes('/data/')) {
             if (id.includes('/hanon/')) return 'hanon-data'
+            if (id.includes('/gabu')) return 'gabu-data'
           }
         }
       }

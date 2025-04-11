@@ -1,21 +1,19 @@
 <script setup lang="ts">
 import {onMounted, ref} from 'vue'
-// import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './HelloWorld.vue'
 import {loadSongs, loadVideos} from '@/utils/loadSongs';
 import type { Song } from '@/types/song'
-import Nav from "@/components/Nav.vue";
 
 const songs = ref<Song[]>([]);
 onMounted(async () => {
   songs.value = await loadSongs(await loadVideos('hanon'));
 });
-
 </script>
 
 <template>
-  <Nav />
-  <router-view />
+  <HelloWorld :songs="songs" />
 </template>
 
 <style scoped>
+
 </style>

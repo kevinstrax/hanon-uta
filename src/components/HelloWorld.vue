@@ -60,7 +60,7 @@ const paginationList = computed(() => {
 </script>
 
 <template>
-  <div class="dropdown mt-4">
+  <div class="dropdown my-4 mx-2 d-inline-block">
     <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
       <i class="fa-solid fa-language fa-fw me-1"></i>
       説明書
@@ -79,7 +79,7 @@ const paginationList = computed(() => {
     </ul>
   </div>
   <!-- 搜索框 -->
-  <div class="row my-4">
+  <div class="row my-4 mt-0 clearfix">
     <div class="input-group">
       <span class="input-group-text bg-light">
         <i class="fas fa-search"></i>
