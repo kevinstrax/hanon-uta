@@ -71,7 +71,7 @@ const paginationList = computed(() => {
 </script>
 
 <template>
-  <div class="dropdown my-4 mx-2 d-inline-block">
+  <div class="dropdown my-4 d-inline-block">
     <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
       <i class="fa-solid fa-language fa-fw me-1"></i>
       説明書
@@ -128,9 +128,9 @@ const paginationList = computed(() => {
             </small>
           </p>
           <p class="card-text hover-text-light"><small class="text-muted">
-            <a class="text-decoration-none text-secondary" :href="song.ref_video_url"
+            <a class="text-decoration-none text-secondary d-block" :href="song.ref_video_url"
                :title="song.song_title"
-               target="_blank">{{ song.song_start_time }}</a>
+               target="_blank">⤷ {{ song.song_start_time }}</a>
           </small>
           </p>
         </div>

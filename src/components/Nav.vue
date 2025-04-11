@@ -15,7 +15,7 @@ const currentRouteTitle = computed(() => {
 </script>
 
 <template>
-  <div class="dropdown float-start mt-4">
+  <div class="dropdown float-start mt-4 me-2">
     <button
         class="btn btn-light dropdown-toggle"
         type="button"
