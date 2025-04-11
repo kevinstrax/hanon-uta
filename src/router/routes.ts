@@ -1,19 +1,19 @@
 // src/router/routes.ts
 import type { AppRouteRecordRaw } from '@/types/router'
 
-// 定义路由数组
+// define an array of routes
 const routes: AppRouteRecordRaw[] = [
     {
         path: '/',
         name: 'Hanon',
         component: () => import('@/components/Hanon.vue'),
-        meta: { vtuber: 'hanon', title: '香鳴ハノン' }
+        meta: { vtuber: 'hanon', title: '香鳴ハノン', mark: '🎀🎶' }
     },
     {
         path: '/saotomegabu',
         name: 'Gabu',
         component: () => import('@/components/Gabu.vue'),
-        meta: { vtuber: 'gabu', title: '鎖乙女がぶ' }
+        meta: { vtuber: 'gabu', title: '鎖乙女がぶ', mark: '🐺🩰' }
     },
 ]
 

@@ -8,10 +8,10 @@ const props = defineProps<{
 
 const searchQuery = ref('')
 const currentPage = ref(1)
-const itemsPerPage = ref(10) // 每页显示10个项目
+const itemsPerPage = ref(10) // each page displays 10 items
 const goToPage = ref(1);
 
-// 搜索功能
+// search function
 const filteredSongs = computed(() => {
   if (!searchQuery.value) return props.songs
   const query = searchQuery.value.trim().toLowerCase()
@@ -21,19 +21,19 @@ const filteredSongs = computed(() => {
   )
 })
 
-// 分页数据
+// paginated data
 const paginatedSongs = computed(() => {
   const start = (currentPage.value - 1) * itemsPerPage.value
   const end = start + itemsPerPage.value
   return filteredSongs.value.slice(start, end)
 })
 
-// 总页数
+// total number of pages
 const totalPages = computed(() => {
   return Math.ceil(filteredSongs.value.length / itemsPerPage.value)
 })
 
-// 改变页码
+// change the page number
 const changePage = (page: number) => {
   if (page >= 1 && page <= totalPages.value) {
     currentPage.value = page
@@ -78,7 +78,7 @@ const paginationList = computed(() => {
       </li>
     </ul>
   </div>
-  <!-- 搜索框 -->
+  <!-- search box -->
   <div class="row my-4 mt-0 clearfix">
     <div class="input-group">
       <span class="input-group-text bg-light">
@@ -94,7 +94,7 @@ const paginationList = computed(() => {
     </div>
   </div>
 
-  <!-- 歌曲列表 -->
+  <!-- a list of songs -->
   <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2">
     <div v-for="(song, index) in paginatedSongs" :key="index">
       <div class="card h-100 hover-bg-light ">
@@ -127,7 +127,7 @@ const paginationList = computed(() => {
     </div>
   </div>
 
-  <!-- 分页控件 -->
+  <!-- Pagination controls -->
   <nav aria-label="ページネーション" class="mt-4" v-if="totalPages > 1">
     <ul class="pagination justify-content-center flex-wrap">
 
@@ -154,10 +154,10 @@ const paginationList = computed(() => {
     </ul>
   </nav>
 
-  <!-- 显示当前页码和总数 -->
+  <!-- displays the current page number and total -->
   <div class="text-center text-muted small mt-2 mb-4" v-if="filteredSongs.length > 0">
     {{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件
-    <!-- 页面跳转 -->
+    <!-- page jump -->
     <div class="d-flex justify-content-center align-items-center gap-2 mt-2" v-if="totalPages > 1">
       <input
           type="number"
@@ -181,7 +181,7 @@ const paginationList = computed(() => {
 </template>
 
 <style scoped>
-/* 你的现有样式保持不变 */
+/* Your existing styles remain the same */
 .multi-line-ellipsis-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -246,27 +246,4 @@ const paginationList = computed(() => {
 .hover-text-light:hover {
   background-color: var(--bs-secondary-bg) !important;
 }
-
-/* 分页样式增强 */
-/*.page-item.active .page-link {
-  background-color: var(--bs-primary);
-  border-color: var(--bs-primary);
-}
-
-.page-link {
-  color: var(--bs-primary);
-}
-
-.page-link:hover {
-  background-color: var(--bs-light);
-}*/
-/* 小屏幕下隐藏部分页码 */
-/*@media (max-width: 576px) {
-  .page-item .page-link {
-    padding: 0.25rem 0.5rem;
-  }
-  .page-item:not(.active):not(:first-child):not(:last-child):not(.disabled) {
-    display: none;
-  }
-}*/
 </style>

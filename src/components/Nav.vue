@@ -9,7 +9,7 @@ const menuRoutes = computed(() => {
 })
 
 const currentRouteTitle = computed(() => {
-  return router.currentRoute.value.meta.title || '选择页面'
+  return `${router.currentRoute.value.meta.title}${router.currentRoute.value.meta.mark ?? ''}` || 'ページを選択'
 })
 </script>
 
@@ -29,9 +29,8 @@ const currentRouteTitle = computed(() => {
         <router-link
             class="dropdown-item"
             :to="route.path"
-
         >
-          {{ route.meta.title }}
+          {{ route.meta.title }}{{ route.meta.mark }}
         </router-link>
       </li>
     </ul>

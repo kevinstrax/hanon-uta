@@ -5,10 +5,10 @@ import type {Video} from "@/types/video";
 export async function loadVideos(v: string): Promise<Video[]> {
     const modules = import.meta.glob(`@/assets/data/**/*.json`);
 
-    // 过滤出属于该 vtuber 的文件
+    // Filter out files that belong to the vtuber
     return await Promise.all(
         Object.entries(modules)
-            .filter(([path]) => path.includes(`/${v}/`)) // 只匹配当前 vtuber
+            .filter(([path]) => path.includes(`/${v}/`)) // Only the current vtuber is matched
             .map(async ([_, module]) => {
                 const data = (await module()) as { default: Video };
                 return data.default;
@@ -27,11 +27,11 @@ export async function loadSongs(videos: Video[]): Promise<Song[]> {
                 ref_video_url: 'https://www.youtube.com/watch?v=' + video.video_id + '&t=' + timeToSeconds(songMeta.time) + 's',
                 ref_video_embed_url: 'https://www.youtube.com/embed/' + video.video_id,
                 /**
-                 * maxresdefault.jpg - 最高分辨率（可能不存在于所有视频）
-                 * sddefault.jpg - 标准清晰度
-                 * hqdefault.jpg - 高质量
-                 * mqdefault.jpg - 中等质量
-                 * default.jpg - 默认质量
+                 * maxresdefault.jpg - Highest resolution (may not be present in all videos)
+                 * sddefault.jpg - Standard clarity
+                 * hqdefault.jpg - Quality
+                 * mqdefault.jpg - Medium quality
+                 * default.jpg - Default quality
                  */
                 ref_video_thumbnail_url: 'https://img.youtube.com/vi/' + video.video_id + '/hqdefault.jpg',
                 ref_video_publish_date_ts: Date.parse(video.video_publish_date_str) / 1000,
@@ -53,9 +53,9 @@ export async function loadSongs(videos: Video[]): Promise<Song[]> {
 
         });
     });
-    // 排序逻辑
+    // Sorting logic
     songs.sort((a, b) => {
-        // 先按 ref_video_publish_date_ts 降序
+        // Start in descending order by ref_video_publish_date_ts
         if (a.ref_video_publish_date_ts > b.ref_video_publish_date_ts) {
             return -1;
         }
@@ -63,7 +63,7 @@ export async function loadSongs(videos: Video[]): Promise<Song[]> {
             return 1;
         }
 
-        // 如果 ref_video_publish_date_ts 相等，则按 video_offset_ts 升序
+        // If ref_video_publish_date_ts are equal, in ascending order by video_offset_ts
         return a.video_offset_ts - b.video_offset_ts;
     });
     return songs;

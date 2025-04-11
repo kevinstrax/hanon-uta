@@ -4,8 +4,8 @@ import { RouteRecordRaw } from 'vue-router'
 declare module 'vue-router' {
     interface RouteMeta {
         title: string,
-        vtuber: string
-        // 其他自定义元字段
+        vtuber: string,
+        mark?: string
     }
 }
 

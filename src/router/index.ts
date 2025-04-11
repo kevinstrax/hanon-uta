@@ -8,7 +8,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to) => {
-    document.title = `${to.meta.title}チャンネル歌枠検索` || '香鳴ハノンチャンネル歌枠検索'
+    document.title = `${ to.meta.title ?? '香鳴ハノン' }チャンネル歌枠検索（非公式）`
 })
 
 export default router
