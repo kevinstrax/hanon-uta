@@ -282,7 +282,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 2:36:23 スパチャ読み
 2:43:18 はのはー！
 2:43:45 END / Cパート
-2:44:00 5月生写真サンプル公開（5枚）`,Ud={video_title:dn,video_artist:rn,video_id:ln,video_publish_date_str:an,song_timeline:vn},ta=Object.freeze(Object.defineProperty({__proto__:null,default:Ud,song_timeline:vn,video_artist:rn,video_id:ln,video_publish_date_str:an,video_title:dn},Symbol.toStringTag,{value:"Module"})),cn="【耐久歌枠｜前半】登録者31000人&同接500人達成するまで歌い続ける！！🎤🎀【#パレプロ #香鳴ハノン】",un="Hanon Ch. 香鳴ハノン【パレプロ】",bn="CrJ7XbyRvhs",gn="2024-05-02 00:00:01",pn=`0:03:13 はのはー！
+2:44:00 5月生写真サンプル公開（5枚）`,Ud={video_title:dn,video_artist:rn,video_id:ln,video_publish_date_str:an,song_timeline:vn},ta=Object.freeze(Object.defineProperty({__proto__:null,default:Ud,song_timeline:vn,video_artist:rn,video_id:ln,video_publish_date_str:an,video_title:dn},Symbol.toStringTag,{value:"Module"})),cn="【耐久歌枠｜前半】登録者31000人&同接500人達成するまで歌い続ける！！🎤🎀【#パレプロ #香鳴ハノン】",un="Hanon Ch. 香鳴ハノン【パレプロ】",bn="CrJ7XbyRvhs",gn="2024-05-02",pn=`0:03:13 はのはー！
 目指せ30,758→31,000人！
 
 0:08:57 01. CHE.R.RY / YUI
@@ -334,7 +334,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 5:36:55 41. 恋愛サーキュレーション / 千石撫子（花澤香菜）
 5:43:54 42. メランコリック / Junky feat. 鏡音リン
 
-5:49:41 次枠に引っ越し`,zd={video_title:cn,video_artist:un,video_id:bn,video_publish_date_str:gn,song_timeline:pn},ia=Object.freeze(Object.defineProperty({__proto__:null,default:zd,song_timeline:pn,video_artist:un,video_id:bn,video_publish_date_str:gn,video_title:cn},Symbol.toStringTag,{value:"Module"})),mn="【耐久歌枠｜後半】登録者31000人&同接500人達成するまで歌い続ける！！🎤🎀【#パレプロ #香鳴ハノン】",$n="Hanon Ch. 香鳴ハノン【パレプロ】",On="S2wujBC4F_A",hn="2024-05-02 00:00:02",An=`0:00:05 引っ越し完了
+5:49:41 次枠に引っ越し`,zd={video_title:cn,video_artist:un,video_id:bn,video_publish_date_str:gn,song_timeline:pn},ia=Object.freeze(Object.defineProperty({__proto__:null,default:zd,song_timeline:pn,video_artist:un,video_id:bn,video_publish_date_str:gn,video_title:cn},Symbol.toStringTag,{value:"Module"})),mn="【耐久歌枠｜後半】登録者31000人&同接500人達成するまで歌い続ける！！🎤🎀【#パレプロ #香鳴ハノン】",$n="Hanon Ch. 香鳴ハノン【パレプロ】",On="S2wujBC4F_A",hn="2024-05-02 12:00:02",An=`0:00:05 引っ越し完了
 
 0:07:57 43. ミックスナッツ / Official髭男dism　※楽曲番号は前枠から継続
 0:15:41 44. 勘冴えて悔しいわ / ずっと真夜中でいいのに。
@@ -1930,7 +1930,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 3:32:05；3:36:50 憧れをいっぱい / 倉本千奈\r
 \r
 3:41:13 スパチャ読み\r
-3:50:18 エンドカード`,tl={video_title:H1,video_artist:I1,video_id:D1,video_publish_date_str:L1,song_timeline:B1},$4=Object.freeze(Object.defineProperty({__proto__:null,default:tl,song_timeline:B1,video_artist:I1,video_id:D1,video_publish_date_str:L1,video_title:H1},Symbol.toStringTag,{value:"Module"})),V1="【歌枠｜KARAOKE】オンゲキオリ曲オンリーで20曲！譜面を思い出しながら歌う🎶【#パレプロ #香鳴ハノン】",U1="Hanon Ch. 香鳴ハノン【パレプロ】",z1="T_-vS1ogeSs",G1="2024-12-28 00:00:02",k1=`0:03:20 はのは〜！
+3:50:18 エンドカード`,tl={video_title:H1,video_artist:I1,video_id:D1,video_publish_date_str:L1,song_timeline:B1},$4=Object.freeze(Object.defineProperty({__proto__:null,default:tl,song_timeline:B1,video_artist:I1,video_id:D1,video_publish_date_str:L1,video_title:H1},Symbol.toStringTag,{value:"Module"})),V1="【歌枠｜KARAOKE】オンゲキオリ曲オンリーで20曲！譜面を思い出しながら歌う🎶【#パレプロ #香鳴ハノン】",U1="Hanon Ch. 香鳴ハノン【パレプロ】",z1="T_-vS1ogeSs",G1="2024-12-28 12:00:02",k1=`0:03:20 はのは〜！
 
 0:11:39 01. シンデレラディスコ / 藍原 椿(CV：橋本 ちなみ)、早乙女 彩華(CV：中島 唯)
 0:17:06 02. みんな Happy!! / 藤沢 柚子(CV:久保田 梨沙)
@@ -1962,7 +1962,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 
 2:43:33 スパチャ読み
 2:54:19 はのは〜！
-2:54:32 END / Cパート`,il={video_title:V1,video_artist:U1,video_id:z1,video_publish_date_str:G1,song_timeline:k1},O4=Object.freeze(Object.defineProperty({__proto__:null,default:il,song_timeline:k1,video_artist:U1,video_id:z1,video_publish_date_str:G1,video_title:V1},Symbol.toStringTag,{value:"Module"})),Y1="【耐久歌枠】登録者33333人目指して歌い続ける✨制限時間7時間…！【 #香鳴ハノン33333人耐久 】",F1="Hanon Ch. 香鳴ハノン【パレプロ】",W1="FtqISd_alKs",w1="2024-12-28 00:00:01",Q1=`Today's Set List\r
+2:54:32 END / Cパート`,il={video_title:V1,video_artist:U1,video_id:z1,video_publish_date_str:G1,song_timeline:k1},O4=Object.freeze(Object.defineProperty({__proto__:null,default:il,song_timeline:k1,video_artist:U1,video_id:z1,video_publish_date_str:G1,video_title:V1},Symbol.toStringTag,{value:"Module"})),Y1="【耐久歌枠】登録者33333人目指して歌い続ける✨制限時間7時間…！【 #香鳴ハノン33333人耐久 】",F1="Hanon Ch. 香鳴ハノン【パレプロ】",W1="FtqISd_alKs",w1="2024-12-28",Q1=`Today's Set List\r
 0:00:00 OP\r
 0:03:42 はのは～\r
 \r
@@ -2081,7 +2081,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 1:52:24；1:55:59 ラヴィット / ピノキオピー\r
 1:57:18；1:58:42 ラヴィット / ピノキオピー\r
 \r
-2:00:20 エンドカード`,dl={video_title:__,video_artist:s_,video_id:d_,video_publish_date_str:r_,song_timeline:l_},y4=Object.freeze(Object.defineProperty({__proto__:null,default:dl,song_timeline:l_,video_artist:s_,video_id:d_,video_publish_date_str:r_,video_title:__},Symbol.toStringTag,{value:"Module"})),a_="【#ユニパレ歌枠リレー】3番手！アイドルらしくかわいく✨盛り上げるぞっ💗【#香鳴ハノン/#パレプロ】",v_="Hanon Ch. 香鳴ハノン【パレプロ】",c_="PaUibOzOXFs",u_="2025-01-18 00:00:02",b_=`Today's Set List\r
+2:00:20 エンドカード`,dl={video_title:__,video_artist:s_,video_id:d_,video_publish_date_str:r_,song_timeline:l_},y4=Object.freeze(Object.defineProperty({__proto__:null,default:dl,song_timeline:l_,video_artist:s_,video_id:d_,video_publish_date_str:r_,video_title:__},Symbol.toStringTag,{value:"Module"})),a_="【#ユニパレ歌枠リレー】3番手！アイドルらしくかわいく✨盛り上げるぞっ💗【#香鳴ハノン/#パレプロ】",v_="Hanon Ch. 香鳴ハノン【パレプロ】",c_="PaUibOzOXFs",u_="2025-01-18 12:00:02",b_=`Today's Set List\r
 0:00:00 OP\r
 0:01:25 はのはー\r
 \r
@@ -2091,7 +2091,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 0:19:58；0:24:47 Q&A リサイタル! / 戸松遥\r
 0:24:52；0:29:06 Campus mode!! / 初星学園\r
 \r
-0:30:57 エンドカード`,rl={video_title:a_,video_artist:v_,video_id:c_,video_publish_date_str:u_,song_timeline:b_},f4=Object.freeze(Object.defineProperty({__proto__:null,default:rl,song_timeline:b_,video_artist:v_,video_id:c_,video_publish_date_str:u_,video_title:a_},Symbol.toStringTag,{value:"Module"})),g_="【#ユニパレ歌枠リレー】開会式はMCハノウタノン✨歌も歌います✊🎤🔥【#白玖ウタノ #香鳴ハノン】",p_="Hanon Ch. 香鳴ハノン【パレプロ】",m_="wMrA0Y4iMOA",$_="2025-01-18 00:00:01",O_=`0:04:03；0:07:51  ギターと孤独と蒼い惑星 / 結束バンド
+0:30:57 エンドカード`,rl={video_title:a_,video_artist:v_,video_id:c_,video_publish_date_str:u_,song_timeline:b_},f4=Object.freeze(Object.defineProperty({__proto__:null,default:rl,song_timeline:b_,video_artist:v_,video_id:c_,video_publish_date_str:u_,video_title:a_},Symbol.toStringTag,{value:"Module"})),g_="【#ユニパレ歌枠リレー】開会式はMCハノウタノン✨歌も歌います✊🎤🔥【#白玖ウタノ #香鳴ハノン】",p_="Hanon Ch. 香鳴ハノン【パレプロ】",m_="wMrA0Y4iMOA",$_="2025-01-18",O_=`0:04:03；0:07:51  ギターと孤独と蒼い惑星 / 結束バンド
 0:21:16；0:25:29 空色デイズ / 中川翔子`,ll={video_title:g_,video_artist:p_,video_id:m_,video_publish_date_str:$_,song_timeline:O_},C4=Object.freeze(Object.defineProperty({__proto__:null,default:ll,song_timeline:O_,video_artist:p_,video_id:m_,video_publish_date_str:$_,video_title:g_},Symbol.toStringTag,{value:"Module"})),h_="【歌枠｜KARAOKE】オールジャンルで自由に歌っていく🎤🎶【#香鳴ハノン/#パレプロ】",A_="Hanon Ch. 香鳴ハノン【パレプロ】",S_="ozddO_2kihc",y_="2025-01-23",f_=`0:02:14 はのは〜！
 
 0:07:29 01. 少女レイ / みきとP
@@ -2379,7 +2379,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 0:42:41 04. Like the Sun, Like the Moon / Stellamaris
 0:48:26 05. 宣誓センセーション / KiRaRe
 
-0:57:17 はのは〜！`,Sl={video_title:E2,video_artist:P2,video_id:R2,video_publish_date_str:M2,song_timeline:K2},B4=Object.freeze(Object.defineProperty({__proto__:null,default:Sl,song_timeline:K2,video_artist:P2,video_id:R2,video_publish_date_str:M2,video_title:E2},Symbol.toStringTag,{value:"Module"})),N2="【歌枠｜KARAOKE】ユメステオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと6日💕【#パレプロ #香鳴ハノン】",T2="Hanon Ch. 香鳴ハノン【パレプロ】",j2="dK_D7VZMpyM",H2="2025-02-24 00:00:01",I2=`0:01:27 はのは〜！
+0:57:17 はのは〜！`,Sl={video_title:E2,video_artist:P2,video_id:R2,video_publish_date_str:M2,song_timeline:K2},B4=Object.freeze(Object.defineProperty({__proto__:null,default:Sl,song_timeline:K2,video_artist:P2,video_id:R2,video_publish_date_str:M2,video_title:E2},Symbol.toStringTag,{value:"Module"})),N2="【歌枠｜KARAOKE】ユメステオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと6日💕【#パレプロ #香鳴ハノン】",T2="Hanon Ch. 香鳴ハノン【パレプロ】",j2="dK_D7VZMpyM",H2="2025-02-24 12:00:01",I2=`0:01:27 はのは〜！
 
 0:06:42 01. シリウスの輝きのように / シリウス
 0:15:00 02. 夢のステラリウム / 鳳ここな, 静香, カトリナ・グリーベル, 新妻八恵, 柳場ぱんだ, 流石知冴
@@ -2439,7 +2439,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 
 1:21:54 スパチャ読み
 1:26:10 おつぴよのん！ 
-1:26:23 END`,El={video_title:W2,video_artist:w2,video_id:Q2,video_publish_date_str:J2,song_timeline:Z2},G4=Object.freeze(Object.defineProperty({__proto__:null,default:El,song_timeline:Z2,video_artist:w2,video_id:Q2,video_publish_date_str:J2,video_title:W2},Symbol.toStringTag,{value:"Module"})),X2="【歌枠｜KARAOKE】オンゲキオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと2日💕【#パレプロ #香鳴ハノン】",q2="Hanon Ch. 香鳴ハノン【パレプロ】",x2="_idGblkF3mU",ns="2025-02-28 00:00:01",es=`0:02:14 はのは〜！
+1:26:23 END`,El={video_title:W2,video_artist:w2,video_id:Q2,video_publish_date_str:J2,song_timeline:Z2},G4=Object.freeze(Object.defineProperty({__proto__:null,default:El,song_timeline:Z2,video_artist:w2,video_id:Q2,video_publish_date_str:J2,video_title:W2},Symbol.toStringTag,{value:"Module"})),X2="【歌枠｜KARAOKE】オンゲキオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと2日💕【#パレプロ #香鳴ハノン】",q2="Hanon Ch. 香鳴ハノン【パレプロ】",x2="_idGblkF3mU",ns="2025-02-28 12:00:01",es=`0:02:14 はのは〜！
 
 0:07:39 01. UTAKATA / 九條楓
 0:16:45 02. GranFatalité / 柏木咲姫
@@ -2732,7 +2732,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 5:19:09 40. Catch the Moment / LiSA
 5:25:44 41. crossing field / LiSA
 5:34:27 42. 紅蓮華 / LiSA
-5:38:53 43. 炎 / LiSA`,Ul={video_title:rd,video_artist:ld,video_id:ad,video_publish_date_str:vd,song_timeline:cd},t3=Object.freeze(Object.defineProperty({__proto__:null,default:Ul,song_timeline:cd,video_artist:ld,video_id:ad,video_publish_date_str:vd,video_title:rd},Symbol.toStringTag,{value:"Module"})),ud="【#耐久歌枠(後編)】達成ありがとう💕登録者34000人&同接300人目標の耐久歌枠🎤🎶老人会セトリ✨【#ハノンノオト #香鳴ハノン】",bd="香鳴ハノン",gd="sYMJ9rAljNg",pd="2025-04-02 00:00:01",md=`0:00:58 はのは〜！
+5:38:53 43. 炎 / LiSA`,Ul={video_title:rd,video_artist:ld,video_id:ad,video_publish_date_str:vd,song_timeline:cd},t3=Object.freeze(Object.defineProperty({__proto__:null,default:Ul,song_timeline:cd,video_artist:ld,video_id:ad,video_publish_date_str:vd,video_title:rd},Symbol.toStringTag,{value:"Module"})),ud="【#耐久歌枠(後編)】達成ありがとう💕登録者34000人&同接300人目標の耐久歌枠🎤🎶老人会セトリ✨【#ハノンノオト #香鳴ハノン】",bd="香鳴ハノン",gd="sYMJ9rAljNg",pd="2025-04-02 12:00:01",md=`0:00:58 はのは〜！
 
 ※番号は前半戦からの通し番号
 0:18:43 44. おジャ魔女カーニバル!! / MAHO堂
