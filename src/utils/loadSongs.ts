@@ -38,7 +38,8 @@ function parseSong(videos: Video[]): Song[] {
                  * mqdefault.jpg - Medium quality
                  * default.jpg - Default quality
                  */
-                ref_video_thumbnail_url: `https://img.youtube.com/vi/${ video.video_id }/hqdefault.jpg`,
+                ref_video_thumbnail_url: `https://img.youtube.com/vi/${ video.video_id }/sddefault.jpg`,
+                ref_video_thumbnail_lqip_url: `https://img.youtube.com/vi/${ video.video_id }/default.jpg`,
                 ref_video_publish_date_ts: Date.parse(video.video_publish_date_str) / 1000,
                 song_origin_artist: songMeta.artist,
                 song_title: songMeta.title,

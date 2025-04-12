@@ -10,8 +10,17 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
       <div class="card h-100 hover-bg-light ">
         <div class="card-img-top ratio ratio-16x9 ">
           <a :href="song.ref_video_url" class="d-flex align-items-center justify-content-center"
-             target="_blank"><img class="img-fluid w-100" :src="song.ref_video_thumbnail_url" :alt="song.song_title"
-                                  :title="song.song_title" loading="lazy"/></a>
+             target="_blank">
+            <img
+                v-lazy="{
+                  src: song.ref_video_thumbnail_url,
+                  loading: song.ref_video_thumbnail_lqip_url
+                }"
+                :alt="song.song_title"
+                :title="song.song_title"
+                class="img-fluid w-100"
+            />
+          </a>
         </div>
 
         <div class="card-body">

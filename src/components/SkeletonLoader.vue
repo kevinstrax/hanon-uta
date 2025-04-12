@@ -13,29 +13,29 @@ defineProps({
     <div v-for="i in skeletonCount" :key="i">
       <div class="card h-100">
         <!-- Picture area skeleton -->
-        <div class="card-img-top ratio ratio-16x9 bg-light placeholder-wave">
-          <div class="placeholder w-100 h-100"></div>
+        <div class="card-img-top ratio ratio-16x9 placeholder-wave">
+          <div class="placeholder w-100 h-100 bg-secondary-subtle"></div>
         </div>
 
         <!-- Content area skeleton -->
-        <div class="card-body" style="box-sizing: border-box;">
+        <div class="card-body" >
           <h6 class="card-title placeholder-glow">
-            <span class="placeholder col-8"></span>
+            <span class="placeholder col-8 bg-secondary-subtle"></span>
           </h6>
           <p class="card-text placeholder-glow">
             <small class="text-muted d-block">
-              <span class="placeholder col-6"></span>
+              <span class="placeholder col-6 bg-secondary-subtle"></span>
             </small>
           </p>
           <p class="card-text placeholder-glow">
             <small class="text-muted d-block">
-              <span class="placeholder col-10"></span>
-              <span class="placeholder col-12"></span>
+              <span class="placeholder col-10 bg-secondary-subtle"></span>
+              <span class="placeholder col-12 bg-secondary-subtle"></span>
             </small>
           </p>
           <p class="card-text placeholder-glow">
             <small class="text-muted d-block">
-              <span class="placeholder col-4"></span>
+              <span class="placeholder col-4 bg-secondary-subtle"></span>
             </small>
           </p>
         </div>
