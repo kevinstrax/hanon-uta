@@ -3,7 +3,7 @@ import type {Song} from '@/types/song';
 import type {Video} from "@/types/video";
 
 export async function loadSongs(v: string): Promise<Song[]> {
-    return parseSong(await loadVideos(v))
+    return loadVideos(v).then(parseSong);
 }
 
 async function loadVideos(v: string): Promise<Video[]> {
@@ -60,20 +60,20 @@ function parseSong(videos: Video[]): Song[] {
         });
     });
     // Sorting logic
-    songs.sort((a, b)=> {
-        return (b.ref_video_publish_date_ts + b.video_offset_ts) - (a.ref_video_publish_date_ts + a.video_offset_ts);
-    })/*.sort((a, b) => {
+    songs.sort((a, b) => {
         // Start in descending order by ref_video_publish_date_ts
-        if (a.ref_video_publish_date_ts > b.ref_video_publish_date_ts) {
-            return -1;
-        }
-        if (a.ref_video_publish_date_ts < b.ref_video_publish_date_ts) {
-            return 1;
-        }
-
+        const dateA = Number(a.ref_video_publish_date_ts ?? 0);
+        const dateB = Number(b.ref_video_publish_date_ts ?? 0);
+        if (dateA > dateB) return -1;
+        if (dateA < dateB) return 1;
         // If ref_video_publish_date_ts are equal, in ascending order by video_offset_ts
-        return a.video_offset_ts - b.video_offset_ts;
-    })*/;
+        const offsetA = Number(a.video_offset_ts ?? 0);
+        const offsetB = Number(b.video_offset_ts ?? 0);
+        return offsetA - offsetB;
+    });
+    /*for (let song of songs) {
+        console.log("%s, %s, %d, %d", song.ref_video_title, song.song_title, song.ref_video_publish_date_ts, song.video_offset_ts);
+    }*/
     return songs;
 }
 
