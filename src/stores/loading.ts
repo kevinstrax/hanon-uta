@@ -12,6 +12,7 @@ export const useLoadingStore = defineStore('loading', {
             this.isSongsLoad = false;
         },
         startSongsLoading() {
+            this.isInitialLoad = true;
             this.isSongsLoad = true;
         },
     }
