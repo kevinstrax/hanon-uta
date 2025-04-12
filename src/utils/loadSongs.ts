@@ -60,7 +60,9 @@ function parseSong(videos: Video[]): Song[] {
         });
     });
     // Sorting logic
-    songs.sort((a, b) => {
+    songs.sort((a, b)=> {
+        return b.ref_video_publish_date_ts - a.ref_video_publish_date_ts;
+    })/*.sort((a, b) => {
         // Start in descending order by ref_video_publish_date_ts
         if (a.ref_video_publish_date_ts > b.ref_video_publish_date_ts) {
             return -1;
@@ -71,7 +73,7 @@ function parseSong(videos: Video[]): Song[] {
 
         // If ref_video_publish_date_ts are equal, in ascending order by video_offset_ts
         return a.video_offset_ts - b.video_offset_ts;
-    });
+    })*/;
     return songs;
 }
 
