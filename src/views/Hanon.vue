@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import HelloWorld from './HelloWorld.vue'
-import { KANARU_HANON } from '@/config/constants';
+import HelloWorld from '../components/HelloWorld.vue'
+import { KANARU_HANON } from '@/config/constants.ts';
 
 </script>
 

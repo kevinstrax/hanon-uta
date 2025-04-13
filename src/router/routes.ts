@@ -6,13 +6,13 @@ const routes: AppRouteRecordRaw[] = [
     {
         path: '/',
         name: 'Hanon',
-        component: () => import('@/components/Hanon.vue'),
+        component: () => import('@/views/Hanon.vue'),
         meta: { title: '香鳴ハノン', mark: '🎀🎶' }
     },
     {
         path: '/saotomegabu',
         name: 'Gabu',
-        component: () => import('@/components/Gabu.vue'),
+        component: () => import('@/views/Gabu.vue'),
         meta: { title: '鎖乙女がぶ', mark: '🐺🩰' }
     },
 ]
