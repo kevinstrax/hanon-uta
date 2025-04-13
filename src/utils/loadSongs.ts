@@ -1,6 +1,7 @@
 // src/utils/loadSongs.ts
 import type {Song} from '@/types/song';
 import type {Video} from "@/types/video";
+import { parseTs, timeToSeconds } from './timeUtils'
 
 export async function loadSongs(v: string): Promise<Song[]> {
     return loadVideos(v).then(parseSong);
@@ -40,7 +41,7 @@ function parseSong(videos: Video[]): Song[] {
                  */
                 ref_video_thumbnail_url: `https://img.youtube.com/vi/${ video.video_id }/sddefault.jpg`,
                 ref_video_thumbnail_lqip_url: `https://img.youtube.com/vi/${ video.video_id }/default.jpg`,
-                ref_video_publish_date_ts: Date.parse(video.video_publish_date_str) / 1000,
+                ref_video_publish_date_ts: parseTs(video.video_publish_date_str),
                 song_origin_artist: songMeta.artist,
                 song_title: songMeta.title,
                 song_start_time: songMeta.time,
@@ -116,9 +117,4 @@ function parseSongTimeline(timelineStr: string): any {
     }
 
     return songs;
-}
-
-function timeToSeconds(timeStr: string): number {
-    const [hours, minutes, seconds] = timeStr.split(':').map(Number);
-    return hours * 3600 + minutes * 60 + seconds;
 }
