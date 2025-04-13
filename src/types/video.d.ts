@@ -1,4 +1,4 @@
-// src/types/video.ts
+// src/types/video.d.ts
 export interface Video {
     video_title: string;
     video_artist: string;

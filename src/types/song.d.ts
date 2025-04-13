@@ -1,4 +1,4 @@
-// src/types/song.ts
+// src/types/song.d.ts
 export interface Song {
     ref_video_title: string;
     ref_video_artist: string;
