@@ -15,6 +15,12 @@ const routes: AppRouteRecordRaw[] = [
         component: () => import('@/views/Gabu.vue'),
         meta: { title: '鎖乙女がぶ', mark: '🐺🩰' }
     },
+    {
+        path: '/akatsukiclara',
+        name: 'Clara',
+        component: () => import('@/views/Clara.vue'),
+        meta: { title: '暁月クララ', mark: '🎠💛' }
+    },
 ]
 
 export default routes
