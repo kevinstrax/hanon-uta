@@ -99,28 +99,28 @@ const changePage = (page: number) => {
 
   <!-- displays the current page number and total -->
   <div v-if="filteredSongs.length > 0"
-       class="text-center text-muted small mt-4 mb-3 d-flex justify-content-center align-items-center gap-2">
+       class="text-center text-muted small mt-4 mb-2 d-flex justify-content-center align-items-center gap-2">
     <input
         :class="{ disabled: currentPage === 1 }"
         aria-label="前のページ"
-        class="btn btn-sm btn-outline-primary rounded-end-0"
-        style="min-width: 43px"
+        class="btn btn-outline-primary rounded-end-0"
+        style="min-width: 48px"
         type="button"
         value="&lsaquo;"
         @click.prevent="changePage(currentPage - 1)"/>
     <!-- page jump -->
     <input
         v-model.number="goToPage"
-        class="form-control form-control-sm shadow-none"
+        class="form-control form-control-sm"
         min="1"
         :max="totalPages"
         style="width: 60px;"
         type="number"
         @keyup.enter="changePage(goToPage)"
     >
-    <span class="small text-muted">/ {{ totalPages }}ページ</span>
+    <span class="text-muted small">/ {{ totalPages }}ページ</span>
     <button
-        class="btn btn-sm btn-outline-primary"
+        class="btn btn-outline-primary btn-sm"
         @click="changePage(goToPage)"
     >
       移動
@@ -128,14 +128,14 @@ const changePage = (page: number) => {
     <input
         :class="{ disabled: currentPage === totalPages }"
         aria-label="次のページ"
-        class="btn btn-sm btn-outline-primary rounded-start-0"
-        style="min-width: 43px"
+        class="btn btn-outline-primary rounded-start-0"
+        style="min-width: 48px"
         type="button"
         value="&rsaquo;"
         @click.prevent="changePage(currentPage + 1)"/>
   </div>
 
-  <p class="text-center">
+  <p class="text-center mb-4">
     <small>{{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件</small>
   </p>
 
