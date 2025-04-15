@@ -89,7 +89,7 @@ const changePage = (page: number) => {
           type="search"
           class="form-control shadow-none"
           placeholder="曲名またはアーティスト名で検索..."
-          @input="currentPage = 1"
+          @input="currentPage = goToPage = 1"
       >
     </div>
   </div>
