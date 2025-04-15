@@ -18,7 +18,7 @@ export default defineConfig({
             deleteOriginFile: false
         }),
         Sitemap({
-            hostname: 'https://kevinstrax.github.io',
+            hostname: 'https://kevinstrax.github.io/hanon-uta',
             dynamicRoutes: [ '/hanon-uta', '/hanon-uta/#/saotomegabu' ], // Your list of routes
             exclude: [ // Excluded routes
                 '/',
