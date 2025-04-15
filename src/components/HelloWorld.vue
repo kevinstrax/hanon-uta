@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Song } from '@/types/song'
-import { ref, onMounted, computed } from 'vue'
+import { ref, nextTick, onMounted, onBeforeUnmount, computed } from 'vue'
 import { loadSongs } from '@/utils/loadSongs';
 import { useLoadingStore } from '@/stores/loading'
 import { DEFAULT_PAGE_SIZE } from '@/config/constants';
@@ -48,14 +48,36 @@ const totalPages = computed(() => {
 
 // change the page number
 const changePage = (page: number) => {
-  if (page >= 1 && page <= totalPages.value) {
-    currentPage.value = goToPage.value = page
-  } else if (page < 1){
-    currentPage.value = goToPage.value = 1
-  } else {
-    currentPage.value = goToPage.value = totalPages.value
+  if (currentPage.value === page) {
+    return;
   }
+
+  // Boundary checks
+  const validatedPage = Math.max(1, Math.min(page, totalPages.value));
+  currentPage.value = goToPage.value = validatedPage;
+
+  // Scroll to the top
+  nextTick(() => {
+    window.scrollTo({
+      top: 0,
+      // behavior: 'instant' // Optional smooth scrolling
+    });
+  });
 }
+const isSmallScreen = ref(false)
+
+const checkScreenSize = () => {
+  isSmallScreen.value = window.innerWidth <= 370
+}
+
+onMounted(() => {
+  checkScreenSize()
+  window.addEventListener('resize', checkScreenSize)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', checkScreenSize)
+})
 
 </script>
 
@@ -103,33 +125,34 @@ const changePage = (page: number) => {
     <input
         :class="{ disabled: currentPage === 1 }"
         aria-label="前のページ"
-        class="btn btn-outline-primary rounded-end-0"
-        style="min-width: 48px"
+        class="btn btn-light rounded-end-0 responsive-width"
+        style="min-width: 55px"
         type="button"
         value="&lsaquo;"
         @click.prevent="changePage(currentPage - 1)"/>
     <!-- page jump -->
     <input
         v-model.number="goToPage"
-        class="form-control form-control-sm"
+        class="form-control"
+        :class="{ 'form-control-sm': isSmallScreen }"
         min="1"
         :max="totalPages"
-        style="width: 60px;"
+        :style="{ width: isSmallScreen ? '60px' : '70px' }"
         type="number"
         @keyup.enter="changePage(goToPage)"
     >
-    <span class="text-muted small">/ {{ totalPages }}ページ</span>
-    <button
-        class="btn btn-outline-primary btn-sm"
+    <span class="text-muted text-nowrap" :class="{'small': isSmallScreen}">/ {{ totalPages }}<span class="d-none d-xxs-inline">ページ</span></span>
+    <input
+        type="button"
+        class="btn btn-light"
         @click="changePage(goToPage)"
-    >
-      移動
-    </button>
+        value="移動"
+    />
     <input
         :class="{ disabled: currentPage === totalPages }"
         aria-label="次のページ"
-        class="btn btn-outline-primary rounded-start-0"
-        style="min-width: 48px"
+        class="btn btn-light rounded-start-0 responsive-width"
+        style="min-width: 55px"
         type="button"
         value="&rsaquo;"
         @click.prevent="changePage(currentPage + 1)"/>
@@ -156,5 +179,18 @@ const changePage = (page: number) => {
 .hover-bg-light:hover img {
   transform: scale(1.05);
 }
+@media (min-width: 365px) {
+  .d-xxs-inline {
+    display: inline !important;
+  }
+}
+.responsive-width {
+  width: 100%; /* Default is 100% */
+}
 
+@media (min-width: 576px) { /* sm breakpoint */
+  .responsive-width {
+    width: auto !important; /* sm and above restore the auto width */
+  }
+}
 </style>
