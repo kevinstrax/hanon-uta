@@ -49,26 +49,13 @@ const totalPages = computed(() => {
 // change the page number
 const changePage = (page: number) => {
   if (page >= 1 && page <= totalPages.value) {
-    currentPage.value = page
+    currentPage.value = goToPage.value = page
+  } else if (page < 1){
+    currentPage.value = goToPage.value = 1
+  } else {
+    currentPage.value = goToPage.value = totalPages.value
   }
 }
-
-const paginationList = computed(() => {
-  const r = [];
-  if (totalPages.value < 7) {
-    for (let i = 1; i <= totalPages.value; i++) {
-      r.push(i);
-    }
-    return r;
-  }
-  if (currentPage.value < 4) {
-    return [1, 2, 3, 4, 0, totalPages.value];
-  }
-  if (currentPage.value < totalPages.value - 3) {
-    return [1, 0, currentPage.value - 1, currentPage.value, currentPage.value + 1, 0, totalPages.value];
-  }
-  return [1, -1, totalPages.value - 3, totalPages.value - 2, totalPages.value - 1, totalPages.value];
-})
 
 </script>
 
@@ -110,56 +97,47 @@ const paginationList = computed(() => {
   <!-- a list of songs -->
   <SongsList :paginated-songs="paginatedSongs"/>
 
-  <!-- Pagination controls -->
-  <nav aria-label="ページネーション" class="mt-4" v-if="totalPages > 1">
-    <ul class="pagination justify-content-center flex-wrap">
-
-      <li class="page-item" :class="{ disabled: currentPage === 1 }" v-if="currentPage > 1">
-        <a class="page-link" href="#" @click.prevent="changePage(currentPage - 1)" aria-label="前のページ">
-          &lsaquo;
-        </a>
-      </li>
-
-      <li v-for="i in paginationList" class="page-item" :class="{ active: currentPage === i, disabled: i <=0 }">
-        <template v-if="i <= 0">
-          <span class="page-link">...</span>
-        </template>
-        <template v-else>
-          <a class="page-link" href="#" @click.prevent="changePage(i)">{{i}}</a>
-        </template>
-      </li>
-
-      <li class="page-item" :class="{ disabled: currentPage === totalPages }" v-if="currentPage < totalPages">
-        <a class="page-link" href="#" @click.prevent="changePage(currentPage + 1)" aria-label="次のページ">
-          &rsaquo;
-        </a>
-      </li>
-    </ul>
-  </nav>
-
   <!-- displays the current page number and total -->
-  <div class="text-center text-muted small mt-2 mb-4" v-if="filteredSongs.length > 0">
-    {{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件
+  <div v-if="filteredSongs.length > 0"
+       class="text-center text-muted small mt-4 mb-3 d-flex justify-content-center align-items-center gap-2">
+    <input
+        :class="{ disabled: currentPage === 1 }"
+        aria-label="前のページ"
+        class="btn btn-sm btn-outline-primary rounded-end-0"
+        style="min-width: 43px"
+        type="button"
+        value="&lsaquo;"
+        @click.prevent="changePage(currentPage - 1)"/>
     <!-- page jump -->
-    <div class="d-flex justify-content-center align-items-center gap-2 mt-2" v-if="totalPages > 1">
-      <input
-          type="number"
-          v-model.number="goToPage"
-          min="1"
-          :max="totalPages"
-          class="form-control form-control-sm"
-          style="width: 60px;"
-          @keyup.enter="changePage(goToPage)"
-      >
-      <span class="small text-muted">/ {{ totalPages }}ページ</span>
-      <button
-          class="btn btn-sm btn-outline-primary"
-          @click="changePage(goToPage)"
-      >
-        移動
-      </button>
-    </div>
+    <input
+        v-model.number="goToPage"
+        class="form-control form-control-sm shadow-none"
+        min="1"
+        :max="totalPages"
+        style="width: 60px;"
+        type="number"
+        @keyup.enter="changePage(goToPage)"
+    >
+    <span class="small text-muted">/ {{ totalPages }}ページ</span>
+    <button
+        class="btn btn-sm btn-outline-primary"
+        @click="changePage(goToPage)"
+    >
+      移動
+    </button>
+    <input
+        :class="{ disabled: currentPage === totalPages }"
+        aria-label="次のページ"
+        class="btn btn-sm btn-outline-primary rounded-start-0"
+        style="min-width: 43px"
+        type="button"
+        value="&rsaquo;"
+        @click.prevent="changePage(currentPage + 1)"/>
   </div>
+
+  <p class="text-center">
+    <small>{{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件</small>
+  </p>
 
 </template>
 
