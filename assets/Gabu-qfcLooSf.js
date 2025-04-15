@@ -1,1 +1,0 @@
-import{S as e,H as o}from"./HelloWorld-Dp1rD_m8.js";import{d as r,c as a,u as t,o as n}from"./index-DKj4DqPP.js";const p=r({__name:"Gabu",setup(s){return(u,c)=>(n(),a(o,{vtuber:t(e)},null,8,["vtuber"]))}});export{p as default};
