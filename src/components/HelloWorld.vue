@@ -58,10 +58,10 @@ const changePage = (page: number) => {
 
   // Scroll to the top
   nextTick(() => {
-    window.scrollTo({
+   /* window.scrollTo({
       top: 0,
       // behavior: 'instant' // Optional smooth scrolling
-    });
+    });*/
   });
 }
 const isSmallScreen = ref(false)
