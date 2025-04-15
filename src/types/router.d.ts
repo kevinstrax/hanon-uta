@@ -1,10 +1,11 @@
 // src/types/router.d.ts
-import { RouteRecordRaw } from 'vue-router'
+import { RouteMeta, RouteRecordRaw } from 'vue-router'
 
 declare module 'vue-router' {
     interface RouteMeta {
         title: string,
-        mark?: string
+        mark?: string,
+        disabled?: boolean
     }
 }
 

@@ -1,6 +1,6 @@
 // src/utils/loadSongs.ts
-import type {Song} from '@/types/song';
-import type {Video} from "@/types/video";
+import type { Song } from '@/types/song';
+import type { Video } from "@/types/video";
 import { parseTs, timeToSeconds } from './timeUtils'
 
 export async function loadSongs(v: string): Promise<Song[]> {

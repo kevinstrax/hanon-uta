@@ -5,7 +5,8 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 
 const menuRoutes = computed(() => {
-  return router.getRoutes();
+  return router.getRoutes()
+      .filter(r => !r.meta.disabled);
 })
 
 const currentRouteTitle = computed(() => {

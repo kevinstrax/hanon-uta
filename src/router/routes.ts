@@ -19,7 +19,7 @@ const routes: AppRouteRecordRaw[] = [
         path: '/akatsukiclara',
         name: 'Clara',
         component: () => import('@/views/Clara.vue'),
-        meta: { title: '暁月クララ', mark: '🎠💛' }
+        meta: { title: '暁月クララ', mark: '🎠💛', disabled: true /* in progress, stay tuned */ }
     },
 ]
 

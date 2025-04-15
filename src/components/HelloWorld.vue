@@ -5,13 +5,10 @@ import { loadSongs } from '@/utils/loadSongs';
 import { useLoadingStore } from '@/stores/loading'
 import { DEFAULT_PAGE_SIZE } from '@/config/constants';
 import SongsList from "@/components/SongsList.vue";
-import SkeletonLoader from "@/components/SkeletonLoader.vue";
-import { storeToRefs } from "pinia";
 
 const props = defineProps<{ vtuber: string }>();
 const songs = ref<Song[]>([]);
 const loadingStore = useLoadingStore()
-const { isSongsLoad } = storeToRefs(loadingStore)
 
 onMounted(async () => {
   try {
@@ -111,8 +108,7 @@ const paginationList = computed(() => {
   </div>
 
   <!-- a list of songs -->
-  <SkeletonLoader v-if="isSongsLoad" />
-  <SongsList v-else :paginated-songs="paginatedSongs"/>
+  <SongsList :paginated-songs="paginatedSongs"/>
 
   <!-- Pagination controls -->
   <nav aria-label="ページネーション" class="mt-4" v-if="totalPages > 1">
