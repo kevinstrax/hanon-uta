@@ -1,1 +1,0 @@
-import{A as e,H as r}from"./HelloWorld-Nys5JOe7.js";import{d as o,c as a,u as t,o as n}from"./index-BzV56PDf.js";const p=o({__name:"Clara",setup(s){return(c,l)=>(n(),a(r,{vtuber:t(e)},null,8,["vtuber"]))}});export{p as default};
