@@ -7,7 +7,7 @@ body {
 }
 
 
-/* Or just for a specific class */
+/* Just for a specific class */
 .no-spinner::-webkit-outer-spin-button,
 .no-spinner::-webkit-inner-spin-button {
     -webkit-appearance: none;
