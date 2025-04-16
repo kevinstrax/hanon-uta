@@ -120,7 +120,7 @@ onBeforeUnmount(() => {
   <SongsList :paginated-songs="paginatedSongs"/>
 
   <!-- displays the current page number and total -->
-  <div v-if="filteredSongs.length > 0"
+  <div v-if="totalPages > 1"
        class="text-center text-muted small mt-4 mb-2 d-flex justify-content-center align-items-center gap-2">
     <input
         :class="{ disabled: currentPage === 1 }"
