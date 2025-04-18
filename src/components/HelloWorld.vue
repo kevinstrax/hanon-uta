@@ -1,14 +1,18 @@
 <script setup lang="ts">
 import type { Song } from '@/types/song'
-import { ref, nextTick, onMounted, onBeforeUnmount, computed } from 'vue'
+import { ref, nextTick, onMounted, onBeforeUnmount, watch, computed } from 'vue'
 import { loadSongs } from '@/utils/loadSongs';
 import { useLoadingStore } from '@/stores/loading'
-import { DEFAULT_PAGE_SIZE } from '@/config/constants';
+import { useRoute, useRouter  } from 'vue-router';
+import { useHead } from '@vueuse/head'
+import { SITE_BRAND, SITE_SUFFIX, DEFAULT_PAGE_SIZE, SITE_DESC } from '@/config/constants';
 import SongsList from "@/components/SongsList.vue";
 
 const props = defineProps<{ vtuber: string }>();
 const songs = ref<Song[]>([]);
 const loadingStore = useLoadingStore()
+const route = useRoute();
+const router = useRouter();
 
 onMounted(async () => {
   try {
@@ -19,10 +23,23 @@ onMounted(async () => {
   }
 })
 
-const searchQuery = ref('')
-const currentPage = ref(1)
+const searchQuery = ref(route.query.search as string || '');
+const currentPage = ref(1);
 const itemsPerPage = ref(DEFAULT_PAGE_SIZE) // each page displays 10 items
 const goToPage = ref(1);
+
+watch(
+    () => route.query.search,
+    (newSearchQuery) => {
+      searchQuery.value = newSearchQuery as string || '';
+    }
+);
+watch(searchQuery, (newSearchQuery) => {
+    router.push({
+      name: route.name, // Use route names to avoid hardcoding paths
+      query: { search: newSearchQuery || undefined }
+    });
+});
 
 // search function
 const filteredSongs = computed(() => {
@@ -32,6 +49,46 @@ const filteredSongs = computed(() => {
       song.song_title.toLowerCase().includes(query) ||
       song.song_origin_artist.toLowerCase().includes(query)
   )
+})
+
+const pageTitle = computed(() => {
+  const vtuber = `${ route.meta.title ?? SITE_BRAND }`;
+  const baseTitle = `${ vtuber }${ SITE_SUFFIX }`;
+
+  if (searchQuery.value && searchQuery.value.trim() !== '' && filteredSongs.value.length > 0) {
+    // Search results page
+    return `${ searchQuery.value.trim() }｜${ vtuber }が歌った回を一覧｜${ baseTitle }`;
+  }
+  return baseTitle;
+});
+
+const pageDescription = computed(() => {
+  const vtuber = `${ route.meta.title ?? SITE_BRAND }`;
+  if (searchQuery.value && searchQuery.value.trim() !== '' && filteredSongs.value.length > 0) {
+    // Search results page (with song title)
+    return `「${ searchQuery.value.trim() }」を${ vtuber }さんが歌った配信回を完全網羅。YouTube該当時間へ直接ジャンプできる非公式ファンサービス。`;
+  }
+  // Home/Default Page
+  return `${ vtuber }${ SITE_DESC }`;
+});
+
+useHead({
+  title: pageTitle,
+  meta: [
+    {
+      name: 'description',
+      content: pageDescription
+    },
+    // Added OGP tags to enhance the effect of social media sharing
+    {
+      property: 'og:title',
+      content: computed(() => pageTitle.value.replace(/（非公式）/, ''))
+    },
+    {
+      property: 'og:description',
+      content: computed(() => pageDescription.value?.replace(/非公式ファンサービス/, 'ファン制作応援ツール') ?? '')
+    }
+  ]
 })
 
 // paginated data
@@ -161,6 +218,12 @@ onBeforeUnmount(() => {
   <p class="text-center mb-4">
     <small>{{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件</small>
   </p>
+  <footer>
+    <p>人気検索:
+      <a href="/#/?search=世界一可愛い私">世界一可愛い私 香鳴ハノン</a> |
+      <a href="/#/?search=アイドル">アイドル 歌ってみた</a>
+    </p>
+  </footer>
 
 </template>
 
