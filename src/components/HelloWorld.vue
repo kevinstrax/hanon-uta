@@ -9,7 +9,7 @@ import { useHead } from '@vueuse/head'
 import type { VtuberValues } from '@/config/constants';
 import { DEFAULT_PAGE_SIZE, SITE_BRAND, SITE_DESC, SITE_SUFFIX } from '@/config/constants';
 import SongsList from "@/components/SongsList.vue";
-import PopularSearches from "@/components/PopularSearches.vue";
+import QuickSearches from "@/components/QuickSearches.vue";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
@@ -209,7 +209,7 @@ onBeforeUnmount(() => {
     <small>{{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件</small>
   </p>
 
-  <PopularSearches />
+  <QuickSearches />
 
 </template>
 
