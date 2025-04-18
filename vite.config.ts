@@ -3,13 +3,23 @@ import vue from '@vitejs/plugin-vue'
 import viteCompression from 'vite-plugin-compression';
 import Sitemap from 'vite-plugin-sitemap'
 import path from 'path';
-import { AKATSUKI_CLARA, KANARU_HANON, SAOTOME_GABU } from './src/config/constants.ts';
+import { VTUBERS } from './src/config/constants.ts';
 
-const vtubers: string[] = [ KANARU_HANON, SAOTOME_GABU, AKATSUKI_CLARA ];
+const vtubers = Object.values(VTUBERS).map(v => v.name);
+
+const isProduction = process.env.NODE_ENV === 'production'
+const base = isProduction ? '/hanon-uta/' : '/'
+
+const generateDynamicRoutes = () => {
+    return Object.values(VTUBERS).map(vtuber => {
+        const uri = vtuber.uri.startsWith('/') ? vtuber.uri : `/${vtuber.uri}`;
+        return base + (uri === '/' ? '' : uri.replace(/^\//, ''));
+    });
+};
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: process.env.NODE_ENV === 'production' ? '/hanon-uta/' : '/',
+    base: base,
     plugins: [ vue(),
         viteCompression({
             algorithm: 'gzip',
@@ -18,8 +28,8 @@ export default defineConfig({
             deleteOriginFile: false
         }),
         Sitemap({
-            hostname: 'https://kevinstrax.github.io/hanon-uta',
-            dynamicRoutes: [ '/hanon-uta', '/hanon-uta/saotomegabu' ], // Your list of routes
+            hostname: `https://kevinstrax.github.io${base}`,
+            dynamicRoutes: generateDynamicRoutes(), // Your list of routes
             exclude: [ // Excluded routes
                 '/',
                 '/google19312be880b2f09b',

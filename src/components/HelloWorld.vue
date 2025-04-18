@@ -6,12 +6,12 @@ import { generateMeta } from "@/utils/meta";
 import { useLoadingStore } from '@/stores/loading'
 import { useRoute, useRouter } from 'vue-router';
 import { useHead } from '@vueuse/head'
+import type { VtuberValues } from '@/config/constants';
 import { DEFAULT_PAGE_SIZE, SITE_BRAND, SITE_DESC, SITE_SUFFIX } from '@/config/constants';
 import SongsList from "@/components/SongsList.vue";
 import PopularSearches from "@/components/PopularSearches.vue";
 
-
-const props = defineProps<{ vtuber: string }>();
+const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
 const loadingStore = useLoadingStore()
 const route = useRoute();

@@ -1,26 +1,16 @@
 // src/router/routes.ts
 import type { AppRouteRecordRaw } from '@/types/router'
+import { VTUBERS } from '@/config/constants'
 
 // define an array of routes
-const routes: AppRouteRecordRaw[] = [
-    {
-        path: '/',
-        name: 'Hanon',
-        component: () => import('@/views/Hanon.vue'),
-        meta: { title: '香鳴ハノン', mark: '🎀🎶' }
-    },
-    {
-        path: '/saotomegabu',
-        name: 'Gabu',
-        component: () => import('@/views/Gabu.vue'),
-        meta: { title: '鎖乙女がぶ', mark: '🐺🩰' }
-    },
-    {
-        path: '/akatsukiclara',
-        name: 'Clara',
-        component: () => import('@/views/Clara.vue'),
-        meta: { title: '暁月クララ', mark: '🎠💛', disabled: true /* in progress, stay tuned */ }
-    },
-]
+const routes: AppRouteRecordRaw[] = Object.entries(VTUBERS).map(([key, vtuber]) => ({
+    path: vtuber.uri,
+    name: key,
+    component: () => import(`@/views/${vtuber.name}.vue`),
+    meta: {
+        title: vtuber.name_ja,
+        mark: vtuber.mark,
+    }
+}))
 
 export default routes

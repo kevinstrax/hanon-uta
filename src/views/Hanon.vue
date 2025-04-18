@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import HelloWorld from '../components/HelloWorld.vue'
-import { KANARU_HANON } from '@/config/constants.ts';
-
+import { VTUBERS } from '@/config/constants';
 </script>
 
 <template>
-  <HelloWorld :vtuber="KANARU_HANON" />
+  <HelloWorld :vtuber="VTUBERS.KANARU_HANON['name']" />
 </template>
 
 <style scoped>
