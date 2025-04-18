@@ -19,11 +19,10 @@ export default defineConfig({
         }),
         Sitemap({
             hostname: 'https://kevinstrax.github.io/hanon-uta',
-            dynamicRoutes: [ '/hanon-uta', '/hanon-uta/#/saotomegabu' ], // Your list of routes
+            dynamicRoutes: [ '/hanon-uta', '/hanon-uta/saotomegabu' ], // Your list of routes
             exclude: [ // Excluded routes
                 '/',
                 '/google19312be880b2f09b',
-                '/hanon-uta/#/akatsukiclara'
             ],
         }) ],
     resolve: {
