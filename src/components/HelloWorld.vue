@@ -1,14 +1,21 @@
 <script setup lang="ts">
 import type { Song } from '@/types/song'
-import { ref, nextTick, onMounted, onBeforeUnmount, computed } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { loadSongs } from '@/utils/loadSongs';
+import { generateMeta } from "@/utils/meta";
 import { useLoadingStore } from '@/stores/loading'
-import { DEFAULT_PAGE_SIZE } from '@/config/constants';
+import { useRoute, useRouter } from 'vue-router';
+import { useHead } from '@vueuse/head'
+import { DEFAULT_PAGE_SIZE, SITE_BRAND, SITE_DESC, SITE_SUFFIX } from '@/config/constants';
 import SongsList from "@/components/SongsList.vue";
+import PopularSearches from "@/components/PopularSearches.vue";
+
 
 const props = defineProps<{ vtuber: string }>();
 const songs = ref<Song[]>([]);
 const loadingStore = useLoadingStore()
+const route = useRoute();
+const router = useRouter();
 
 onMounted(async () => {
   try {
@@ -19,10 +26,26 @@ onMounted(async () => {
   }
 })
 
-const searchQuery = ref('')
-const currentPage = ref(1)
+const searchQuery = ref(route.query.search as string || '');
+const currentPage = ref(1);
 const itemsPerPage = ref(DEFAULT_PAGE_SIZE) // each page displays 10 items
 const goToPage = ref(1);
+
+watch(
+    () => route.query.search,
+    (newSearchQuery) => {
+      searchQuery.value = newSearchQuery as string || '';
+    }
+);
+watch(searchQuery, (newSearchQuery) => {
+    router.push({
+      name: route.name, // Use route names to avoid hardcoding paths
+      query: { search: newSearchQuery || undefined }
+    });
+    if (newSearchQuery && newSearchQuery.trim() !== '') {
+      currentPage.value = goToPage.value = 1;
+    }
+});
 
 // search function
 const filteredSongs = computed(() => {
@@ -33,6 +56,30 @@ const filteredSongs = computed(() => {
       song.song_origin_artist.toLowerCase().includes(query)
   )
 })
+
+const pageTitle = computed(() => {
+  const vtuber = `${ route.meta.title ?? SITE_BRAND }`;
+  const baseTitle = `${ vtuber }${ SITE_SUFFIX }`;
+
+  if (searchQuery.value && searchQuery.value.trim() !== '' && filteredSongs.value.length > 0) {
+    // Search results page
+    return `${ searchQuery.value.trim() }｜${ vtuber }が歌った回を一覧`;
+  }
+  return baseTitle;
+});
+
+const pageDescription = computed(() => {
+  const vtuber = `${ route.meta.title ?? SITE_BRAND }`;
+  if (searchQuery.value && searchQuery.value.trim() !== '' && filteredSongs.value.length > 0) {
+    // Search results page (with song title)
+    return `「${ searchQuery.value.trim() }」を${ vtuber }さんが歌った配信回を完全網羅。YouTube該当時間へ直接ジャンプできる非公式ファンサービス。`;
+  }
+  // Home/Default Page
+  return `${ vtuber }${ SITE_DESC }`;
+});
+
+// share head
+useHead(generateMeta(pageTitle, pageDescription, filteredSongs))
 
 // paginated data
 const paginatedSongs = computed(() => {
@@ -161,6 +208,8 @@ onBeforeUnmount(() => {
   <p class="text-center mb-4">
     <small>{{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件</small>
   </p>
+
+  <PopularSearches />
 
 </template>
 

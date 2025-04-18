@@ -1,5 +1,6 @@
 // src/router/index.ts
 import { createRouter, createWebHashHistory } from 'vue-router'
+import { SITE_BRAND, SITE_SUFFIX } from '../config/constants'
 import routes from './routes'
 
 const router = createRouter({
@@ -8,7 +9,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to) => {
-    document.title = `${ to.meta.title ?? '香鳴ハノン' }チャンネル歌枠検索（非公式）`
+    document.title = `${ to.meta.title ?? SITE_BRAND }${ SITE_SUFFIX }`
 })
 
 export default router
