@@ -13,7 +13,7 @@ const baseUrl = import.meta.env.BASE_URL; // get the base path
     <p class="popular-searches">人気検索:
       <template v-for="(item, _) in popularSearches" :key="item.query">
         <a
-            :href="`${baseUrl}#/?search=${encodeURIComponent(item.query)}`"
+            :href="`${baseUrl}?search=${encodeURIComponent(item.query)}`"
             class="text-nowrap"
         >
           {{ item.text }}
