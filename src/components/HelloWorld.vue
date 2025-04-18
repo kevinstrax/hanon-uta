@@ -2,6 +2,7 @@
 import type { Song } from '@/types/song'
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { loadSongs } from '@/utils/loadSongs';
+import { generateMeta } from "@/utils/meta";
 import { useLoadingStore } from '@/stores/loading'
 import { useRoute, useRouter } from 'vue-router';
 import { useHead } from '@vueuse/head'
@@ -77,24 +78,8 @@ const pageDescription = computed(() => {
   return `${ vtuber }${ SITE_DESC }`;
 });
 
-useHead({
-  title: pageTitle,
-  meta: [
-    {
-      name: 'description',
-      content: pageDescription
-    },
-    // Added OGP tags to enhance the effect of social media sharing
-    {
-      property: 'og:title',
-      content: computed(() => pageTitle.value.replace(/（非公式）/, ''))
-    },
-    {
-      property: 'og:description',
-      content: computed(() => pageDescription.value?.replace(/非公式ファンサービス/, 'ファン制作応援ツール') ?? '')
-    }
-  ]
-})
+// share head
+useHead(generateMeta(pageTitle, pageDescription, filteredSongs))
 
 // paginated data
 const paginatedSongs = computed(() => {
