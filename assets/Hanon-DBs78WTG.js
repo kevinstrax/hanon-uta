@@ -1,0 +1,1 @@
+import{H as e}from"./HelloWorld-C_pR3vyj.js";import{d as o,c as r,u as a,K as n,o as t}from"./index-Z67ITni2.js";const p=o({__name:"Hanon",setup(s){return(c,u)=>(t(),r(e,{vtuber:a(n)},null,8,["vtuber"]))}});export{p as default};
