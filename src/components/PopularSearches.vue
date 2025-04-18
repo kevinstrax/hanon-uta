@@ -10,15 +10,23 @@ const baseUrl = import.meta.env.BASE_URL; // get the base path
 </script>
 <template>
   <footer>
-    <p>人気検索:
-      <template v-for="(item, index) in popularSearches" :key="item.query">
+    <p class="popular-searches">人気検索:
+      <template v-for="(item, _) in popularSearches" :key="item.query">
         <a
             :href="`${baseUrl}#/?search=${encodeURIComponent(item.query)}`"
+            class="text-nowrap"
         >
           {{ item.text }}
         </a>
-        <span v-if="index < popularSearches.length - 1" > | </span>
       </template>
     </p>
   </footer>
 </template>
+
+<style scoped>
+.popular-searches a:not(:last-child)::after {
+  content: "|";
+  color: var(--bs-secondary);
+  margin: 0 0.44rem;
+}
+</style>
