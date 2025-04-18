@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import type { Song } from '@/types/song'
-import { ref, nextTick, onMounted, onBeforeUnmount, watch, computed } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { loadSongs } from '@/utils/loadSongs';
 import { useLoadingStore } from '@/stores/loading'
-import { useRoute, useRouter  } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { useHead } from '@vueuse/head'
-import { SITE_BRAND, SITE_SUFFIX, DEFAULT_PAGE_SIZE, SITE_DESC } from '@/config/constants';
+import { DEFAULT_PAGE_SIZE, SITE_BRAND, SITE_DESC, SITE_SUFFIX } from '@/config/constants';
 import SongsList from "@/components/SongsList.vue";
+import PopularSearches from "@/components/PopularSearches.vue";
+
 
 const props = defineProps<{ vtuber: string }>();
 const songs = ref<Song[]>([]);
@@ -218,12 +220,8 @@ onBeforeUnmount(() => {
   <p class="text-center mb-4">
     <small>{{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件</small>
   </p>
-  <footer>
-    <p>人気検索:
-      <a href="/#/?search=世界一可愛い私">世界一可愛い私 香鳴ハノン</a> |
-      <a href="/#/?search=アイドル">アイドル 歌ってみた</a>
-    </p>
-  </footer>
+
+  <PopularSearches />
 
 </template>
 
