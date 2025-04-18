@@ -33,9 +33,7 @@ export const generateMeta = (
             // Twitter Card
             {
                 name: 'twitter:card',
-                content: computed(() =>
-                    filteredSongs.value.length ? 'summary_large_image' : 'summary'
-                )
+                content: 'summary'
             },
             { name: 'twitter:title', content: titleText },
             { name: 'twitter:description', content: descriptionText },
