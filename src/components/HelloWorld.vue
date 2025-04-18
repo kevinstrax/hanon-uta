@@ -41,6 +41,9 @@ watch(searchQuery, (newSearchQuery) => {
       name: route.name, // Use route names to avoid hardcoding paths
       query: { search: newSearchQuery || undefined }
     });
+    if (newSearchQuery && newSearchQuery.trim() !== '') {
+      currentPage.value = goToPage.value = 1;
+    }
 });
 
 // search function
@@ -59,7 +62,7 @@ const pageTitle = computed(() => {
 
   if (searchQuery.value && searchQuery.value.trim() !== '' && filteredSongs.value.length > 0) {
     // Search results page
-    return `${ searchQuery.value.trim() }｜${ vtuber }が歌った回を一覧｜${ baseTitle }`;
+    return `${ searchQuery.value.trim() }｜${ vtuber }が歌った回を一覧`;
   }
   return baseTitle;
 });
