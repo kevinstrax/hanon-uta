@@ -21,6 +21,38 @@ async function loadVideos(v: string): Promise<Video[]> {
     );
 }
 
+// Shared time-based comparison function (descending by date, ascending by offset)
+function compareByTime(a: Song, b: Song): number {
+    // Primary sort: video publish date (newest first)
+    const dateA = Number(a.ref_video_publish_date_ts ?? 0);
+    const dateB = Number(b.ref_video_publish_date_ts ?? 0);
+    if (dateA > dateB) return -1;
+    if (dateA < dateB) return 1;
+
+    // Secondary sort: video offset timestamp (earlier first)
+    const offsetA = Number(a.video_offset_ts ?? 0);
+    const offsetB = Number(b.video_offset_ts ?? 0);
+    return offsetA - offsetB;
+}
+
+/*export function sortByName(songs: Song[]) {
+    songs.sort((a, b) => {
+        // Primary sort: Japanese song title (50音順)
+        const nameCompare = a.song_title.localeCompare(b.song_title, 'ja', {
+            sensitivity: 'base',  // Case-insensitive
+            numeric: true        // Natural number ordering
+        });
+
+        // Fallback to time-based sort when titles match
+        return nameCompare !== 0 ? nameCompare : compareByTime(a, b);
+    });
+}*/
+
+export function sortByTime(songs: Song[]) {
+    // Directly use the shared comparison function
+    songs.sort(compareByTime);
+}
+
 function parseSong(videos: Video[]): Song[] {
     const songs: Song[] = [];
 
@@ -61,20 +93,7 @@ function parseSong(videos: Video[]): Song[] {
         });
     });
     // Sorting logic
-    songs.sort((a, b) => {
-        // Start in descending order by ref_video_publish_date_ts
-        const dateA = Number(a.ref_video_publish_date_ts ?? 0);
-        const dateB = Number(b.ref_video_publish_date_ts ?? 0);
-        if (dateA > dateB) return -1;
-        if (dateA < dateB) return 1;
-        // If ref_video_publish_date_ts are equal, in ascending order by video_offset_ts
-        const offsetA = Number(a.video_offset_ts ?? 0);
-        const offsetB = Number(b.video_offset_ts ?? 0);
-        return offsetA - offsetB;
-    });
-    /*for (let song of songs) {
-        console.log("%s, %s, %d, %d", song.ref_video_title, song.song_title, song.ref_video_publish_date_ts, song.video_offset_ts);
-    }*/
+    sortByTime(songs);
     return songs;
 }
 

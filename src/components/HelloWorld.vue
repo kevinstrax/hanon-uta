@@ -49,13 +49,49 @@ watch(searchQuery, (newSearchQuery) => {
 
 // search function
 const filteredSongs = computed(() => {
-  if (!searchQuery.value) return songs.value
-  const query = searchQuery.value.trim().toLowerCase()
-  return songs.value.filter(song =>
-      song.song_title.toLowerCase().includes(query) ||
-      song.song_origin_artist.toLowerCase().includes(query)
-  )
-})
+  if (!searchQuery.value) return songs.value;
+
+  const query = searchQuery.value.trim().toLowerCase();
+  if (query === '') return songs.value;
+
+  // Score matches based on relevance
+  const scoredSongs = songs.value.map(song => {
+    const title = song.song_title.toLowerCase();
+    const artist = song.song_origin_artist.toLowerCase();
+
+    let score = 0;
+
+    // Exact match gets highest priority
+    if (title === query || artist === query) score += 100;
+
+    // Beginning matches score higher
+    if (title.startsWith(query)) score += 50;
+    if (artist.startsWith(query)) score += 30;
+
+    // Contains matches
+    if (title.includes(query)) score += 30;
+    if (artist.includes(query)) score += 20;
+
+    // Additional scoring factors could be added here
+    // (e.g., word boundary matches, partial matches, etc.)
+
+    return { ...song, _matchScore: score };
+  });
+
+  // Filter out non-matches and sort by score (descending)
+  const result = scoredSongs
+    .filter(song => song._matchScore > 0)
+    .sort((a, b) => {
+      // First by match score (higher first)
+      if (a._matchScore !== b._matchScore) {
+        return b._matchScore - a._matchScore;
+      }
+      // Then fall back to name sorting for equal scores
+      return a.song_title.localeCompare(b.song_title, 'ja');
+    });
+
+  return result.map(({ _matchScore, ...song }) => song); // Remove temporary score
+});
 
 const pageTitle = computed(() => {
   const vtuber = `${ route.meta.title ?? SITE_BRAND }`;
