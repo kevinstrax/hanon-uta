@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const quickSearches = [
-  { text: "世界一可愛い私 香鳴ハノン", query: "世界一可愛い私" },
+  { text: "RouteHeart", query: "RouteHeart" },
   { text: "アイドル 歌ってみた", query: "アイドル" },
-  { text: "夜に駆ける", query: "夜に駆ける" }
+  { text: "世界一可愛い私 香鳴ハノン", query: "世界一可愛い私" },
   // You can keep adding more
 ];
 
