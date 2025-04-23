@@ -104,13 +104,14 @@ function validSong(song: Song): boolean {
     return true;
 }
 
+const timeRegex = /^((?:\d+:\d{2}:\d{2})(?:\s*~\s*\d+:\d{2}:\d{2})?)(?:[;；]\s*(?:\d+:\d{2}:\d{2})(?:\s*~\s*\d+:\d{2}:\d{2})?)*\s+(.+)/;
+
 function parseSongTimeline(timelineStr: string): any {
     const lines = timelineStr.split('\n').filter(line => line.trim() !== '');
     const songs = [];
-    const timeRegex = /^((?:\d+:\d{2}:\d{2})(?:\s*~\s*\d+:\d{2}:\d{2})?)(?:[;；]\s*(?:\d+:\d{2}:\d{2})(?:\s*~\s*\d+:\d{2}:\d{2})?)*\s+(.+)/;
 
     for (const line of lines) {
-        const match = line.match(timeRegex);
+        const match = timeRegex.exec(line);
         if (!match) continue;
         const time = match[1];
         let songInfo = match[2];
