@@ -35,11 +35,14 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
               {{ song.ref_video_title }}
             </small>
           </p>
-          <p class="card-text hover-text-light"><small class="text-muted">
-            <a class="text-decoration-none text-secondary" :href="song.ref_video_url"
-               :title="song.song_title"
-               target="_blank">⤷ {{ song.song_start_time }}</a>
-          </small>
+          <p class="card-text hover-text-light">
+            <small class="text-muted">
+              <a :href="song.ref_video_url" :title="song.song_title"
+                 class="text-decoration-none text-secondary d-block"
+                 target="_blank">
+                <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                <span style="vertical-align: text-top" class="ms-1">{{ song.song_start_time }}</span></a>
+            </small>
           </p>
         </div>
       </div>
@@ -112,5 +115,11 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 
 .hover-text-light:hover {
   background-color: var(--bs-secondary-bg) !important;
+}
+.hover-text-light small a {
+  transition: transform 0.3s ease;
+}
+.hover-text-light small a:hover {
+  transform: translateX(6px);
 }
 </style>
