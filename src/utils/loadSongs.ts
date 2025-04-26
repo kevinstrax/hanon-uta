@@ -87,7 +87,7 @@ function parseSong(videos: Video[]): Song[] {
                     || song.song_title.includes('エンドカード')
                     || song.song_title.includes('END')
                     || song.song_title.includes('こんばんは')) return;
-                console.log("filtered song: %s", song.song_title)
+                // console.log("filtered song: %s", song.song_title)
             }
 
         });

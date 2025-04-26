@@ -17,27 +17,27 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
                   loading: song.ref_video_thumbnail_lqip_url
                 }"
                 :alt="song.song_title"
-                :title="song.song_title"
                 class="img-fluid w-100"
             />
           </a>
         </div>
 
         <div class="card-body">
-          <h6 class="card-title hover-text-light text-truncate" :title="song.song_title">
+          <h6 class="card-title hover-text-light text-truncate" v-tooltip="song.song_title">
             <i class="fas fa-music"></i>
             {{ song.song_title }}</h6>
           <p class="card-text hover-text-light"><small class="text-muted d-block text-truncate"
-                                                       :title="song.song_origin_artist"
+                                                       v-tooltip="song.song_origin_artist"
           >{{ song.song_origin_artist }}</small></p>
           <p class="card-text hover-text-light">
-            <small class="text-muted card-subtitle multi-line-ellipsis-2 " :title="song.ref_video_title">
+            <small class="text-muted card-subtitle multi-line-ellipsis-2 " v-tooltip="song.ref_video_title">
               {{ song.ref_video_title }}
             </small>
           </p>
           <p class="card-text hover-text-light">
             <small class="text-muted">
-              <a :href="song.ref_video_url" :title="song.song_title"
+              <a :href="song.ref_video_url"
+                 v-tooltip="song.song_title"
                  class="text-decoration-none text-secondary d-block"
                  target="_blank">
                 <i class="fa-solid fa-play" style="font-size: 12px"></i>
