@@ -38,7 +38,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
           <p class="card-text hover-text-light">
             <small class="text-muted">
               <a :href="song.ref_video_url"
-                 v-tooltip="song.song_title"
+                 :title="song.song_title"
                  class="text-decoration-none text-secondary d-block"
                  target="_blank">
                 <i class="fa-solid fa-play" style="font-size: 12px"></i>
