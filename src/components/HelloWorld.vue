@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Song } from '@/types/song'
-import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { loadSongs } from '@/utils/loadSongs';
 import { generateMeta } from "@/utils/meta";
 import { useLoadingStore } from '@/stores/loading'
