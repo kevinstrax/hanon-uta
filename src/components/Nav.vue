@@ -21,6 +21,7 @@ const currentRouteTitle = computed(() => {
         class="btn btn-light dropdown-toggle"
         type="button"
         id="dropdownMenuButton"
+        v-dropdown
         data-bs-toggle="dropdown"
         aria-expanded="false"
     >

@@ -138,14 +138,6 @@ const changePage = (page: number) => {
   // Boundary checks
   const validatedPage = Math.max(1, Math.min(page, totalPages.value));
   currentPage.value = goToPage.value = validatedPage;
-
-  // Scroll to the top
-  nextTick(() => {
-   /* window.scrollTo({
-      top: 0,
-      // behavior: 'instant' // Optional smooth scrolling
-    });*/
-  });
 }
 const isSmallScreen = ref(false)
 
@@ -166,7 +158,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="dropdown my-4 d-inline-block">
-    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+    <button class="btn btn-light dropdown-toggle" id="dropdownMenuReadme" data-bs-toggle="dropdown" type="button" v-dropdown>
       <i class="fa-solid fa-language fa-fw me-1"></i>
       説明書
     </button>
