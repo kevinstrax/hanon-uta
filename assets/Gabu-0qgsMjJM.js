@@ -1,0 +1,1 @@
+import{H as e}from"./HelloWorld-Di16ZOEf.js";import{d as o,c as r,u as a,o as t,V as n}from"./index-DAPBLVc5.js";const m=o({__name:"Gabu",setup(s){return(u,c)=>(t(),r(e,{vtuber:a(n).SAOTOME_GABU.name},null,8,["vtuber"]))}});export{m as default};
