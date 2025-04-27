@@ -17,6 +17,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
                   loading: song.ref_video_thumbnail_lqip_url
                 }"
                 :alt="song.song_title"
+                :title="song.song_title"
                 class="img-fluid w-100"
             />
           </a>
