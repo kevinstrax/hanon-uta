@@ -94,6 +94,7 @@ function parseSong(videos: Video[]): Song[] {
     });
     // Sorting logic
     sortByTime(songs);
+    listSongName(songs);
     return songs;
 }
 
@@ -137,4 +138,30 @@ function parseSongTimeline(timelineStr: string): any {
     }
 
     return songs;
+}
+
+export function listSongName(songs: Song[]): string[] {
+    // Use Map to count the number of occurrences of each song title
+    const songCountMap = new Map<string, number>();
+
+    songs.forEach(song => {
+        const title = song.song_title;
+        if (songCountMap.has(title)) {
+            songCountMap.set(title, songCountMap.get(title)! + 1);
+        } else {
+            songCountMap.set(title, 1);
+        }
+    });
+
+    // Convert the statistical results into an array and sort them in descending order by number of occurrences
+    const sortedSongTitles = Array.from(songCountMap.entries())
+        .sort((a, b) => b[1] - a[1])
+        .map(entry => entry[0]);
+
+    // Print the sorted results
+    sortedSongTitles.forEach(title => {
+        console.log("https://kevinstrax.github.io/hanon-uta/?search=" + title);
+    });
+
+    return sortedSongTitles;
 }
