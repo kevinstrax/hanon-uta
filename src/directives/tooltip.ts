@@ -29,9 +29,14 @@ const tooltipDirective: ObjectDirective<TooltipElement> = {
         initTooltip(el, binding)
     },
     updated(el, binding) {
-        if (binding.oldValue !== binding.value) {
-            destroyTooltip(el)
-            initTooltip(el, binding)
+        if (binding.oldValue === binding.value) {
+            return;
+        }
+        const tooltip = el._tooltip as Tooltip;
+        if (!tooltip) {
+            initTooltip(el, binding);
+        } else {
+            tooltip.setContent({'.tooltip-inner': binding.value});
         }
     },
     unmounted(el) {
