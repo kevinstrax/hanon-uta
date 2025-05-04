@@ -1,0 +1,1 @@
+import{d as o,o as t,u as s,c as a,a as n,b as r}from"./index-DIRyLRSj.js";const c={class:"row my-4 mt-0"},p=o({__name:"404",setup(m){return t(()=>{s().completeLoading()}),(d,e)=>(r(),a("div",c,e[0]||(e[0]=[n("h4",null,"あれ、ここはなにもありませんよ~",-1)])))}});export{p as default};

@@ -1,0 +1,1 @@
+import{H as e}from"./HelloWorld-D-ANQUtF.js";import{d as r,e as a,f as o,b as t,V as n}from"./index-DIRyLRSj.js";const m=r({__name:"Gabu",setup(s){return(u,_)=>(t(),a(e,{vtuber:o(n).SAOTOME_GABU.name},null,8,["vtuber"]))}});export{m as default};
