@@ -1,4 +1,4 @@
-const e="【歌枠/カラオケJOYSOUND for STREAMER】初めての歌枠♡アイドル縛り【#鎖乙女がぶ /パレプロ研究生】",t="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",o="nMmWVciVOgk",n="2024-12-27",i=`🐺💜セットリスト🐺💜
+const e="【歌枠/カラオケJOYSOUND for STREAMER】初めての歌枠♡アイドル縛り【#鎖乙女がぶ /パレプロ研究生】",t="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",o="nMmWVciVOgk",i="2024-12-27",n=`🐺💜セットリスト🐺💜
 0:00:00 OP
 0:02:05 開始、ミュート芸
 0:03:15 01.星間飛行～Freyja Ver.～／ワルキューレ
@@ -25,7 +25,7 @@ const e="【歌枠/カラオケJOYSOUND for STREAMER】初めての歌枠♡ア�
 
 おつがぶでした！
 歌声綺麗でとても良きでしたね〜！
-しっかりセトリも練ってきてて流石でした！`,te={video_title:e,video_artist:t,video_id:o,video_publish_date_str:n,song_timeline:i},ce=Object.freeze(Object.defineProperty({__proto__:null,default:te,song_timeline:i,video_artist:t,video_id:o,video_publish_date_str:n,video_title:e},Symbol.toStringTag,{value:"Module"})),_="【歌枠/カラオケJOYSOUND for STREAMER】新年1発目はオールジャンル歌枠っ！♡【#鎖乙女がぶ /パレプロ研究生】",s="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",d="_DNXs9CJh3w",l="2025-01-06",a=`歌枠配信、おつがぶ～
+しっかりセトリも練ってきてて流石でした！`,se={video_title:e,video_artist:t,video_id:o,video_publish_date_str:i,song_timeline:n},ge=Object.freeze(Object.defineProperty({__proto__:null,default:se,song_timeline:n,video_artist:t,video_id:o,video_publish_date_str:i,video_title:e},Symbol.toStringTag,{value:"Module"})),_="【歌枠/カラオケJOYSOUND for STREAMER】新年1発目はオールジャンル歌枠っ！♡【#鎖乙女がぶ /パレプロ研究生】",s="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",d="_DNXs9CJh3w",l="2025-01-06",a=`歌枠配信、おつがぶ～
 
 [セトリ]
 0:02:06 01. ムーンライト伝説 / DALI
@@ -41,7 +41,7 @@ const e="【歌枠/カラオケJOYSOUND for STREAMER】初めての歌枠♡ア�
 1:32:45 11. プラチナ / 坂本真綾
 1:41:36 12. アイのシナリオ / CHiCO with HoneyWorks
 1:49:01 13. きみわずらい / まねきケチャ
-1:59:56 14. コネクト / ClariS`,oe={video_title:_,video_artist:s,video_id:d,video_publish_date_str:l,song_timeline:a},ue=Object.freeze(Object.defineProperty({__proto__:null,default:oe,song_timeline:a,video_artist:s,video_id:d,video_publish_date_str:l,video_title:_},Symbol.toStringTag,{value:"Module"})),r="【ボカロ歌枠/カラオケJOYSOUND for STREAMER】懐かしのボカロ多め歌枠行くぞ～！！【#鎖乙女がぶ /パレプロ研究生】",v="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",c="6TsXn5PJzFo",u="2025-01-12",S=`🐺💜セットリスト🐺💜
+1:59:56 14. コネクト / ClariS`,de={video_title:_,video_artist:s,video_id:d,video_publish_date_str:l,song_timeline:a},pe=Object.freeze(Object.defineProperty({__proto__:null,default:de,song_timeline:a,video_artist:s,video_id:d,video_publish_date_str:l,video_title:_},Symbol.toStringTag,{value:"Module"})),r="【ボカロ歌枠/カラオケJOYSOUND for STREAMER】懐かしのボカロ多め歌枠行くぞ～！！【#鎖乙女がぶ /パレプロ研究生】",v="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",c="6TsXn5PJzFo",u="2025-01-12",S=`🐺💜セットリスト🐺💜
 0:00:00 OP 
 0:02:17 01.ワールドイズマイン / supercell
 0:12:28 02.おじゃま虫 / DECO*27
@@ -58,7 +58,7 @@ const e="【歌枠/カラオケJOYSOUND for STREAMER】初めての歌枠♡ア�
 初手ワールドイズマインで横転してしまいましたね…
 地球最後の告白をとかアスノヨゾラ哨戒班、ロミオとシンデレラもすごく好きな曲なので聴けてよかったです！
 
-ニアは初めて聴いたのですが、すごくきれいな曲で原曲も聴きたくなっちゃいました！`,ne={video_title:r,video_artist:v,video_id:c,video_publish_date_str:u,song_timeline:S},Se=Object.freeze(Object.defineProperty({__proto__:null,default:ne,song_timeline:S,video_artist:v,video_id:c,video_publish_date_str:u,video_title:r},Symbol.toStringTag,{value:"Module"})),b="【カラオケJOYSOUND for STREAMER】高評価150行くまで終われまてんアニソン歌枠！！【#鎖乙女がぶ /パレプロ研究生】",m="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",O="v8qbOm3yfRo",g="2025-01-25",f=`🐺💜セットリスト🐺💜
+ニアは初めて聴いたのですが、すごくきれいな曲で原曲も聴きたくなっちゃいました！`,le={video_title:r,video_artist:v,video_id:c,video_publish_date_str:u,song_timeline:S},fe=Object.freeze(Object.defineProperty({__proto__:null,default:le,song_timeline:S,video_artist:v,video_id:c,video_publish_date_str:u,video_title:r},Symbol.toStringTag,{value:"Module"})),b="【カラオケJOYSOUND for STREAMER】高評価150行くまで終われまてんアニソン歌枠！！【#鎖乙女がぶ /パレプロ研究生】",m="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",O="v8qbOm3yfRo",g="2025-01-25",p=`🐺💜セットリスト🐺💜
 0:00:00 OP
 0:03:08 開始
 0:11:21 01.ユメセカイ / 戸松遥 
@@ -80,7 +80,7 @@ const e="【歌枠/カラオケJOYSOUND for STREAMER】初めての歌枠♡ア�
 
 おつがぶでした～
 お昼からがぶちゃんのお歌いっぱい聴けて楽しかったです！
-最後の3曲はどれも初めて聴いたのですが、どれも良い曲でしたね…！`,ie={video_title:b,video_artist:m,video_id:O,video_publish_date_str:g,song_timeline:f},be=Object.freeze(Object.defineProperty({__proto__:null,default:ie,song_timeline:f,video_artist:m,video_id:O,video_publish_date_str:g,video_title:b},Symbol.toStringTag,{value:"Module"})),p="【歌枠/カラオケJOYSOUND for STREAMER】平成のJ-POP縛り歌枠‼懐かしさで震えて眠れ【#鎖乙女がぶ /パレプロ研究生】",$="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",A="x6c4IX-Z-YQ",h="2025-02-09",R=`0:00:00 OP
+最後の3曲はどれも初めて聴いたのですが、どれも良い曲でしたね…！`,ae={video_title:b,video_artist:m,video_id:O,video_publish_date_str:g,song_timeline:p},$e=Object.freeze(Object.defineProperty({__proto__:null,default:ae,song_timeline:p,video_artist:m,video_id:O,video_publish_date_str:g,video_title:b},Symbol.toStringTag,{value:"Module"})),f="【歌枠/カラオケJOYSOUND for STREAMER】平成のJ-POP縛り歌枠‼懐かしさで震えて眠れ【#鎖乙女がぶ /パレプロ研究生】",$="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",A="x6c4IX-Z-YQ",h="2025-02-09",R=`0:00:00 OP
 0:02:26 01. GLAMOROUS SKY / NANA starring MIKA NAKASHIMA
 0:16:00 02.八月の夜 / Silent Siren
 0:23:33 03.気まぐれロマンティック / いきものがかり
@@ -99,7 +99,7 @@ const e="【歌枠/カラオケJOYSOUND for STREAMER】初めての歌枠♡ア�
 1:55:30 16.乙女のポリシー / 石田よう子
 2:01:38 17.ロマンスの神様 / 広瀬 香美
 2:16:01 18.ヘビーローテーション / AKB48
-2:21:09 19.青春アミーゴ / 修二と彰`,_e={video_title:p,video_artist:$,video_id:A,video_publish_date_str:h,song_timeline:R},me=Object.freeze(Object.defineProperty({__proto__:null,default:_e,song_timeline:R,video_artist:$,video_id:A,video_publish_date_str:h,video_title:p},Symbol.toStringTag,{value:"Module"})),T="【歌枠/カラオケJOYSOUND for STREAMER】バレンタインのあま～い恋愛ソング召し上がれ♡【#鎖乙女がぶ /パレプロ研究生】",M="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",P="ZSoc5mLy9v0",E="2025-02-14",y=`🐺💜🎶セットリスト🐺💜🎶
+2:21:09 19.青春アミーゴ / 修二と彰`,re={video_title:f,video_artist:$,video_id:A,video_publish_date_str:h,song_timeline:R},Ae=Object.freeze(Object.defineProperty({__proto__:null,default:re,song_timeline:R,video_artist:$,video_id:A,video_publish_date_str:h,video_title:f},Symbol.toStringTag,{value:"Module"})),T="【歌枠/カラオケJOYSOUND for STREAMER】バレンタインのあま～い恋愛ソング召し上がれ♡【#鎖乙女がぶ /パレプロ研究生】",M="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",P="ZSoc5mLy9v0",E="2025-02-14",y=`🐺💜🎶セットリスト🐺💜🎶
 0:00:00 OP
 0:02:26 01.Love so sweet / 嵐
 0:14:13 02.あたしを彼女にしたいなら / コレサワ
@@ -120,18 +120,18 @@ const e="【歌枠/カラオケJOYSOUND for STREAMER】初めての歌枠♡ア�
 
 おつがぶでした～
 遅れ馳せながらセトリをば
-とっても甘々なセトリでたすかりすぎちゃいましたね…！`,se={video_title:T,video_artist:M,video_id:P,video_publish_date_str:E,song_timeline:y},Oe=Object.freeze(Object.defineProperty({__proto__:null,default:se,song_timeline:y,video_artist:M,video_id:P,video_publish_date_str:E,video_title:T},Symbol.toStringTag,{value:"Module"})),N="【 #Vアイドルが歌う2次元アイドル歌枠リレー 】7番手！作品被り無しで盛り上がるぞっ！【#鎖乙女がぶ /パレプロ研究生】",j="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",I="ZOYzqWUvWMQ",B="2025-03-01",C=`0:01:31 01.星間飛行 / ランカ・リー=中島愛 / マクロスF
+とっても甘々なセトリでたすかりすぎちゃいましたね…！`,ve={video_title:T,video_artist:M,video_id:P,video_publish_date_str:E,song_timeline:y},he=Object.freeze(Object.defineProperty({__proto__:null,default:ve,song_timeline:y,video_artist:M,video_id:P,video_publish_date_str:E,video_title:T},Symbol.toStringTag,{value:"Module"})),N="【 #Vアイドルが歌う2次元アイドル歌枠リレー 】7番手！作品被り無しで盛り上がるぞっ！【#鎖乙女がぶ /パレプロ研究生】",j="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",I="ZOYzqWUvWMQ",B="2025-03-01",C=`0:01:31 01.星間飛行 / ランカ・リー=中島愛 / マクロスF
 0:08:43 02. STAR☆T☆RAIN / B小町 ルビー(CV:伊駒ゆりえ) 有馬かな(CV:潘めぐみ) MEMちょ(CV:大久保瑠美) / 推しの子
 0:14:14 03.硝子ドール / もえ from STAR ANIS / アイカツ！
 0:20:45 04.Cutie Panther / BiBi ～絢瀬絵里(南條愛乃)、西木野真姫(Pile)、矢澤にこ(徳井青空) from μ's～ / ラブライブ！
-0:27:13 05.Starlight Prologue / Liella! / ラブライブ！スーパースター!!`,de={video_title:N,video_artist:j,video_id:I,video_publish_date_str:B,song_timeline:C},ge=Object.freeze(Object.defineProperty({__proto__:null,default:de,song_timeline:C,video_artist:j,video_id:I,video_publish_date_str:B,video_title:N},Symbol.toStringTag,{value:"Module"})),U="【歌枠/カラオケJOYSOUND for STREAMER】歌ったり喋ったり、寝たり。【#鎖乙女がぶ /パレプロ研究生】",D="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",G="Avby-tqdntY",K="2025-03-07",L=`0:00:00 OP
+0:27:13 05.Starlight Prologue / Liella! / ラブライブ！スーパースター!!`,ce={video_title:N,video_artist:j,video_id:I,video_publish_date_str:B,song_timeline:C},Re=Object.freeze(Object.defineProperty({__proto__:null,default:ce,song_timeline:C,video_artist:j,video_id:I,video_publish_date_str:B,video_title:N},Symbol.toStringTag,{value:"Module"})),U="【歌枠/カラオケJOYSOUND for STREAMER】歌ったり喋ったり、寝たり。【#鎖乙女がぶ /パレプロ研究生】",D="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",G="Avby-tqdntY",K="2025-03-07",L=`0:00:00 OP
 0:01:13 開始
 0:11:46 01.夜もすがら君想ふ / TOKOTOKO(西沢さんP)
 0:27:15 02.僕らの戦場～Freyja Solo Edition～ / ワルキューレ
 0:58:05 03.ANIMA / ReoNa
 1:08:00 04.未来予報ハレルヤ！ / Liella!
 1:49:57 05.シルエット / KANA-BOON
-2:00:43 06.ワルキューレは裏切らない / ワルキューレ`,le={video_title:U,video_artist:D,video_id:G,video_publish_date_str:K,song_timeline:L},fe=Object.freeze(Object.defineProperty({__proto__:null,default:le,song_timeline:L,video_artist:D,video_id:G,video_publish_date_str:K,video_title:U},Symbol.toStringTag,{value:"Module"})),Y="【歌枠/カラオケJOYSOUND for STREAMER】プロセカ収録ボカロ縛り歌枠！【#鎖乙女がぶ /パレプロ研究生】",z="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",k="VFnobl-_9MI",J="2025.04.06",F=`歌枠配信、おつがぶ～
+2:00:43 06.ワルキューレは裏切らない / ワルキューレ`,ue={video_title:U,video_artist:D,video_id:G,video_publish_date_str:K,song_timeline:L},Te=Object.freeze(Object.defineProperty({__proto__:null,default:ue,song_timeline:L,video_artist:D,video_id:G,video_publish_date_str:K,video_title:U},Symbol.toStringTag,{value:"Module"})),Y="【歌枠/カラオケJOYSOUND for STREAMER】プロセカ収録ボカロ縛り歌枠！【#鎖乙女がぶ /パレプロ研究生】",z="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",k="VFnobl-_9MI",J="2025.04.06",V=`歌枠配信、おつがぶ～
 
 [セトリ]
 0:02:12 01.少女レイ / みきとP
@@ -146,7 +146,7 @@ const e="【歌枠/カラオケJOYSOUND for STREAMER】初めての歌枠♡ア�
 1:37:42 10.エイリアンエイリアン / ナユタン星人
 1:46:21 11.嗚呼、素晴らしきニャン生 / Nem
 1:53:15 12.地球最後の告白を / kemu
-1:58:18 13.ニア / 夏代孝明`,ae={video_title:Y,video_artist:z,video_id:k,video_publish_date_str:J,song_timeline:F},pe=Object.freeze(Object.defineProperty({__proto__:null,default:ae,song_timeline:F,video_artist:z,video_id:k,video_publish_date_str:J,video_title:Y},Symbol.toStringTag,{value:"Module"})),V="【歌枠/カラオケJOYSOUND for STREAMER】高評価150行くまで終われない歌枠！！【#鎖乙女がぶ /パレプロ研究生】",w="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",W="QnjsujoZ-P8",Z="2025-04-12",Q=`🐺💜🎶セットリスト🐺💜🎶
+1:58:18 13.ニア / 夏代孝明`,Se={video_title:Y,video_artist:z,video_id:k,video_publish_date_str:J,song_timeline:V},Me=Object.freeze(Object.defineProperty({__proto__:null,default:Se,song_timeline:V,video_artist:z,video_id:k,video_publish_date_str:J,video_title:Y},Symbol.toStringTag,{value:"Module"})),F="【歌枠/カラオケJOYSOUND for STREAMER】高評価150行くまで終われない歌枠！！【#鎖乙女がぶ /パレプロ研究生】",w="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",Q="QnjsujoZ-P8",W="2025-04-12",Z=`🐺💜🎶セットリスト🐺💜🎶
 0:00:00 OP
 0:02:16 開始
 0:10:13 01.君の知らない物語 / supercell
@@ -174,7 +174,7 @@ Special Color初めて聴いたのですがとても良かったですね…
 ダイヤモンドハッピーやハート型ウイルス、おじゃま虫とかかわいすぎました！
 
 汗のお話助かりました🙏
-メンシも開始したらぜひ入りたいですし、どんなスタンプ使えるようになるのかも楽しみです！`,re={video_title:V,video_artist:w,video_id:W,video_publish_date_str:Z,song_timeline:Q},$e=Object.freeze(Object.defineProperty({__proto__:null,default:re,song_timeline:Q,video_artist:w,video_id:W,video_publish_date_str:Z,video_title:V},Symbol.toStringTag,{value:"Module"})),q="【 アイカツ！縛り歌枠 】アイカツ！のかっこいい＆キレイ系の歌を沢山歌う！！【#がぶかなめ #鎖乙女がぶ /#常磐カナメ】",H="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",x="dQeEFcMcQoU",X="2025-04-27",ee=`0:00:00 OP
+メンシも開始したらぜひ入りたいですし、どんなスタンプ使えるようになるのかも楽しみです！`,be={video_title:F,video_artist:w,video_id:Q,video_publish_date_str:W,song_timeline:Z},Pe=Object.freeze(Object.defineProperty({__proto__:null,default:be,song_timeline:Z,video_artist:w,video_id:Q,video_publish_date_str:W,video_title:F},Symbol.toStringTag,{value:"Module"})),q="【 アイカツ！縛り歌枠 】アイカツ！のかっこいい＆キレイ系の歌を沢山歌う！！【#がぶかなめ #鎖乙女がぶ /#常磐カナメ】",x="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",H="dQeEFcMcQoU",X="2025-04-27",ee=`0:00:00 OP
 0:03:01 開始
 0:04:22 01.Move on now! / わか・ふうり・すなお・りすこ from STAR☆ANIS
 0:11:50 02.オトナモード / りすこ・もな from STAR☆ANIS
@@ -182,4 +182,6 @@ Special Color初めて聴いたのですがとても良かったですね…
 0:28:10 04. Wake up my music / りさ・えいみ
 0:36:32 05. MUSIC of DREAM!!! / せな from AIKATSU☆STARS!
 0:46:34 06.Take Me Higher / りすこ・もえ・ゆな from STAR☆ANIS
-0:57:38 07.硝子ドール  / もえ from STAR☆ANIS`,ve={video_title:q,video_artist:H,video_id:x,video_publish_date_str:X,song_timeline:ee},Ae=Object.freeze(Object.defineProperty({__proto__:null,default:ve,song_timeline:ee,video_artist:H,video_id:x,video_publish_date_str:X,video_title:q},Symbol.toStringTag,{value:"Module"}));export{ce as _,ue as a,Se as b,be as c,me as d,Oe as e,ge as f,fe as g,pe as h,$e as i,Ae as j};
+0:57:38 07.硝子ドール  / もえ from STAR☆ANIS`,me={video_title:q,video_artist:x,video_id:H,video_publish_date_str:X,song_timeline:ee},Ee=Object.freeze(Object.defineProperty({__proto__:null,default:me,song_timeline:ee,video_artist:x,video_id:H,video_publish_date_str:X,video_title:q},Symbol.toStringTag,{value:"Module"})),te="【誕生日配信/カラオケJOYSOUND for STREAMER】最後に重大発表あり！！お誕生日当日！！私が主役だ！！【#鎖乙女がぶ /#パレプロ研究生 】",oe="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",ie="dQx_7qmiQ8w",ne="2025-05-01",_e=`1:38:38 1.SOS / 黛冬優子 (CV.幸村恵理)
+1:50:21 2.ハム太郎とっとこうた / ハムちゃんず
+1:53:16 3.夜もすがら君想ふ / TOKOTOKO(西沢さんP)`,Oe={video_title:te,video_artist:oe,video_id:ie,video_publish_date_str:ne,song_timeline:_e},ye=Object.freeze(Object.defineProperty({__proto__:null,default:Oe,song_timeline:_e,video_artist:oe,video_id:ie,video_publish_date_str:ne,video_title:te},Symbol.toStringTag,{value:"Module"}));export{ge as _,pe as a,fe as b,$e as c,Ae as d,he as e,Re as f,Te as g,Me as h,Pe as i,Ee as j,ye as k};
