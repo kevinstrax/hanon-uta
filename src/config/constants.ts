@@ -32,3 +32,4 @@ export type VtuberKeys = keyof Vtubers; // "KANARU_HANON" | "SAOTOME_GABU" | ...
 export type VtuberValues = Vtubers[VtuberKeys]['name']; // "hanon" | "Gabu" | "Clara"
 
 export const VTUBER_KEYS: string[] = Object.entries(VTUBERS).map(([key, _]) => key)
+export const VTUBER_URIS: string[] = Object.entries(VTUBERS).map(([_, value]) => value.uri)

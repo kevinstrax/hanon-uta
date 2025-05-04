@@ -45,6 +45,10 @@ export default defineConfig({
     },
     build: {
         rollupOptions: {
+            input: {
+                index: path.resolve(__dirname, 'index.html'),
+                page_404: path.resolve(__dirname, '404.html'),
+            },
             output: {
                 manualChunks: (id) =>
                     id.includes('/data/')
