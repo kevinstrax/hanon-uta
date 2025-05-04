@@ -1,12 +1,14 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
+import { VTUBER_KEYS } from "@/config/constants.ts";
 
 const router = useRouter()
 
 const menuRoutes = computed(() => {
   return router.getRoutes()
-      .filter(r => !r.meta.disabled);
+    .filter(r => !r.meta.disabled)
+    .filter(r => VTUBER_KEYS.includes(r.name as string));
 })
 
 const currentRouteTitle = computed(() => {

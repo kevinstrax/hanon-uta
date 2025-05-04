@@ -13,4 +13,19 @@ const routes: AppRouteRecordRaw[] = Object.entries(VTUBERS).map(([key, vtuber]) 
     }
 }))
 
+routes.push({
+        path: '/404.html',
+        name: '404',
+        component: () => import('@/views/404.vue'),
+    },
+    {
+        path: '/index.html',
+        name: 'index',
+        component: () => import((`@/views/${VTUBERS.KANARU_HANON.name}.vue`)),
+        meta: {
+            title: VTUBERS.KANARU_HANON.name_ja,
+            mark: VTUBERS.KANARU_HANON.mark
+        }
+    })
+
 export default routes
