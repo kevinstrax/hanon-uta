@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import { createHead } from '@vueuse/head'
 import { createPinia } from 'pinia'
-import './style.css'
+import './style.scss'
 import App from './App.vue'
 
 const head = createHead()
@@ -10,7 +10,6 @@ import tooltipDirective from '@/directives/tooltip.ts'
 import dropdownDirective from '@/directives/dropdown.ts'
 
 import VueLazyload from 'vue-lazyload'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 
