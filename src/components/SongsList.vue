@@ -24,8 +24,8 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
         </div>
 
         <div class="card-body">
-          <h6 class="card-title hover-text-light text-truncate d-flex align-items-center" v-tooltip="song.song_title">
-            <i class="fas fa-music me-1" style="margin-left: 1px;"></i>
+          <h6 class="card-title hover-text-light text-truncate d-flex" v-tooltip="song.song_title">
+            <i class="iconfont me-1">&#xf0064;</i>
             {{ song.song_title }}</h6>
           <p class="card-text hover-text-light"><small class="text-muted d-block text-truncate"
                                                        v-tooltip="song.song_origin_artist"
@@ -41,7 +41,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
                  :title="song.song_title"
                  class="text-decoration-none text-secondary d-block"
                  target="_blank">
-                <i class="fa-solid fa-play" style="font-size: 12px"></i>
+                <i class="iconfont" style="font-size: 12px">&#xe66e;</i>
                 <span style="vertical-align: text-top" class="ms-1">{{ song.song_start_time }}</span></a>
             </small>
           </p>

@@ -159,18 +159,20 @@ onBeforeUnmount(() => {
 <template>
   <div class="dropdown my-4 d-inline-block">
     <button class="btn btn-light dropdown-toggle" id="dropdownMenuReadme" data-bs-toggle="dropdown" type="button" v-dropdown>
-      <i class="fa-solid fa-language fa-fw me-1"></i>
+      <i class="iconfont me-1">&#xef1f;</i>
       説明書
     </button>
     <ul class="dropdown-menu dropdown-menu-end">
       <li>
         <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README.md" target="_blank" rel="noopener noreferrer">
-          <i class="fa-solid fa-file-lines fa-fw me-2"></i> 日本語
+          <i class="iconfont me-1">&#xe648;</i>
+          日本語
         </a>
       </li>
       <li>
         <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README_zh-CN.md" target="_blank" rel="noopener noreferrer">
-          <i class="fa-solid fa-file-lines fa-fw me-2"></i> 简体中文
+          <i class="iconfont me-1">&#xe648;</i>
+          简体中文
         </a>
       </li>
     </ul>
@@ -178,10 +180,11 @@ onBeforeUnmount(() => {
   <!-- search box -->
   <div class="row my-4 mt-0 clearfix">
     <div class="input-group">
-      <span class="input-group-text bg-light">
-        <i class="fas fa-search"></i>
-      </span>
+      <label for="searchInput" class="input-group-text bg-light">
+        <i class="iconfont">&#xe7ec;</i>
+      </label>
       <input
+          id="searchInput"
           v-model="searchQuery"
           type="search"
           class="form-control shadow-none"
