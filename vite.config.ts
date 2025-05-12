@@ -5,6 +5,7 @@ import viteCompression from 'vite-plugin-compression';
 import Sitemap from 'vite-plugin-sitemap'
 import path from 'path';
 import { VTUBERS } from './src/config/constants.ts';
+import { htmlPrerender } from "vite-plugin-html-prerender";
 
 const vtubers = Object.values(VTUBERS).map(v => v.name);
 
@@ -38,7 +39,20 @@ export default defineConfig({
                 '/',
                 '/google19312be880b2f09b',
             ],
-        }) ],
+        }),
+        htmlPrerender({
+            staticDir: path.join(__dirname, "dist"),
+            routes: Object.values(VTUBERS).map(vtuber => vtuber.uri),
+            selector: "#app",
+            minify: {
+                collapseBooleanAttributes: true,
+                collapseWhitespace: true,
+                decodeEntities: true,
+                keepClosingSlash: true,
+                sortAttributes: true
+            }
+        })
+    ],
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './src')
