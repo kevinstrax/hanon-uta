@@ -1,6 +1,7 @@
 // src/utils/loadSongs.ts
 import type { Song } from '@/types/song';
 import type { Video } from "@/types/video";
+import he from 'he'
 import { parseTs, timeToSeconds } from './timeUtils'
 
 export async function loadSongs(v: string): Promise<Song[]> {
@@ -75,7 +76,7 @@ function parseSong(videos: Video[]): Song[] {
                 ref_video_thumbnail_lqip_url: `https://img.youtube.com/vi/${ video.video_id }/mqdefault.jpg`,
                 ref_video_publish_date_ts: parseTs(video.video_publish_date_str),
                 song_origin_artist: songMeta.artist,
-                song_title: songMeta.title,
+                song_title: he.decode(songMeta.title),
                 song_start_time: songMeta.time,
                 video_offset_ts: offsetSec
             };

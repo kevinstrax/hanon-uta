@@ -25,7 +25,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 
         <div class="card-body">
           <h6 class="card-title hover-text-light text-truncate d-flex" v-tooltip="song.song_title">
-            <i class="iconfont me-1">&#xf0064;</i>
+            <i class="iconfont" style="margin-right: 1.5px">&#xe892;</i>
             {{ song.song_title }}</h6>
           <p class="card-text hover-text-light"><small class="text-muted d-block text-truncate"
                                                        v-tooltip="song.song_origin_artist"

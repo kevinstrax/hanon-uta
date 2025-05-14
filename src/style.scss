@@ -67,7 +67,9 @@ body {
 
 @font-face {
     font-family: 'iconfont';
-    src: url('iconfont/iconfont.ttf') format('truetype');
+    src: url('iconfont/iconfont.woff2?t=1747244009184') format('woff2'),
+    url('iconfont/iconfont.woff?t=1747244009184') format('woff'),
+    url('iconfont/iconfont.ttf?t=1747244009184') format('truetype');
 }
 
 .iconfont {
