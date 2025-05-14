@@ -123,4 +123,30 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 .hover-text-light small a:hover {
   transform: translateX(6px);
 }
+
+
+@keyframes titleIconShake {
+  0% {
+    transform: scale(1);
+  }
+
+  70%,73%{
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  77%,83%,90%,97%  {
+    transform: scale(1.2) rotate(3deg);
+  }
+
+  80%,87%,93%{
+    transform: scale(1.2) rotate(-3deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+.card-title:hover .iconfont {
+  animation: titleIconShake 1s ease 1s infinite alternate;
+}
 </style>
