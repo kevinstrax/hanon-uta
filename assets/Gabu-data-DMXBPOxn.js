@@ -131,7 +131,7 @@ const e="【歌枠/カラオケJOYSOUND for STREAMER】初めての歌枠♡ア�
 0:58:05 03.ANIMA / ReoNa
 1:08:00 04.未来予報ハレルヤ！ / Liella!
 1:49:57 05.シルエット / KANA-BOON
-2:00:43 06.ワルキューレは裏切らない / ワルキューレ`,Ee={video_title:B,video_artist:L,video_id:U,video_publish_date_str:K,song_timeline:D},Ue=Object.freeze(Object.defineProperty({__proto__:null,default:Ee,song_timeline:D,video_artist:L,video_id:U,video_publish_date_str:K,video_title:B},Symbol.toStringTag,{value:"Module"})),z="【歌枠/カラオケJOYSOUND for STREAMER】プロセカ収録ボカロ縛り歌枠！【#鎖乙女がぶ /パレプロ研究生】",Y="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",k="VFnobl-_9MI",F="2025.04.06",J=`歌枠配信、おつがぶ～
+2:00:43 06.ワルキューレは裏切らない / ワルキューレ`,Ee={video_title:B,video_artist:L,video_id:U,video_publish_date_str:K,song_timeline:D},Ue=Object.freeze(Object.defineProperty({__proto__:null,default:Ee,song_timeline:D,video_artist:L,video_id:U,video_publish_date_str:K,video_title:B},Symbol.toStringTag,{value:"Module"})),z="【歌枠/カラオケJOYSOUND for STREAMER】プロセカ収録ボカロ縛り歌枠！【#鎖乙女がぶ /パレプロ研究生】",Y="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",k="VFnobl-_9MI",F="2025-04-06",J=`歌枠配信、おつがぶ～
 
 [セトリ]
 0:02:12 01.少女レイ / みきとP
