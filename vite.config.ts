@@ -74,5 +74,15 @@ export default defineConfig({
                         : undefined
             }
         }
-    }
+    },
+    /*server: {
+        proxy: {
+            '/hanon-uta/api': {
+                target: 'http://localhost:18080', // Replace with the actual backend address
+                changeOrigin: true,
+                // If you need to handle WebSockets
+                // ws: true
+            }
+        }
+    }*/
 })
