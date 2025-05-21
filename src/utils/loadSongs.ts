@@ -1,11 +1,26 @@
 // src/utils/loadSongs.ts
 import type { Song } from '@/types/song';
+import type { SongsInfo } from '@/types/songs-info';
 import type { Video } from "@/types/video";
 import he from 'he'
 import { parseTs, timeToSeconds } from './timeUtils'
+import { apiRequest } from "@/api/instance.ts";
 
 export async function loadSongs(v: string): Promise<Song[]> {
     return loadVideos(v).then(parseSong);
+}
+
+export async function loadSongsByApi(v: string): Promise<Song[]> {
+    return await apiRequest<SongsInfo>({
+        url: '/list_songs',
+        params: {
+            v_tuber: v,
+            size: 90000000
+        }
+    }).then(res => {
+        sortByTime(res.song_list)
+        return res.song_list
+    })
 }
 
 async function loadVideos(v: string): Promise<Video[]> {
@@ -121,9 +136,9 @@ function parseSongTimeline(timelineStr: string): any {
         songInfo = songInfo.replace(/^\d+\.\s*/, '');
 
         // Split song and artist
-        let [title, artist] = songInfo.includes('/')
+        let [ title, artist ] = songInfo.includes('/')
             ? songInfo.split('/').map(part => part.trim())
-            : [songInfo.trim(), ''];
+            : [ songInfo.trim(), '' ];
 
         // Remove duration timestamp and anything after it from artist
         if (artist) {
