@@ -4,11 +4,11 @@ import type { ApiResponse } from "@/types/api-response";
 
 // Environmental judgment
 const isDev = import.meta.env.DEV
-const isProd = import.meta.env.PROD
+// const isProd = import.meta.env.PROD
 const isTest = import.meta.env.MODE === 'test'
 
 const instance = axios.create({
-    baseURL: isProd ? '/hanon-uta/api' : 'http://localhost:18080/hanon-uta/api',
+    baseURL: 'https://www.aquac.cc/hanon-uta/api',
     timeout: 10000,
     headers: {
         'Content-Type': 'application/json',
