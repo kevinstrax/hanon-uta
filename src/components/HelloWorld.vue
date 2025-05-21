@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Song } from '@/types/song'
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { loadSongsByApi } from '@/utils/loadSongs';
+import { loadSongs, loadSongsByApi } from '@/utils/loadSongs';
 import { generateMeta } from "@/utils/meta";
 import { useLoadingStore } from '@/stores/loading'
 import { useRoute, useRouter } from 'vue-router';
@@ -20,7 +20,11 @@ const router = useRouter();
 onMounted(async () => {
   try {
     loadingStore.startSongsLoading();
-    songs.value = await loadSongsByApi(props.vtuber);
+    if (window.location.host.includes('github.io')) {
+      songs.value = await loadSongs(props.vtuber);
+    } else {
+      songs.value = await loadSongsByApi(props.vtuber);
+    }
   } finally {
     loadingStore.completeLoading();
   }
