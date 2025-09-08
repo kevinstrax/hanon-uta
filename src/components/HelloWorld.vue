@@ -20,8 +20,8 @@ const router = useRouter();
 onMounted(async () => {
   try {
     loadingStore.startSongsLoading();
-    if (window.location.host.includes('github.io')) {
-      songs.value = await loadSongs(props.vtuber);
+    if (window.location.host.includes('aquac.cc')) {
+      songs.value = await loadSongsByApi(props.vtuber);
     } else {
       songs.value = await loadSongs(props.vtuber);
     }
