@@ -18,7 +18,10 @@ const generateDynamicRoutes = () => {
         return base + (uri === '/' ? '' : uri.replace(/^\//, ''));
     });
 };
-
+const defaultData : any = {
+    vtuber: '香鳴ハノン',
+    cover: 'https://img.youtube.com/vi/V8gg1yrTzsw/maxresdefault.jpg'
+};
 // https://vite.dev/config/
 export default defineConfig({
     base: base,
@@ -30,10 +33,7 @@ export default defineConfig({
                     filename: 'index.html',
                     template: 'index.html',
                     injectOptions: {
-                        data: {
-                            vtuber: '香鳴ハノン',
-                            cover: 'https://img.youtube.com/vi/V8gg1yrTzsw/maxresdefault.jpg'
-                        },
+                        data: defaultData,
                     }
                 },
             ]
@@ -71,10 +71,10 @@ export default defineConfig({
 
                 for (const template of templates) {
                     // Simple template replacement
-                    let processedContent = fs.readFileSync('index.html', 'utf-8')
+                    let processedContent = fs.readFileSync('dist/index.html', 'utf-8')
                     for (const [key, value] of Object.entries(template.data)) {
-                        processedContent = processedContent.replace(
-                            new RegExp(`<%=\\s*${key}\\s*%>|<%-\\s*${key}\\s*%>`, 'g'),
+                        processedContent = processedContent.replaceAll(
+                            defaultData[key],
                             value
                         )
                     }
