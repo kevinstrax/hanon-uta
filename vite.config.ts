@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import vue from '@vitejs/plugin-vue'
-import viteCompression from 'vite-plugin-compression';
 import Sitemap from 'vite-plugin-sitemap'
+import fs from 'fs'
 import path from 'path';
+import htmlMinifier from 'html-minifier'
 import { VTUBERS } from './src/config/constants.ts';
-import { htmlPrerender } from "vite-plugin-html-prerender";
 
 const vtubers = Object.values(VTUBERS).map(v => v.name);
 
@@ -24,13 +24,19 @@ export default defineConfig({
     base: base,
     plugins: [ vue(),
         createHtmlPlugin({
-            minify: true
-        }),
-        viteCompression({
-            algorithm: 'gzip',
-            ext: '.gz',
-            threshold: 10240,
-            deleteOriginFile: false
+            minify: true,
+            pages: [
+                {
+                    filename: 'index.html',
+                    template: 'index.html',
+                    injectOptions: {
+                        data: {
+                            vtuber: '香鳴ハノン',
+                            cover: 'https://img.youtube.com/vi/V8gg1yrTzsw/maxresdefault.jpg'
+                        },
+                    }
+                },
+            ]
         }),
         Sitemap({
             hostname: `https://kevinstrax.github.io${base}`,
@@ -40,18 +46,64 @@ export default defineConfig({
                 '/google19312be880b2f09b',
             ],
         }),
-        htmlPrerender({
-            staticDir: path.join(__dirname, "dist"),
-            routes: Object.values(VTUBERS).map(vtuber => vtuber.uri),
-            selector: "#app",
-            minify: {
-                collapseBooleanAttributes: true,
-                collapseWhitespace: true,
-                decodeEntities: true,
-                keepClosingSlash: true,
-                sortAttributes: true
+        // Custom HTML generation plugin
+        {
+            name: 'multi-page-html',
+            apply: 'build',
+            enforce: 'post',
+            async writeBundle() {
+                const templates = [
+                    {
+                        outputPath: 'saotomegabu/index.html',
+                        data: {
+                            vtuber: '鎖乙女がぶ',
+                            cover: 'https://img.youtube.com/vi/nMmWVciVOgk/maxresdefault.jpg'
+                        }
+                    },
+                    {
+                        outputPath: 'akatsukiclara/index.html',
+                        data: {
+                            vtuber: '暁月クララ',
+                            cover: 'https://img.youtube.com/vi/iavuOMwYjpg/maxresdefault.jpg'
+                        }
+                    },
+                ]
+
+                for (const template of templates) {
+                    // Simple template replacement
+                    let processedContent = fs.readFileSync('index.html', 'utf-8')
+                    for (const [key, value] of Object.entries(template.data)) {
+                        processedContent = processedContent.replace(
+                            new RegExp(`<%=\\s*${key}\\s*%>|<%-\\s*${key}\\s*%>`, 'g'),
+                            value
+                        )
+                    }
+                    // HTML compression
+                    const minifiedContent = htmlMinifier.minify(processedContent, {
+                        collapseWhitespace: true,
+                        removeComments: true,
+                        removeRedundantAttributes: true,
+                        removeScriptTypeAttributes: true,
+                        removeStyleLinkTypeAttributes: true,
+                        useShortDoctype: true,
+                        minifyCSS: true,
+                        minifyJS: true,
+                        minifyURLs: true,
+                        removeAttributeQuotes: false, // keep attribute quotes to avoid problems
+                        removeOptionalTags: false     // Maintain the integrity of optional labels
+                    })
+                    // create a directory and write to the file
+                    const outputDir = path.dirname(template.outputPath)
+                    const fullOutputDir = path.join('dist', outputDir)
+                    if (!fs.existsSync(fullOutputDir)) {
+                        fs.mkdirSync(fullOutputDir, { recursive: true })
+                    }
+
+                    fs.writeFileSync(path.join('dist', template.outputPath), minifiedContent)
+                    console.log('Generated:', template.outputPath)
+                }
             }
-        })
+        }
     ],
     resolve: {
         alias: {
