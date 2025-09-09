@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { Song } from '@/types/song'
+import type { SongMetaGroup } from "@/types/song-meta";
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { loadSongs, loadSongsByApi } from '@/utils/loadSongs';
+import { getGroupedSongMetas, loadSongs, loadSongsByApi } from '@/utils/loadSongs';
 import { generateMeta } from "@/utils/meta";
 import { useLoadingStore } from '@/stores/loading'
 import { useRoute, useRouter } from 'vue-router';
@@ -13,6 +14,7 @@ import QuickSearches from "@/components/QuickSearches.vue";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
+const songMetaGroups = ref<SongMetaGroup[]>([]);
 const loadingStore = useLoadingStore()
 const route = useRoute();
 const router = useRouter();
@@ -24,6 +26,7 @@ onMounted(async () => {
       songs.value = await loadSongsByApi(props.vtuber);
     } else {
       songs.value = await loadSongs(props.vtuber);
+      songMetaGroups.value = getGroupedSongMetas(songs.value);
     }
   } finally {
     loadingStore.completeLoading();
@@ -181,6 +184,49 @@ onBeforeUnmount(() => {
       </li>
     </ul>
   </div>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item" v-for="(songMetaGroup, idx) in songMetaGroups"  >
+              <h2 class="accordion-header" :id="'flush-heading' + idx">
+                <!--data-bs-toggle="collapse"-->
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        :data-bs-target="'#flush-collapse' + idx" aria-expanded="false" :aria-controls="'flush-collapse' + idx">
+                  {{songMetaGroup.group_name}}
+                </button>
+              </h2>
+              <div :id="'flush-collapse' + idx" class="accordion-collapse collapse"
+                   :aria-labelledby="'flush-heading' + idx" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item" v-for="songMeta in songMetaGroup.song_metas">{{songMeta.title}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- search box -->
   <div class="row my-4 mt-0 clearfix">
     <div class="input-group">

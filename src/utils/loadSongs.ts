@@ -5,6 +5,150 @@ import type { Video } from "@/types/video";
 import he from 'he'
 import { parseTs, timeToSeconds } from './timeUtils'
 import { apiRequest } from "@/api/instance.ts";
+import type { SongMetaGroup } from "@/types/song-meta";
+
+export function getGroupedSongMetas(songs: Song[]): SongMetaGroup[] {
+    // 使用 Map 来去重并保留首个 artist
+    const titleMap = new Map<string, string>();
+
+    songs.forEach(song => {
+        if (song.song_title && !titleMap.has(song.song_title)) {
+            titleMap.set(song.song_title, song.song_origin_artist || '');
+        }
+    });
+
+    // 定义分组映射
+    const groups: { [key: string]: { title: string; artist: string }[] } = {
+        '0-9・記号': [],
+        'A-Z': [],
+        '漢字': [],
+        'あ': [],
+        'か': [],
+        'さ': [],
+        'た': [],
+        'な': [],
+        'は': [],
+        'ま': [],
+        'や': [],
+        'ら': [],
+        'わ': []
+    };
+
+    const collator = new Intl.Collator('ja');
+
+    // 将歌名分类到对应的组
+    titleMap.forEach((artist, title) => {
+        if (!title || title.trim() === '') {
+            groups['0-9・記号'].push({ title, artist });
+            return;
+        }
+
+        const firstChar = title.charAt(0);
+
+        // 数字开头
+        if (/[0-9]/.test(firstChar)) {
+            groups['0-9・記号'].push({ title, artist });
+            return;
+        }
+
+        // 英文字母开头（A-Z）
+        if (/[A-Za-z]/.test(firstChar)) {
+            groups['A-Z'].push({ title, artist });
+            return;
+        }
+
+        // 符号开头
+        if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(firstChar)) {
+            groups['0-9・記号'].push({ title, artist });
+            return;
+        }
+
+        // 汉字开头（中日韩统一表意文字）
+        if (/[\u4E00-\u9FFF\u3400-\u4DBF]/.test(firstChar)) {
+            groups['漢字'].push({ title, artist });
+            return;
+        }
+
+        // 日语假名开头（包括ヴ等特殊假名）
+        if (/[ぁ-んァ-ヴ]/.test(firstChar)) {
+            // 将片假名转换为平假名以便分类
+            let hiraganaChar = firstChar;
+            if (/[ァ-ヴ]/.test(firstChar)) {
+                // 特殊处理ヴ系列
+                if (firstChar === 'ヴ') {
+                    groups['は'].push({ title, artist });
+                    return;
+                }
+                // 普通片假名转平假名
+                hiraganaChar = String.fromCharCode(firstChar.charCodeAt(0) - 0x60);
+            }
+
+            // 根据平假名确定分组
+            if (/[あいうえおぁぃぅぇぉ]/.test(hiraganaChar)) {
+                groups['あ'].push({ title, artist });
+            } else if (/[かきくけこがぎぐげご]/.test(hiraganaChar)) {
+                groups['か'].push({ title, artist });
+            } else if (/[さしすせそざじずぜぞ]/.test(hiraganaChar)) {
+                groups['さ'].push({ title, artist });
+            } else if (/[たちつてとだぢづでど]/.test(hiraganaChar)) {
+                groups['た'].push({ title, artist });
+            } else if (/[なにぬねの]/.test(hiraganaChar)) {
+                groups['な'].push({ title, artist });
+            } else if (/[はひふへほばびぶべぼぱぴぷぺぽ]/.test(hiraganaChar)) {
+                groups['は'].push({ title, artist });
+            } else if (/[まみむめも]/.test(hiraganaChar)) {
+                groups['ま'].push({ title, artist });
+            } else if (/[やゆよ]/.test(hiraganaChar)) {
+                groups['や'].push({ title, artist });
+            } else if (/[らりるれろ]/.test(hiraganaChar)) {
+                groups['ら'].push({ title, artist });
+            } else if (/[わをん]/.test(hiraganaChar)) {
+                groups['わ'].push({ title, artist });
+            } else {
+                groups['0-9・記号'].push({ title, artist });
+            }
+            return;
+        }
+
+        // 其他情况归入符号组
+        groups['0-9・記号'].push({ title, artist });
+    });
+
+    // 对每个组内的歌名进行日语排序
+    Object.keys(groups).forEach(groupName => {
+        groups[groupName].sort((a, b) => collator.compare(a.title, b.title));
+    });
+
+    // 转换为数组格式并按组名排序
+    const groupOrder = ['0-9・記号', 'A-Z', '漢字', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'ヤ', 'ら', 'わ'];
+
+    return groupOrder
+        .filter(groupName => groups[groupName] && groups[groupName].length > 0)
+        .map(groupName => ({
+            group_name: getDisplayGroupName(groupName),
+            song_metas: groups[groupName]
+        }));
+}
+
+// 获取显示用的组名
+function getDisplayGroupName(groupKey: string): string {
+    const displayNames: { [key: string]: string } = {
+        '0-9・記号': '0-9・記号',
+        'A-Z': 'A-Z',
+        '漢字': '漢字',
+        'あ': 'あ行',
+        'か': 'か行',
+        'さ': 'さ行',
+        'た': 'た行',
+        'な': 'な行',
+        'は': 'は行',
+        'ま': 'ま行',
+        'や': 'や行',
+        'ら': 'ら行',
+        'わ': 'わ行'
+    };
+    return displayNames[groupKey] || groupKey;
+}
 
 export async function loadSongs(v: string): Promise<Song[]> {
     return loadVideos(v).then(parseSong);

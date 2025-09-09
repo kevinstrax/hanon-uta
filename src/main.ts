@@ -7,10 +7,9 @@ import App from './App.vue'
 const head = createHead()
 import router from './router'
 import tooltipDirective from '@/directives/tooltip.ts'
-import dropdownDirective from '@/directives/dropdown.ts'
 
 import VueLazyload from 'vue-lazyload'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import 'bootstrap'
 
 
 const app = createApp(App);
@@ -25,6 +24,5 @@ app.use(VueLazyload, {
 app.use(router);
 
 app.directive('tooltip', tooltipDirective);
-app.directive('dropdown', dropdownDirective);
 
 app.mount('#app');
