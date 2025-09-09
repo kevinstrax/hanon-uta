@@ -5,6 +5,150 @@ import type { Video } from "@/types/video";
 import he from 'he'
 import { parseTs, timeToSeconds } from './timeUtils'
 import { apiRequest } from "@/api/instance.ts";
+import type { SongMetaGroup } from "@/types/song-meta";
+
+export function getGroupedSongMetas(songs: Song[]): SongMetaGroup[] {
+    // Use Map to remove and retain the first artist
+    const titleMap = new Map<string, string>();
+
+    songs.forEach(song => {
+        if (song.song_title && !titleMap.has(song.song_title)) {
+            titleMap.set(song.song_title, song.song_origin_artist || '');
+        }
+    });
+
+    // Define group mappings
+    const groups: { [key: string]: { title: string; artist: string }[] } = {
+        '0-9・記号': [],
+        'A-Z': [],
+        '漢字': [],
+        'あ': [],
+        'か': [],
+        'さ': [],
+        'た': [],
+        'な': [],
+        'は': [],
+        'ま': [],
+        'や': [],
+        'ら': [],
+        'わ': []
+    };
+
+    const collator = new Intl.Collator('ja');
+
+    // Categorize song titles into corresponding groups
+    titleMap.forEach((artist, title) => {
+        if (!title || title.trim() === '') {
+            groups['0-9・記号'].push({ title, artist });
+            return;
+        }
+
+        const firstChar = title.charAt(0);
+
+        // Numbers begin
+        if (/[0-9]/.test(firstChar)) {
+            groups['0-9・記号'].push({ title, artist });
+            return;
+        }
+
+        // English letters starting (A-Z)
+        if (/[A-Za-z]/.test(firstChar)) {
+            groups['A-Z'].push({ title, artist });
+            return;
+        }
+
+        // symbol begins
+        if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(firstChar)) {
+            groups['0-9・記号'].push({ title, artist });
+            return;
+        }
+
+        // Beginning of Chinese characters (unified ideograms of Chinese, Japanese, and Korean characters)
+        if (/[\u4E00-\u9FFF\u3400-\u4DBF]/.test(firstChar)) {
+            groups['漢字'].push({ title, artist });
+            return;
+        }
+
+        // Japanese kana beginning (including vu and other special kana)
+        if (/[ぁ-んァ-ヴ]/.test(firstChar)) {
+            // Convert katakana to hiragana for classification
+            let hiraganaChar = firstChar;
+            if (/[ァ-ヴ]/.test(firstChar)) {
+                // 特殊处理ヴ系列
+                if (firstChar === 'ヴ') {
+                    groups['は'].push({ title, artist });
+                    return;
+                }
+                // Ordinary katakana to hiragana
+                hiraganaChar = String.fromCharCode(firstChar.charCodeAt(0) - 0x60);
+            }
+
+            // Grouping is determined according to hiragana
+            if (/[あいうえおぁぃぅぇぉ]/.test(hiraganaChar)) {
+                groups['あ'].push({ title, artist });
+            } else if (/[かきくけこがぎぐげご]/.test(hiraganaChar)) {
+                groups['か'].push({ title, artist });
+            } else if (/[さしすせそざじずぜぞ]/.test(hiraganaChar)) {
+                groups['さ'].push({ title, artist });
+            } else if (/[たちつてとだぢづでど]/.test(hiraganaChar)) {
+                groups['た'].push({ title, artist });
+            } else if (/[なにぬねの]/.test(hiraganaChar)) {
+                groups['な'].push({ title, artist });
+            } else if (/[はひふへほばびぶべぼぱぴぷぺぽ]/.test(hiraganaChar)) {
+                groups['は'].push({ title, artist });
+            } else if (/[まみむめも]/.test(hiraganaChar)) {
+                groups['ま'].push({ title, artist });
+            } else if (/[やゆよ]/.test(hiraganaChar)) {
+                groups['や'].push({ title, artist });
+            } else if (/[らりるれろ]/.test(hiraganaChar)) {
+                groups['ら'].push({ title, artist });
+            } else if (/[わをん]/.test(hiraganaChar)) {
+                groups['わ'].push({ title, artist });
+            } else {
+                groups['0-9・記号'].push({ title, artist });
+            }
+            return;
+        }
+
+        // Other cases are grouped into the symbol group
+        groups['0-9・記号'].push({ title, artist });
+    });
+
+    // Sort the song titles in each group in Japanese
+    Object.keys(groups).forEach(groupName => {
+        groups[groupName].sort((a, b) => collator.compare(a.title, b.title));
+    });
+
+    // Convert to array format and sort by group name
+    const groupOrder = ['0-9・記号', 'A-Z', '漢字', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'ヤ', 'ら', 'わ'];
+
+    return groupOrder
+        .filter(groupName => groups[groupName] && groups[groupName].length > 0)
+        .map(groupName => ({
+            group_name: getDisplayGroupName(groupName),
+            song_metas: groups[groupName]
+        }));
+}
+
+// Get the group name for display
+function getDisplayGroupName(groupKey: string): string {
+    const displayNames: { [key: string]: string } = {
+        '0-9・記号': '0-9・記号',
+        'A-Z': 'A-Z',
+        '漢字': '漢字',
+        'あ': 'あ行',
+        'か': 'か行',
+        'さ': 'さ行',
+        'た': 'た行',
+        'な': 'な行',
+        'は': 'は行',
+        'ま': 'ま行',
+        'や': 'や行',
+        'ら': 'ら行',
+        'わ': 'わ行'
+    };
+    return displayNames[groupKey] || groupKey;
+}
 
 export async function loadSongs(v: string): Promise<Song[]> {
     return loadVideos(v).then(parseSong);

@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue'
 import Sitemap from 'vite-plugin-sitemap'
 import fs from 'fs'
 import path from 'path';
-import htmlMinifier from 'html-minifier'
+import htmlMinifier from 'html-minifier-terser'
 import { VTUBERS } from './src/config/constants.ts';
 
 const vtubers = Object.values(VTUBERS).map(v => v.name);
@@ -99,8 +99,10 @@ export default defineConfig({
                         fs.mkdirSync(fullOutputDir, { recursive: true })
                     }
 
-                    fs.writeFileSync(path.join('dist', template.outputPath), minifiedContent)
-                    console.log('Generated:', template.outputPath)
+                    minifiedContent.then(value => {
+                        fs.writeFileSync(path.join('dist', template.outputPath), value)
+                        console.log('Generated:', template.outputPath)
+                    })
                 }
             }
         }
