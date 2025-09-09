@@ -212,7 +212,12 @@ onBeforeUnmount(() => {
                    :aria-labelledby="'flush-heading' + idx" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item" v-for="songMeta in songMetaGroup.song_metas">{{songMeta.title}}</li>
+                    <li class="list-group-item" v-for="songMeta in songMetaGroup.song_metas">
+                        <div class="d-flex w-100 justify-content-between">
+                          <span>{{songMeta.title}}</span>
+                          <small class="small text-secondary">{{songMeta.artist}}</small>
+                        </div>
+                    </li>
                   </ul>
                 </div>
               </div>
