@@ -37,6 +37,7 @@ const searchQuery = ref(route.query.search as string || '');
 const currentPage = ref(1);
 const itemsPerPage = ref(DEFAULT_PAGE_SIZE) // each page displays 10 items
 const goToPage = ref(1);
+const redPointRead = ref(false)
 
 watch(
     () => route.query.search,
@@ -164,45 +165,50 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="dropdown my-4 d-inline-block">
-    <button class="btn btn-light dropdown-toggle" id="dropdownMenuReadme" data-bs-toggle="dropdown" type="button" v-dropdown>
-      <i class="iconfont me-1">&#xef1f;</i>
-      説明書
-    </button>
-    <ul class="dropdown-menu dropdown-menu-end">
-      <li>
-        <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README.md" target="_blank" rel="noopener noreferrer">
-          <i class="iconfont me-1">&#xe648;</i>
-          日本語
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README_zh-CN.md" target="_blank" rel="noopener noreferrer">
-          <i class="iconfont me-1">&#xe648;</i>
-          简体中文
-        </a>
-      </li>
-    </ul>
-  </div>
 
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
+  <div class="d-flex justify-content-between align-items-center">
+    <!-- Button trigger modal -->
+    <div class="position-relative">
+      <button class="btn btn-light" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button" @click="redPointRead = true">
+        <i class="iconfont">&#xe66f;</i> <span class="d-none d-xxs2-inline">楽曲リスト</span>
+        <span v-if="!redPointRead" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger z-1">New</span>
+      </button>
+    </div>
+
+    <div class="dropdown my-4">
+      <button class="btn btn-light dropdown-toggle" id="dropdownMenuReadme" data-bs-toggle="dropdown" type="button">
+        <i class="iconfont me-1">&#xef1f;</i>
+        <!--      説明書-->
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li>
+          <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+            <i class="iconfont me-1">&#xe648;</i>
+            日本語
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README_zh-CN.md" target="_blank" rel="noopener noreferrer">
+            <i class="iconfont me-1">&#xe648;</i>
+            简体中文
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">楽曲リスト</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item" v-for="(songMetaGroup, idx) in songMetaGroups"  >
+            <div class="accordion-item" v-for="(songMetaGroup, idx) in songMetaGroups" >
               <h2 class="accordion-header" :id="'flush-heading' + idx">
-                <!--data-bs-toggle="collapse"-->
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         :data-bs-target="'#flush-collapse' + idx" aria-expanded="false" :aria-controls="'flush-collapse' + idx">
                   {{songMetaGroup.group_name}}
@@ -213,10 +219,10 @@ onBeforeUnmount(() => {
                 <div class="accordion-body">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item" v-for="songMeta in songMetaGroup.song_metas">
-                        <div class="d-flex w-100 justify-content-between">
-                          <span>{{songMeta.title}}</span>
-                          <small class="small text-secondary">{{songMeta.artist}}</small>
-                        </div>
+                      <div class="list-group-item-content">
+                        <a href="#" @click="searchQuery = songMeta.title" class="d-block text-black" data-bs-dismiss="modal" >{{songMeta.title}}</a>
+                        <i class="small fst-normal text-secondary">{{songMeta.artist}}</i>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -225,8 +231,7 @@ onBeforeUnmount(() => {
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
         </div>
       </div>
     </div>
@@ -239,12 +244,12 @@ onBeforeUnmount(() => {
         <i class="iconfont">&#xe7ec;</i>
       </label>
       <input
-          id="searchInput"
-          v-model="searchQuery"
-          type="search"
-          class="form-control shadow-none"
-          placeholder="曲名またはアーティスト名で検索..."
-          @input="currentPage = goToPage = 1"
+        id="searchInput"
+        v-model="searchQuery"
+        class="form-control shadow-none"
+        placeholder="曲名またはアーティスト名で検索..."
+        type="search"
+        @input="currentPage = goToPage = 1"
       >
     </div>
   </div>
@@ -319,6 +324,11 @@ onBeforeUnmount(() => {
     display: inline !important;
   }
 }
+@media (min-width: 400px) {
+  .d-xxs2-inline {
+    display: inline !important;
+  }
+}
 .responsive-width {
   width: 100%; /* Default is 100% */
 }
@@ -328,4 +338,20 @@ onBeforeUnmount(() => {
     width: auto !important; /* sm and above restore the auto width */
   }
 }
+.list-group-item:hover {
+  background-color: var(--bs-tertiary-bg) !important;
+}
+.list-group-item-content {
+  transition: .3s;
+}
+.list-group-item:hover .list-group-item-content {
+  transform: translateX(6px);
+}
+.list-group-item-content > a {
+  text-decoration: none;
+}
+.list-group-item-content > a:hover {
+  text-decoration: underline;
+}
+
 </style>

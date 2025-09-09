@@ -8,7 +8,7 @@ import { apiRequest } from "@/api/instance.ts";
 import type { SongMetaGroup } from "@/types/song-meta";
 
 export function getGroupedSongMetas(songs: Song[]): SongMetaGroup[] {
-    // 使用 Map 来去重并保留首个 artist
+    // Use Map to remove and retain the first artist
     const titleMap = new Map<string, string>();
 
     songs.forEach(song => {
@@ -17,7 +17,7 @@ export function getGroupedSongMetas(songs: Song[]): SongMetaGroup[] {
         }
     });
 
-    // 定义分组映射
+    // Define group mappings
     const groups: { [key: string]: { title: string; artist: string }[] } = {
         '0-9・記号': [],
         'A-Z': [],
@@ -36,7 +36,7 @@ export function getGroupedSongMetas(songs: Song[]): SongMetaGroup[] {
 
     const collator = new Intl.Collator('ja');
 
-    // 将歌名分类到对应的组
+    // Categorize song titles into corresponding groups
     titleMap.forEach((artist, title) => {
         if (!title || title.trim() === '') {
             groups['0-9・記号'].push({ title, artist });
@@ -45,33 +45,33 @@ export function getGroupedSongMetas(songs: Song[]): SongMetaGroup[] {
 
         const firstChar = title.charAt(0);
 
-        // 数字开头
+        // Numbers begin
         if (/[0-9]/.test(firstChar)) {
             groups['0-9・記号'].push({ title, artist });
             return;
         }
 
-        // 英文字母开头（A-Z）
+        // English letters starting (A-Z)
         if (/[A-Za-z]/.test(firstChar)) {
             groups['A-Z'].push({ title, artist });
             return;
         }
 
-        // 符号开头
+        // symbol begins
         if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(firstChar)) {
             groups['0-9・記号'].push({ title, artist });
             return;
         }
 
-        // 汉字开头（中日韩统一表意文字）
+        // Beginning of Chinese characters (unified ideograms of Chinese, Japanese, and Korean characters)
         if (/[\u4E00-\u9FFF\u3400-\u4DBF]/.test(firstChar)) {
             groups['漢字'].push({ title, artist });
             return;
         }
 
-        // 日语假名开头（包括ヴ等特殊假名）
+        // Japanese kana beginning (including vu and other special kana)
         if (/[ぁ-んァ-ヴ]/.test(firstChar)) {
-            // 将片假名转换为平假名以便分类
+            // Convert katakana to hiragana for classification
             let hiraganaChar = firstChar;
             if (/[ァ-ヴ]/.test(firstChar)) {
                 // 特殊处理ヴ系列
@@ -79,11 +79,11 @@ export function getGroupedSongMetas(songs: Song[]): SongMetaGroup[] {
                     groups['は'].push({ title, artist });
                     return;
                 }
-                // 普通片假名转平假名
+                // Ordinary katakana to hiragana
                 hiraganaChar = String.fromCharCode(firstChar.charCodeAt(0) - 0x60);
             }
 
-            // 根据平假名确定分组
+            // Grouping is determined according to hiragana
             if (/[あいうえおぁぃぅぇぉ]/.test(hiraganaChar)) {
                 groups['あ'].push({ title, artist });
             } else if (/[かきくけこがぎぐげご]/.test(hiraganaChar)) {
@@ -110,16 +110,16 @@ export function getGroupedSongMetas(songs: Song[]): SongMetaGroup[] {
             return;
         }
 
-        // 其他情况归入符号组
+        // Other cases are grouped into the symbol group
         groups['0-9・記号'].push({ title, artist });
     });
 
-    // 对每个组内的歌名进行日语排序
+    // Sort the song titles in each group in Japanese
     Object.keys(groups).forEach(groupName => {
         groups[groupName].sort((a, b) => collator.compare(a.title, b.title));
     });
 
-    // 转换为数组格式并按组名排序
+    // Convert to array format and sort by group name
     const groupOrder = ['0-9・記号', 'A-Z', '漢字', 'あ', 'か', 'さ', 'た', 'な', 'は', 'ま', 'ヤ', 'ら', 'わ'];
 
     return groupOrder
@@ -130,7 +130,7 @@ export function getGroupedSongMetas(songs: Song[]): SongMetaGroup[] {
         }));
 }
 
-// 获取显示用的组名
+// Get the group name for display
 function getDisplayGroupName(groupKey: string): string {
     const displayNames: { [key: string]: string } = {
         '0-9・記号': '0-9・記号',
