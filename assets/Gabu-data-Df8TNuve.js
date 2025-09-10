@@ -207,7 +207,7 @@ Special Color初めて聴いたのですがとても良かったですね…
 0:57:37 05.白い雪のプリンセスは / のぼる↑
 1:10:55 06.恋愛サーキュレーション / 千石撫子(花澤香菜)
 1:22:51 07.MIRACLE NEW STORY / Liella!
-1:30:52 08.ハム太郎 とっとこうた / ハムちゃんず
+1:30:52 08.ハム太郎とっとこうた / ハムちゃんず
 1:34:03 09.おどるポンポコリン / E-Girls
 1:38:55 10.星間飛行 / ランカ・リー=中島愛
 1:42:57 11.放課後オーバーフロウ / ランカ・リー=中島愛
@@ -265,7 +265,7 @@ Blowin' in the Mindも聴けて嬉しかったです！
 1:36:05 ドリームインブルーム！ / Palette Project
 
 練習
-0:43:13 ビタミンSUMMER！ / Liella!
+0:43:13 ビタミンSUMMER! / Liella!
 0:54:58 cherry-picking days / プリティーリズム・レインボーライブ 福原あん•森園わかな
 
 半年おめでとう🎉セトリ無かったから置いとくねー
@@ -283,7 +283,7 @@ Blowin' in the Mindも聴けて嬉しかったです！
 1:15:01  カメラモードで遊ぶがぶちゃん可愛いからみんな見ていって〜！`,qt={video_title:Ne,video_artist:Ie,video_id:Le,video_publish_date_str:Ge,song_timeline:ze},Ai=Object.freeze(Object.defineProperty({__proto__:null,default:qt,song_timeline:ze,video_artist:Ie,video_id:Le,video_publish_date_str:Ge,video_title:Ne},Symbol.toStringTag,{value:"Module"})),Ce="【歌枠/Karaoke】マクロス縛り歌枠！私の歌を聴けぇええ！【#鎖乙女がぶ /#パレプロ研究生 】",Ue="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",Be="wz7f_dIilLM",ke="2025-07-13",Ke=`【🐺🩰セトリ🐺💜🎶】
 00:12:41 トライアングラー / 坂本真綾
 00:23:20 星間飛行 〜Freyja Ver.〜 / ワルキューレ
-00:36:53 僕らの戦場 〜Freyja Solo Edition〜 / ワルキューレ
+00:36:53 僕らの戦場～Freyja Solo Edition～ / ワルキューレ
 00:52:17 Absolute 5 / ワルキューレ
 01:02:36 一度だけの恋なら / ワルキューレ
 01:31:28 破滅の純情 / ワルキューレ
@@ -315,7 +315,7 @@ Blowin' in the Mindも聴けて嬉しかったです！
 1:38:10 08.ビタミンSUMMER! / Liella!
 1:44:51 09.青と夏 / Mrs. GREEN APPLE
 1:51:49 10.夏の花は向日葵だけじゃない / 櫻坂46
-2:08:34 11.secret base ～君がくれたもの～ / ZONE
+2:08:34 11.secret base 〜君がくれたもの〜 / ZONE
 
 
 おつがぶでした〜
