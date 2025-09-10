@@ -9,8 +9,9 @@ import { useRoute, useRouter } from 'vue-router';
 import { useHead } from '@vueuse/head'
 import type { VtuberValues } from '@/config/constants';
 import { DEFAULT_PAGE_SIZE, SITE_BRAND, SITE_DESC, SITE_SUFFIX } from '@/config/constants';
-import SongsList from "@/components/SongsList.vue";
+import SongList from "@/components/SongList.vue";
 import QuickSearches from "@/components/QuickSearches.vue";
+import SongMetaListModal from "@/components/SongMetaListModal.vue";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
@@ -197,45 +198,9 @@ onBeforeUnmount(() => {
     </div>
   </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">楽曲リスト</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item" v-for="(songMetaGroup, idx) in songMetaGroups" >
-              <h2 class="accordion-header" :id="'flush-heading' + idx">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        :data-bs-target="'#flush-collapse' + idx" aria-expanded="false" :aria-controls="'flush-collapse' + idx">
-                  {{songMetaGroup.group_name}}
-                </button>
-              </h2>
-              <div :id="'flush-collapse' + idx" class="accordion-collapse collapse"
-                   :aria-labelledby="'flush-heading' + idx" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item" v-for="songMeta in songMetaGroup.song_metas">
-                      <div class="list-group-item-content">
-                        <a href="#" @click="searchQuery = songMeta.title" class="d-block text-black" data-bs-dismiss="modal" >{{songMeta.title}}</a>
-                        <i class="small fst-normal text-secondary">{{songMeta.artist}}</i>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <SongMetaListModal
+      :song-meta-groups="songMetaGroups" v-model:search-query="searchQuery"
+  />
 
   <!-- search box -->
   <div class="row my-4 mt-0 clearfix">
@@ -255,7 +220,7 @@ onBeforeUnmount(() => {
   </div>
 
   <!-- a list of songs -->
-  <SongsList :paginated-songs="paginatedSongs"/>
+  <SongList :paginated-songs="paginatedSongs"/>
 
   <!-- displays the current page number and total -->
   <div v-if="totalPages > 1"
@@ -337,21 +302,6 @@ onBeforeUnmount(() => {
   .responsive-width {
     width: auto !important; /* sm and above restore the auto width */
   }
-}
-.list-group-item:hover {
-  background-color: var(--bs-tertiary-bg) !important;
-}
-.list-group-item-content {
-  transition: .3s;
-}
-.list-group-item:hover .list-group-item-content {
-  transform: translateX(6px);
-}
-.list-group-item-content > a {
-  text-decoration: none;
-}
-.list-group-item-content > a:hover {
-  text-decoration: underline;
 }
 
 </style>
