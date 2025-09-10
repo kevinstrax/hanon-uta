@@ -68,7 +68,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 1:13:11 10. heavenly days / 新垣結衣
 
 1:18:36 11. アイのうた / 福井舞
-1:27:43 12. 渡月橋 〜君 想ふ〜 / 倉木麻衣
+1:27:43 12. 渡月橋 ～君 想ふ～ / 倉木麻衣
 1:33:51 13. さよならエレジー / 菅田将暉
 1:39:42 14. 裸の心 / あいみょん
 1:47:54 15. HANABI / Mr.Children
@@ -676,7 +676,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 
 0:33:10 06. ふわふわ時間 / 桜高軽音部
 0:38:40 07. ごはんはおかず / 放課後ティータイム
-0:42:00 08. 天使にふれたよ / 放課後ティータイム
+0:42:00 08. 天使にふれたよ！ / 放課後ティータイム
 0:48:28 09. ちゅ、多様性。 / ano
 0:53:14 10. 恋は渾沌の隷也 / 後ろから這いより隊Ｇ
 
@@ -875,7 +875,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 2:20:46 END / Cパート`,y5={video_title:bt,video_artist:pt,video_id:gt,video_publish_date_str:mt,song_timeline:$t},Nc=Object.freeze(Object.defineProperty({__proto__:null,default:y5,song_timeline:$t,video_artist:pt,video_id:gt,video_publish_date_str:mt,video_title:bt},Symbol.toStringTag,{value:"Module"})),Ot="【歌枠｜KARAOKE】平成アニソンといえば！？有名＆懐かしい曲をたくさん歌う🎤✨【#パレプロ #香鳴ハノン】",ht="Hanon Ch. 香鳴ハノン【パレプロ】",At="WiABilUXp-A",St="2024-07-30",yt=`0:03:20 はのはー！
 
 0:12:17 01. カサブタ / 千綿偉功
-0:22:01 02. 檄! 帝国華撃団 / 真宮寺さくら(横山智佐)&帝国歌劇団
+0:22:01 02. 檄！帝国華撃団 / 真宮寺さくら(横山智佐)&帝国歌劇団
 0:26:20 03. 撲殺天使ドクロちゃん / ドクロちゃん(千葉紗子)
 0:37:04 04. Butter-Fly / 和田光司
 0:44:06 05. Q&Aリサイタル / 戸松遥
@@ -945,7 +945,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 2:09:04 はのはー！
 2:09:14 END / Cパート`,f5={video_title:Mt,video_artist:Kt,video_id:Nt,video_publish_date_str:Tt,song_timeline:jt},Hc=Object.freeze(Object.defineProperty({__proto__:null,default:f5,song_timeline:jt,video_artist:Kt,video_id:Nt,video_publish_date_str:Tt,video_title:Mt},Symbol.toStringTag,{value:"Module"})),Ht="【歌枠｜KARAOKE】初見さんも大歓迎！オールジャンル歌う夏曲歌枠👙✨【#パレプロ #香鳴ハノン】",It="Hanon Ch. 香鳴ハノン【パレプロ】",Lt="bzl27VqJq5k",Dt="2024-08-08",Bt=`0:01:05 はのはー！
 
-0:08:17 01. 真夏のSounds good / AKB48
+0:08:17 01. 真夏のSounds good ! / AKB48
 0:18:47 02. 夢見る 15歳 / スマイレージ
 0:24:19 03. 世界には愛しかない / 欅坂46
 0:31:13 04. 青い珊瑚礁 / 松田聖子
@@ -1066,7 +1066,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 1:16:25 12. Tame-Lie-One-Step / 紫雲清夏
 1:22:43 13. Wonder Scale / 倉本千奈
 1:27:19 14. 白線 / 葛城リーリヤ
-1:34:00 15. Yellow Big Bang！ / 藤田ことね
+1:34:00 15. Yellow Big Bang! / 藤田ことね
 
 1:38:11 16. Campus mode!! / 初星学園
 1:50:50 17. Luna say maybe / 月村手毬
@@ -1256,7 +1256,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 1:43:55 16. again / YUI
 1:49:42 17. 瞬間センチメンタル / SCANDAL
 2:03:01 18. Butter-Fly / 和田光司
-2:08:31 19. ウィーアー! / きただにひろし
+2:08:31 19. ウィーアー！ / きただにひろし
 2:14:52 20. カサブタ / 千綿偉功
 
 2:19:08 21. 月光花 / Janne Da Arc
@@ -1298,7 +1298,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 0:58:09 05. Boom Boom Pow / 花海咲季
 
 1:17:04 06. Luna say maybe / 月村手毬
-1:26:21 07. Yellow Big Bang！ / 藤田ことね
+1:26:21 07. Yellow Big Bang! / 藤田ことね
 1:31:18 08. 白線 / 葛城リーリヤ
 1:36:35 09. The Rolling Riceball / 花海佑芽
 1:44:51 10. 世界一可愛い私 / 藤田ことね
@@ -1368,7 +1368,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 2:04:48 20. 紅の詩 / 私立恵比寿中学
 
 2:11:01 21. 感情電車 / 私立恵比寿中学
-2:21:08 22. 泡沫サタデーナイト / モーニング娘。
+2:21:08 22. 泡沫サタデーナイト！ / モーニング娘。
 2:26:02 23. ミニモニ。ジャンケンぴょん！ / ミニモニ。
 2:34:57 24. 夏の花は向日葵だけじゃない / 欅坂46
 2:42:11 25. ガールズルール / 乃木坂46
@@ -1381,10 +1381,10 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 0:09:19 01. 初 / 初星学園
 0:15:42 02. Fighting My Way / 花海咲季
 0:21:56 03. Boom Boom Pow / 花海咲季
-0:25:30 04. Yellow Big Bang！ / 藤田ことね
+0:25:30 04. Yellow Big Bang! / 藤田ことね
 0:31:16 05. 世界一可愛い私 / 藤田ことね
 
-0:37:27 06. 叶えたい、ことばかり / 月村手毬
+0:37:27 06. 叶えたい、ことばかり / 月村手毬
 0:43:18 07. アイヴイ / 月村手毬
 0:46:52 08. Luna say maybe / 月村手毬
 0:53:15 09. Fluorite / 有村麻央
@@ -1565,7 +1565,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 
 0:46:17 06. 恋愛サーキュレーション / 花澤香菜
 0:55:46 07. Lovers / sumika
-1:02:04 08. Wherever You Are / ONE OK ROCK
+1:02:04 08. Wherever you are / ONE OK ROCK
 
 1:07:43 スパチャ読み
 1:10:16 はのは〜！
@@ -1650,7 +1650,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 1:32:28 15. again / YUI
 
 1:37:09 16. ブルーバード / いきものがかり
-1:42:11 17. ウィーアー! / きただにひろし
+1:42:11 17. ウィーアー！ / きただにひろし
 1:46:39 18. Believe / Folder5
 1:52:51 19. ハム太郎とっとこうた / ハムちゃんず
 
@@ -1741,7 +1741,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 0:44:32 カラオケもいいけどこのメンバーで何かしたいことある？
 0:47:51 秘密のトワレ / 一ノ瀬志希(クララちゃんソロ)
 0:52:59 神様は死んだ、って / 斑鳩ルカ(ウタノちゃんソロ)
-0:57:00 夢見る15歳 / アンジュルム(シェルちゃん、ハノンちゃん)
+0:57:00 夢見る 15歳 / アンジュルム(シェルちゃん、ハノンちゃん)
 
 1:01:42 告知
 1:05:11 ヘビーローテーション / AKB48
@@ -2393,7 +2393,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 1:20:49 はのは〜！ 
 1:21:01 END / Cパート`,D3={video_title:N_,video_artist:T_,video_id:j_,video_publish_date_str:H_,song_timeline:I_},Fu=Object.freeze(Object.defineProperty({__proto__:null,default:D3,song_timeline:I_,video_artist:T_,video_id:j_,video_publish_date_str:H_,video_title:N_},Symbol.toStringTag,{value:"Module"})),L_="【歌枠｜KARAOKE】バンドリオリ曲オンリーセトリ歌枠🎤✨#ハノ誕2025 ライブまであと5日💕【#パレプロ #香鳴ハノン】",D_="Hanon Ch. 香鳴ハノン【パレプロ】",B_="zzDDf2chH1w",V_="2025-02-25",U_=`0:04:02 はのは〜！
 
-0:11:31 01. えがお･シング･あ･ソング / ハロー、ハッピーワールド!
+0:11:31 01. えがお・シング・あ・ソング / ハロー、ハッピーワールド!
 0:22:38 02. キズナミュージック♪ / Poppin'Party
 0:32:07 03. 迷星叫 / MyGO!!!!!
 0:45:36 04. Scarlet Sky / Afterglow
@@ -3144,7 +3144,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 1:53:46 12. ハッピーミルフィーユ / 初星学園
 2:05:26 13. Howling over the World / 初星学園
 2:11:46 14. Howling over the World / 初星学園
-2:24:51 15. 叶えたい、ことばかり / 月村手毬
+2:24:51 15. 叶えたい、ことばかり / 月村手毬
 
 2:32:31 16. 冠菊 / 初星学園
 2:48:00 17. 仮装狂騒曲 / 初星学園
@@ -3514,7 +3514,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 2:26:09 21. バラライカ / 月島きらり starring 久住小春
 2:30:10 22. おジャ魔女カーニバル!! / MAHO堂
 2:36:23 23. めざせポケモンマスター / 松本梨香
-2:41:25 24. 勇気100％ / 光GENJI
+2:41:25 24. 勇気100% / 光GENJI
 2:47:37 25. DANZEN!ふたりはプリキュア / 五條真由美
 
 2:53:45 26. プリキュア5、スマイル go go! / 工藤真由
@@ -3564,7 +3564,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 0:19:20；0:23:09 最強 the サマータイム!!!!! / 日向千夏、柏木美亜、東雲つむぎ、星咲あかり、高瀬梨緒\r
 0:24:48 感謝祭告知\r
 0:26:39 バカたすかる\r
-0:26:48；0:30:28 夏ゆきトキメキHigh Tension! / Palette Project\r
+0:26:48；0:30:28 夏ゆきトキメキ High Tension! / Palette Project\r
 \r
 0:31:06 エンドカード`,Hv={video_title:ga,video_artist:ma,video_id:$a,video_publish_date_str:Oa,song_timeline:ha},Gb=Object.freeze(Object.defineProperty({__proto__:null,default:Hv,song_timeline:ha,video_artist:ma,video_id:$a,video_publish_date_str:Oa,video_title:ga},Symbol.toStringTag,{value:"Module"})),Aa="【歌枠｜KARAOKE】平成前半のアニソンをガンガン歌う！ぶちあげてくぞ～～～！！✨【#パレプロ #香鳴ハノン】",Sa="Hanon Ch. 香鳴ハノン【パレプロ】",ya="AqXZwSUTvSo",Ea="2025-07-21",Ca=`0:02:30 はのは〜！
 
@@ -3651,7 +3651,7 @@ const n="【3D LIVE】香鳴ハノンバースデーライブ🌟バンドリ！
 2:38:33 24. 超最強 / 超ときめき♡宣伝部
 2:45:04 25. 君のことが好きだから / アンダーガールズ(AKB48)
 
-2:51:17 26. 涙サプライズ / AKB48
+2:51:17 26. 涙サプライズ！ / AKB48
 
 2:57:20 告知
 3:22:18 スパチャ読み
