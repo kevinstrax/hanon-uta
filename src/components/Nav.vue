@@ -23,7 +23,7 @@ const currentRouteTitle = computed(() => {
 <template>
   <div class="dropdown float-start mt-4 me-2">
     <button
-        class="btn btn-light dropdown-toggle"
+        class="btn dropdown-toggle"
         :class="isDark ? 'btn-dark border' : 'btn-light'"
         type="button"
         id="dropdownMenuButton"
