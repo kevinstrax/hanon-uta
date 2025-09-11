@@ -36,7 +36,7 @@ const updateSearchQuery = (title: string) => {
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item" v-for="songMeta in songMetaGroup.song_metas">
                       <div class="list-group-item-content">
-                        <a href="#" @click="updateSearchQuery(songMeta.title)" class="d-block text-black" data-bs-dismiss="modal" >{{songMeta.title}}</a>
+                        <a href="#" @click="updateSearchQuery(songMeta.title)" class="d-block text-body" data-bs-dismiss="modal" >{{songMeta.title}}</a>
                         <i class="small fst-normal text-secondary">{{songMeta.artist}}</i>
                       </div>
                     </li>
