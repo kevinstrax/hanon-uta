@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Song } from '@/types/song'
 import type { SongMetaGroup } from "@/types/song-meta";
+import { storeToRefs } from "pinia";
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { getGroupedSongMetas, loadSongs, loadSongsByApi } from '@/utils/loadSongs';
 import { generateMeta } from "@/utils/meta";
@@ -12,6 +13,7 @@ import { DEFAULT_PAGE_SIZE, SITE_BRAND, SITE_DESC, SITE_SUFFIX } from '@/config/
 import SongList from "@/components/SongList.vue";
 import QuickSearches from "@/components/QuickSearches.vue";
 import SongMetaListModal from "@/components/SongMetaListModal.vue";
+import { useColorModeStore } from "@/stores/color-mode.ts";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
@@ -19,6 +21,8 @@ const songMetaGroups = ref<SongMetaGroup[]>([]);
 const loadingStore = useLoadingStore()
 const route = useRoute();
 const router = useRouter();
+
+const { isDark } = storeToRefs(useColorModeStore())
 
 onMounted(async () => {
   try {
@@ -170,14 +174,14 @@ onBeforeUnmount(() => {
   <div class="d-flex justify-content-between align-items-center">
     <!-- Button trigger modal -->
     <div class="position-relative">
-      <button class="btn btn-light" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button" @click="redPointRead = true">
+      <button class="btn" :class="isDark ? 'btn-dark border' : 'btn-light'" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button" @click="redPointRead = true">
         <i class="iconfont">&#xe66f;</i> <span class="d-none d-xxs2-inline">楽曲リスト</span>
         <span v-if="!redPointRead" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger z-1">New</span>
       </button>
     </div>
 
     <div class="dropdown my-4">
-      <button class="btn btn-light dropdown-toggle" id="dropdownMenuReadme" data-bs-toggle="dropdown" type="button">
+      <button class="btn dropdown-toggle" :class="isDark ? 'btn-dark border' : 'btn-light'" id="dropdownMenuReadme" data-bs-toggle="dropdown" type="button">
         <i class="iconfont me-1">&#xef1f;</i>
         <!--      説明書-->
       </button>
@@ -205,7 +209,7 @@ onBeforeUnmount(() => {
   <!-- search box -->
   <div class="row my-4 mt-0 clearfix">
     <div class="input-group">
-      <label for="searchInput" class="input-group-text bg-light">
+      <label for="searchInput" class="input-group-text bg-light" :class="isDark ? 'bg-dark' : 'bg-light'">
         <i class="iconfont">&#xe7ec;</i>
       </label>
       <input
@@ -226,9 +230,9 @@ onBeforeUnmount(() => {
   <div v-if="totalPages > 1"
        class="text-center text-muted small mt-4 mb-2 d-flex justify-content-center align-items-center gap-2">
     <input
-        :class="{ disabled: currentPage === 1 }"
+        :class="[{ disabled: currentPage === 1 }, isDark ? 'btn-dark border' : 'btn-light']"
         aria-label="前のページ"
-        class="btn btn-light rounded-end-0 responsive-width"
+        class="btn rounded-end-0 responsive-width"
         style="min-width: 55px"
         type="button"
         value="&lsaquo;"
@@ -237,24 +241,25 @@ onBeforeUnmount(() => {
     <input
         v-model.number="goToPage"
         class="form-control"
-        :class="{ 'form-control-sm': isSmallScreen }"
+        :class="[{ 'form-control-sm': isSmallScreen }, isDark ? 'btn-dark border' : 'btn-light']"
         min="1"
         :max="totalPages"
         :style="{ width: isSmallScreen ? '60px' : '70px' }"
         type="number"
         @keyup.enter="changePage(goToPage)"
     >
-    <span class="text-muted text-nowrap" :class="{'small': isSmallScreen}">/ {{ totalPages }}<span class="d-none d-xxs-inline">ページ</span></span>
+    <span class="text-muted text-nowrap" :class="[{'small': isSmallScreen}]">/ {{ totalPages }}<span class="d-none d-xxs-inline">ページ</span></span>
     <input
         type="button"
-        class="btn btn-light"
+        class="btn"
+        :class="isDark ? 'btn-dark border' : 'btn-light'"
         @click="changePage(goToPage)"
         value="移動"
     />
     <input
-        :class="{ disabled: currentPage === totalPages }"
+        :class="[{ disabled: currentPage === totalPages }, isDark ? 'btn-dark border' : 'btn-light']"
         aria-label="次のページ"
-        class="btn btn-light rounded-start-0 responsive-width"
+        class="btn rounded-start-0 responsive-width"
         style="min-width: 55px"
         type="button"
         value="&rsaquo;"

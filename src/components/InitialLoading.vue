@@ -1,17 +1,19 @@
 <script setup lang="ts">
 import { useLoadingStore } from '@/stores/loading'
 import { storeToRefs } from 'pinia'
+import { useColorModeStore } from "@/stores/color-mode.ts";
 
 const loadingStore = useLoadingStore()
 const { isInitialLoad } = storeToRefs(loadingStore)
-
+const { isDark } = storeToRefs(useColorModeStore())
 </script>
 
 <template>
   <Transition name="fade">
     <div
         v-if="isInitialLoad"
-        class="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-white"
+        class="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
+        :class="isDark ? 'bg-dark' : 'bg-white'"
         style="z-index: 1080;"
     >
       <div class="text-center">

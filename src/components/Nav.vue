@@ -2,8 +2,11 @@
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { VTUBER_KEYS } from "@/config/constants.ts";
+import { useColorModeStore } from "@/stores/color-mode.ts";
+import { storeToRefs } from "pinia";
 
 const router = useRouter()
+const { isDark } = storeToRefs(useColorModeStore())
 
 const menuRoutes = computed(() => {
   return router.getRoutes()
@@ -21,6 +24,7 @@ const currentRouteTitle = computed(() => {
   <div class="dropdown float-start mt-4 me-2">
     <button
         class="btn btn-light dropdown-toggle"
+        :class="isDark ? 'btn-dark border' : 'btn-light'"
         type="button"
         id="dropdownMenuButton"
         data-bs-toggle="dropdown"

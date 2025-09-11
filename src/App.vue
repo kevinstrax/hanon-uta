@@ -4,9 +4,21 @@ import InitialLoading from "@/components/InitialLoading.vue";
 import { useLoadingStore } from '@/stores/loading'
 import { storeToRefs } from 'pinia'
 import { use404Redirect } from "@/utils/404Redirect";
+import { useColorModeStore } from "@/stores/color-mode.ts";
+import { onBeforeUnmount, onMounted } from "vue";
 
 const loadingStore = useLoadingStore()
 const { isInitialLoad } = storeToRefs(loadingStore)
+
+const colorMode = useColorModeStore()
+
+onMounted(() => {
+  colorMode.init()
+})
+
+onBeforeUnmount(() => {
+  colorMode.destroy()
+})
 
 use404Redirect();
 
