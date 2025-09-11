@@ -14,6 +14,7 @@ import SongList from "@/components/SongList.vue";
 import QuickSearches from "@/components/QuickSearches.vue";
 import SongMetaListModal from "@/components/SongMetaListModal.vue";
 import { useColorModeStore } from "@/stores/color-mode.ts";
+import UpdateHintToast from "@/components/UpdateHintToast.vue";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
@@ -271,7 +272,7 @@ onBeforeUnmount(() => {
   </p>
 
   <QuickSearches />
-
+  <UpdateHintToast />
 </template>
 
 <style scoped>
