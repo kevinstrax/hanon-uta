@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import type { Song } from '@/types/song'
+import { timestampColor, timestampToDate } from "@/utils/timeUtils.ts";
 const props = defineProps<{ paginatedSongs: Song[] }>();
-
 </script>
 
 <template>
   <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2">
     <div v-for="(song, index) in props.paginatedSongs" :key="index">
       <div class="card h-100 hover-bg-light ">
-        <div class="card-img-top ratio ratio-16x9 ">
+        <div class="card-img-top ratio ratio-16x9 position-relative">
           <a :href="song.ref_video_url" class="d-flex align-items-center justify-content-center"
              target="_blank">
             <img
@@ -20,9 +20,15 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
                 :title="song.song_title"
                 class="img-fluid w-100"
             />
-          </a>
-        </div>
 
+          </a>
+
+        </div>
+        <span class="card-datetime position-absolute badge rounded-1 small"
+              :style="'background-color: ' + timestampColor(song.ref_video_publish_date_ts)"
+              v-tooltip="timestampToDate(song.ref_video_publish_date_ts)">
+          <small>{{timestampToDate(song.ref_video_publish_date_ts)}}</small>
+        </span>
         <div class="card-body">
           <h6 class="card-title hover-text-light text-truncate d-flex" v-tooltip="song.song_title">
             <i class="iconfont" style="margin-right: 1.5px">&#xe892;</i>
@@ -63,6 +69,15 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 
 .card {
   padding: 0;
+}
+/*.card:hover .card-datetime {
+  opacity: .808;
+}
+*/
+.card-datetime {
+  transition: opacity .3s ease;
+  opacity: .868;
+  top:3px;right:3px;
 }
 
 .card-img-top a {
@@ -149,4 +164,5 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 .card-title:hover .iconfont {
   animation: titleIconShake 1s ease 1s infinite alternate;
 }
+
 </style>
