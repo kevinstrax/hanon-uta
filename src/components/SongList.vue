@@ -1,6 +1,8 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { Song } from '@/types/song'
-import { timestampColor, timestampToDate } from "@/utils/timeUtils.ts";
+import { timestampToDate } from "@/utils/timeUtils.ts";
+import { nameColor, timestampColor } from "@/utils/songTagUtils.ts";
+
 const props = defineProps<{ paginatedSongs: Song[] }>();
 </script>
 
@@ -9,46 +11,52 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
     <div v-for="(song, index) in props.paginatedSongs" :key="index">
       <div class="card h-100 hover-bg-light ">
         <div class="card-img-top ratio ratio-16x9 position-relative">
-          <a :href="song.ref_video_url" class="d-flex align-items-center justify-content-center"
-             target="_blank">
-            <img
-                v-lazy="{
+
+          <a :href="song.ref_video_url" class="d-flex align-items-center justify-content-center" target="_blank">
+            <img v-lazy="{
                   src: song.ref_video_thumbnail_url,
                   loading: song.ref_video_thumbnail_lqip_url
-                }"
-                :alt="song.song_title"
-                :title="song.song_title"
-                class="img-fluid w-100"
-            />
+                }" :alt="song.song_title" :title="song.song_title" class="img-fluid w-100"/>
 
           </a>
 
         </div>
-        <span class="card-datetime position-absolute badge rounded-1 small"
+        <span v-tooltip="timestampToDate(song.ref_video_publish_date_ts)"
               :style="'background-color: ' + timestampColor(song.ref_video_publish_date_ts)"
-              v-tooltip="timestampToDate(song.ref_video_publish_date_ts)">
-          <small>{{timestampToDate(song.ref_video_publish_date_ts)}}</small>
-        </span>
-        <div class="card-body">
-          <h6 class="card-title hover-text-light text-truncate d-flex" v-tooltip="song.song_title">
+              class="card-tag d-inline-block card-datetime position-absolute badge rounded-1 small">
+              <small>{{ timestampToDate(song.ref_video_publish_date_ts) }}</small>
+            </span>
+
+        <div class="card-body position-relative">
+          <!-- Song tags -->
+          <div v-if="song.tags.length > 0" class="card-tags position-absolute top-0 start-0 flex-wrap flex-wrap-reverse">
+            <template v-for="tag in song.tags">
+                <span :style="'background-color: ' + nameColor(tag)"
+                      class="card-tag badge rounded-1 small m-1">
+                    <small>{{ tag }}</small>
+                </span>
+            </template>
+          </div>
+
+          <h6 v-tooltip="song.song_title" class="card-title hover-text-light text-truncate d-flex">
             <i class="iconfont" style="margin-right: 1.5px">&#xe892;</i>
-            {{ song.song_title }}</h6>
-          <p class="card-text hover-text-light"><small class="text-muted d-block text-truncate"
-                                                       v-tooltip="song.song_origin_artist"
-          >{{ song.song_origin_artist }}</small></p>
+            {{ song.song_title }}
+          </h6>
+          <p class="card-text hover-text-light"><small v-tooltip="song.song_origin_artist"
+                                                       class="text-muted d-block text-truncate">{{
+              song.song_origin_artist
+            }}</small></p>
           <p class="card-text hover-text-light">
-            <small class="text-muted card-subtitle multi-line-ellipsis-2 " v-tooltip="song.ref_video_title">
+            <small v-tooltip="song.ref_video_title" class="text-muted card-subtitle multi-line-ellipsis-2 ">
               {{ song.ref_video_title }}
             </small>
           </p>
           <p class="card-text hover-text-light">
             <small class="text-muted">
-              <a :href="song.ref_video_url"
-                 :title="song.song_title"
-                 class="text-decoration-none text-secondary d-block"
+              <a :href="song.ref_video_url" :title="song.song_title" class="text-decoration-none text-secondary d-block"
                  target="_blank">
                 <i class="iconfont" style="font-size: 12px">&#xe66e;</i>
-                <span style="vertical-align: text-top" class="ms-1">{{ song.song_start_time }}</span></a>
+                <span class="ms-1" style="vertical-align: text-top">{{ song.song_start_time }}</span></a>
             </small>
           </p>
         </div>
@@ -70,16 +78,16 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 .card {
   padding: 0;
 }
-/*.card:hover .card-datetime {
-  opacity: .808;
-}
-*/
 .card-datetime {
-  transition: opacity .3s ease;
-  opacity: .868;
-  top:3px;right:3px;
+  top: 3px;
+  right: 3px;
 }
-
+.card-tags{
+  transform: translateY(-100%);
+}
+.card-tag {
+  opacity: .868;
+}
 .card-img-top a {
   display: block;
   overflow: hidden;
@@ -132,9 +140,11 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 .hover-text-light:hover {
   background-color: var(--bs-secondary-bg) !important;
 }
+
 .hover-text-light small a {
   transition: transform 0.3s ease;
 }
+
 .hover-text-light small a:hover {
   transform: translateX(6px);
 }
@@ -145,15 +155,15 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
     transform: scale(1);
   }
 
-  70%,73%{
+  70%, 73% {
     transform: scale(0.9) rotate(-3deg);
   }
 
-  77%,83%,90%,97%  {
+  77%, 83%, 90%, 97% {
     transform: scale(1.2) rotate(3deg);
   }
 
-  80%,87%,93%{
+  80%, 87%, 93% {
     transform: scale(1.2) rotate(-3deg);
   }
 
@@ -161,6 +171,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
     transform: scale(1) rotate(0);
   }
 }
+
 .card-title:hover .iconfont {
   animation: titleIconShake 1s ease 1s infinite alternate;
 }

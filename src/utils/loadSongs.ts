@@ -6,6 +6,7 @@ import he from 'he'
 import { checkAndFormatTime, parseTs, timeToSeconds } from './timeUtils'
 import { apiRequest } from "@/api/instance.ts";
 import type { SongMetaGroup } from "@/types/song-meta";
+import { extractAndRemove } from "@/utils/placeholderUtils.ts";
 
 export function getGroupedSongMetas(songs: Song[]): SongMetaGroup[] {
     // Use Map to remove and retain the first artist
@@ -213,6 +214,16 @@ export function sortByTime(songs: Song[]) {
     songs.sort(compareByTime);
 }
 
+function fillInSongTags(song: Song) {
+    let songTitleAndTags = extractAndRemove(song.song_title);
+    song.song_title = songTitleAndTags.cleanedContent
+
+    let artistAndTags = extractAndRemove(song.song_origin_artist);
+    song.song_origin_artist = artistAndTags.cleanedContent
+
+    song.tags = [ ...songTitleAndTags.extracted, ...artistAndTags.extracted ];
+}
+
 function parseSong(videos: Video[]): Song[] {
     const songs: Song[] = [];
 
@@ -237,10 +248,14 @@ function parseSong(videos: Video[]): Song[] {
                 song_origin_artist: he.decode(songMeta.artist),
                 song_title: he.decode(songMeta.title),
                 song_start_time: songMeta.time,
-                video_offset_ts: offsetSec
+                video_offset_ts: offsetSec,
+                tags: [],
             };
             if (validSong(song)) {
                 song.song_start_time = checkAndFormatTime(song.song_start_time)
+
+                fillInSongTags(song);
+
                 songs.push(song);
             } else {
                 if (song.song_title.includes('はのは')

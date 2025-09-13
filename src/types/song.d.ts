@@ -11,4 +11,5 @@ export interface Song {
     song_title: string,
     song_origin_artist: string,
     song_start_time: string,
+    tags: string[],
 }
