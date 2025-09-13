@@ -39,7 +39,7 @@ Live2Dの歌枠は、聴き惚れるだけじゃなくて見惚れるなぁ。�
 1:28:43　ハム太郎とっとこうた#{=アンコール}/ハムちゃんず\r
 1:30:51　告知（えるすりーのとくばん、明日の配信グルメツアー～徳島編～）\r
 \r
-おっさんに特に刺さる選曲～♪この道ずっといけば～♪`,Vi={video_title:a,video_artist:v,video_id:c,video_publish_date_str:u,song_timeline:b},ro=Object.freeze(Object.defineProperty({__proto__:null,default:Vi,song_timeline:b,video_artist:v,video_id:c,video_publish_date_str:u,video_title:a},Symbol.toStringTag,{value:"Module"})),$="【おめでとう！】香鳴ハノンお誕生日ライブ!! Happy Birthday【パレプロ/Palette Project】#香鳴ハノン誕生祭2022",g="Palette Project Channel",O="BDVz76YT9_k",m="2022-03-05",p=`00:00 開始
+おっさんに特に刺さる選曲～♪この道ずっといけば～♪`,Vi={video_title:a,video_artist:v,video_id:c,video_publish_date_str:u,song_timeline:b},ro=Object.freeze(Object.defineProperty({__proto__:null,default:Vi,song_timeline:b,video_artist:v,video_id:c,video_publish_date_str:u,video_title:a},Symbol.toStringTag,{value:"Module"})),g="【おめでとう！】香鳴ハノンお誕生日ライブ!! Happy Birthday【パレプロ/Palette Project】#香鳴ハノン誕生祭2022",$="Palette Project Channel",O="BDVz76YT9_k",m="2022-03-05",p=`00:00 開始
 00:01:27 1. 勘ぐれい / ずっと真夜中でいいのに。
 00:05:40 2. 強盗と花束 / ヨルシカ
 00:08:52 MC 
@@ -60,7 +60,7 @@ Live2Dの歌枠は、聴き惚れるだけじゃなくて見惚れるなぁ。�
 1:08:03 スパチャ読み
 1:17:24 誕生日プレゼント受付のお知らせ
 1:18:24 MC
-1:19:56 ED`,Ji={video_title:$,video_artist:g,video_id:O,video_publish_date_str:m,song_timeline:p},io=Object.freeze(Object.defineProperty({__proto__:null,default:Ji,song_timeline:p,video_artist:g,video_id:O,video_publish_date_str:m,video_title:$},Symbol.toStringTag,{value:"Module"})),h="【歌枠】ボカロ曲を歌う！#ハノンの歌みた強化月間 /テーマ歌枠②【#パレプロ #香鳴ハノン】",S="Hanon Ch. 香鳴ハノン【パレプロ】",f="RbAQo36bRA4",y="2022-03-17",A=`0:00:00　開始\r
+1:19:56 ED`,Ji={video_title:g,video_artist:$,video_id:O,video_publish_date_str:m,song_timeline:p},io=Object.freeze(Object.defineProperty({__proto__:null,default:Ji,song_timeline:p,video_artist:$,video_id:O,video_publish_date_str:m,video_title:g},Symbol.toStringTag,{value:"Module"})),h="【歌枠】ボカロ曲を歌う！#ハノンの歌みた強化月間 /テーマ歌枠②【#パレプロ #香鳴ハノン】",S="Hanon Ch. 香鳴ハノン【パレプロ】",f="RbAQo36bRA4",y="2022-03-17",A=`0:00:00　開始\r
 0:02:07　はのは～！\r
 0:05:41　少女レイ/みきとP\r
 0:13:08　メランコリック/Junky\r
@@ -83,7 +83,7 @@ Live2Dの歌枠は、聴き惚れるだけじゃなくて見惚れるなぁ。�
 2:03:21　スパチャ読み\r
 2:05:24　告知
 
-ハノンちゃんの幅広い歌が聴けて、とてもありがたき。これからも色んな歌、期待してるね！`,Zi={video_title:h,video_artist:S,video_id:f,video_publish_date_str:y,song_timeline:A},oo=Object.freeze(Object.defineProperty({__proto__:null,default:Zi,song_timeline:A,video_artist:S,video_id:f,video_publish_date_str:y,video_title:h},Symbol.toStringTag,{value:"Module"})),M="【歌枠】男性アーティスト楽曲を歌う！#ハノンの歌みた強化月間 /テーマ歌枠③【#パレプロ #香鳴ハノン】",C="Hanon Ch. 香鳴ハノン【パレプロ】",P="-j0yu3XnAOg",I="2022-03-20",j=`0:00:00　開始\r
+ハノンちゃんの幅広い歌が聴けて、とてもありがたき。これからも色んな歌、期待してるね！`,Zi={video_title:h,video_artist:S,video_id:f,video_publish_date_str:y,song_timeline:A},oo=Object.freeze(Object.defineProperty({__proto__:null,default:Zi,song_timeline:A,video_artist:S,video_id:f,video_publish_date_str:y,video_title:h},Symbol.toStringTag,{value:"Module"})),M="【歌枠】男性アーティスト楽曲を歌う！#ハノンの歌みた強化月間 /テーマ歌枠③【#パレプロ #香鳴ハノン】",C="Hanon Ch. 香鳴ハノン【パレプロ】",P="-j0yu3XnAOg",I="2022-03-20",B=`0:00:00　開始\r
 0:01:06　はのは～！\r
 0:03:29　レモンパイ/マカロニえんぴつ\r
 0:09:19　恋人ごっこ/マカロニえんぴつ\r
@@ -107,7 +107,7 @@ Live2Dの歌枠は、聴き惚れるだけじゃなくて見惚れるなぁ。�
 2:11:26　スパチャ読み\r
 2:15:48　告知\r
 \r
-男性曲をここまで歌えるとは！心が洗われるような歌枠で、すごく元気がでました！`,xi={video_title:M,video_artist:C,video_id:P,video_publish_date_str:I,song_timeline:j},_o=Object.freeze(Object.defineProperty({__proto__:null,default:xi,song_timeline:j,video_artist:C,video_id:P,video_publish_date_str:I,video_title:M},Symbol.toStringTag,{value:"Module"})),B="【歌枠】YOASOBI楽曲を歌う！#ハノンの歌みた強化月間 /テーマ歌枠④【#パレプロ #香鳴ハノン】",H="Hanon Ch. 香鳴ハノン【パレプロ】",D="rlbLIjHEXpM",Y="2022-03-30",E=`0:00:00　開始\r
+男性曲をここまで歌えるとは！心が洗われるような歌枠で、すごく元気がでました！`,xi={video_title:M,video_artist:C,video_id:P,video_publish_date_str:I,song_timeline:B},_o=Object.freeze(Object.defineProperty({__proto__:null,default:xi,song_timeline:B,video_artist:C,video_id:P,video_publish_date_str:I,video_title:M},Symbol.toStringTag,{value:"Module"})),j="【歌枠】YOASOBI楽曲を歌う！#ハノンの歌みた強化月間 /テーマ歌枠④【#パレプロ #香鳴ハノン】",H="Hanon Ch. 香鳴ハノン【パレプロ】",D="rlbLIjHEXpM",Y="2022-03-30",E=`0:00:00　開始\r
 0:01:58　ラブレター/YOASOBI\r
 0:06:43　今月歌ってみた4本を上げて\r
 0:12:25　ハルカ/YOASOBI\r
@@ -125,7 +125,7 @@ Live2Dの歌枠は、聴き惚れるだけじゃなくて見惚れるなぁ。�
 1:26:39　パレプロ宣伝、告知\r
 1:29:49　スパチャ読み
 
-YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲とハノンちゃんの親和性が高くて、よき歌枠でした`,qi={video_title:B,video_artist:H,video_id:D,video_publish_date_str:Y,song_timeline:E},so=Object.freeze(Object.defineProperty({__proto__:null,default:qi,song_timeline:E,video_artist:H,video_id:D,video_publish_date_str:Y,video_title:B},Symbol.toStringTag,{value:"Module"})),T="【15分歌枠】わーーーーーーーい春だね！…歌えるん？【#パレプロ #香鳴ハノン】",N="Hanon Ch. 香鳴ハノン【パレプロ】",z="fvDWjaKTeD4",K="2022-04-16",R=`00:00　開始\r
+YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲とハノンちゃんの親和性が高くて、よき歌枠でした`,qi={video_title:j,video_artist:H,video_id:D,video_publish_date_str:Y,song_timeline:E},so=Object.freeze(Object.defineProperty({__proto__:null,default:qi,song_timeline:E,video_artist:H,video_id:D,video_publish_date_str:Y,video_title:j},Symbol.toStringTag,{value:"Module"})),T="【15分歌枠】わーーーーーーーい春だね！…歌えるん？【#パレプロ #香鳴ハノン】",N="Hanon Ch. 香鳴ハノン【パレプロ】",z="fvDWjaKTeD4",K="2022-04-16",R=`00:00　開始\r
 01:05　はのは～！\r
 03:51　はのは～！（仕切り直し）\r
 06:48　春になったら/miwa\r
@@ -156,16 +156,16 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 0:30:46 ハノンちゃん成長
 0:38:30 ハノンちゃん成長
 0:39:32 ハノンちゃん成長
-0:41:27 GO! GO! MANIACアカペライントロ
+0:41:27 GO! GO! MANIAC #{=アカペライントロ} / 放課後ティータイム
 0:42:14 GO! GO! MANIAC / 放課後ティータイム
 0:49:31 ハノンちゃん成長
-0:51:48 5&sol;1 19時～パレプロ無銭ライブ告知
+0:51:48 5/1 19時～パレプロ無銭ライブ告知
 0:52:50 U&I / 放課後ティータイム
 0:58:11 メンバーシップ200人達成
 1:03:36 ハム太郎とっとこうた / ハムちゃんず
-1:05:03 ハム太郎とっとこうた/ ハムちゃんず#{=香鳴ハノンMIX ver,ハノンちゃん成長}
-1:06:39 ハム太郎とっとこうた/ ハムちゃんず#{=宣伝入りver,ハノンちゃん成長}
-1:08:23 ハム太郎とっとこうた/ ハムちゃんず#{=パレプロ告知口上ver}
+1:05:03 ハム太郎とっとこうた / ハムちゃんず#{=香鳴ハノンMIX ver,ハノンちゃん成長}
+1:06:39 ハム太郎とっとこうた / ハムちゃんず#{=宣伝入りver,ハノンちゃん成長}
+1:08:23 ハム太郎とっとこうた / ハムちゃんず#{=パレプロ告知口上ver}
 1:11:15 スパチャ読み
 1:15:14 締めの言葉、告知
 1:18:09 ED
@@ -186,7 +186,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 0:01:06　はのは～！\r
 0:03:27　出逢った頃のように/Every Little Thing\r
 0:10:54　愛しさと切なさと心強さと/篠原涼子\r
-0:16:49　偶然の確率、Infinity/girl next door アカペラでちょっと\r
+0:16:49　偶然の確率、Infinity/girl next door #{=アカペラでちょっと}\r
 0:21:02　White Love/SPEED\r
 0:30:10　卒業写真/荒井由実\r
 0:37:12　少女A/中森明菜\r
@@ -199,7 +199,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 1:36:30　サイレントマジョリティー/欅坂46\r
 1:44:26　炎/LiSA\r
 1:55:24　ミックスナッツ/Official髭男dism\r
-2:01:41　Mela!/緑黄色社会 アカペラでちょっと\r
+2:01:41　Mela!/緑黄色社会 #{=アカペラでちょっと}\r
 2:03:08　群青/YOASOBI\r
 2:08:24　告知\r
 2:13:20　スパチャ読み\r
@@ -227,7 +227,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 1:43:55　ED（ちょっと待てぃ）\r
 1:44:35　ED
 
-有名ノリノリアニソンの連続に、パリピ集うの会。`,i0={video_title:dn,video_artist:sn,video_id:ln,video_publish_date_str:an,song_timeline:vn},bo=Object.freeze(Object.defineProperty({__proto__:null,default:i0,song_timeline:vn,video_artist:sn,video_id:ln,video_publish_date_str:an,video_title:dn},Symbol.toStringTag,{value:"Module"})),cn="【#耐久歌枠】チャンネル登録者数13000人したけどもうちょっと歌う！！初見さん大歓迎！【#パレプロ #香鳴ハノン】",un="Hanon Ch. 香鳴ハノン【パレプロ】",bn="A1E4uHqS4BQ",$n="2022-05-28",gn=`0:00:00　開始\r
+有名ノリノリアニソンの連続に、パリピ集うの会。`,i0={video_title:dn,video_artist:sn,video_id:ln,video_publish_date_str:an,song_timeline:vn},bo=Object.freeze(Object.defineProperty({__proto__:null,default:i0,song_timeline:vn,video_artist:sn,video_id:ln,video_publish_date_str:an,video_title:dn},Symbol.toStringTag,{value:"Module"})),cn="【#耐久歌枠】チャンネル登録者数13000人したけどもうちょっと歌う！！初見さん大歓迎！【#パレプロ #香鳴ハノン】",un="Hanon Ch. 香鳴ハノン【パレプロ】",bn="A1E4uHqS4BQ",gn="2022-05-28",$n=`0:00:00　開始\r
 0:01:37　はのは～！\r
 0:06:37　夢をかなえてドラえもん/mao\r
 0:13:09　気まぐれロマンティック/いきものがかり\r
@@ -263,7 +263,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 2:55:04　はのは～の謎\r
 2:57:19　ED
 
-登録者13,000人おめでとう！今日もいっぱい素敵なお歌を堪能。ハノンちゃんの歌声の魅力、ハノンちゃんというアイドルの魅力がより多くの人に伝わり、どんどん拡がっていくことを願い、応援しています。`,o0={video_title:cn,video_artist:un,video_id:bn,video_publish_date_str:$n,song_timeline:gn},$o=Object.freeze(Object.defineProperty({__proto__:null,default:o0,song_timeline:gn,video_artist:un,video_id:bn,video_publish_date_str:$n,video_title:cn},Symbol.toStringTag,{value:"Module"})),On="【歌枠/初見歓迎】2時間まるっとたのしく歌う！【#パレプロ #香鳴ハノン】",mn="Hanon Ch. 香鳴ハノン【パレプロ】",pn="KTjrPj-99zQ",hn="2022-06-10",Sn=`0:00:00　開始\r
+登録者13,000人おめでとう！今日もいっぱい素敵なお歌を堪能。ハノンちゃんの歌声の魅力、ハノンちゃんというアイドルの魅力がより多くの人に伝わり、どんどん拡がっていくことを願い、応援しています。`,o0={video_title:cn,video_artist:un,video_id:bn,video_publish_date_str:gn,song_timeline:$n},go=Object.freeze(Object.defineProperty({__proto__:null,default:o0,song_timeline:$n,video_artist:un,video_id:bn,video_publish_date_str:gn,video_title:cn},Symbol.toStringTag,{value:"Module"})),On="【歌枠/初見歓迎】2時間まるっとたのしく歌う！【#パレプロ #香鳴ハノン】",mn="Hanon Ch. 香鳴ハノン【パレプロ】",pn="KTjrPj-99zQ",hn="2022-06-10",Sn=`0:00:00　開始\r
 0:02:07　はのは～！\r
 0:05:31　GLAMOROUS SKY/中島美嘉\r
 0:10:06　たばこ/コレサワ\r
@@ -287,7 +287,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 2:01:02　スパチャ読み\r
 2:05:42　ED
 
-2時間でいっぱい歌ったね～いっぱいお歌を聴いて、お寿司が食べたくなりました未来を見据えたとこ好き。`,_0={video_title:On,video_artist:mn,video_id:pn,video_publish_date_str:hn,song_timeline:Sn},go=Object.freeze(Object.defineProperty({__proto__:null,default:_0,song_timeline:Sn,video_artist:mn,video_id:pn,video_publish_date_str:hn,video_title:On},Symbol.toStringTag,{value:"Module"})),fn="【#耐久歌枠 / 初見大歓迎】チャンネル登録15000人達成まで歌い続ける！【#パレプロ #香鳴ハノン】",yn="Hanon Ch. 香鳴ハノン【パレプロ】",An="4uUid_P7CMs",Mn="2022-06-17",Cn=`0:00:00　開始\r
+2時間でいっぱい歌ったね～いっぱいお歌を聴いて、お寿司が食べたくなりました未来を見据えたとこ好き。`,_0={video_title:On,video_artist:mn,video_id:pn,video_publish_date_str:hn,song_timeline:Sn},$o=Object.freeze(Object.defineProperty({__proto__:null,default:_0,song_timeline:Sn,video_artist:mn,video_id:pn,video_publish_date_str:hn,video_title:On},Symbol.toStringTag,{value:"Module"})),fn="【#耐久歌枠 / 初見大歓迎】チャンネル登録15000人達成まで歌い続ける！【#パレプロ #香鳴ハノン】",yn="Hanon Ch. 香鳴ハノン【パレプロ】",An="4uUid_P7CMs",Mn="2022-06-17",Cn=`0:00:00　開始\r
 0:04:17　はのは～！
 0:13:12　夜に駆ける/YOASOBI\r
 0:21:37　あの夢をなぞって/YOASOBI\r
@@ -350,7 +350,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 6:31:58　ミックスナッツ/Official髭男dism\r
 6:42:04　だから僕は音楽を辞めた/ヨルシカ\r
 6:49:31　花に亡霊/ヨルシカ\r
-6:54:58　summertimeアカペラでちょっと\r
+6:54:58　summertime/cinnamons, evening cinema#{=アカペラでちょっと}\r
 6:56:37　リツイート拡散してくれてる人たち\r
 7:01:57　ハノン教\r
 7:10:18　ただ君に晴れ/ヨルシカ\r
@@ -369,7 +369,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 8:26:34　告知\r
 8:29:20　ED
 
-登録者15,000人おめでとう！ハノンちゃんは何でもやり遂げるのがすごい。これからも躍進を見守り、応援しています。`,d0={video_title:fn,video_artist:yn,video_id:An,video_publish_date_str:Mn,song_timeline:Cn},Oo=Object.freeze(Object.defineProperty({__proto__:null,default:d0,song_timeline:Cn,video_artist:yn,video_id:An,video_publish_date_str:Mn,video_title:fn},Symbol.toStringTag,{value:"Module"})),Pn="【歌枠 / 初見大歓迎】3Dで1時間だけ歌う！ゆっくりしていってね💠【#パレプロ #香鳴ハノン】",In="Hanon Ch. 香鳴ハノン【パレプロ】",jn="91FI9UgHkDM",Bn="2022-06-21",Hn=`0:00:00　開始\r
+登録者15,000人おめでとう！ハノンちゃんは何でもやり遂げるのがすごい。これからも躍進を見守り、応援しています。`,d0={video_title:fn,video_artist:yn,video_id:An,video_publish_date_str:Mn,song_timeline:Cn},Oo=Object.freeze(Object.defineProperty({__proto__:null,default:d0,song_timeline:Cn,video_artist:yn,video_id:An,video_publish_date_str:Mn,video_title:fn},Symbol.toStringTag,{value:"Module"})),Pn="【歌枠 / 初見大歓迎】3Dで1時間だけ歌う！ゆっくりしていってね💠【#パレプロ #香鳴ハノン】",In="Hanon Ch. 香鳴ハノン【パレプロ】",Bn="91FI9UgHkDM",jn="2022-06-21",Hn=`0:00:00　開始\r
 0:02:07　はのは～！\r
 0:02:50　6月新衣装・生写真\r
 0:08:01　SUN/星野源\r
@@ -383,7 +383,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 0:57:11　スパチャ読み\r
 1:02:32　ED\r
 
-❁❉❂素敵な衣装に、この季節に合う歌～♬❁❉❂`,s0={video_title:Pn,video_artist:In,video_id:jn,video_publish_date_str:Bn,song_timeline:Hn},mo=Object.freeze(Object.defineProperty({__proto__:null,default:s0,song_timeline:Hn,video_artist:In,video_id:jn,video_publish_date_str:Bn,video_title:Pn},Symbol.toStringTag,{value:"Module"})),Dn="【歌枠 / 初見歓迎】今度こそ超高音質…！きっと声が気持ちよく聞こえるお歌枠【#パレプロ #香鳴ハノン】",Yn="Hanon Ch. 香鳴ハノン【パレプロ】",En="CeVTUsbuVFE",Tn="2022-06-30",Nn=`0:00:00　開始\r
+❁❉❂素敵な衣装に、この季節に合う歌～♬❁❉❂`,s0={video_title:Pn,video_artist:In,video_id:Bn,video_publish_date_str:jn,song_timeline:Hn},mo=Object.freeze(Object.defineProperty({__proto__:null,default:s0,song_timeline:Hn,video_artist:In,video_id:Bn,video_publish_date_str:jn,video_title:Pn},Symbol.toStringTag,{value:"Module"})),Dn="【歌枠 / 初見歓迎】今度こそ超高音質…！きっと声が気持ちよく聞こえるお歌枠【#パレプロ #香鳴ハノン】",Yn="Hanon Ch. 香鳴ハノン【パレプロ】",En="CeVTUsbuVFE",Tn="2022-06-30",Nn=`0:00:00　開始\r
 0:02:05　はのは～！\r
 0:03:54　1コーラス歌ってみたについて\r
 0:06:39　ドラえもん/星野源\r
@@ -511,7 +511,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 
 リレー歌枠おつサキュノンでした
 今回の中では『世界は恋に落ちている』が好きです
-明日でコラボウィークも終わりですが最終回も楽しみにしてます`,$0={video_title:st,video_artist:lt,video_id:at,video_publish_date_str:vt,song_timeline:ct},Mo=Object.freeze(Object.defineProperty({__proto__:null,default:$0,song_timeline:ct,video_artist:lt,video_id:at,video_publish_date_str:vt,video_title:st},Symbol.toStringTag,{value:"Module"})),ut="【歌枠 / 初見歓迎】ハッピーになっちゃう歌枠【#パレプロ #香鳴ハノン】",bt="Hanon Ch. 香鳴ハノン【パレプロ】",$t="WPO6SkAX0yQ",gt="2022-08-06",Ot=`0:00	待機\r
+明日でコラボウィークも終わりですが最終回も楽しみにしてます`,g0={video_title:st,video_artist:lt,video_id:at,video_publish_date_str:vt,song_timeline:ct},Mo=Object.freeze(Object.defineProperty({__proto__:null,default:g0,song_timeline:ct,video_artist:lt,video_id:at,video_publish_date_str:vt,video_title:st},Symbol.toStringTag,{value:"Module"})),ut="【歌枠 / 初見歓迎】ハッピーになっちゃう歌枠【#パレプロ #香鳴ハノン】",bt="Hanon Ch. 香鳴ハノン【パレプロ】",gt="WPO6SkAX0yQ",$t="2022-08-06",Ot=`0:00	待機\r
 2:15	開始　はのは～\r
 4:00	チャンス！ / 月島きらり\r
 ～7:41	\r
@@ -521,7 +521,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 ～22:06	\r
 24:02	ダンデライオン / BUMP OF CHICKEN\r
 ～27:07	\r
-29:34	シーソーゲーム 〜勇敢な恋の歌〜 / Mr.Children(一番のみ)\r
+29:34	シーソーゲーム 〜勇敢な恋の歌〜 / Mr.Children#{=一番のみ}\r
 ～31:14	\r
 31:45	さくらんぼ / 大塚愛\r
 ～35:47	\r
@@ -534,7 +534,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 57:05	FA紹介の話～告知～終了　はのは～\r
 
 とてもハッピーになれるセトリでありがとうございました
-今月来月はライブ多めですが楽しんでいきましょう！`,g0={video_title:ut,video_artist:bt,video_id:$t,video_publish_date_str:gt,song_timeline:Ot},Co=Object.freeze(Object.defineProperty({__proto__:null,default:g0,song_timeline:Ot,video_artist:bt,video_id:$t,video_publish_date_str:gt,video_title:ut},Symbol.toStringTag,{value:"Module"})),mt="【歌枠 / 初見歓迎】わたしたちオトナだよね？聴かせるバラード歌枠【#香鳴ハノン #暁月クララ】",pt="Hanon Ch. 香鳴ハノン【パレプロ】",ht="8SYSSJFLaqE",St="2022-08-07",ft=`0:00	待機\r
+今月来月はライブ多めですが楽しんでいきましょう！`,$0={video_title:ut,video_artist:bt,video_id:gt,video_publish_date_str:$t,song_timeline:Ot},Co=Object.freeze(Object.defineProperty({__proto__:null,default:$0,song_timeline:Ot,video_artist:bt,video_id:gt,video_publish_date_str:$t,video_title:ut},Symbol.toStringTag,{value:"Module"})),mt="【歌枠 / 初見歓迎】わたしたちオトナだよね？聴かせるバラード歌枠【#香鳴ハノン #暁月クララ】",pt="Hanon Ch. 香鳴ハノン【パレプロ】",ht="8SYSSJFLaqE",St="2022-08-07",ft=`0:00	待機\r
 2:34	開始　はのは～\r
 4:58	ドライフラワー / 優里\r
 ～9:50	\r
@@ -563,7 +563,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 00:49:18 プラチナ / 坂本真綾
 00:53:40 ハム太郎とっとこうた / ハムちゃんず
 00:56:12 チャンネル登録の歌 / 香鳴ハノン
-00:56:44 チャンネル登録の歌 / 亜玖魔サキ`,m0={video_title:yt,video_artist:At,video_id:Mt,video_publish_date_str:Ct,song_timeline:Pt},Io=Object.freeze(Object.defineProperty({__proto__:null,default:m0,song_timeline:Pt,video_artist:At,video_id:Mt,video_publish_date_str:Ct,video_title:yt},Symbol.toStringTag,{value:"Module"})),It="【歌枠 / 初見歓迎】ときめくしかない！！ラブソング歌枠💗【#パレプロ #香鳴ハノン】",jt="Hanon Ch. 香鳴ハノン【パレプロ】",Bt="wKD2xr8RQtc",Ht="2022-08-21",Dt=`今回のタイムスタンプ＆セトリ	\r
+00:56:44 チャンネル登録の歌 / 亜玖魔サキ`,m0={video_title:yt,video_artist:At,video_id:Mt,video_publish_date_str:Ct,song_timeline:Pt},Io=Object.freeze(Object.defineProperty({__proto__:null,default:m0,song_timeline:Pt,video_artist:At,video_id:Mt,video_publish_date_str:Ct,video_title:yt},Symbol.toStringTag,{value:"Module"})),It="【歌枠 / 初見歓迎】ときめくしかない！！ラブソング歌枠💗【#パレプロ #香鳴ハノン】",Bt="Hanon Ch. 香鳴ハノン【パレプロ】",jt="wKD2xr8RQtc",Ht="2022-08-21",Dt=`今回のタイムスタンプ＆セトリ	\r
 0:00	待機\r
 1:10	開始　はのは～\r
 2:23	メンギフ祭り\r
@@ -584,7 +584,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 	\r
 200人越えおめでとうございます！	\r
 とてもときめきを感じるセトリありがとうございました	\r
-スプカラもスプの周年ライブも楽しみにしてます！`,p0={video_title:It,video_artist:jt,video_id:Bt,video_publish_date_str:Ht,song_timeline:Dt},jo=Object.freeze(Object.defineProperty({__proto__:null,default:p0,song_timeline:Dt,video_artist:jt,video_id:Bt,video_publish_date_str:Ht,video_title:It},Symbol.toStringTag,{value:"Module"})),Yt="【歌枠 / 初見歓迎】激かわいい水着で夏のアイドル曲を歌っちゃえ！【#パレプロ #香鳴ハノン】",Et="Hanon Ch. 香鳴ハノン【パレプロ】",Tt="YOvj5QhUfdc",Nt="2022-08-22",zt=`今回のタイムスタンプ＆セトリ	\r
+スプカラもスプの周年ライブも楽しみにしてます！`,p0={video_title:It,video_artist:Bt,video_id:jt,video_publish_date_str:Ht,song_timeline:Dt},Bo=Object.freeze(Object.defineProperty({__proto__:null,default:p0,song_timeline:Dt,video_artist:Bt,video_id:jt,video_publish_date_str:Ht,video_title:It},Symbol.toStringTag,{value:"Module"})),Yt="【歌枠 / 初見歓迎】激かわいい水着で夏のアイドル曲を歌っちゃえ！【#パレプロ #香鳴ハノン】",Et="Hanon Ch. 香鳴ハノン【パレプロ】",Tt="YOvj5QhUfdc",Nt="2022-08-22",zt=`今回のタイムスタンプ＆セトリ	\r
 0:00	待機\r
 2:13	開始　はのは～\r
 4:40	Everyday、カチューシャ / AKB48\r
@@ -603,7 +603,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 	\r
 水着でアイドル歌枠ありがとうございます	\r
 遅めの時間からでしたが同接100人超えおめでとうございます	\r
-セトリ先出してのアイドル枠も楽しみにしています　毎日楽しみが増えてます`,h0={video_title:Yt,video_artist:Et,video_id:Tt,video_publish_date_str:Nt,song_timeline:zt},Bo=Object.freeze(Object.defineProperty({__proto__:null,default:h0,song_timeline:zt,video_artist:Et,video_id:Tt,video_publish_date_str:Nt,video_title:Yt},Symbol.toStringTag,{value:"Module"})),Kt="【#スプカラ4時間SP/再放送】全身3Dで歌う！はしゃぐ！生態暴露？！Sputrip2周年直前スペシャル💫【#常磐カナメ #暁月クララ #香鳴ハノン】",Rt="Hanon Ch. 香鳴ハノン【パレプロ】",Lt="G48mbn-ItLw",Ut="2022-09-01",Gt=`今回のタイムスタンプ＆セトリ	\r
+セトリ先出してのアイドル枠も楽しみにしています　毎日楽しみが増えてます`,h0={video_title:Yt,video_artist:Et,video_id:Tt,video_publish_date_str:Nt,song_timeline:zt},jo=Object.freeze(Object.defineProperty({__proto__:null,default:h0,song_timeline:zt,video_artist:Et,video_id:Tt,video_publish_date_str:Nt,video_title:Yt},Symbol.toStringTag,{value:"Module"})),Kt="【#スプカラ4時間SP/再放送】全身3Dで歌う！はしゃぐ！生態暴露？！Sputrip2周年直前スペシャル💫【#常磐カナメ #暁月クララ #香鳴ハノン】",Rt="Hanon Ch. 香鳴ハノン【パレプロ】",Lt="G48mbn-ItLw",Ut="2022-09-01",Gt=`今回のタイムスタンプ＆セトリ	\r
 0:00:00	待機\r
 \r
 0:00:04	ココ☆ナツ / ももいろクローバー\r
@@ -766,7 +766,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 
 ゲリラ歌枠お疲れ様でした。\r
 夜中だけあってしっとり目の曲多め良かったです。\r
-えるすりー本番頑張ってください！`,C0={video_title:le,video_artist:ae,video_id:ve,video_publish_date_str:ce,song_timeline:ue},No=Object.freeze(Object.defineProperty({__proto__:null,default:C0,song_timeline:ue,video_artist:ae,video_id:ve,video_publish_date_str:ce,video_title:le},Symbol.toStringTag,{value:"Module"})),be="【リレー歌枠】嫌がるののちを口説いてたどり着いた歌枠コラボ💗 #はのののん【#乙川のの #香鳴ハノン】",$e="Hanon Ch. 香鳴ハノン【パレプロ】",ge="FdpCxNcHsqc",Oe="2022-10-08",me=`今回のタイムスタンプ＆セトリ\r
+えるすりー本番頑張ってください！`,C0={video_title:le,video_artist:ae,video_id:ve,video_publish_date_str:ce,song_timeline:ue},No=Object.freeze(Object.defineProperty({__proto__:null,default:C0,song_timeline:ue,video_artist:ae,video_id:ve,video_publish_date_str:ce,video_title:le},Symbol.toStringTag,{value:"Module"})),be="【リレー歌枠】嫌がるののちを口説いてたどり着いた歌枠コラボ💗 #はのののん【#乙川のの #香鳴ハノン】",ge="Hanon Ch. 香鳴ハノン【パレプロ】",$e="FdpCxNcHsqc",Oe="2022-10-08",me=`今回のタイムスタンプ＆セトリ\r
 \r
 0:00 待機\r
 3:10 開始 はのはー、こんののー\r
@@ -791,48 +791,29 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 
 リレー歌枠前半、お疲れ様でした\r
 さいしんのあにそんとお二人の楽しそうな雑談でとても楽しめました\r
-後半も楽しみです！`,P0={video_title:be,video_artist:$e,video_id:ge,video_publish_date_str:Oe,song_timeline:me},zo=Object.freeze(Object.defineProperty({__proto__:null,default:P0,song_timeline:me,video_artist:$e,video_id:ge,video_publish_date_str:Oe,video_title:be},Symbol.toStringTag,{value:"Module"})),pe="【歌枠 / 初見歓迎】ハノンのこと知ってる？こんな顔👀こんな歌声🎤【#パレプロ #香鳴ハノン】",he="Hanon Ch. 香鳴ハノン【パレプロ】",Se="u3yMAETjohE",fe="2022-10-09",ye=`今回のタイムスタンプ＆セトリ\r
-\r
-0:00 待機\r
-2:34 開始　はのは～\r
-4:00 買ったフライパンが重かった話\r
-\r
-12:43 ドライフラワー / 優里\r
-~17:34 \r
-21:32 シンデレラボーイ / Saucy Dog\r
-~25:39 \r
-31:46 優しい彗星 / YOASOBI\r
-~35:29 \r
-39:00 ノーダウト / Official髭男dism\r
-～42:25 \r
-42:36 告知　明日歌みたが上がるよ！\r
-49:36 シャルル(サビだけ\r
-~50:15 \r
-52:26 神っぽいな\r
-53:20 神っぽいな(リトライ\r
-54:40 神っぽいな / ピノキオピー\r
-～58:04 \r
-\r
-1:02:20 ライオン / May'n、中島愛\r
-～1:07:25 \r
-1:09:34 告知　明日歌みた二本目も上がるよ！\r
-1:13:50 イントゥ・ジ・アンノウン\r
-1:16:00 イントゥ・ジ・アンノウン(リトライ\r
-1:17:30  イントゥ・ジ・アンノウン / 松たか子\r
-1:18:58 判っちゃったハノンちゃん\r
-1:26:03 シュガーソングとビターステップ / UNISON SQUARE GARDEN\r
-~1:30:35 \r
-1:34:03 夏の日の1993 / Class\r
-～1:38:34 \r
-1:42:34 Everything / MISIA\r
-～1:49:39 \r
-\r
-1:50:50 スパチャ名前読み、終わり　はのはー\r
-1:54:56 エンドカード
-
-ソロ歌枠お疲れ様でしたー\r
-ハノンちゃんのヒゲダンは良いぞ...良いぞ...\r
-明日の歌みた2本公開楽しみにしてます`,I0={video_title:pe,video_artist:he,video_id:Se,video_publish_date_str:fe,song_timeline:ye},Ko=Object.freeze(Object.defineProperty({__proto__:null,default:I0,song_timeline:ye,video_artist:he,video_id:Se,video_publish_date_str:fe,video_title:pe},Symbol.toStringTag,{value:"Module"})),Ae="【コラボ歌枠 / 初見歓迎】初対面だけど歌で仲を深めたいっ！ #はのちる を見つけてね👀🎀 【#結城ミチル #香鳴ハノン】",Me="Hanon Ch. 香鳴ハノン【パレプロ】",Ce="iPWq-ahsG84",Pe="2022-10-10",Ie=`今回のタイムスタンプ＆セトリ\r
+後半も楽しみです！`,P0={video_title:be,video_artist:ge,video_id:$e,video_publish_date_str:Oe,song_timeline:me},zo=Object.freeze(Object.defineProperty({__proto__:null,default:P0,song_timeline:me,video_artist:ge,video_id:$e,video_publish_date_str:Oe,video_title:be},Symbol.toStringTag,{value:"Module"})),pe="【歌枠 / 初見歓迎】ハノンのこと知ってる？こんな顔👀こんな歌声🎤【#パレプロ #香鳴ハノン】",he="Hanon Ch. 香鳴ハノン【パレプロ】",Se="u3yMAETjohE",fe="2022-10-09",ye=`0:00:00 待機
+0:02:34 開始 はのは～
+0:04:00 買ったフライパンが重かった話
+0:12:43 ドライフラワー / 優里
+0:21:32 シンデレラボーイ / Saucy Dog
+0:31:46 優しい彗星 / YOASOBI
+0:39:00 ノーダウト / Official髭男dism
+0:42:36 告知 明日歌みたが上がるよ！
+0:49:36 シャルル#{=サビだけ} / バルーンP
+0:52:26 神っぽいな / ピノキオピー
+0:53:20 神っぽいな#{=リトライ} / ピノキオピー
+0:54:40 神っぽいな / ピノキオピー
+1:02:20 ライオン / May'n、中島愛
+1:09:34 告知 明日歌みた二本目も上がるよ！
+1:13:50 イントゥ・ジ・アンノウン/ 松たか子
+1:16:00 イントゥ・ジ・アンノウン#{=リトライ}/ 松たか子
+1:17:30 イントゥ・ジ・アンノウン / 松たか子
+1:18:58 判っちゃったハノンちゃん
+1:26:03 シュガーソングとビターステップ / UNISON SQUARE GARDEN
+1:34:03 夏の日の1993 / Class
+1:42:34 Everything / MISIA
+1:50:50 スパチャ名前読み、終わり はのはー
+1:54:56 エンドカード`,I0={video_title:pe,video_artist:he,video_id:Se,video_publish_date_str:fe,song_timeline:ye},Ko=Object.freeze(Object.defineProperty({__proto__:null,default:I0,song_timeline:ye,video_artist:he,video_id:Se,video_publish_date_str:fe,video_title:pe},Symbol.toStringTag,{value:"Module"})),Ae="【コラボ歌枠 / 初見歓迎】初対面だけど歌で仲を深めたいっ！ #はのちる を見つけてね👀🎀 【#結城ミチル #香鳴ハノン】",Me="Hanon Ch. 香鳴ハノン【パレプロ】",Ce="iPWq-ahsG84",Pe="2022-10-10",Ie=`今回のタイムスタンプ＆セトリ\r
 \r
 0:00 待機\r
 2:35 開始　はのはーこんちる～\r
@@ -860,7 +841,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 
 コラボ歌枠お疲れ様でしたー\r
 ミチルさんの切れのあるトークと二人の初対面なのに仲の良さそうな歌声とても楽しめました\r
-次回コラボも楽しみにしてますね`,j0={video_title:Ae,video_artist:Me,video_id:Ce,video_publish_date_str:Pe,song_timeline:Ie},Ro=Object.freeze(Object.defineProperty({__proto__:null,default:j0,song_timeline:Ie,video_artist:Me,video_id:Ce,video_publish_date_str:Pe,video_title:Ae},Symbol.toStringTag,{value:"Module"})),je="【雑談歌枠】初見さん大歓迎💫あと100人でチャンネル登録18000人！！！【#パレプロ #香鳴ハノン】",Be="Hanon Ch. 香鳴ハノン【パレプロ】",He="fohzMcdIpEk",De="2022-10-15",Ye=`今回のタイムスタンプ＆セトリ\r
+次回コラボも楽しみにしてますね`,B0={video_title:Ae,video_artist:Me,video_id:Ce,video_publish_date_str:Pe,song_timeline:Ie},Ro=Object.freeze(Object.defineProperty({__proto__:null,default:B0,song_timeline:Ie,video_artist:Me,video_id:Ce,video_publish_date_str:Pe,video_title:Ae},Symbol.toStringTag,{value:"Module"})),Be="【雑談歌枠】初見さん大歓迎💫あと100人でチャンネル登録18000人！！！【#パレプロ #香鳴ハノン】",je="Hanon Ch. 香鳴ハノン【パレプロ】",He="fohzMcdIpEk",De="2022-10-15",Ye=`今回のタイムスタンプ＆セトリ\r
 \r
 0:00 待機\r
 1:54 開始　はのは～　ガチ恋距離助かる\r
@@ -928,14 +909,14 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 
 急遽耐久のようになりましたがお疲れ様でした\r
 18000人達成おめでとうございます！\r
-年末ライブまで体調に気をつけつつ頑張ってください　応援しています`,B0={video_title:je,video_artist:Be,video_id:He,video_publish_date_str:De,song_timeline:Ye},Lo=Object.freeze(Object.defineProperty({__proto__:null,default:B0,song_timeline:Ye,video_artist:Be,video_id:He,video_publish_date_str:De,video_title:je},Symbol.toStringTag,{value:"Module"})),Ee="【歌枠 / 初見歓迎】1曲聴いていきませんか？深夜のまったり歌枠🌙【#パレプロ #香鳴ハノン】",Te="Hanon Ch. 香鳴ハノン【パレプロ】",Ne="ac8sB8ALLzU",ze="2022-10-17",Ke=`今回のタイムスタンプ＆セトリ\r
+年末ライブまで体調に気をつけつつ頑張ってください　応援しています`,j0={video_title:Be,video_artist:je,video_id:He,video_publish_date_str:De,song_timeline:Ye},Lo=Object.freeze(Object.defineProperty({__proto__:null,default:j0,song_timeline:Ye,video_artist:je,video_id:He,video_publish_date_str:De,video_title:Be},Symbol.toStringTag,{value:"Module"})),Ee="【歌枠 / 初見歓迎】1曲聴いていきませんか？深夜のまったり歌枠🌙【#パレプロ #香鳴ハノン】",Te="Hanon Ch. 香鳴ハノン【パレプロ】",Ne="ac8sB8ALLzU",ze="2022-10-17",Ke=`今回のタイムスタンプ＆セトリ\r
 \r
 0:00 待機\r
 2:13 開始　はのはー\r
 9:48 花に亡霊 / ヨルシカ\r
 ～13:59 \r
 19:52 ただ君に晴れ\r
-20:28 ただ君に晴れ / ヨルシカ#{=リベンジ}　(ただ君に晴れ好き\r
+20:28 ただ君に晴れ / ヨルシカ#{=リベンジ,ただ君に晴れ好き}\r
 ~23:52 \r
 26:08 カタオモイ\r
 26:30 カタオモイ / Aimer#{=リベンジ}\r
@@ -991,7 +972,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 1:03:45 スクショタイムここまで \r
 1:07:06 スクショタイム再び\r
 1:11:14 スクショタイムここまで\r
-1:11:25 夜もすがら君想ふ / 西沢さんP (好き\r
+1:11:25 夜もすがら君想ふ / 西沢さんP #{=好き}\r
 ～1:15:26 \r
 1:16:15 ツイッターとか味覚とかホラゲーの話\r
 1:35:28 ファンサ / Mona\r
@@ -1002,50 +983,32 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 
 コラボ歌枠お疲れ様でしたー
 ホラゲーの話をしている時のミレアちゃんがとても生き生きしてかわいかったので
-次回ホラゲーコラボ楽しみにしていますね`,D0={video_title:Re,video_artist:Le,video_id:Ue,video_publish_date_str:Ge,song_timeline:we},Go=Object.freeze(Object.defineProperty({__proto__:null,default:D0,song_timeline:we,video_artist:Le,video_id:Ue,video_publish_date_str:Ge,video_title:Re},Symbol.toStringTag,{value:"Module"})),ke="【歌枠 / 初見大歓迎】同接250人いきたいな…！しっとりバラード歌枠🎤✨【 #パレプロ #香鳴ハノン 】",Fe="Hanon Ch. 香鳴ハノン【パレプロ】",Qe="s-5wDk_Z3GM",We="2022-10-24",Ve=`今回のタイムスタンプ＆セトリ\r
-\r
-0:00 待機\r
-1:45 開始　はのは～\r
-7:04 糸 / 中島みゆき\r
-~12:12 \r
-17:10 M / プリンセス プリンセス\r
-~21:45 \r
-24:13 Song for... / HY\r
-~29:05 \r
-30:33 AM11:00(アカペラ軽く　好きありがとうございます\r
-35:05 オトシモノ / Miwa\r
-~36:17 \r
-36:43 オトシモノ / Miwa#{=リテイク}\r
-~42:09 \r
-44:33 たぶん / YOASOBI\r
-~49:03 \r
-51:05 200人突破\r
-53:47 やさしさで溢れるように / JUJU　(好き\r
-~58:40 \r
-\r
-1:00:55 愛唄 / GReeeeN\r
-~1:04:57 \r
-1:08:55 大阪LOVER / DREAMS COME TRUE\r
-~1:13:22 \r
-1:19:20 250人突破\r
-1:20:50 さよならの向う側 / 山口百恵\r
-~1:27:01 \r
-1:30:00 卒業写真 / 松任谷由実\r
-~1:34:15 \r
-1:35:28 瑠璃色の地球 / 松田聖子\r
-~1:39:51 \r
-1:46:17 ベテルギウス / 優里\r
-~1:50:17 \r
-1:58:10 黒毛和牛上塩タン焼680円 / 大塚愛\r
-~2:02:18 \r
-\r
-2:03:00 告知、スパチャ読み、グッズ告知　終わり　はのは～\r
+次回ホラゲーコラボ楽しみにしていますね`,D0={video_title:Re,video_artist:Le,video_id:Ue,video_publish_date_str:Ge,song_timeline:we},Go=Object.freeze(Object.defineProperty({__proto__:null,default:D0,song_timeline:we,video_artist:Le,video_id:Ue,video_publish_date_str:Ge,video_title:Re},Symbol.toStringTag,{value:"Module"})),ke="【歌枠 / 初見大歓迎】同接250人いきたいな…！しっとりバラード歌枠🎤✨【 #パレプロ #香鳴ハノン 】",Fe="Hanon Ch. 香鳴ハノン【パレプロ】",Qe="s-5wDk_Z3GM",We="2022-10-24",Ve=`0:00:00 待機
+0:01:45 開始 はのは～
+0:07:04 糸 / 中島みゆき
+0:17:10 M / プリンセス プリンセス
+0:24:13 Song for... / HY
+0:30:33 AM11:00#{=アカペラ軽く,好きありがとうございます} / HY
+0:35:05 オトシモノ / Miwa
+0:36:43 オトシモノ / Miwa
+0:44:33 たぶん / YOASOBI
+0:51:05 200人突破
+0:53:47 やさしさで溢れるように / JUJU #{=好き}
+1:00:55 愛唄 / GReeeeN
+1:08:55 大阪LOVER / DREAMS COME TRUE
+1:19:20 250人突破
+1:20:50 さよならの向う側 / 山口百恵
+1:30:00 卒業写真 / 松任谷由実
+1:35:28 瑠璃色の地球 / 松田聖子
+1:46:17 ベテルギウス / 優里
+1:58:10 黒毛和牛上塩タン焼680円 / 大塚愛
+2:03:00 告知、スパチャ読み、グッズ告知 終わり はのは～
 2:18:57 エンドカード`,Y0={video_title:ke,video_artist:Fe,video_id:Qe,video_publish_date_str:We,song_timeline:Ve},wo=Object.freeze(Object.defineProperty({__proto__:null,default:Y0,song_timeline:Ve,video_artist:Fe,video_id:Qe,video_publish_date_str:We,video_title:ke},Symbol.toStringTag,{value:"Module"})),Je="【歌枠 / 初見大歓迎】アイドルソング縛りでかわいく楽しく歌う🎤💞✨【 #パレプロ #香鳴ハノン 】",Ze="Hanon Ch. 香鳴ハノン【パレプロ】",xe="1NRVnhZhA44",qe="2022-10-27",Xe=`今回のタイムスタンプ＆セトリ\r
 \r
 0:00 待機\r
 3:45 開始　はのは～\r
 \r
-8:04 大声ダイヤモンド \r
+8:04 大声ダイヤモンド / AKB48 \r
 9:46 大声ダイヤモンド / AKB48#{=リテイク}\r
 ～13:56 \r
 14:38 言い訳Maybe / AKB48\r
@@ -1141,11 +1104,11 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 ~36:38 \r
 41:30 水平線 / Back number\r
 ~46:16 \r
-55:42 帰り道\r
+55:42 帰り道 / 加藤英美里\r
 57:07 帰り道 / 加藤英美里#{=リテイク}\r
 ~1:01:24 
 \r
-1:05:03 Snow halation\r
+1:05:03 Snow halation/ μ's\r
 1:05:37 Snow halation / μ's#{=リテイク}\r
 ~1:09:54 \r
 1:12:10 サヨナラの意味 / 乃木坂46\r
@@ -1158,7 +1121,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 ~1:39:05 
 \r
 1:40:22 スパチャ読み　告知\r
-1:43:41 君をのせて(アカペラ\r
+1:43:41 君をのせて/井上あずみ#{=アカペラ}\r
 1:49:47 エンドカード\r
 \r
 初見150人耐久の打ち上げ歌枠お疲れ様でした\r
@@ -1190,7 +1153,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 1:32:19 エンドカード(Cパート\r
 \r
 かわいい曲歌枠お疲れ様でした\r
-明日以降も配信いっぱいで楽しみにしてます`,z0={video_title:ar,video_artist:vr,video_id:cr,video_publish_date_str:ur,song_timeline:br},Wo=Object.freeze(Object.defineProperty({__proto__:null,default:z0,song_timeline:br,video_artist:vr,video_id:cr,video_publish_date_str:ur,video_title:ar},Symbol.toStringTag,{value:"Module"})),$r="【歌枠 / 初見大歓迎】一曲聴いていきませんか？💠懐メロを歌います🎤【#パレプロ #香鳴ハノン】",gr="Hanon Ch. 香鳴ハノン【パレプロ】",Or="8O5_9Ak8Cds",mr="2022-11-07",pr=`今回のタイムスタンプ＆セトリ\r
+明日以降も配信いっぱいで楽しみにしてます`,z0={video_title:ar,video_artist:vr,video_id:cr,video_publish_date_str:ur,song_timeline:br},Wo=Object.freeze(Object.defineProperty({__proto__:null,default:z0,song_timeline:br,video_artist:vr,video_id:cr,video_publish_date_str:ur,video_title:ar},Symbol.toStringTag,{value:"Module"})),gr="【歌枠 / 初見大歓迎】一曲聴いていきませんか？💠懐メロを歌います🎤【#パレプロ #香鳴ハノン】",$r="Hanon Ch. 香鳴ハノン【パレプロ】",Or="8O5_9Ak8Cds",mr="2022-11-07",pr=`今回のタイムスタンプ＆セトリ\r
 \r
 0:00 開始！？\r
 0:33 改めて開始　はのは～\r
@@ -1205,7 +1168,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 \r
 懐メロ枠お疲れ様でした\r
 短時間でも配信してくれてありがとうございます&19000人登録おめでとうございます\r
-口内炎酷くならないようお大事にです`,K0={video_title:$r,video_artist:gr,video_id:Or,video_publish_date_str:mr,song_timeline:pr},Vo=Object.freeze(Object.defineProperty({__proto__:null,default:K0,song_timeline:pr,video_artist:gr,video_id:Or,video_publish_date_str:mr,video_title:$r},Symbol.toStringTag,{value:"Module"})),hr="【歌枠 / 初見大歓迎】女性ボーカルしばりでかわいくかっこよく🎤🎀【#パレプロ #香鳴ハノン】",Sr="Hanon Ch. 香鳴ハノン【パレプロ】",fr="aqbit4boUyY",yr="2022-11-08",Ar=`今回のタイムスタンプ＆セトリ\r
+口内炎酷くならないようお大事にです`,K0={video_title:gr,video_artist:$r,video_id:Or,video_publish_date_str:mr,song_timeline:pr},Vo=Object.freeze(Object.defineProperty({__proto__:null,default:K0,song_timeline:pr,video_artist:$r,video_id:Or,video_publish_date_str:mr,video_title:gr},Symbol.toStringTag,{value:"Module"})),hr="【歌枠 / 初見大歓迎】女性ボーカルしばりでかわいくかっこよく🎤🎀【#パレプロ #香鳴ハノン】",Sr="Hanon Ch. 香鳴ハノン【パレプロ】",fr="aqbit4boUyY",yr="2022-11-08",Ar=`今回のタイムスタンプ＆セトリ\r
 \r
 0:00 待機\r
 2:30 開始 はのはー\r
@@ -1242,10 +1205,10 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 
 女性ボーカル縛り歌枠お疲れ様でした\r
 序盤かみかみでもかわいかったし後半のおじさん向けも盛り上がってましたね\r
-明日的今日の同時視聴も悲鳴楽しみにしてます`,R0={video_title:hr,video_artist:Sr,video_id:fr,video_publish_date_str:yr,song_timeline:Ar},Jo=Object.freeze(Object.defineProperty({__proto__:null,default:R0,song_timeline:Ar,video_artist:Sr,video_id:fr,video_publish_date_str:yr,video_title:hr},Symbol.toStringTag,{value:"Module"})),Mr="【歌枠 / 初見大歓迎】バラード縛り歌枠で金曜の夜をしっとり過ごしませんか？✨【#パレプロ #香鳴ハノン】",Cr="Hanon Ch. 香鳴ハノン【パレプロ】",Pr="Qh6_D16Ky7M",Ir="2022-11-11 12:00:00",jr=`0:00:00 待機
+明日的今日の同時視聴も悲鳴楽しみにしてます`,R0={video_title:hr,video_artist:Sr,video_id:fr,video_publish_date_str:yr,song_timeline:Ar},Jo=Object.freeze(Object.defineProperty({__proto__:null,default:R0,song_timeline:Ar,video_artist:Sr,video_id:fr,video_publish_date_str:yr,video_title:hr},Symbol.toStringTag,{value:"Module"})),Mr="【歌枠 / 初見大歓迎】バラード縛り歌枠で金曜の夜をしっとり過ごしませんか？✨【#パレプロ #香鳴ハノン】",Cr="Hanon Ch. 香鳴ハノン【パレプロ】",Pr="Qh6_D16Ky7M",Ir="2022-11-11 12:00:00",Br=`0:00:00 待機
 0:02:46 開始 はのはー
 0:08:28 なんでもないや / RADWIMPS
-0:15:29 スパークル
+0:15:29 スパークル / RADWIMPS
 0:16:04 スパークル / RADWIMPS#{=リテイク}
 0:25:04 水平線 / Back number
 0:29:57 ベテルギウス / 優里
@@ -1267,7 +1230,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 3:00:59 白日 / King Gnu
 3:12:50 スクショタイム、スパチャ読み
 3:32:37 告知、終わり
-3:36:38 エンドカード`,L0={video_title:Mr,video_artist:Cr,video_id:Pr,video_publish_date_str:Ir,song_timeline:jr},Zo=Object.freeze(Object.defineProperty({__proto__:null,default:L0,song_timeline:jr,video_artist:Cr,video_id:Pr,video_publish_date_str:Ir,video_title:Mr},Symbol.toStringTag,{value:"Module"})),Br="【歌枠 / 初見大歓迎】#るきノン コラボ歌枠！20:15～歌みた公開もあるよ🎧🎀【#るきIQ民 #香鳴ハノン】",Hr="Hanon Ch. 香鳴ハノン【パレプロ】",Dr="pc4lIkpYc0g",Yr="2022-11-11",Er=`0:00:00 待機
+3:36:38 エンドカード`,L0={video_title:Mr,video_artist:Cr,video_id:Pr,video_publish_date_str:Ir,song_timeline:Br},Zo=Object.freeze(Object.defineProperty({__proto__:null,default:L0,song_timeline:Br,video_artist:Cr,video_id:Pr,video_publish_date_str:Ir,video_title:Mr},Symbol.toStringTag,{value:"Module"})),jr="【歌枠 / 初見大歓迎】#るきノン コラボ歌枠！20:15～歌みた公開もあるよ🎧🎀【#るきIQ民 #香鳴ハノン】",Hr="Hanon Ch. 香鳴ハノン【パレプロ】",Dr="pc4lIkpYc0g",Yr="2022-11-11",Er=`0:00:00 待機
 0:02:16 開始 はのはーこんるきー
 0:07:39 丸の内サディスティック / 椎名林檎
 0:13:55 配信に来た時に見分け方
@@ -1279,7 +1242,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 1:02:20 ひまわりの約束 / 秦基博
 1:15:08 シュガーソングとビターステップ / UNISON SQUARE GARDEN
 1:20:34 告知、終わり おつるきノン
-1:26:34 エンドカード`,U0={video_title:Br,video_artist:Hr,video_id:Dr,video_publish_date_str:Yr,song_timeline:Er},xo=Object.freeze(Object.defineProperty({__proto__:null,default:U0,song_timeline:Er,video_artist:Hr,video_id:Dr,video_publish_date_str:Yr,video_title:Br},Symbol.toStringTag,{value:"Module"})),Tr="【条件付き耐久歌枠】ワンコーラス100曲歌い切れ！※10分登録者が増えないと強制終了💣【#パレプロ #香鳴ハノン】",Nr="Hanon Ch. 香鳴ハノン【パレプロ】",zr="38FUltmfMb4",Kr="2022-11-13",Rr=`今回のタイムスタンプ＆セトリ\r
+1:26:34 エンドカード`,U0={video_title:jr,video_artist:Hr,video_id:Dr,video_publish_date_str:Yr,song_timeline:Er},xo=Object.freeze(Object.defineProperty({__proto__:null,default:U0,song_timeline:Er,video_artist:Hr,video_id:Dr,video_publish_date_str:Yr,video_title:jr},Symbol.toStringTag,{value:"Module"})),Tr="【条件付き耐久歌枠】ワンコーラス100曲歌い切れ！※10分登録者が増えないと強制終了💣【#パレプロ #香鳴ハノン】",Nr="Hanon Ch. 香鳴ハノン【パレプロ】",zr="38FUltmfMb4",Kr="2022-11-13",Rr=`今回のタイムスタンプ＆セトリ\r
 \r
 0:00 待機\r
 2:46 開始 はのはー\r
@@ -1483,7 +1446,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 1:14:50 ドキピポ☆エモーション / 天王寺璃奈 ~1:19:44 \r
 1:22:45 StarDust / Sound Horizon ~1:27:13 \r
 1:29:50 Charming Do! / 小倉唯 ~1:33:53 \r
-1:34:09 Charming Do!ラスサビだけ\r
+1:34:09 Charming Do!/小倉唯#{=ラスサビだけ}\r
 1:36:57 撲殺天使ドクロちゃん / 石田燿子 ~1:40:46 \r
 1:41:10 君が好きです / miwa ~1:45:19 \r
 1:45:39 すきっ! / 超ときめき♡宣伝部 ~1:50:57 \r
@@ -1531,7 +1494,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 \r
 ジェムパレドットコラボ歌枠お疲れ様でした\r
 4人わちゃわちゃ女子会とても楽しかったです\r
-次回コラボも楽しみに待ってます！`,W0={video_title:_i,video_artist:di,video_id:si,video_publish_date_str:li,song_timeline:ai},r2=Object.freeze(Object.defineProperty({__proto__:null,default:W0,song_timeline:ai,video_artist:di,video_id:si,video_publish_date_str:li,video_title:_i},Symbol.toStringTag,{value:"Module"})),vi="【歌枠 / 初見歓迎】12月中にチャンネル登録2万人目指してます🎀✨あと567人！【#パレプロ #香鳴ハノン】",ci="Hanon Ch. 香鳴ハノン【パレプロ】",ui="Zex4pVo82Lg",bi="2022-12-12",$i=`今回のタイムスタンプ＆セトリ\r
+次回コラボも楽しみに待ってます！`,W0={video_title:_i,video_artist:di,video_id:si,video_publish_date_str:li,song_timeline:ai},r2=Object.freeze(Object.defineProperty({__proto__:null,default:W0,song_timeline:ai,video_artist:di,video_id:si,video_publish_date_str:li,video_title:_i},Symbol.toStringTag,{value:"Module"})),vi="【歌枠 / 初見歓迎】12月中にチャンネル登録2万人目指してます🎀✨あと567人！【#パレプロ #香鳴ハノン】",ci="Hanon Ch. 香鳴ハノン【パレプロ】",ui="Zex4pVo82Lg",bi="2022-12-12",gi=`今回のタイムスタンプ＆セトリ\r
 \r
 0:00 待機\r
 2:23 開始 はのは～\r
@@ -1557,7 +1520,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 \r
 バラード歌枠お疲れ様でした\r
 最初不調だったPCも再起動後は落ち着いたようで良かったです\r
-今月は色々忙しそうですが無理のないよう頑張って下さい　応援してます`,V0={video_title:vi,video_artist:ci,video_id:ui,video_publish_date_str:bi,song_timeline:$i},i2=Object.freeze(Object.defineProperty({__proto__:null,default:V0,song_timeline:$i,video_artist:ci,video_id:ui,video_publish_date_str:bi,video_title:vi},Symbol.toStringTag,{value:"Module"})),gi="【歌枠 / 初見歓迎】登録2万人耐久直前！3時間たっぷり歌う✨【#パレプロ #香鳴ハノン】",Oi="Hanon Ch. 香鳴ハノン【パレプロ】",mi="DjaLLUwL8y8",pi="2022-12-17",hi=`今回のタイムスタンプ＆セトリ\r
+今月は色々忙しそうですが無理のないよう頑張って下さい　応援してます`,V0={video_title:vi,video_artist:ci,video_id:ui,video_publish_date_str:bi,song_timeline:gi},i2=Object.freeze(Object.defineProperty({__proto__:null,default:V0,song_timeline:gi,video_artist:ci,video_id:ui,video_publish_date_str:bi,video_title:vi},Symbol.toStringTag,{value:"Module"})),$i="【歌枠 / 初見歓迎】登録2万人耐久直前！3時間たっぷり歌う✨【#パレプロ #香鳴ハノン】",Oi="Hanon Ch. 香鳴ハノン【パレプロ】",mi="DjaLLUwL8y8",pi="2022-12-17",hi=`今回のタイムスタンプ＆セトリ\r
 \r
 00:00 待機\r
 02:42 開始 はのは～　\r
@@ -1592,7 +1555,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 2:57:23 エンドカード\r
 \r
 3時間耐久歌枠お疲れ様でした\r
-19500人も達成おめでとうございます`,J0={video_title:gi,video_artist:Oi,video_id:mi,video_publish_date_str:pi,song_timeline:hi},o2=Object.freeze(Object.defineProperty({__proto__:null,default:J0,song_timeline:hi,video_artist:Oi,video_id:mi,video_publish_date_str:pi,video_title:gi},Symbol.toStringTag,{value:"Module"})),Si="【歌枠 / 初見歓迎】登録2万人耐久直前！男性アーティスト縛り✨【#パレプロ #香鳴ハノン】",fi="Hanon Ch. 香鳴ハノン【パレプロ】",yi="NEHnfybBY04",Ai="2022-12-20",Mi=`今回のタイムスタンプ＆セトリ\r
+19500人も達成おめでとうございます`,J0={video_title:$i,video_artist:Oi,video_id:mi,video_publish_date_str:pi,song_timeline:hi},o2=Object.freeze(Object.defineProperty({__proto__:null,default:J0,song_timeline:hi,video_artist:Oi,video_id:mi,video_publish_date_str:pi,video_title:$i},Symbol.toStringTag,{value:"Module"})),Si="【歌枠 / 初見歓迎】登録2万人耐久直前！男性アーティスト縛り✨【#パレプロ #香鳴ハノン】",fi="Hanon Ch. 香鳴ハノン【パレプロ】",yi="NEHnfybBY04",Ai="2022-12-20",Mi=`今回のタイムスタンプ＆セトリ\r
 0:00 待機\r
 2:10 開始 はのは～\r
 \r
@@ -1624,7 +1587,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 
 男性アーティスト縛り歌枠お疲れ様でした\r
 雑談少なめでしたがたまにはこんな感じで歌多めも良いですね\r
-ラストのトラブルも無事(？)復旧できて良かったです`,Z0={video_title:Si,video_artist:fi,video_id:yi,video_publish_date_str:Ai,song_timeline:Mi},_2=Object.freeze(Object.defineProperty({__proto__:null,default:Z0,song_timeline:Mi,video_artist:fi,video_id:yi,video_publish_date_str:Ai,video_title:Si},Symbol.toStringTag,{value:"Module"})),Ci="【歌枠 / 初見歓迎】登録2万人耐久直前！アニソン縛り歌枠💗【#パレプロ #香鳴ハノン】",Pi="Hanon Ch. 香鳴ハノン【パレプロ】",Ii="oqzwdZaMVLA",ji="2022-12-22",Bi=`今回のタイムスタンプ＆セトリ\r
+ラストのトラブルも無事(？)復旧できて良かったです`,Z0={video_title:Si,video_artist:fi,video_id:yi,video_publish_date_str:Ai,song_timeline:Mi},_2=Object.freeze(Object.defineProperty({__proto__:null,default:Z0,song_timeline:Mi,video_artist:fi,video_id:yi,video_publish_date_str:Ai,video_title:Si},Symbol.toStringTag,{value:"Module"})),Ci="【歌枠 / 初見歓迎】登録2万人耐久直前！アニソン縛り歌枠💗【#パレプロ #香鳴ハノン】",Pi="Hanon Ch. 香鳴ハノン【パレプロ】",Ii="oqzwdZaMVLA",Bi="2022-12-22",ji=`今回のタイムスタンプ＆セトリ\r
 0:00 待機\r
 3:24 開始 はのは～\r
 \r
@@ -1649,7 +1612,7 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 \r
 アニソン縛り歌枠お疲れ様でした\r
 今日は前回と対照的に雑談多めでしたねー\r
-明日的な今日の歌枠リレーや土曜の耐久、年末のライブと大変でしょうが無理のないよう頑張ってください、応援しています`,x0={video_title:Ci,video_artist:Pi,video_id:Ii,video_publish_date_str:ji,song_timeline:Bi},d2=Object.freeze(Object.defineProperty({__proto__:null,default:x0,song_timeline:Bi,video_artist:Pi,video_id:Ii,video_publish_date_str:ji,video_title:Ci},Symbol.toStringTag,{value:"Module"})),Hi="【歌枠リレー】#パレプロワンマン2022 に向けてカラオケリレー！4番手🎀🎶【#パレプロ / #香鳴ハノン】",Di="Hanon Ch. 香鳴ハノン【パレプロ】",Yi="JxN9Ku1ZVaE",Ei="2022-12-23",Ti=`🎀🎶今回のタイムスタンプ＆セトリ🎀🎶
+明日的な今日の歌枠リレーや土曜の耐久、年末のライブと大変でしょうが無理のないよう頑張ってください、応援しています`,x0={video_title:Ci,video_artist:Pi,video_id:Ii,video_publish_date_str:Bi,song_timeline:ji},d2=Object.freeze(Object.defineProperty({__proto__:null,default:x0,song_timeline:ji,video_artist:Pi,video_id:Ii,video_publish_date_str:Bi,video_title:Ci},Symbol.toStringTag,{value:"Module"})),Hi="【歌枠リレー】#パレプロワンマン2022 に向けてカラオケリレー！4番手🎀🎶【#パレプロ / #香鳴ハノン】",Di="Hanon Ch. 香鳴ハノン【パレプロ】",Yi="JxN9Ku1ZVaE",Ei="2022-12-23",Ti=`🎀🎶今回のタイムスタンプ＆セトリ🎀🎶
 0:00 待機
 1:03 開始 はのは～
 
@@ -1755,4 +1718,4 @@ YOASOBIさんの楽曲やっぱりいいなと思うとともに、その楽曲�
 2:17:24 エンドカード
 
 今年最後の歌枠お疲れ様でした\r
-少し早いですが来年もよろしくお願いします`,no={video_title:Ui,video_artist:Gi,video_id:wi,video_publish_date_str:ki,song_timeline:Fi},a2=Object.freeze(Object.defineProperty({__proto__:null,default:no,song_timeline:Fi,video_artist:Gi,video_id:wi,video_publish_date_str:ki,video_title:Ui},Symbol.toStringTag,{value:"Module"}));export{t2 as $,jo as A,Bo as B,Ho as C,Do as D,Yo as E,Eo as F,To as G,No as H,zo as I,Ko as J,Ro as K,Lo as L,Uo as M,Go as N,wo as O,ko as P,Fo as Q,Qo as R,Wo as S,Vo as T,Jo as U,Zo as V,xo as W,qo as X,Xo as Y,n2 as Z,to as _,eo as a,e2 as a0,r2 as a1,i2 as a2,o2 as a3,_2 as a4,d2 as a5,s2 as a6,l2 as a7,a2 as a8,ro as b,io as c,oo as d,_o as e,so as f,lo as g,ao as h,vo as i,co as j,uo as k,bo as l,$o as m,go as n,Oo as o,mo as p,po as q,ho as r,So as s,fo as t,yo as u,Ao as v,Mo as w,Co as x,Po as y,Io as z};
+少し早いですが来年もよろしくお願いします`,no={video_title:Ui,video_artist:Gi,video_id:wi,video_publish_date_str:ki,song_timeline:Fi},a2=Object.freeze(Object.defineProperty({__proto__:null,default:no,song_timeline:Fi,video_artist:Gi,video_id:wi,video_publish_date_str:ki,video_title:Ui},Symbol.toStringTag,{value:"Module"}));export{t2 as $,Bo as A,jo as B,Ho as C,Do as D,Yo as E,Eo as F,To as G,No as H,zo as I,Ko as J,Ro as K,Lo as L,Uo as M,Go as N,wo as O,ko as P,Fo as Q,Qo as R,Wo as S,Vo as T,Jo as U,Zo as V,xo as W,qo as X,Xo as Y,n2 as Z,to as _,eo as a,e2 as a0,r2 as a1,i2 as a2,o2 as a3,_2 as a4,d2 as a5,s2 as a6,l2 as a7,a2 as a8,ro as b,io as c,oo as d,_o as e,so as f,lo as g,ao as h,vo as i,co as j,uo as k,bo as l,go as m,$o as n,Oo as o,mo as p,po as q,ho as r,So as s,fo as t,yo as u,Ao as v,Mo as w,Co as x,Po as y,Io as z};

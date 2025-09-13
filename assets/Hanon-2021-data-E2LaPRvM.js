@@ -43,7 +43,7 @@ J-POP楽曲
 2:20:55  硝子の少年 /KinKi Kids
 2:27:07  糸 /中島みゆき
 2:34:45  愛は勝つ /KAN
-2:43:02  どんなときも /槇原敬之#{=ワンコーラス}
+2:43:02  どんなときも。/槇原敬之#{=ワンコーラス}
 2:49:38  チェリー /スピッツ
 2:55:10  Hello, Again ~昔からある場所~ /My Little Lover
 
@@ -524,7 +524,7 @@ AKB48楽曲
 0:31:45 桃色吐息/高橋真梨子#{=アカペラ}
 0:43:34 飾りじゃないのよ涙は/中森明菜
 0:52:14 セーラー服と機関銃/薬師丸ひろ子#{=アカペラ}
-1:06:42 恋におちて -Fall in love-/小林明子(アカペラ1コーラス)
+1:06:42 恋におちて -Fall in love-/小林明子#{=アカペラ1コーラス}
 1:10:36 赤いスイートピー/松田聖子`,ds={video_title:Gt,video_artist:Ut,video_id:kt,video_publish_date_str:Wt,song_timeline:Ft},k1=Object.freeze(Object.defineProperty({__proto__:null,default:ds,song_timeline:Ft,video_artist:Ut,video_id:kt,video_publish_date_str:Wt,video_title:Gt},Symbol.toStringTag,{value:"Module"})),Jt="【ほぼ毎日歌枠#30】2017~2021年の曲を歌います【#パレプロ #香鳴ハノン】",Zt="Hanon Ch. 香鳴ハノン【パレプロ】",Vt="sLbyUcaxxeg",Qt="2021-05-14",xt=`0:04:41 ドライフラワー/優里
 0:13:00 正しくなれない/ずっと真夜中でいいのに。
 0:20:51 だから僕は音楽を辞めた/ヨルシカ
@@ -865,7 +865,7 @@ STAND-ALONE良い曲ですねえ\r
 2:13:38 給水タイム\r
 2:21:44 courage / 戸松遥\r
 2:23:49 カナメちゃん召喚\r
-2:30:13 カエルの歌\r
+2:30:13 カエルの歌 /香鳴ハノン、常磐カナメ\r
 2:34:29 Butter-Fly / 和田光司 ~2:39:30 \r
 2:40:19 ガーネット / 奥華子 ~2:45:34 \r
 2:47:05 花に亡霊 / ヨルシカ ~2:51:17 \r
@@ -937,7 +937,7 @@ STAND-ALONE良い曲ですねえ\r
 0:38:59 千本桜 / 黒うさP ~0:43:54 \r
 0:46:43 アスノヨゾラ哨戒班 / Orangestar\r
 0:48:00 KING / Kanaria\r
-0:50:20 メランコリック / Junky(En3曲一気に) ~0:54:12 \r
+0:50:20 メランコリック / Junky#{=En3曲一気に} ~0:54:12 \r
 \r
 0:56:10 スパチャ読み\r
 0:58:40 エンドカード`,Ks={video_title:fo,video_artist:Ao,video_id:yo,video_publish_date_str:Mo,song_timeline:Io},$r=Object.freeze(Object.defineProperty({__proto__:null,default:Ks,song_timeline:Io,video_artist:Ao,video_id:yo,video_publish_date_str:Mo,video_title:fo},Symbol.toStringTag,{value:"Module"})),Co="【歌枠】夏だ！花火だ！プールだ！サマーソングを歌う！#2【#パレプロ #香鳴ハノン】",Bo="Hanon Ch. 香鳴ハノン【パレプロ】",jo="jEhay_5Kjtw",Po="2021-07-10",Ho=`今回のタイムスタンプ＆セトリ\r
@@ -1043,7 +1043,7 @@ STAND-ALONE良い曲ですねえ\r
 1:05:40 群青日和 / 東京事変 ~1:09:33 \r
 1:12:27 透明人間 / 東京事変 ~1:16:43 \r
 1:18:37 恋 / 星野源 ~1:22:56 \r
-1:31:03 Mela! / 緑黄色社会(アカペラ出だしだけ)\r
+1:31:03 Mela! / 緑黄色社会#{=アカペラ出だしだけ}\r
 1:32:22 宿命 / Official髭男dism ~1:37:04 \r
 1:38:38 一旦休憩 ~1:41:50 \r
 1:44:36 たぶん / YOASOBI ~1:49:09 \r

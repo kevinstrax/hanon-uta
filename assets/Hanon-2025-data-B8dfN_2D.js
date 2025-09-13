@@ -142,11 +142,11 @@ const n="【#オンゲキ歌枠リレー】8番手！神曲セトリ全曲ABFB�
 1:40:06；1:44:25 Happiness on the Table / 柏木咲姫\r
 \r
 1:47:22 ※練習タイム※\r
-1:50:15 Transcend Lights(アカペラ練習)\r
+1:50:15 Transcend Lights/星咲あかり、高瀬梨緒、柏木美亜、東雲つむぎ、皇城セツナ#{=アカペラ練習}\r
 2:07:50；2:12:30 Transcend Lights / 星咲あかり、高瀬梨緒、柏木美亜、東雲つむぎ、皇城セツナ\r
 2:13:07；2:17:49 Transcend Lights / 星咲あかり、高瀬梨緒、柏木美亜、東雲つむぎ、皇城セツナ\r
 \r
-2:19:10 Zest of Blue(アカペラ練習)\r
+2:19:10 Zest of Blue/三角葵#{=アカペラ練習}\r
 2:26:37 Zest of Blue / 三角葵#{=アカペラ}\r
 2:27:27；2:32:15 Zest of Blue / 三角葵\r
 2:36:40 Zest of Blue / 三角葵#{=Youtube不調により一瞬切断されたためやり直し}\r
@@ -519,13 +519,13 @@ const n="【#オンゲキ歌枠リレー】8番手！神曲セトリ全曲ABFB�
 1:04:02 ほのはのは〜！
 1:04:28 END`,C2={video_title:Pe,video_artist:Me,video_id:Te,video_publish_date_str:Ke,song_timeline:Ne},_s=Object.freeze(Object.defineProperty({__proto__:null,default:C2,song_timeline:Ne,video_artist:Me,video_id:Te,video_publish_date_str:Ke,video_title:Pe},Symbol.toStringTag,{value:"Module"})),je="【#めちゃすぷ 歌枠】えるすりー9直前！3人の歌、聴いてみませんか？💫【左から #常磐カナメ #暁月クララ #香鳴ハノン】",Le="Hanon Ch. 香鳴ハノン【パレプロ】",He="oV-RusOOs1s",Ie="2025-03-13",De=`0:02:09 こんばんは〜！
 
-0:07:17 01. 星間飛行 / ランカ・リー＝中島愛 - 常磐カナメ＆暁月クララ＆香鳴ハノン
-0:16:13 02. 彗星ハネムーン / ナユタン星人 - 常磐カナメ
-0:22:15 03. KAWAII FESTIVAL / みんななかよく - 暁月クララ
-0:28:15 04. 限りなく灰色へ / 25時、ナイトコードで。 - 常磐カナメ＆香鳴ハノン
-0:37:25 05. snowdrop / 春奈るな - 香鳴ハノン
+0:07:17 01. 星間飛行 / ランカ・リー＝中島愛 #{=常磐カナメ,暁月クララ,香鳴ハノン}
+0:16:13 02. 彗星ハネムーン / ナユタン星人 #{=常磐カナメ}
+0:22:15 03. KAWAII FESTIVAL / みんななかよく  #{=暁月クララ}
+0:28:15 04. 限りなく灰色へ / 25時、ナイトコードで。  #{=常磐カナメ,香鳴ハノン}
+0:37:25 05. snowdrop / 春奈るな#{=香鳴ハノン}
 
-0:44:57 06. ハート型ウイルス / AKB48 チームA - 暁月クララ＆香鳴ハノン
+0:44:57 06. ハート型ウイルス / AKB48 チームA - #{=暁月クララ,香鳴ハノン}
 0:51:11 07. 絶対敵対メチャキライヤー / メドミア
 1:00:02 08. アイドライフライト / Sputrip
 
@@ -1075,7 +1075,7 @@ const n="【#オンゲキ歌枠リレー】8番手！神曲セトリ全曲ABFB�
 0:48:46 07. タチアガレ！ / Wake Up, Girls!
 0:59:12 08. 7 Girls War / Wake Up, Girls!
 1:08:55 09. START!! True dreams / Liella!
-1:17:38 10. 輝夜の城で踊りたい / μ's
+1:17:38 10. 輝夜の城で踊りたい / μ's#{=途中まで}
 
 1:22:28 11. 輝夜の城で踊りたい / μ's
 1:30:09 12. 青春ライン / いきものがかり
@@ -1103,6 +1103,7 @@ const n="【#オンゲキ歌枠リレー】8番手！神曲セトリ全曲ABFB�
 3:10:50 END / Cパート`,X2={video_title:Z0,video_artist:q0,video_id:x0,video_publish_date_str:X0,song_timeline:ni},Ks=Object.freeze(Object.defineProperty({__proto__:null,default:X2,song_timeline:ni,video_artist:q0,video_id:x0,video_publish_date_str:X0,video_title:Z0},Symbol.toStringTag,{value:"Module"})),ei="【歌枠｜KARAOKE】学園アイドルマスター縛り歌枠✨学マス1周年おめでとう！！💗【#パレプロ #香鳴ハノン】",ti="Hanon Ch. 香鳴ハノン【パレプロ】",ii="ttQYqhpt4OA",oi="2025-05-16",_i=`0:03:42 はのは〜！
 
 0:16:02 01. ツキノカメ / 秦谷美鈴
+0:25:41；0:27:21 ツキノカメ / 秦谷美鈴#{=途中まで}
 0:29:54 02. ツキノカメ / 秦谷美鈴
 0:39:17 03. 白線 / 葛城リーリヤ
 0:46:10 04. Fighting My Way / 花海咲季
@@ -1180,102 +1181,103 @@ const n="【#オンゲキ歌枠リレー】8番手！神曲セトリ全曲ABFB�
 2:45:40 はのは〜！
 2:46:30 END / Cパート`,t_={video_title:vi,video_artist:ci,video_id:ui,video_publish_date_str:pi,song_timeline:gi},Ls=Object.freeze(Object.defineProperty({__proto__:null,default:t_,song_timeline:gi,video_artist:ci,video_id:ui,video_publish_date_str:pi,video_title:vi},Symbol.toStringTag,{value:"Module"})),bi="【歌枠｜KARAOKE】リクエストOK✨平成前半(1989-2004)J-POP縛り1コーラスずつガンガン歌う【#パレプロ #香鳴ハノン】",mi="Hanon Ch. 香鳴ハノン【パレプロ】",hi="_ENlwO3o6IA",$i="2025-05-21",Oi=`0:03:14 はのは〜！
 
-0:08:05 01. 負けないで / ZARD
-0:09:54 02. 世界に一つだけの花 / SMAP
-0:12:53 03. ロマンスの神様 / 広瀬香美
-0:15:03 04. ミュージック・アワー / ポルノグラフィティ
-0:17:15 05. アゲハ蝶 / ポルノグラフィティ
+0:08:05 01. 負けないで / ZARD#{=ワンコーラス}
+0:09:54 02. 世界に一つだけの花 / SMAP#{=ワンコーラス}
+0:12:53 03. ロマンスの神様 / 広瀬香美#{=ワンコーラス}
+0:15:03 04. ミュージック・アワー / ポルノグラフィティ#{=ワンコーラス}
+0:17:15 05. アゲハ蝶 / ポルノグラフィティ#{=ワンコーラス}
 
-0:19:59 06. 小さな恋のうた / MONGOL800
-0:22:05 07. Hello, Again ~昔からある場所~ / MY LITTLE LOVER
-0:26:16 08. 夢見る少女じゃいられない / 相川七瀬
-0:28:16 09. AM11:00 / HY
-0:31:54 10. Can You Keep A Secret? / 宇多田ヒカル
+0:19:59 06. 小さな恋のうた / MONGOL800#{=ワンコーラス}
+0:22:05 07. Hello, Again ~昔からある場所~ / MY LITTLE LOVER#{=ワンコーラス}
+0:26:16 08. 夢見る少女じゃいられない / 相川七瀬#{=ワンコーラス}
+0:28:16 09. AM11:00 / HY#{=ワンコーラス}
+0:31:54 10. Can You Keep A Secret? / 宇多田ヒカル#{=ワンコーラス}
 
-0:36:41 11. ♡桃色片想い♡ / 松浦亜弥
-0:38:51 12. 雪の華 / 中島美嘉
-0:44:17 13. 瞳をとじて / 平井堅
-0:47:31 14. 栄光の架橋 / ゆず
-0:50:54 15. White Love / SPEED
+0:36:41 11. ♡桃色片想い♡ / 松浦亜弥#{=ワンコーラス}
+0:38:51 12. 雪の華 / 中島美嘉#{=ワンコーラス}
+0:44:17 13. 瞳をとじて / 平井堅#{=ワンコーラス}
+0:47:31 14. 栄光の架橋 / ゆず#{=ワンコーラス}
+0:50:54 15. White Love / SPEED#{=ワンコーラス}
 
-0:53:53 16. 出逢った頃のように / Every Little Thing
-0:57:39 17. 涙そうそう / 森山良子
-1:03:28 18. 歩いて帰ろう / 斉藤和義
-1:06:26 19. Time goes by / Every Little Thing
-1:12:32 20. サウダージ / ポルノグラフィティ
+0:53:53 16. 出逢った頃のように / Every Little Thing#{=ワンコーラス}
+0:57:39 17. 涙そうそう / 森山良子#{=ワンコーラス}
+1:03:28 18. 歩いて帰ろう / 斉藤和義#{=ワンコーラス}
+1:06:26 19. Time goes by / Every Little Thing#{=ワンコーラス}
+1:12:32 20. サウダージ / ポルノグラフィティ#{=ワンコーラス}
 
-1:14:28 21. 明日への扉 / I WiSH
-1:16:57 22. チェリー / スピッツ
-1:20:22 23. ロビンソン / スピッツ
-1:23:13 24. さくらんぼ / 大塚愛
-1:25:30 25. だんご三兄弟 / 茂森あゆみ・速水けんたろう
+1:14:28 21. 明日への扉 / I WiSH#{=ワンコーラス}
+1:16:57 22. チェリー / スピッツ#{=ワンコーラス}
+1:20:22 23. ロビンソン / スピッツ#{=ワンコーラス}
+1:23:13 24. さくらんぼ / 大塚愛#{=ワンコーラス}
+1:25:30 25. だんご三兄弟 / 茂森あゆみ・速水けんたろう#{=ワンコーラス}
 
-1:29:33 26. ミニモニ。ジャンケンぴょん！ / ミニモニ。
-1:33:50 27. Butter-Fly / 和田光司
-1:38:16 28. どんなときも。 / 槇原敬之
-1:41:07 29. 真夏の果実 / サザンオールスターズ
-1:44:22 30. 世界が終るまでは... / WANDS
+1:29:33 26. ミニモニ。ジャンケンぴょん！ / ミニモニ。#{=ワンコーラス}
+1:33:50 27. Butter-Fly / 和田光司#{=ワンコーラス}
+1:38:16 28. どんなときも。 / 槇原敬之#{=ワンコーラス}
+1:41:07 29. 真夏の果実 / サザンオールスターズ#{=ワンコーラス}
+1:44:22 30. 世界が終るまでは... / WANDS#{=ワンコーラス}
 
-1:48:21 31. 謎 / 小松未歩
-1:54:28 32. ハナミズキ / 一青窈
-1:57:48 33. カントリー・ロード / 本名陽子
-2:02:55 34. 気分上々↑↑ / mihimaru GT
-2:04:45 35. LOVEマシーン / モーニング娘。
+1:48:21 31. 謎 / 小松未歩#{=ワンコーラス}
+1:54:28 32. ハナミズキ / 一青窈#{=ワンコーラス}
+1:57:48 33. カントリー・ロード / 本名陽子#{=ワンコーラス}
+2:02:55 34. 気分上々↑↑ / mihimaru GT#{=ワンコーラス}
+2:04:45 35. LOVEマシーン / モーニング娘。#{=ワンコーラス}
 
-2:08:00 36. Believe / Folder5
-2:11:57 37. my graduation / SPEED
-2:16:09 38. Dearest / 浜崎あゆみ
-2:18:44 39. シーソーゲーム 〜勇敢な恋の歌〜 / Mr.Children
-2:21:27 40. Tomorrow never knows / Mr.Children
+2:08:00 36. Believe / Folder5#{=ワンコーラス}
+2:11:57 37. my graduation / SPEED#{=ワンコーラス}
+2:16:09 38. Dearest / 浜崎あゆみ#{=ワンコーラス}
+2:18:44 39. シーソーゲーム 〜勇敢な恋の歌〜 / Mr.Children#{=ワンコーラス}
+2:21:27 40. Tomorrow never knows / Mr.Children#{=ワンコーラス}
 
-2:31:58 41. 空と君のあいだに / 中島みゆき
-2:35:44 42. Everything / MISIA
-2:44:29 43. 愛は勝つ / KAN
-2:51:09 44. HOT LIMIT / T.M.Revolution
-2:55:02 45. ultra soul / B'z
+2:31:58 41. 空と君のあいだに / 中島みゆき#{=ワンコーラス}
+2:35:44 42. Everything / MISIA#{=ワンコーラス}
+2:44:29 43. 愛は勝つ / KAN#{=ワンコーラス}
+2:51:09 44. HOT LIMIT / T.M.Revolution#{=ワンコーラス}
+2:55:02 45. ultra soul / B'z#{=ワンコーラス}
 
-2:59:21 46. Diamonds / プリンセス プリンセス
+2:59:21 46. Diamonds / プリンセス プリンセス#{=これだけフル}
 
 3:08:01 スパチャ読み
 3:22:22 はのは〜！
-3:22:58 END / Cパート`,i_={video_title:bi,video_artist:mi,video_id:hi,video_publish_date_str:$i,song_timeline:Oi},Hs=Object.freeze(Object.defineProperty({__proto__:null,default:i_,song_timeline:Oi,video_artist:mi,video_id:hi,video_publish_date_str:$i,video_title:bi},Symbol.toStringTag,{value:"Module"})),Si="【歌枠｜KARAOKE】リクエストOK✨平成後半(2005-2019.4)J-POP縛り1コーラスずつガンガン歌う【#パレプロ #香鳴ハノン】",Ai="Hanon Ch. 香鳴ハノン【パレプロ】",yi="qAjDKaHo6ac",Ei="2025-05-22",Ri=`Today's Set List\r
-0:00:00 OP\r
-0:03:33 はのはー\r
-\r
-0:08:52；0:10:38 フライングゲット / AKB48(※以下ワンコーラス)\r
-0:10:53；0:12:17 恋 / 星野源\r
-0:12:55；0:14:39 全力少年 / スキマスイッチ\r
-0:15:30；0:17:32 POP STAR / 平井堅\r
-0:18:46；0:20:40 三日月 / 絢香\r
-0:21:12；0:23:25 トリセツ / 西野カナ\r
-0:27:45；0:29:46 決意の朝に / Aqua Timez\r
-0:32:49；0:33:18 LOSER / 米津玄師#{=サビのみ}\r
-0:35:10；0:37:07 ニホンノミカタ ―ネバダカラキマシタ― / 矢島美容室\r
-0:39:14；0:40:49 女々しくて / ゴールデンボンバー#{=アカペラ}\r
-0:41:06；0:42:34 女々しくて / ゴールデンボンバー\r
-0:47:01；0:47:42 Baby Don't Cry / 安室奈美恵#{=サビのみ}\r
-0:48:29；0:50:20 睡蓮花 / 湘南乃風\r
-0:50:47；0:52:45 チョコレイト・ディスコ / Perfume\r
-0:56:25；0:58:31 ずっと好きだった / 斉藤和義\r
-0:59:50；1:01:44 マリーゴールド / あいみょん\r
-\r
-1:02:01；1:03:52 One Love / 嵐\r
-1:04:07；1:06:40 HANABI / Mr.Children\r
-1:07:29；1:08:32 StaRt / Mrs. GREEN APPLE\r
-1:10:06；1:11:13 StaRt / Mrs. GREEN APPLE\r
-1:11:36；1:13:38 サラバ、愛しき悲しみたちよ / ももいろクローバーZ\r
-1:15:10；1:16:50 気まぐれロマンティック / いきものがかり\r
-1:19:27；1:22:43 歩いていこう / いきものがかり\r
-1:23:53；1:26:02 会いたくて 会いたくて / 西野カナ\r
-1:28:05；1:29:52 if / 西野カナ\r
-1:34:05；1:35:53 ミラクル / miwa\r
-1:43:41；1:45:23 羞恥心 / 羞恥心\r
-1:48:05；1:49:47 秒針を噛む / ずっと真夜中でいいのに。\r
-1:51:12；1:52:54 青春アミーゴ / 修二と彰\r
-1:57:24；1:58:39 CHE.R.RY / Yui\r
-2:00:30；2:04:52 FRiDAY-MA-MAGiC / miwa(フル)\r
-\r
-2:11:42 スパチャ読み\r
+3:22:58 END / Cパート
+`,i_={video_title:bi,video_artist:mi,video_id:hi,video_publish_date_str:$i,song_timeline:Oi},Hs=Object.freeze(Object.defineProperty({__proto__:null,default:i_,song_timeline:Oi,video_artist:mi,video_id:hi,video_publish_date_str:$i,video_title:bi},Symbol.toStringTag,{value:"Module"})),Si="【歌枠｜KARAOKE】リクエストOK✨平成後半(2005-2019.4)J-POP縛り1コーラスずつガンガン歌う【#パレプロ #香鳴ハノン】",Ai="Hanon Ch. 香鳴ハノン【パレプロ】",yi="qAjDKaHo6ac",Ei="2025-05-22",Ri=`Today's Set List
+0:00:00 OP
+0:03:33 はのはー
+
+0:08:52；0:10:38 フライングゲット / AKB48#{=以下ワンコーラス}
+0:10:53；0:12:17 恋 / 星野源#{=ワンコーラス}
+0:12:55；0:14:39 全力少年 / スキマスイッチ#{=ワンコーラス}
+0:15:30；0:17:32 POP STAR / 平井堅#{=ワンコーラス}
+0:18:46；0:20:40 三日月 / 絢香#{=ワンコーラス}
+0:21:12；0:23:25 トリセツ / 西野カナ#{=ワンコーラス}
+0:27:45；0:29:46 決意の朝に / Aqua Timez#{=ワンコーラス}
+0:32:49；0:33:18 LOSER / 米津玄師#{=サビのみ}
+0:35:10；0:37:07 ニホンノミカタ ―ネバダカラキマシタ― / 矢島美容室#{=ワンコーラス}
+0:39:14；0:40:49 女々しくて / ゴールデンボンバー#{=アカペラ}
+0:41:06；0:42:34 女々しくて / ゴールデンボンバー#{=アカペラ}
+0:47:01；0:47:42 Baby Don't Cry / 安室奈美恵#{=サビのみ}
+0:48:29；0:50:20 睡蓮花 / 湘南乃風#{=ワンコーラス}
+0:50:47；0:52:45 チョコレイト・ディスコ / Perfume#{=ワンコーラス}
+0:56:25；0:58:31 ずっと好きだった / 斉藤和義#{=ワンコーラス}
+0:59:50；1:01:44 マリーゴールド / あいみょん#{=ワンコーラス}
+
+1:02:01；1:03:52 One Love / 嵐#{=ワンコーラス}
+1:04:07；1:06:40 HANABI / Mr.Children#{=ワンコーラス}
+1:07:29；1:08:32 StaRt / Mrs. GREEN APPLE#{=ワンコーラス}
+1:10:06；1:11:13 StaRt / Mrs. GREEN APPLE#{=ワンコーラス}
+1:11:36；1:13:38 サラバ、愛しき悲しみたちよ / ももいろクローバーZ#{=ワンコーラス}
+1:15:10；1:16:50 気まぐれロマンティック / いきものがかり#{=ワンコーラス}
+1:19:27；1:22:43 歩いていこう / いきものがかり#{=ワンコーラス}
+1:23:53；1:26:02 会いたくて 会いたくて / 西野カナ#{=ワンコーラス}
+1:28:05；1:29:52 if / 西野カナ#{=ワンコーラス}
+1:34:05；1:35:53 ミラクル / miwa#{=ワンコーラス}
+1:43:41；1:45:23 羞恥心 / 羞恥心#{=ワンコーラス}
+1:48:05；1:49:47 秒針を噛む / ずっと真夜中でいいのに。#{=ワンコーラス}
+1:51:12；1:52:54 青春アミーゴ / 修二と彰#{=ワンコーラス}
+1:57:24；1:58:39 CHE.R.RY / Yui#{=ワンコーラス}
+2:00:30；2:04:52 FRiDAY-MA-MAGiC / miwa#{=フル}
+
+2:11:42 スパチャ読み
 2:19:10 エンドカード`,o_={video_title:Si,video_artist:Ai,video_id:yi,video_publish_date_str:Ei,song_timeline:Ri},Is=Object.freeze(Object.defineProperty({__proto__:null,default:o_,song_timeline:Ri,video_artist:Ai,video_id:yi,video_publish_date_str:Ei,video_title:Si},Symbol.toStringTag,{value:"Module"})),fi="【歌枠｜KARAOKE】概要欄のリストからリクエストOK✨あなたの聴きたいロボソンは？【#パレプロ #香鳴ハノン】",Ci="Hanon Ch. 香鳴ハノン【パレプロ】",Pi="hzBxJbmYEOA",Mi="2025-05-23",Ti=`0:02:48 はのは〜！
 
 0:12:25 01. 星間飛行 / ランカ・リー＝中島愛
@@ -1294,7 +1296,7 @@ const n="【#オンゲキ歌枠リレー】8番手！神曲セトリ全曲ABFB�
 1:31:44 12. モザイクカケラ / SunSet Swish
 1:41:58 13. マジンガーZ / 水木一郎
 1:49:38 14. ルンがピカッと光ったら / ワルキューレ
-2:00:04 15. 純情スペクトラ / Zwei - アカペラ歌唱
+2:00:04 15. 純情スペクトラ / Zwei#{=アカペラ歌唱}
 
 2:04:30 16. ココロオドル / Nobodyknows+
 
@@ -1306,7 +1308,7 @@ const n="【#オンゲキ歌枠リレー】8番手！神曲セトリ全曲ABFB�
 0:44:17 02. シャイノグラフィ / シャイニーカラーズ
 0:57:22 03. 憧れをいっぱい / 倉本千奈
 1:04:01 04. 日々、発見的ステップ！ / 倉本千奈
-1:10:45 05. GO MY WAY!! / THE IDOLM@STER
+1:10:45 05. GO MY WAY!!#{=ワンコーラス} / THE IDOLM@STER
 
 1:19:59 06. clumsy trick / 姫崎莉波
 1:41:37 07. L.U.V / 姫崎莉波
@@ -1872,36 +1874,36 @@ const n="【#オンゲキ歌枠リレー】8番手！神曲セトリ全曲ABFB�
 3:03:16 R.E.P.O.（出演：Sputrip、七海ロナ、江波キョウカ）
 
 5:04:37 Sputrip歌枠リレー①（出演：香鳴ハノン）
-5:07:28 01. キミイロクロニクル / Palette Project
-5:14:37 02. Dramatic Parade / Alt!!
-5:18:31 03. KAWAII FESTIVAL / ハローキティ
-5:21:03 04. Kira・pata・shining / すなお from STAR☆ANIS
-5:24:54 05. 創造 / REGALILIA
-5:29:11 06. アイドライフライト / Sputrip
-5:33:09 07. 白線 / 葛城リーリヤ
-5:36:50 08. シャイノグラフィ / シャイニーカラーズ
+5:07:28 01. キミイロクロニクル / Palette Project#{=香鳴ハノン}
+5:14:37 02. Dramatic Parade / Alt!!#{=香鳴ハノン}
+5:18:31 03. KAWAII FESTIVAL / ハローキティ#{=香鳴ハノン}
+5:21:03 04. Kira・pata・shining / すなお from STAR☆ANIS#{=香鳴ハノン}
+5:24:54 05. 創造 / REGALILIA#{=香鳴ハノン}
+5:29:11 06. アイドライフライト / Sputrip#{=香鳴ハノン}
+5:33:09 07. 白線 / 葛城リーリヤ#{=香鳴ハノン}
+5:36:50 08. シャイノグラフィ / シャイニーカラーズ#{=香鳴ハノン}
 5:43:45 はのは〜！
 
 5:45:00 Sputrip歌枠リレー②（出演：暁月クララ）
-5:45:32 01. Dreamin'Train♡ / Sputrip
-5:49:52 02. トキメキ禁断症状 / RouteHeart
-5:55:02 03. 憧れをいっぱい / 倉本千奈
-5:59:48 04. Wonder Scale / 倉本千奈
-6:04:28 05. CHU-CHU♡RAINBOW / れみ・えり from STAR☆ANIS
-6:09:07 06. KAWAII FESTIVAL / ハローキティ
-6:14:15 07. キライラ / REGALILIA
-6:18:28 08. Sweet♡Heart☆Palette♪ / Palette Project
+5:45:32 01. Dreamin'Train♡ / Sputrip #{=暁月クララ}
+5:49:52 02. トキメキ禁断症状 / RouteHeart#{=暁月クララ}
+5:55:02 03. 憧れをいっぱい / 倉本千奈#{=暁月クララ}
+5:59:48 04. Wonder Scale / 倉本千奈#{=暁月クララ}
+6:04:28 05. CHU-CHU♡RAINBOW / れみ・えり from STAR☆ANIS#{=暁月クララ}
+6:09:07 06. KAWAII FESTIVAL / ハローキティ#{=暁月クララ}
+6:14:15 07. キライラ / REGALILIA#{=暁月クララ}
+6:18:28 08. Sweet♡Heart☆Palette♪ / Palette Project#{=暁月クララ}
 6:23:03 おつくらら〜！
 
 6:24:59 Sputrip歌枠リレー③（出演：常磐カナメ）
-6:25:07 01. Own other side / Palette Project
-6:31:28 02. KAWAII FESTIVAL / ハローキティ
-6:34:11 03. 光景 / 篠澤広
-6:39:04 04. So Beautiful Story / るか・せな from AIKATSU☆STARS!
-6:44:47 05. メリュー / n-buna feat.初音ミク
-6:49:46 06. MORAL / REGALILIA
-6:53:44 07. ラブ・ラビリンス / RouteHeart
-6:57:46 08. with your JOURNEY / Sputrip
+6:25:07 01. Own other side / Palette Project#{=常磐カナメ}
+6:31:28 02. KAWAII FESTIVAL / ハローキティ#{=常磐カナメ}
+6:34:11 03. 光景 / 篠澤広#{=常磐カナメ}
+6:39:04 04. So Beautiful Story / るか・せな from AIKATSU☆STARS!#{=常磐カナメ}
+6:44:47 05. メリュー / n-buna feat.初音ミク#{=常磐カナメ}
+6:49:46 06. MORAL / REGALILIA#{=常磐カナメ}
+6:53:44 07. ラブ・ラビリンス / RouteHeart#{=常磐カナメ}
+6:57:46 08. with your JOURNEY / Sputrip#{=常磐カナメ}
 7:01:40 おつかなめ〜！
 
 7:08:39 明け方のドカ沸き☆コーレスチャレンジ！（出演：Sputrip）
@@ -1911,7 +1913,8 @@ const n="【#オンゲキ歌枠リレー】8番手！神曲セトリ全曲ABFB�
 
 7:37:26 全通特典スタンプ作り①（出演：香鳴ハノン）
 
-8:00:23 はのは〜！（次枠に移動）`,T_={video_title:Y1,video_artist:W1,video_id:w1,video_publish_date_str:F1,song_timeline:J1},rd=Object.freeze(Object.defineProperty({__proto__:null,default:T_,song_timeline:J1,video_artist:W1,video_id:w1,video_publish_date_str:F1,video_title:Y1},Symbol.toStringTag,{value:"Module"})),Q1="【歌枠｜KARAOKE】大ヒットしたJ-POP縛りで歌う🎤💗初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",Z1="Hanon Ch. 香鳴ハノン【パレプロ】",q1="ibJ3KhiOjhA",x1="2025-09-10",X1=`Today's Set List \r
+8:00:23 はのは〜！（次枠に移動）
+`,T_={video_title:Y1,video_artist:W1,video_id:w1,video_publish_date_str:F1,song_timeline:J1},rd=Object.freeze(Object.defineProperty({__proto__:null,default:T_,song_timeline:J1,video_artist:W1,video_id:w1,video_publish_date_str:F1,video_title:Y1},Symbol.toStringTag,{value:"Module"})),Q1="【歌枠｜KARAOKE】大ヒットしたJ-POP縛りで歌う🎤💗初見さんも大歓迎✨【#パレプロ #香鳴ハノン】",Z1="Hanon Ch. 香鳴ハノン【パレプロ】",q1="ibJ3KhiOjhA",x1="2025-09-10",X1=`Today's Set List \r
 0:00:00 OP\r
 0:02:08 はのはー\r
 3:50\r
