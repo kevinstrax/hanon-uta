@@ -252,7 +252,7 @@ Blowin' in the Mindも聴けて嬉しかったです！
 1:44:39  ただ君に晴れ/ヨルシカ
 1:49:52  少女レイ/みきとP
 2:02:52  花に亡霊/ヨルシカ
-2:18:21  怪獣のバラード(アカペラ)/-
+2:18:21  怪獣のバラード#{=アカペラ}/-
 1:15:01  カメラモードで遊ぶがぶちゃん可愛いからみんな見ていって〜！`,Yt={video_title:Ee,video_artist:Pe,video_id:Me,video_publish_date_str:Re,song_timeline:je},mi=Object.freeze(Object.defineProperty({__proto__:null,default:Yt,song_timeline:je,video_artist:Pe,video_id:Me,video_publish_date_str:Re,video_title:Ee},Symbol.toStringTag,{value:"Module"})),Ne="【歌枠/Karaoke】マクロス縛り歌枠！私の歌を聴けぇええ！【#鎖乙女がぶ /#パレプロ研究生 】",Le="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",Ie="wz7f_dIilLM",Ge="2025-07-13",ze=`【🐺🩰セトリ🐺💜🎶】
 00:12:41 トライアングラー / 坂本真綾
 00:23:20 星間飛行 〜Freyja Ver.〜 / ワルキューレ
@@ -260,7 +260,7 @@ Blowin' in the Mindも聴けて嬉しかったです！
 00:52:17 Absolute 5 / ワルキューレ
 01:02:36 一度だけの恋なら / ワルキューレ
 01:31:28 破滅の純情 / ワルキューレ
-01:39:52 AXIA 〜ダイスキでダイキライ〜 / ワルキューレ(ワンコーラス)  
+01:39:52 AXIA 〜ダイスキでダイキライ〜 / ワルキューレ#{=ワンコーラス}  
 01:44:23 放課後オーバーフロウ / ランカ・リー=中島愛
 01:51:14 ルンがピカッと光ったら / ワルキューレ
 02:09:58 不確定性⭐︎COSMIC MOVEMENT / ワルキューレ
@@ -295,7 +295,7 @@ Blowin' in the Mindも聴けて嬉しかったです！
 とても夏感じられる歌枠でしたね…！
 恋アクや少女レイ好きな曲だから聴けてよかったです！`,Jt={video_title:De,video_artist:Ve,video_id:Ye,video_publish_date_str:we,song_timeline:Fe},$i=Object.freeze(Object.defineProperty({__proto__:null,default:Jt,song_timeline:Fe,video_artist:Ve,video_id:Ye,video_publish_date_str:we,video_title:De},Symbol.toStringTag,{value:"Module"})),Je="【雑談】#パレプロ感謝祭2025 のあった夜の寝落ちもちもち【#鎖乙女がぶ / #パレプロ研究生 】",He="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",We="jWKjtPdNkGQ",qe="2025-08-02",Qe=`【🐺🩰お歌TS🐺💜🎶】
 0:06:13 ドリームインブルーム！/Palette Project
-0:22:24 Re:Myself/Altimate!! (アカペラ)`,Ht={video_title:Je,video_artist:He,video_id:We,video_publish_date_str:qe,song_timeline:Qe},Oi=Object.freeze(Object.defineProperty({__proto__:null,default:Ht,song_timeline:Qe,video_artist:He,video_id:We,video_publish_date_str:qe,video_title:Je},Symbol.toStringTag,{value:"Module"})),Ze="【雑談】緊急配信！初見さん大歓迎♡【#鎖乙女がぶ /#パレプロ研究生 】",xe="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",Xe="sg7gWCvTdzc",et="2025-08-11",tt=`【🐺🩰お歌🐺💜🎶】
+0:22:24 Re:Myself/Altimate!! #{=アカペラ}`,Ht={video_title:Je,video_artist:He,video_id:We,video_publish_date_str:qe,song_timeline:Qe},Oi=Object.freeze(Object.defineProperty({__proto__:null,default:Ht,song_timeline:Qe,video_artist:He,video_id:We,video_publish_date_str:qe,video_title:Je},Symbol.toStringTag,{value:"Module"})),Ze="【雑談】緊急配信！初見さん大歓迎♡【#鎖乙女がぶ /#パレプロ研究生 】",xe="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",Xe="sg7gWCvTdzc",et="2025-08-11",tt=`【🐺🩰お歌🐺💜🎶】
 2:53:41 Re:Myself/Altimate!! (オケありFull)
 ※パレ感後夜祭のリベンジ`,Wt={video_title:Ze,video_artist:xe,video_id:Xe,video_publish_date_str:et,song_timeline:tt},fi=Object.freeze(Object.defineProperty({__proto__:null,default:Wt,song_timeline:tt,video_artist:xe,video_id:Xe,video_publish_date_str:et,video_title:Ze},Symbol.toStringTag,{value:"Module"})),it="【朝枠/雑談】初見さん20人・高評価200件いくまで終われない朝活♡【#鎖乙女がぶ /#パレプロ研究生 】",ot="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",nt="lPcmbzQqa4o",_t="2025-08-21",dt=`【🐺🩰朝活お歌セトリ🐺💜🎶】
 2:06:55 Let’s be ONE/Liella!

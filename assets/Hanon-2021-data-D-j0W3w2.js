@@ -43,7 +43,7 @@ J-POP楽曲
 2:20:55  硝子の少年 /KinKi Kids
 2:27:07  糸 /中島みゆき
 2:34:45  愛は勝つ /KAN
-2:43:02  どんなときも /槇原敬之（ワンコーラス）
+2:43:02  どんなときも /槇原敬之#{=ワンコーラス}
 2:49:38  チェリー /スピッツ
 2:55:10  Hello, Again ~昔からある場所~ /My Little Lover
 
@@ -57,7 +57,7 @@ J-POP楽曲
 3:47:30  Honey♥Come!! /小倉唯
 3:54:10  ハレ晴レユカイ /平野綾(涼宮ハルヒ)・茅原実里(長門有希)・後藤邑子(朝比奈みくる) 
 
-J-POP楽曲（２回目）
+J-POP楽曲#{=２回目}
 4:02:10  Pretender /Official髭男dism
 4:10:45  夜に駆ける /YOASOBI
 4:20:07  だから僕は音楽を辞めた /ヨルシカ
@@ -68,7 +68,7 @@ J-POP楽曲（２回目）
 
 ずっと真夜中でいいのに。楽曲
 5:01:14  ヒューマノイド/ずっと真夜中でいいのに。
-5:02:47 ヒューマノイド（やり直し）/ずっと真夜中でいいのに。
+5:02:47 ヒューマノイド#{=やり直し}/ずっと真夜中でいいのに。
 5:09:10  お勉強しといてよ/ずっと真夜中でいいのに。
 5:15:34  正しくなれない/ずっと真夜中でいいのに。
 5:24:56  勘ぐれい/ずっと真夜中でいいのに。
@@ -424,14 +424,14 @@ AKB48楽曲
 07:45:09 ムーンライト伝説/DALI
 07:50:29 泪のムコウ/ステレオポニー
 07:55:33 ヒトヒラのハナビラ/ステレオポニー
-08:01:29 スマイライフ/ステレオポニー(アカペラ)
+08:01:29 スマイライフ/ステレオポニー#{=アカペラ}
 08:05:01 なんでもないや/上白石萌音
 08:26:29 ふわふわ時間/放課後ティータイム
 08:34:25 Don't say "lazy"/桜高軽音部
 08:51:41 U&I/放課後ティータイム
 08:59:32 ごはんはおかず/放課後ティータイム
 09:04:34 ぴゅあぴゅあはーと/放課後ティータイム
-09:09:49 Utauyo!!MIRACLE/放課後ティータイ(アカペラ)
+09:09:49 Utauyo!!MIRACLE/放課後ティータイ#{=アカペラ}
 09:14:40 GO! GO! MANIAC/放課後ティータイム
 09:32:49 高嶺の花子さん/back number
 09:42:58 キューティーハニー/倖田來未
@@ -460,7 +460,7 @@ AKB48楽曲
 0:11:22 粉雪/レミオロメン
 0:19:19 香水/瑛人
 0:26:18 チェリー/スピッツ
-0:32:24 POP STAR/平井堅(ワンコーラス)
+0:32:24 POP STAR/平井堅#{=ワンコーラス}
 0:35:55 青いベンチ/サスケ
 0:42:23 猫/DISH&sol;&sol;
 0:48:48 しるし/Mr.Children`,qd={video_title:nt,video_artist:it,video_id:ot,video_publish_date_str:_t,song_timeline:dt},R1=Object.freeze(Object.defineProperty({__proto__:null,default:qd,song_timeline:dt,video_artist:it,video_id:ot,video_publish_date_str:_t,video_title:nt},Symbol.toStringTag,{value:"Module"})),st="【ほぼ毎日歌枠#20】Official髭男dismの楽曲を歌います【#パレプロ #香鳴ハノン】",rt="Hanon Ch. 香鳴ハノン【パレプロ】",lt="YNU1mdQs1hc",at="2021-04-29",vt=`0:5:29 Stand By You/Official髭男dism
@@ -521,9 +521,9 @@ AKB48楽曲
 1:58:36 世界には愛しかない/欅坂46`,_s={video_title:zt,video_artist:Et,video_id:wt,video_publish_date_str:Lt,song_timeline:Dt},U1=Object.freeze(Object.defineProperty({__proto__:null,default:_s,song_timeline:Dt,video_artist:Et,video_id:wt,video_publish_date_str:Lt,video_title:zt},Symbol.toStringTag,{value:"Module"})),Gt="【ほぼ毎日歌枠#29】1980年代の曲を歌います【#パレプロ #香鳴ハノン】",Ut="Hanon Ch. 香鳴ハノン【パレプロ】",kt="xXvNvHTAimg",Wt="2021-05-12",Ft=`0:02:44 少女A/中森明菜
 0:10:07 さよならの向う側/山口百恵
 0:23:37 I LOVE YOU/尾崎豊
-0:31:45 桃色吐息/高橋真梨子(アカペラ)
+0:31:45 桃色吐息/高橋真梨子#{=アカペラ}
 0:43:34 飾りじゃないのよ涙は/中森明菜
-0:52:14 セーラー服と機関銃/薬師丸ひろ子(アカペラ)
+0:52:14 セーラー服と機関銃/薬師丸ひろ子#{=アカペラ}
 1:06:42 恋におちて -Fall in love-/小林明子(アカペラ1コーラス)
 1:10:36 赤いスイートピー/松田聖子`,ds={video_title:Gt,video_artist:Ut,video_id:kt,video_publish_date_str:Wt,song_timeline:Ft},k1=Object.freeze(Object.defineProperty({__proto__:null,default:ds,song_timeline:Ft,video_artist:Ut,video_id:kt,video_publish_date_str:Wt,video_title:Gt},Symbol.toStringTag,{value:"Module"})),Jt="【ほぼ毎日歌枠#30】2017~2021年の曲を歌います【#パレプロ #香鳴ハノン】",Zt="Hanon Ch. 香鳴ハノン【パレプロ】",Vt="sLbyUcaxxeg",Qt="2021-05-14",xt=`0:04:41 ドライフラワー/優里
 0:13:00 正しくなれない/ずっと真夜中でいいのに。
@@ -659,7 +659,7 @@ AKB48楽曲
 \r
 0:04:25 ないものねだり / KANA-BOON ~0:08:49 \r
 0:10:50 夏祭り / Whiteberry  ~0:15:14 \r
-0:16:22 キラキラ / Aiko(ワンコーラス) ~0:18:20 \r
+0:16:22 キラキラ / Aiko#{=ワンコーラス} ~0:18:20 \r
 0:23:02 あの夢をなぞって / YOASOBI ~0:27:11 \r
 0:31:10 リブート / miwa ~0:35:18 \r
 0:44:50 脳裏上のクラッカー / ずっと真夜中でいいのに。\r
@@ -783,11 +783,11 @@ AKB48楽曲
 0:58:53 僕に彼女ができたんだ / SHISHAMO ~1:02:05 \r
 \r
 1:04:19 ロビンソン / スピッツ ~1:08:38 \r
-1:14:01 浪漫飛行(サビのみ) / 米米CLUB ~1:14:48 \r
+1:14:01 浪漫飛行#{=サビのみ} / 米米CLUB ~1:14:48 \r
 1:15:43 白日 / King Gnu ~1:20:25 \r
-1:22:24 恋のABO(サビのみ) / NEWS\r
+1:22:24 恋のABO#{=サビのみ} / NEWS\r
 1:28:22 STAND-ALONE / Aimer ~1:33:14 \r
-1:34:22 Climax Jump(アカペラ一部のみ) / AAA ~1:35:20 \r
+1:34:22 Climax Jump#{=アカペラ一部のみ} / AAA ~1:35:20 \r
 1:39:47 めざせポケモンマスター / 松本梨香 ~1:43:57 \r
 1:45:05 曇天 / DOES ~1:48:09 \r
 1:52:24 MONSTER DANCE / KEYTALK ~1:56:50 \r
@@ -804,8 +804,8 @@ STAND-ALONE良い曲ですねえ\r
 0:17:20 dawn / LiSA ~0:21:29 \r
 0:23:40 紅蓮華 / LiSA ~0:27:42 \r
 0:29:53 炎 / LiSA ~0:34:29 \r
-0:36:32 Catch the Moment(ワンコーラス) / LiSA ~0:38:23 \r
-0:39:16 crossing field(ワンコーラス) / LiSA ~0:40:46 \r
+0:36:32 Catch the Moment#{=ワンコーラス} / LiSA ~0:38:23 \r
+0:39:16 crossing field#{=ワンコーラス} / LiSA ~0:40:46 \r
 \r
 0:45:19 エンドカード`,Cs={video_title:Li,video_artist:Di,video_id:Gi,video_publish_date_str:Ui,song_timeline:ki},vr=Object.freeze(Object.defineProperty({__proto__:null,default:Cs,song_timeline:ki,video_artist:Di,video_id:Gi,video_publish_date_str:Ui,video_title:Li},Symbol.toStringTag,{value:"Module"})),Wi="【ほぼ毎日歌枠#49】君の名は。楽曲を歌います【#パレプロ #香鳴ハノン】",Fi="Hanon Ch. 香鳴ハノン【パレプロ】",Ji="he6ML8Qdsss",Zi="2021-06-29",Vi=`今回のタイムスタンプ＆セトリ\r
 0:00:00 OP\r
@@ -829,7 +829,7 @@ STAND-ALONE良い曲ですねえ\r
 \r
 0:12:43 Everyday、カチューシャ / AKB48 ~0:18:00 \r
 0:24:02 カブトムシ / Aiko ~0:29:19 \r
-0:31:49 気分上々↑↑(アカペラ) / Mihimaru GT ~0:33:24 \r
+0:31:49 気分上々↑↑#{=アカペラ} / Mihimaru GT ~0:33:24 \r
 0:37:20 MILABO / ずっと真夜中でいいのに。 ~0:41:52 \r
 0:44:15 ヒューマノイド / ずっと真夜中でいいのに。 ~0:48:26 \r
 0:51:06 脳裏上のクラッカー / ずっと真夜中でいいのに。 ~0:56:01 \r
@@ -847,8 +847,8 @@ STAND-ALONE良い曲ですねえ\r
 0:31:28 again / YUI ~0:35:50 \r
 0:37:47 メリッサ / ポルノグラフィティ ~0:42:25 \r
 0:45:42 瞬間センチメンタル / SCANDAL ~0:49:22\r
-0:53:08 ふ・れ・ん・ど・し・た・い(ワンコーラス) / 学園生活部 ~0:54:44 \r
-0:57:34 アンハッピーエンドワールド(アカペラ) / 直樹美紀(高橋李依)&恵飛須沢胡桃(小澤亜李) ~1:01:47 \r
+0:53:08 ふ・れ・ん・ど・し・た・い#{=ワンコーラス} / 学園生活部 ~0:54:44 \r
+0:57:34 アンハッピーエンドワールド#{=アカペラ} / 直樹美紀(高橋李依)&恵飛須沢胡桃(小澤亜李) ~1:01:47 \r
 \r
 1:03:44 ブルーバード / いきものがかり ~1:07:14 \r
 1:08:11 シルエット / KANA-BOON ~1:12:36\r
@@ -856,9 +856,9 @@ STAND-ALONE良い曲ですねえ\r
 1:21:26 月光花 / Janne Da Arc ~1:27:03 \r
 1:27:53 Rolling star / YUI ~1:31:08 \r
 1:32:03 chAngE / miwa ~1:36:18 \r
-1:39:43 LIFE(アカペラ) / YUI ~1:43:43 \r
+1:39:43 LIFE#{=アカペラ} / YUI ~1:43:43 \r
 1:45:41 ヒトヒラのハナビラ / ステレオポニー ~1:49:17 \r
-1:53:53 かくしん的☆めたまるふぉ～ぜっ!(ワンコーラス) / 土間うまる ~1:56:06 \r
+1:53:53 かくしん的☆めたまるふぉ～ぜっ!#{=ワンコーラス} / 土間うまる ~1:56:06 \r
 \r
 2:02:42 白銀ディスコ / 井口裕香 ~2:07:03 \r
 2:07:57 恋愛サーキュレーション / 花澤香菜 ~2:12:30 \r
@@ -927,8 +927,8 @@ STAND-ALONE良い曲ですねえ\r
 0:01:13 はのはー\r
 \r
 0:04:40 シャルル / バルーンP\r
-0:06:07 シャルル / バルーンP(ワンコーラス) ~0:07:40 \r
-0:09:53 アスノヨゾラ哨戒班 / Orangestar(ワンコーラス) ~0:11:17 \r
+0:06:07 シャルル / バルーンP#{=ワンコーラス} ~0:07:40 \r
+0:09:53 アスノヨゾラ哨戒班 / Orangestar#{=ワンコーラス} ~0:11:17 \r
 0:13:01 ヴァンパイア / DECO*27 ~0:16:08 \r
 0:17:32 KING / Kanaria ~0:20:04 \r
 0:25:01 妄想感傷代償連盟 / DECO*27 ~0:29:32 \r
@@ -982,7 +982,7 @@ STAND-ALONE良い曲ですねえ\r
 0:55:04 ハレ晴レユカイ / 平野綾、茅原実里、後藤邑子 ~0:58:42 \r
 0:59:48 ふわふわ時間 / 放課後ティータイム ~1:03:46 \r
 1:05:45 君が代 / 国歌\r
-1:09:47 うっせぇわ(1番のみ) / Ado ~1:13:19 \r
+1:09:47 うっせぇわ#{=1番のみ} / Ado ~1:13:19 \r
 1:15:17 星間飛行 / 中島愛 ~1:19:16 
 \r
 1:21:28 スパチャ読み\r
@@ -1066,7 +1066,7 @@ STAND-ALONE良い曲ですねえ\r
 3:23:58 炎 / LiSA ~3:28:31 \r
 3:33:01 KING / Kanaria ~3:35:38 \r
 3:36:48 千本桜 / 黒うさP ~3:40:59 \r
-3:42:42 ヴァンパイア / DECO*27(アカペラ)\r
+3:42:42 ヴァンパイア / DECO*27#{=アカペラ}\r
 3:43:10 ヴァンパイア / DECO*27 ~3:46:18 \r
 3:48:47 メランコリック / Junky ~3:52:32 \r
 \r
@@ -1099,13 +1099,13 @@ STAND-ALONE良い曲ですねえ\r
 0:23:40 夏祭り / Whiteberry ~0:27:31 \r
 0:30:16 プラネタリウム / 大塚愛 ~0:35:46 \r
 0:39:45 わたがし / Back number ~0:44:10 \r
-0:50:28 SUMMER SONG(アカペラワンコーラス) / Yui\r
-0:55:20 invitation(アカペラ) / 柴咲 コウ ~0:57:25 \r
+0:50:28 SUMMER SONG#{=アカペラワンコーラス} / Yui\r
+0:55:20 invitation#{=アカペラ} / 柴咲 コウ ~0:57:25 \r
 0:59:13 夏色 / ゆず ~1:02:38 \r
 \r
 1:02:47 エアコンが暴れ出した\r
 1:07:33 サマータイムラブ / Shiggy Jr. ~1:11:50 \r
-1:21:57 アスノヨゾラ哨戒班(アカペラ) / Orangestar\r
+1:21:57 アスノヨゾラ哨戒班#{=アカペラ} / Orangestar\r
 1:24:20 花に亡霊 / ヨルシカ ~1:28:30 \r
 1:30:21 告知\r
 1:55:24 エンドカード`,Ws={video_title:A0,video_artist:y0,video_id:M0,video_publish_date_str:I0,song_timeline:C0},jr=Object.freeze(Object.defineProperty({__proto__:null,default:Ws,song_timeline:C0,video_artist:y0,video_id:M0,video_publish_date_str:I0,video_title:A0},Symbol.toStringTag,{value:"Module"})),B0="【歌枠】お昼の30分歌枠【#パレプロ #香鳴ハノン】",j0="Hanon Ch. 香鳴ハノン【パレプロ】",P0="uN9PjQ4u8X8",H0="2021-07-27",Y0=`今回のタイムスタンプ＆セトリ\r
@@ -1118,14 +1118,14 @@ STAND-ALONE良い曲ですねえ\r
 0:26:24 風になる / つじあやの ~0:30:56 
 \r
 0:31:30 スパチャ読み\r
-0:33:29 エンドカード`,Fs={video_title:B0,video_artist:j0,video_id:P0,video_publish_date_str:H0,song_timeline:Y0},Pr=Object.freeze(Object.defineProperty({__proto__:null,default:Fs,song_timeline:Y0,video_artist:j0,video_id:P0,video_publish_date_str:H0,video_title:B0},Symbol.toStringTag,{value:"Module"})),T0="【全身3Dコラボ】カラオケBOXで #にこノンぱーてぃー ！【#今羽にこ #香鳴ハノン】",K0="Hanon Ch. 香鳴ハノン【パレプロ】",N0="wpi5ylL0WnU",R0="2021-07-28",z0=`0:01:27 チャンス！ / 月島きらり starring 久住小春 (モーニング娘。) - にこノン
-0:06:59 星間飛行 / ランカ・リー＝中島愛 - 香鳴ハノン
-0:10:51 恋するフォーチュンクッキー / AKB48 - 今羽にこ
-0:22:04 ただ君に晴れ / ヨルシカ - 今羽にこ
-0:25:39 なんでもないや(movie ver.) / RADWIMPS - 香鳴ハノン
-0:31:25 世界は恋に落ちている / CHiCO with HoneyWorks - にこノン
-0:46:05 Choo Choo TRAIN / ZOO - にこノン
-0:50:48 ハム太郎とっとこうた / ハムちゃんず - にこノン`,Js={video_title:T0,video_artist:K0,video_id:N0,video_publish_date_str:R0,song_timeline:z0},Hr=Object.freeze(Object.defineProperty({__proto__:null,default:Js,song_timeline:z0,video_artist:K0,video_id:N0,video_publish_date_str:R0,video_title:T0},Symbol.toStringTag,{value:"Module"})),E0="【バイノーラル歌枠（今はポテチ食べながら雑談）】至近距離でこそこそ歌います【#パレプロ #香鳴ハノン】",w0="Hanon Ch. 香鳴ハノン【パレプロ】",L0="u-CbCt3NbYg",D0="2021-07-29",G0=`今回のタイムスタンプ＆セトリ\r
+0:33:29 エンドカード`,Fs={video_title:B0,video_artist:j0,video_id:P0,video_publish_date_str:H0,song_timeline:Y0},Pr=Object.freeze(Object.defineProperty({__proto__:null,default:Fs,song_timeline:Y0,video_artist:j0,video_id:P0,video_publish_date_str:H0,video_title:B0},Symbol.toStringTag,{value:"Module"})),T0="【全身3Dコラボ】カラオケBOXで #にこノンぱーてぃー ！【#今羽にこ #香鳴ハノン】",K0="Hanon Ch. 香鳴ハノン【パレプロ】",N0="wpi5ylL0WnU",R0="2021-07-28",z0=`0:01:27 チャンス！ / 月島きらり starring 久住小春 (モーニング娘。) #{=にこノン}
+0:06:59 星間飛行 / ランカ・リー＝中島愛#{=香鳴ハノン}
+0:10:51 恋するフォーチュンクッキー / AKB48#{=今羽にこ}
+0:22:04 ただ君に晴れ / ヨルシカ#{=今羽にこ}
+0:25:39 なんでもないや(movie ver.) / RADWIMPS#{=香鳴ハノン}
+0:31:25 世界は恋に落ちている / CHiCO with HoneyWorks #{=にこノン}
+0:46:05 Choo Choo TRAIN / ZOO #{=にこノン}
+0:50:48 ハム太郎とっとこうた / ハムちゃんず #{=にこノン}`,Js={video_title:T0,video_artist:K0,video_id:N0,video_publish_date_str:R0,song_timeline:z0},Hr=Object.freeze(Object.defineProperty({__proto__:null,default:Js,song_timeline:z0,video_artist:K0,video_id:N0,video_publish_date_str:R0,video_title:T0},Symbol.toStringTag,{value:"Module"})),E0="【バイノーラル歌枠（今はポテチ食べながら雑談）】至近距離でこそこそ歌います【#パレプロ #香鳴ハノン】",w0="Hanon Ch. 香鳴ハノン【パレプロ】",L0="u-CbCt3NbYg",D0="2021-07-29",G0=`今回のタイムスタンプ＆セトリ\r
 0:00:00 OP\r
 0:01:12 はのは～\r
 \r
@@ -1199,16 +1199,16 @@ STAND-ALONE良い曲ですねえ\r
 1:11:38 FRiDAY-MA-MAGiC/miwa
 1:17:42 つよくなりたい/miwa
 1:23:16 めぐろ川/miwa
-1:33:28 リトルガール（２回目）/miwa`,Qs={video_title:Z0,video_artist:V0,video_id:Q0,video_publish_date_str:x0,song_timeline:q0},Kr=Object.freeze(Object.defineProperty({__proto__:null,default:Qs,song_timeline:q0,video_artist:V0,video_id:Q0,video_publish_date_str:x0,video_title:Z0},Symbol.toStringTag,{value:"Module"})),X0="【全身3D歌枠】#スプカラ vol.2 夏祭り終わりのSputripが浴衣でカラオケ！【#パレプロ 左から #常磐カナメ #香鳴ハノン #暁月クララ】",e_="Hanon Ch. 香鳴ハノン【パレプロ】",t_="pfS7h_IAk3U",n_="2021-08-08",i_=`0:01:52 ダーリンダンス / かいりきベア feat. 初音ミク（暁月クララ）
-0:06:38 命ばっかり / ぬゆり（常磐カナメ）
-0:11:32 アンハッピーエンドワールド / 高橋李依、小澤亜李（香鳴ハノン）
-0:20:52 ようかい体操第一 / Dream5（暁月クララ & 常磐カナメ）
-0:26:03 ソーラン節 / 石川さゆり（暁月クララ）
-0:31:22 わたがし / back number（香鳴ハノン）
-0:36:48 ambivalent world / 神原駿河(沢城みゆき)（常磐カナメ & 香鳴ハノン）
-0:42:15 ハートリアライズ / Tia（常磐カナメ）
-0:47:58 いけないボーダーライン / ワルキューレ（暁月クララ & 香鳴ハノン）
-0:55:13 せーのっ！ / 情報処理部（Sputrip）`,xs={video_title:X0,video_artist:e_,video_id:t_,video_publish_date_str:n_,song_timeline:i_},Nr=Object.freeze(Object.defineProperty({__proto__:null,default:xs,song_timeline:i_,video_artist:e_,video_id:t_,video_publish_date_str:n_,video_title:X0},Symbol.toStringTag,{value:"Module"})),o_="【雑談歌枠】8月を振り返りながら、時々歌う。【#パレプロ #香鳴ハノン】",__="Hanon Ch. 香鳴ハノン【パレプロ】",d_="Jc37_fKoGd8",s_="2021-08-31",r_="0:52:45 涙サプライズ! / AKB48",qs={video_title:o_,video_artist:__,video_id:d_,video_publish_date_str:s_,song_timeline:r_},Rr=Object.freeze(Object.defineProperty({__proto__:null,default:qs,song_timeline:r_,video_artist:__,video_id:d_,video_publish_date_str:s_,video_title:o_},Symbol.toStringTag,{value:"Module"})),l_="【雑談歌枠】9月最初の歌枠、お話多め。（結局お歌たくさん歌った）【#パレプロ #香鳴ハノン】",a_="Hanon Ch. 香鳴ハノン【パレプロ】",v_="xzD36ZQ8YuM",c_="2021-09-11",u_=`0:00:00 開始
+1:33:28 リトルガール#{=２回目}/miwa`,Qs={video_title:Z0,video_artist:V0,video_id:Q0,video_publish_date_str:x0,song_timeline:q0},Kr=Object.freeze(Object.defineProperty({__proto__:null,default:Qs,song_timeline:q0,video_artist:V0,video_id:Q0,video_publish_date_str:x0,video_title:Z0},Symbol.toStringTag,{value:"Module"})),X0="【全身3D歌枠】#スプカラ vol.2 夏祭り終わりのSputripが浴衣でカラオケ！【#パレプロ 左から #常磐カナメ #香鳴ハノン #暁月クララ】",e_="Hanon Ch. 香鳴ハノン【パレプロ】",t_="pfS7h_IAk3U",n_="2021-08-08",i_=`0:01:52 ダーリンダンス / かいりきベア feat. 初音ミク#{=暁月クララ}
+0:06:38 命ばっかり / ぬゆり#{=常磐カナメ}
+0:11:32 アンハッピーエンドワールド / 高橋李依、小澤亜李#{=香鳴ハノン}
+0:20:52 ようかい体操第一 / Dream5#{=暁月クララ,常磐カナメ}
+0:26:03 ソーラン節 / 石川さゆり#{=暁月クララ}
+0:31:22 わたがし / back number#{=香鳴ハノン}
+0:36:48 ambivalent world / 神原駿河(沢城みゆき)#{=常磐カナメ,香鳴ハノン}
+0:42:15 ハートリアライズ / Tia#{=常磐カナメ}
+0:47:58 いけないボーダーライン / ワルキューレ#{=暁月クララ,香鳴ハノン}
+0:55:13 せーのっ！ / 情報処理部#{=Sputrip}`,xs={video_title:X0,video_artist:e_,video_id:t_,video_publish_date_str:n_,song_timeline:i_},Nr=Object.freeze(Object.defineProperty({__proto__:null,default:xs,song_timeline:i_,video_artist:e_,video_id:t_,video_publish_date_str:n_,video_title:X0},Symbol.toStringTag,{value:"Module"})),o_="【雑談歌枠】8月を振り返りながら、時々歌う。【#パレプロ #香鳴ハノン】",__="Hanon Ch. 香鳴ハノン【パレプロ】",d_="Jc37_fKoGd8",s_="2021-08-31",r_="0:52:45 涙サプライズ! / AKB48",qs={video_title:o_,video_artist:__,video_id:d_,video_publish_date_str:s_,song_timeline:r_},Rr=Object.freeze(Object.defineProperty({__proto__:null,default:qs,song_timeline:r_,video_artist:__,video_id:d_,video_publish_date_str:s_,video_title:o_},Symbol.toStringTag,{value:"Module"})),l_="【雑談歌枠】9月最初の歌枠、お話多め。（結局お歌たくさん歌った）【#パレプロ #香鳴ハノン】",a_="Hanon Ch. 香鳴ハノン【パレプロ】",v_="xzD36ZQ8YuM",c_="2021-09-11",u_=`0:00:00 開始
 0:11:10 花に亡霊/ヨルシカ
 0:17:48 言って。/ヨルシカ
 0:23:10 カタオモイ/Aimer
@@ -1245,7 +1245,7 @@ STAND-ALONE良い曲ですねえ\r
 2:32:30 サイレントマジョリティー/欅坂46
 2:40:53 366日/HY
 2:50:31 高嶺の花子さん/back number
-2:57:33 ハム太郎とっとこうた/ハムちゃんず 3連続`,t1={video_title:p_,video_artist:h_,video_id:S_,video_publish_date_str:f_,song_timeline:A_},wr=Object.freeze(Object.defineProperty({__proto__:null,default:t1,song_timeline:A_,video_artist:h_,video_id:S_,video_publish_date_str:f_,video_title:p_},Symbol.toStringTag,{value:"Module"})),y_="【歌枠/Singing】アイドル楽曲を歌う1時間歌枠【#パレプロ #香鳴ハノン】",M_="Hanon Ch. 香鳴ハノン【パレプロ】",I_="3-gNfDvev1Y",C_="2021-09-27",B_=`0:0:00 開始
+2:57:33 ハム太郎とっとこうた/ハムちゃんず#{=3連続}`,t1={video_title:p_,video_artist:h_,video_id:S_,video_publish_date_str:f_,song_timeline:A_},wr=Object.freeze(Object.defineProperty({__proto__:null,default:t1,song_timeline:A_,video_artist:h_,video_id:S_,video_publish_date_str:f_,video_title:p_},Symbol.toStringTag,{value:"Module"})),y_="【歌枠/Singing】アイドル楽曲を歌う1時間歌枠【#パレプロ #香鳴ハノン】",M_="Hanon Ch. 香鳴ハノン【パレプロ】",I_="3-gNfDvev1Y",C_="2021-09-27",B_=`0:0:00 開始
 0:6:55 世界には愛しかない/欅坂46
 0:13:53 ポニーテールとシュシュ/AKB48
 0:22:32 初恋サイダー/Buono!
@@ -1356,14 +1356,14 @@ STAND-ALONE良い曲ですねえ\r
 1:57:56　ウィーアー!/きただにひろし\r
 2:04:22　ハレ晴レユカイ/涼宮ハルヒ(平野綾),長門有希(茅原実里),朝比奈みくる(後藤邑子)\r
 2:10:32　ハノンの話～どんな配信をしてる？\r
-2:20:03　ファンサ(ワンコーラス)/mona(夏川椎菜)\r
+2:20:03　ファンサ#{=ワンコーラス}/mona(夏川椎菜)\r
 2:25:45　Snow halation/μ's\r
 2:30:55　神菜コハネちゃんがお誕生日ライブで歌ってた Cutie Panther 歌えるかな？\r
 2:32:47　登録者9,950人達成・チョコパイたいむ\r
 2:44:39　君の知らない物語/supercell\r
 2:55:18　スパークル/RADWIMPS\r
 3:11:47　勘ぐれい/ずっと真夜中でいいのに。\r
-3:20:22　三原色(ワンコーラス)/YOASOBI\r
+3:20:22　三原色#{=ワンコーラス}/YOASOBI\r
 3:27:03　群青/YOASOBI\r
 3:37:09　怪物/YOASOBI\r
 3:42:27　U&I/放課後ティータイム\r
@@ -1397,7 +1397,7 @@ STAND-ALONE良い曲ですねえ\r
 1:34:25　やりたい企画「英語絶対使っちゃいけない歌枠」\r
 1:46:08　I LOVE.../Official髭男dism\r
 1:54:12　愛をこめて花束を/Superfly\r
-2:04:43　ファンサ(ワンコーラス)/mona(夏川椎菜)\r
+2:04:43　ファンサ#{=ワンコーラス}/mona(夏川椎菜)\r
 2:07:29　紫桃あのんちゃんスパチャ\r
 2:12:52　Honey♥Come!!/小倉唯\r
 2:17:28　ここで止まってはいられない\r
@@ -1411,7 +1411,7 @@ STAND-ALONE良い曲ですねえ\r
 0:24:47　くしゃみ3発
 0:28:49　白日/King Gnu
 0:36:00　ハノンの昨日の晩ご飯
-0:42:36　First Love(ワンコーラス)/宇多田ヒカル
+0:42:36　First Love#{=ワンコーラス}/宇多田ヒカル
 0:45:44　粉雪/レミオロメン
 0:53:31　ファンサ/mona(夏川椎菜)
 1:00:37　ファンサ/mona(夏川椎菜)
