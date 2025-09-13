@@ -260,10 +260,23 @@ function parseSong(videos: Video[]): Song[] {
             } else {
                 if (song.song_title.includes('はのは')
                     || song.song_title.includes('スパチャ読み')
+                    || song.song_title.includes('スパチャ')
+                    || song.song_title.includes('チャンネル')
                     || song.song_title.includes('エンドカード')
                     || song.song_title.includes('END')
                     || song.song_title === 'OP'
                     || song.song_title === 'ED'
+                    || song.song_title.includes('開始')
+                    || song.song_title.includes('告知')
+                    || song.song_title.includes('お知らせ')
+                    || song.song_title.includes('雑談')
+                    || song.song_title.includes('生写真')
+                    || song.song_title.includes('研究生')
+                    || song.song_title === 'ばいばーい！'
+                    || song.song_title === '待機'
+                    || song.song_title === 'MC'
+                    || song.song_title === 'スクショタイム'
+                    || song.song_title.includes('同接')
                     || song.song_title.includes('こんばんは')) return;
                 // console.log("filtered song: %s", song.song_title)
             }
