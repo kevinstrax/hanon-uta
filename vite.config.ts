@@ -122,10 +122,21 @@ export default defineConfig({
                 page_404: path.resolve(__dirname, '404.html'),
             },
             output: {
-                manualChunks: (id) =>
-                    id.includes('/data/')
-                        ? vtubers.find((vtuber) => id.includes(`/${ vtuber }/`))?.concat('-data')
-                        : undefined
+                manualChunks: (id) => {
+                    if (id.includes('/data/')) {
+                        // Find the VTuber first
+                        const vtuber = vtubers.find((v) => id.includes(`/${v}/`));
+                        if (vtuber) {
+                            // File name matching year:2025-02-22_n.json
+                            const match = id.match(/\/(\d{4})-\d{2}-\d{2}(?:_\d+)?\.json$/);
+                            if (match) {
+                                return `${vtuber}-${match[1]}-data`;
+                            }
+                            return `${vtuber}-data`; // When the year is not matched fallback
+                        }
+                    }
+                    return undefined;
+                }
             }
         }
     },

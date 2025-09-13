@@ -234,7 +234,7 @@ function parseSong(videos: Video[]): Song[] {
                 ref_video_thumbnail_url: `https://img.youtube.com/vi/${ video.video_id }/sddefault.jpg`,
                 ref_video_thumbnail_lqip_url: `https://img.youtube.com/vi/${ video.video_id }/mqdefault.jpg`,
                 ref_video_publish_date_ts: parseTs(video.video_publish_date_str),
-                song_origin_artist: songMeta.artist,
+                song_origin_artist: he.decode(songMeta.artist),
                 song_title: he.decode(songMeta.title),
                 song_start_time: songMeta.time,
                 video_offset_ts: offsetSec
