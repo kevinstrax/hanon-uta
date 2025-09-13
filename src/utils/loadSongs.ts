@@ -3,7 +3,7 @@ import type { Song } from '@/types/song';
 import type { SongsInfo } from '@/types/songs-info';
 import type { Video } from "@/types/video";
 import he from 'he'
-import { parseTs, timeToSeconds } from './timeUtils'
+import { checkAndFormatTime, parseTs, timeToSeconds } from './timeUtils'
 import { apiRequest } from "@/api/instance.ts";
 import type { SongMetaGroup } from "@/types/song-meta";
 
@@ -240,6 +240,7 @@ function parseSong(videos: Video[]): Song[] {
                 video_offset_ts: offsetSec
             };
             if (validSong(song)) {
+                song.song_start_time = checkAndFormatTime(song.song_start_time)
                 songs.push(song);
             } else {
                 if (song.song_title.includes('はのは')

@@ -18,6 +18,23 @@ export function timeToSeconds(timeStr: string): number {
     const [hours, minutes, seconds] = timeStr.split(':').map(Number);
     return hours * 3600 + minutes * 60 + seconds;
 }
+
+export function checkAndFormatTime(timeStr: string) {
+    const seconds = timeToSeconds(timeStr);
+    if (isNaN(seconds)) {
+        throw Error(`Invalid time string ${timeStr}`);
+    }
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const secs = seconds % 60;
+
+    return [
+        hours.toString(),
+        minutes.toString().padStart(2, '0'),
+        secs.toString().padStart(2, '0'),
+    ].join(':');
+}
+
 export function timestampToYear(timestamp: number): string {
     const date = new Date(timestamp * 1000);
     const year = date.getFullYear();
