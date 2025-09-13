@@ -112,7 +112,7 @@ const n="【歌枠】2023年初歌！ことしもどんどん見つかりたい�
 02:33 はのはー\r
 04:33 はのはー(やりなおし)\r
 \r
-06:38 Hello,Again ～昔からある場所～ / My Little Lover ~11:50 \r
+06:38 Hello, Again ~昔からある場所~ / My Little Lover ~11:50 \r
 14:03 チェリー / スピッツ ~18:26 \r
 20:42 DIAMONDS / プリンセス プリンセス ~25:29 \r
 30:49 ロマンスの神様 / 広瀬香美 ~35:18 \r
@@ -123,7 +123,7 @@ const n="【歌枠】2023年初歌！ことしもどんどん見つかりたい�
 1:05:35 First Love / 宇多田ヒカル ~1:09:55 \r
 1:13:31 夢見る少女じゃいられない / 相川七瀬 ~1:17:55 \r
 1:18:17 出逢った頃のように / Every Little Thing ~1:22:46 \r
-1:22:55 tomorrow never knows / Mr.Children ~1:28:00 \r
+1:22:55 Tomorrow never knows / Mr.Children ~1:28:00 \r
 1:29:03 どんなときも。 / 槇原敬之 ~1:33:41 \r
 1:41:53 夏の日の1993 / Class ~1:45:46 \r
 1:46:34 負けないで / ZARD ~1:50:17 \r
@@ -186,13 +186,13 @@ const n="【歌枠】2023年初歌！ことしもどんどん見つかりたい�
 0:58:21 Precious / 伊藤由奈 ~1:04:23 \r
 \r
 1:10:15 Best Friend / Kiroro ~1:14:17 \r
-1:26:37 猫 / DISH// ~1:31:10 \r
+1:26:37 猫 / DISH&sol;&sol; ~1:31:10 \r
 1:34:58 カタオモイ / Aimer ~1:38:25 \r
 1:38:57 残響散歌 / Aimer ~1:42:04 \r
 1:42:08 雑談 / よいしょ 焼肉ヒロミヤ行ってきたよ\r
 1:54:55 黒毛和牛上塩タン焼680円 / 大塚愛 ~1:58:19 \r
 \r
-2:02:22 だから僕は音楽をやめた / ヨルシカ ~2:06:29 \r
+2:02:22 だから僕は音楽を辞めた / ヨルシカ ~2:06:29 \r
 2:08:02 ただ君に晴れ / ヨルシカ ~2:11:27 \r
 2:14:33 ノーチラス / ヨルシカ ~2:18:36 \r
 2:21:15 言って。 / ヨルシカ ~2:25:22 \r
@@ -226,7 +226,7 @@ const n="【歌枠】2023年初歌！ことしもどんどん見つかりたい�
 0:33:37 雑談 / はのめしとか今度見たいアニメの話\r
 0:41:24 ハレ晴レユカイ / 平野綾、茅原実里、後藤邑子 ~0:44:55 \r
 0:51:54 シルエット / KANA-BOON ~55:50 \r
-1:02:30 secret base ～君がくれたもの～ / ZONE ~1:07:43 \r
+1:02:30 secret base ~君がくれたもの~ / ZONE ~1:07:43 \r
 \r
 1:10:21 告知\r
 1:21:24 雑談 / 今度ロボ歌枠で歌って欲しいロボアニメの話\r
@@ -268,7 +268,7 @@ const n="【歌枠】2023年初歌！ことしもどんどん見つかりたい�
 0:13:20 残響散歌 / Aimer ~0:16:21 \r
 0:27:08 chAngE / Miwa ~0:31:16 \r
 0:32:32 雑談 / みくりん(星衣未空莉ちゃん)の話とか\r
-0:40:11 だから僕は音楽をやめた / ヨルシカ ~0:44:15 \r
+0:40:11 だから僕は音楽を辞めた / ヨルシカ ~0:44:15 \r
 0:47:58 怪物 / YOASOBI ~0:51:22 \r
 0:59:54 フォニイ / ツミキ ~1:03:04 
 1:06:05 告知\r
@@ -437,7 +437,7 @@ BDライブありがとうございました。最高に盛り上がりました
 1:27:31 Flavor Of Life / 宇多田ヒカル ~1:32:35 \r
 1:35:18 ダダダダ天使 / ナナヲアカリ ~1:39:03 \r
 1:41:59 アナタボシ / MilkyWay ~1:45:22 \r
-1:49:51 Yeah!めっちゃホリディ / 松浦亜弥 ~1:53:37 \r
+1:49:51 Yeah! めっちゃホリディ / 松浦亜弥 ~1:53:37 \r
 1:58:14 絶滅黒髪少女 / NMB48 ~2:02:01 \r
 2:02:04 LOVEマシーン / モーニング娘。 ~2:07:08 \r
 \r
@@ -532,7 +532,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:10:03 丸の内サディスティック / 椎名林檎 ~0:13:50 \r
 0:14:32 KING / Kanaria ~0:16:48 \r
 0:18:00 Mela! / 緑黄色社会 ~0:22:04 \r
-0:26:55 #超絶かわいい ​/ mona ~0:29:52 \r
+0:26:55 #超絶かわいい/ mona ~0:29:52 \r
 0:32:20 SHAMROCK / UVERworld ~0:36:39 \r
 0:39:13 トンデモワンダーズ / Sasakure.UK\r
 0:40:23 トンデモワンダーズ / Sasakure.UK ~0:43:39 \r
@@ -557,7 +557,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:10:03 丸の内サディスティック / 椎名林檎 ~0:13:50 \r
 0:14:32 KING / Kanaria ~0:16:48 \r
 0:18:00 Mela! / 緑黄色社会 ~0:22:04 \r
-0:26:55 #超絶かわいい ​/ mona ~0:29:52 \r
+0:26:55 #超絶かわいい/ mona ~0:29:52 \r
 0:32:20 SHAMROCK / UVERworld ~0:36:39 \r
 0:39:13 トンデモワンダーズ / Sasakure.UK\r
 0:40:23 トンデモワンダーズ / Sasakure.UK ~0:43:39 \r
@@ -583,7 +583,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:16:00 夜に駆ける / YOASOBI ~0:20:22 \r
 0:22:05 ノーダウト / Official髭男dism ~0:25:24 \r
 0:25:48 ミックスナッツ / Official髭男dism ~0:29:18 \r
-0:34:40 アイドル / YOASOBI(1コーラス) ~0:36:06 \r
+0:34:40 アイドル / YOASOBI(ワンコーラス) ~0:36:06 \r
 0:38:06 シンデレラボーイ / Saucy Dog ~0:42:00 \r
 0:42:20 檄！帝国華撃団 / 真宮時さくら＆帝国歌劇団 ~0:45:22 \r
 0:50:01 ムーンライト伝説 / DALI ~0:52:50 \r
@@ -603,7 +603,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 2:02:01 ドラえもん / 星野源 ~2:06:00 \r
 2:08:24 渡月橋 ～君 想ふ～ / 倉木麻衣 ~2:12:28 \r
 2:14:54 Cry Baby / Official髭男dism ~2:18:53 \r
-2:21:37 # 超絶かわいい ​/ mona ~2:24:37 \r
+2:21:37 #超絶かわいい/ mona ~2:24:37 \r
 2:25:18 可愛くてごめん / HoneyWorks ~2:28:59 \r
 2:31:31 推し変なんて許さない！ / 可憐なアイボリー ~2:35:12 \r
 2:35:52 ハンコウ予告 / CHiCO ~2:40:02 \r
@@ -752,7 +752,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 1:39:24 正しくなれない / ずっと真夜中でいいのに。 ~1:41:44 \r
 1:42:18 給水タイム ~1:43:32 \r
 \r
-1:46:12 #超絶かわいい ​/ mona ~1:47:21 \r
+1:46:12 #超絶かわいい/ mona ~1:47:21 \r
 1:48:54 推し変なんて許さない！ / 可憐なアイボリー ~1:50:07 \r
 1:50:18 ハンコウ予告 / CHiCO ~1:51:54 \r
 1:52:16 世界は恋に落ちている / CHiCO ~1:54:03 \r
@@ -783,10 +783,10 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:17:50 白日 / King Gnu ~0:22:34 \r
 0:25:01 香水 / 瑛人 ~0:29:17 \r
 0:30:02 雑談 / 気温の変化と家の間取りの話(キッチンにベッド)\r
-0:34:30 猫 / DISH// ~0:39:01 \r
+0:34:30 猫 / DISH&sol;&sol; ~0:39:01 \r
 0:40:03 花に亡霊 / ヨルシカ ~0:44:09 \r
 0:45:45 裸の心 / あいみょん ~0:50:39 \r
-0:52:46 secret base ～君がくれたもの～ / ZONE ~0:58:09 \r
+0:52:46 secret base ~君がくれたもの~ / ZONE ~0:58:09 \r
 \r
 1:00:24 M / プリンセス プリンセス ~1:04:52 \r
 1:05:40 赤いスイートピー / 松田聖子 ~1:09:21 \r
@@ -811,7 +811,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:07:57 Butter-Fly / 和田光司 ~0:12:21 \r
 0:14:28 新時代 / Ado ~0:18:18 \r
 0:19:47 シル・ヴ・プレジデント / P丸様。 ~0:23:11 \r
-0:27:36 涙サプライズ！ / AKB48 ~0:32:17 \r
+0:27:36 涙サプライズ! / AKB48 ~0:32:17 \r
 0:38:29 Rolling star / Yui ~0:41:44 \r
 0:45:03 シャルル / バルーンP ~0:48:58 \r
 0:50:04 グッバイ宣言 / Chinozo ~0:53:03 \r
@@ -840,7 +840,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:13:29 可愛くてごめん / HoneyWorks ~0:17:12 \r
 0:17:34 雑談 / ミレアちゃんとてぇてぇしてる話\r
 0:27:17 恋愛サーキュレーション / 花澤香菜 ~0:31:36 \r
-0:37:28 #超絶かわいい ​/ mona ~0:40:30 \r
+0:37:28 #超絶かわいい/ mona ~0:40:30 \r
 0:45:57 Habit / SEKAI NO OWARI ~0:47:50 \r
 0:49:49 GLAMOROUS SKY / NANA starring MIKA NAKASHIMA ~0:54:14 \r
 0:55:05 チョコレイト・ディスコ / Perfume  ~0:57:00 \r
@@ -879,7 +879,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:41:06 サイレントマジョリティー / 櫻坂46 ~0:45:28 \r
 0:48:13 LOVEマシーン / モーニング娘。 ~0:53:15 \r
 \r
-1:00:41 夢見る15歳 / アンジュルム ~1:04:21 \r
+1:00:41 夢見る 15歳 / アンジュルム ~1:04:21 \r
 1:04:36 行くぜっ!怪盗少女 / ももいろクローバーZ ~1:08:20\r
 1:16:38 梅 / 私立恵比寿中学 ~1:20:52 \r
 1:27:20 プロミスザスター / BiSH ~1:31:50 \r
@@ -905,7 +905,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 1:53:11 ​おちゅもぐ～\r
 1:55:28 負けないで / ZARD ~1:59:09 \r
 \r
-2:00:18 HoneyCome!! / 小倉唯 ~2:04:25 \r
+2:00:18 Honey♥Come!! / 小倉唯 ~2:04:25 \r
 2:05:30 告知\r
 2:09:30 世界のつづき / Ado  ~2:14:12 \r
 2:14:25 あの夢をなぞって / YOASOBI ~2:18:26 \r
@@ -923,7 +923,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:44:50 雑談 / にゃんしか言えない配信 お祭りとか田舎の話\r
 0:55:06 ぼくはくま / 宇多田ヒカル ~0:57:29 \r
 0:58:17 雑談 / ショート動画の話\r
-1:07:06 ハム太郎 とっとこうた / ハムちゃんず ~1:08:35 \r
+1:07:06 ハム太郎とっとこうた / ハムちゃんず ~1:08:35 \r
 1:10:49 ファンサ / Mona ~1:15:03 \r
 \r
 1:17:32 スパチャ読み＆スクショタイム \r
@@ -971,10 +971,10 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 \r
 0:09:26 フレンズ / レベッカ ~0:13:58 \r
 0:15:26 夏色 / ゆず ~0:18:54 \r
-0:23:42 Hello,Again ～昔からある場所～ / My Little Lover ~0:29:01 \r
+0:23:42 Hello, Again ~昔からある場所~ / My Little Lover ~0:29:01 \r
 0:31:00 夏の日の1993 / Class ~0:34:59 \r
 0:42:19 I LOVE YOU / 尾崎豊 ~0:46:43 \r
-0:47:55 未来予想図 II / DREAMS COME TRUE ~0:55:08 \r
+0:47:55 未来予想図II / DREAMS COME TRUE ~0:55:08 \r
 0:55:15 愛は勝つ / KAN ~0:59:16 \r
 0:59:19 少女A / 中森明菜 ~1:02:53 \r
 1:03:36 負けないで / ZARD ~1:07:16 \r
@@ -993,7 +993,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:26:43 U&I / 放課後ティータイム ~0:31:12 \r
 0:31:34 God knows... / 涼宮ハルヒ ~0:36:13 \r
 0:38:14 ハレ晴レユカイ / 平野綾、茅原実里、後藤邑子 ~0:41:50 \r
-0:42:33 ウィーアー！ / きただにひろし ~0:46:34 \r
+0:42:33 ウィーアー! / きただにひろし ~0:46:34 \r
 0:46:46 私は最強 / Ado ~0:51:12 \r
 0:52:15 雑談 / メンバーシップ特典の話、ポケモンスリープの話\r
 1:01:54 めざせポケモンマスター / 松本梨香 ~1:06:05\r
@@ -1073,7 +1073,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 1:15:40 少女レイ / みきとP ~1:20:20 \r
 1:24:00 金魚花火 / 大塚愛(アカペラサビのみ) ~1:24:55 \r
 1:26:27 ただ君に晴れ / ヨルシカ ~1:29:47 \r
-1:30:21 secret base ～君がくれたもの～ / ZONE ~1:35:43 \r
+1:30:21 secret base ~君がくれたもの~ / ZONE ~1:35:43 \r
 \r
 1:38:37 生写真、グッズ紹介\r
 1:58:20 スパチャ読み＆スクショ、雑談タイム \r
@@ -1084,8 +1084,8 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:07:10 Lemon / 米津玄師 ~0:11:26 \r
 0:11:54 水平線 / Back number ~0:16:35 \r
 0:17:43 君をのせて / 井上あずみ ~0:21:05 \r
-0:21:50 未来予想図 II / DREAMS COME TRUE ~0:28:14 \r
-0:28:30 さくら(独唱) / 森山直太朗 ~0:33:11 \r
+0:21:50 未来予想図II / DREAMS COME TRUE ~0:28:14 \r
+0:28:30 さくら（独唱） / 森山直太朗 ~0:33:11 \r
 0:34:12 First Love / 宇多田ヒカル ~0:38:27 \r
 0:40:01 ベテルギウス / 優里 ~0:44:28 \r
 0:46:43 糸 / 中島みゆき ~0:50:30 \r
@@ -1102,7 +1102,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:16:44 小さな恋のうた / MONGOL800 ~0:20:34 \r
 0:22:08 キセキ / GReeeeN ~0:26:41 \r
 0:28:38 さくらんぼ / 大塚愛 ~0:32:28 \r
-0:32:57 AM11：00 / HY ~0:38:10 \r
+0:32:57 AM11:00 / HY ~0:38:10 \r
 0:39:28 Song for... / HY ~0:44:13 \r
 0:45:55 茜色の約束 / いきものがかり ~0:50:46 \r
 0:51:41 帰りたくなったよ / いきものがかり ~0:57:45 \r
@@ -1122,28 +1122,26 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 2:06:58 ありがとう / いきものがかり ~2:13:00 \r
 \r
 2:13:52 スパチャ読み＆スクショタイム \r
-2:28:07 エンドカード`,ar={video_title:Ot,video_artist:mt,video_id:$t,video_publish_date_str:gt,song_timeline:pt},y1=Object.freeze(Object.defineProperty({__proto__:null,default:ar,song_timeline:pt,video_artist:mt,video_id:$t,video_publish_date_str:gt,video_title:Ot},Symbol.toStringTag,{value:"Module"})),ht="【歌枠/KARAOKE】令和のヒットソングを歌っていく🎤✨初見さん歓迎です！【#パレプロ #香鳴ハノン】",ft="Hanon Ch. 香鳴ハノン【パレプロ】",St="XVlZ7yntk6Q",At="2023-08-25",yt=`本日のセットリスト
-00:07:18 01. 新時代 (ウタ from ONE PIECE FILM RED) / Ado - 00:11:06
-00:12:53 02. ミックスナッツ / Official髭男dism - 00:16:24
-00:19:19 03. オトナブルー / 新しい学校のリーダーズ - 00:22:23
-00:23:27 04. ちゅ、多様性 / ano - 00:26:30
-00:28:27 05. 怪獣の花唄 / Vaundy - 00:32:10
-00:35:39 06. Mela! / 緑黄色社会 - 00:39:42 
-00:42:09 07. 三原色 / YOASOBI - 00:45:50
-00:48:10 08. 私は最強 (ウタ from ONE PIECE FILM RED) / Ado - 00:52:29 
-00:54:35 09. 強風オールバック (feat.歌愛ユキ) / Yukopi - 00:56:53
-00:58:34 10. アイドル / YOASOBI - 01:02:06 
-01:03:14 11. 残響散歌 / Aimer - 01:06:16
-01:09:21 12. シャル・ウィ・ダンス？ / ReoNa - 01:13:48`,vr={video_title:ht,video_artist:ft,video_id:St,video_publish_date_str:At,song_timeline:yt},P1=Object.freeze(Object.defineProperty({__proto__:null,default:vr,song_timeline:yt,video_artist:ft,video_id:St,video_publish_date_str:At,video_title:ht},Symbol.toStringTag,{value:"Module"})),Pt="【歌枠/KARAOKE】古のアニソン歌枠🎤✨初見さんも大歓迎です！【#パレプロ #香鳴ハノン】",Mt="Hanon Ch. 香鳴ハノン【パレプロ】",Ct="vRi49FFbDSw",It="2023-09-05",Et=`本日のセットリスト
-0:02:29 はのは〜！
-0:07:59 ~ 0:12:42 01. 謎 / 小松未歩
-0:15:12 ~ 0:19:49 02. God knows... / 涼宮ハルヒ (CV.平野 綾)
-0:21:33 ~ 0:24:52 03. アナタボシ / MilkyWay
-0:26:58 ~ 0:29:38 04. ラムのラブソング / 松谷祐子
-0:31:00 ~ 0:34:57 05. 黒毛和牛上塩タン焼680円 / 大塚愛
-0:38:02 ~ 0:41:54 06. ふでペン ~ボールペン~ / 放課後ティータイム
-0:43:14 ~ 0:46:43 07. ギー太に首ったけ / 平沢 唯(CV:豊崎愛生)
-0:49:32 ~ 0:53:35 08. 帰り道 / 八九寺真宵(加藤英美里)
+2:28:07 エンドカード`,ar={video_title:Ot,video_artist:mt,video_id:$t,video_publish_date_str:gt,song_timeline:pt},y1=Object.freeze(Object.defineProperty({__proto__:null,default:ar,song_timeline:pt,video_artist:mt,video_id:$t,video_publish_date_str:gt,video_title:Ot},Symbol.toStringTag,{value:"Module"})),ht="【歌枠/KARAOKE】令和のヒットソングを歌っていく🎤✨初見さん歓迎です！【#パレプロ #香鳴ハノン】",ft="Hanon Ch. 香鳴ハノン【パレプロ】",St="XVlZ7yntk6Q",At="2023-08-25",yt=`0:07:18 新時代 (ウタ from ONE PIECE FILM RED) / Ado
+0:12:53 ミックスナッツ / Official髭男dism
+0:19:19 オトナブルー / 新しい学校のリーダーズ
+0:23:27 ちゅ、多様性。 / ano
+0:28:27 怪獣の花唄 / Vaundy
+0:35:39 Mela! / 緑黄色社会
+0:42:09 三原色 / YOASOBI
+0:48:10 私は最強 (ウタ from ONE PIECE FILM RED) / Ado
+0:54:35 強風オールバック (feat.歌愛ユキ) / Yukopi
+0:58:34 アイドル / YOASOBI
+1:03:14 残響散歌 / Aimer
+1:09:21 シャル・ウィ・ダンス？ / ReoNa`,vr={video_title:ht,video_artist:ft,video_id:St,video_publish_date_str:At,song_timeline:yt},P1=Object.freeze(Object.defineProperty({__proto__:null,default:vr,song_timeline:yt,video_artist:ft,video_id:St,video_publish_date_str:At,video_title:ht},Symbol.toStringTag,{value:"Module"})),Pt="【歌枠/KARAOKE】古のアニソン歌枠🎤✨初見さんも大歓迎です！【#パレプロ #香鳴ハノン】",Mt="Hanon Ch. 香鳴ハノン【パレプロ】",Ct="vRi49FFbDSw",It="2023-09-05",Et=`0:02:29 はのは〜！
+0:07:59 謎 / 小松未歩
+0:15:12 God knows... / 涼宮ハルヒ (CV.平野 綾)
+0:21:33 アナタボシ / MilkyWay
+0:26:58 ラムのラブソング / 松谷祐子
+0:31:00 黒毛和牛上塩タン焼680円 / 大塚愛
+0:38:02 ふでペン ~ボールペン~ / 放課後ティータイム
+0:43:14 ギー太に首ったけ / 平沢 唯(CV:豊崎愛生)
+0:49:32 帰り道 / 八九寺真宵(加藤英美里)
 0:54:22 スパチャ読み
 0:57:16 ED / Cパート`,cr={video_title:Pt,video_artist:Mt,video_id:Ct,video_publish_date_str:It,song_timeline:Et},M1=Object.freeze(Object.defineProperty({__proto__:null,default:cr,song_timeline:Et,video_artist:Mt,video_id:Ct,video_publish_date_str:It,video_title:Pt},Symbol.toStringTag,{value:"Module"})),jt="【歌枠/KARAOKE】かわいい曲だけ1時間みっちり歌う🎤💞【#パレプロ #香鳴ハノン】",Ht="Hanon Ch. 香鳴ハノン【パレプロ】",Bt="GPmvVZ4fqa0",Kt="2023-09-16",Rt=`本日のセットリスト
 0:00:00 OP
@@ -1151,12 +1149,12 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:05:55 わたしの一番かわいいところ / FRUITS ZIPPER
 0:11:43 ギー太に首ったけ / 平沢 唯 (CV:豊崎愛生)
 0:18:05 だいしきゅーだいしゅき / femme fatale
-0:23:23 ちゅ、多様性 / ano
+0:23:23 ちゅ、多様性。 / ano
 0:27:34 サインはB / B小町 アイ (CV:高橋李依)
-0:32:32 桃色片想い / 松浦亜弥
+0:32:32 ♡桃色片想い♡ / 松浦亜弥
 0:38:59 可愛くてごめん / HoneyWorks
 0:44:53 #超絶かわいい / mona (CV:夏川椎菜)
-0:51:43 推し変なんて許さない / 可憐なアイボリー
+0:51:43 推し変なんて許さない！ / 可憐なアイボリー
 0:56:52 ファンサ / mona (CV:夏川椎菜)
 1:04:24 スパチャ読み
 1:09:22 告知
@@ -1193,17 +1191,17 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 2:41:42 カタオモイ / Aimer ~2:45:12 \r
 2:45:28 スパチャ読み＆告知\r
 \r
-2:53:07 ハム太郎 とっとこうた / ハムちゃんず ~2:54:34 \r
-2:58:40 はのは～`,br={video_title:Nt,video_artist:Tt,video_id:Yt,video_publish_date_str:Dt,song_timeline:zt},I1=Object.freeze(Object.defineProperty({__proto__:null,default:br,song_timeline:zt,video_artist:Tt,video_id:Yt,video_publish_date_str:Dt,video_title:Nt},Symbol.toStringTag,{value:"Module"})),Lt="【ロリ歌枠/KARAOKE】同接50人増えるごとに「粛聖!!ロリ神レクイエム☆」を歌う【#パレプロ #香鳴ハノン】",kt="Hanon Ch. 香鳴ハノン【パレプロ】",Ut="IMGC-drgWko",wt="2023-09-27",Ft=`本日のセットリスト
+2:53:07 ハム太郎とっとこうた / ハムちゃんず ~2:54:34 \r
+2:58:40 はのは～`,br={video_title:Nt,video_artist:Tt,video_id:Yt,video_publish_date_str:Dt,song_timeline:zt},I1=Object.freeze(Object.defineProperty({__proto__:null,default:br,song_timeline:zt,video_artist:Tt,video_id:Yt,video_publish_date_str:Dt,video_title:Nt},Symbol.toStringTag,{value:"Module"})),Lt="【ロリ歌枠/KARAOKE】同接50人増えるごとに「粛聖!! ロリ神レクイエム☆」を歌う【#パレプロ #香鳴ハノン】",kt="Hanon Ch. 香鳴ハノン【パレプロ】",Ut="IMGC-drgWko",wt="2023-09-27",Ft=`本日のセットリスト
 0:03:10 はのは〜
-0:08:42 粛聖!!ロリ神レクイエム☆ / しぐれうい
+0:08:42 粛聖!! ロリ神レクイエム☆ / しぐれうい
 0:18:33 帰り道 / 八九寺真宵(CV:加藤英美里)
-0:29:48 粛聖!!ロリ神レクイエム☆ / しぐれうい
+0:29:48 粛聖!! ロリ神レクイエム☆ / しぐれうい
 0:37:43 恋愛サーキュレーション / 千石撫子(CV:花澤香菜)
 0:44:55 だいしきゅーだいしゅき / femme fatale
 0:51:43 神っぽいな / ピノキオピー feat. 初音ミク
 0:58:43 おジャ魔女カーニバル!! / MAHO堂
-1:08:41 粛聖!!ロリ神レクイエム☆ / しぐれうい
+1:08:41 粛聖!! ロリ神レクイエム☆ / しぐれうい
 1:20:59 スパチャ読み
 1:29:30 はのは〜
 1:30:05 ED / Cパート`,Or={video_title:Lt,video_artist:kt,video_id:Ut,video_publish_date_str:wt,song_timeline:Ft},E1=Object.freeze(Object.defineProperty({__proto__:null,default:Or,song_timeline:Ft,video_artist:kt,video_id:Ut,video_publish_date_str:wt,video_title:Lt},Symbol.toStringTag,{value:"Module"})),Gt="【#耐久歌枠】リクエストOK♡ハノンを見つけてくれませんか？登録者数25000人目指して歌う～後編～【#香鳴ハノン25000人耐久】",Wt="Hanon Ch. 香鳴ハノン【パレプロ】",Vt="1Wag5hIEMEc",Zt="2023-09-30",Qt=`🎀🎶Today's Set List🎀🎶
@@ -1365,7 +1363,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:02:23 はのはー！
 0:07:01 少女レイ / みきとP
 0:12:51 君をのせて / 井上あずみ
-0:18:52 未来予想図Ⅱ / DREAMS COME TRUE
+0:18:52 未来予想図II / DREAMS COME TRUE
 0:28:40 さくら（独唱） / 森山直太朗
 0:37:18 ベテルギウス / 優里
 0:45:06 糸 / 中島みゆき
@@ -1393,7 +1391,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 1:09:22  告知①：朝倉杏子1周年記念ライブ（1217 22時〜）
 1:11:50  告知②：Palette Project 3rdワンマンライブ（1230 15時30分〜）
 
-1:16:01 HoneyCome!!  / 小倉唯（暁月クララ、香鳴ハノン、朝倉杏子）
+1:16:01 Honey♥Come!!  / 小倉唯（暁月クララ、香鳴ハノン、朝倉杏子）
 1:20:08 ありがとうございましたー！（一期一会...？？）
 1:20:38 ED`,Mr={video_title:ki,video_artist:Ui,video_id:wi,video_publish_date_str:Fi,song_timeline:Gi},L1=Object.freeze(Object.defineProperty({__proto__:null,default:Mr,song_timeline:Gi,video_artist:Ui,video_id:wi,video_publish_date_str:Fi,video_title:ki},Symbol.toStringTag,{value:"Module"})),Wi="【縦型配信】Vアイドルの耐久歌枠！登録者数27100人まで歌います✨【#香鳴ハノン #パレプロ】 #shorts",Vi="Hanon Ch. 香鳴ハノン【パレプロ】",Zi="VF-qNB11UZA",Qi="2023-12-08",Ji=`本日のセトリ、タイムスタンプ
 0:02:09 はのはー！
@@ -1437,7 +1435,7 @@ GWの配信も色々楽しみにしてます`,Do={video_title:Vn,video_artist:Zn
 0:03:23 はのはー！
 0:07:55 創聖のアクエリオン / AKINO
 0:14:07 Butter-Fly / 和田光司
-0:19:17 ウィーアー！ / きただにひろし
+0:19:17 ウィーアー! / きただにひろし
 0:24:06 Believe / Folder5
 0:28:53 残響散歌 / Aimer
 0:32:26 シュガーソングとビターステップ / UNISON SQUARE GARDEN

@@ -70,7 +70,7 @@ const e="【歌枠/カラオケJOYSOUND for STREAMER】新年1発目はオール
 1:38:55 14.おどるポンポコリン / E-Girls
 1:46:51 15.Catch You Catch Me / グミ
 1:55:30 16.乙女のポリシー / 石田よう子
-2:01:38 17.ロマンスの神様 / 広瀬 香美
+2:01:38 17.ロマンスの神様 / 広瀬香美
 2:16:01 18.ヘビーローテーション / AKB48
 2:21:09 19.青春アミーゴ / 修二と彰`,jt={video_title:S,video_artist:m,video_id:g,video_publish_date_str:p,song_timeline:$},oi=Object.freeze(Object.defineProperty({__proto__:null,default:jt,song_timeline:$,video_artist:m,video_id:g,video_publish_date_str:p,video_title:S},Symbol.toStringTag,{value:"Module"})),O="【歌枠/カラオケJOYSOUND for STREAMER】バレンタインのあま～い恋愛ソング召し上がれ♡【#鎖乙女がぶ /パレプロ研究生】",f="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",h="ZSoc5mLy9v0",A="2025-02-14",T=`🐺💜🎶セットリスト🐺💜🎶
 0:00:00 OP
@@ -160,7 +160,7 @@ Special Color初めて聴いたのですがとても良かったですね…
 1:53:16 3.夜もすがら君想ふ / TOKOTOKO(西沢さんP)`,Ut={video_title:Q,video_artist:Z,video_id:x,video_publish_date_str:X,song_timeline:ee},ri=Object.freeze(Object.defineProperty({__proto__:null,default:Ut,song_timeline:ee,video_artist:Z,video_id:x,video_publish_date_str:X,video_title:Q},Symbol.toStringTag,{value:"Module"})),te="【歌枠/ #パレ研24時間リレー 】私たちの歌を聞けぇぇええええ！！【＃がぶるか/ #鎖乙女がぶ /#彩音るか】",ie="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",oe="ab91wpuk7Ow",ne="2025-05-05",_e=`0:02:36 1.ロボキッス / W(ダブルユー)
 0:06:19 2.てもでもの涙 / AKB48
 0:10:12 3.ハート型ウイルス / AKB48
-0:20:07 4.secret base 〜君がくれたもの〜 / ZONE
+0:20:07 4.secret base ~君がくれたもの~ / ZONE
 0:27:44 5.点描の唄 / Mrs. GREEN APPLE(feat. 井上苑子)
 0:39:21 6.コネクト / ClariS
 0:47:03 7.StaRt / Mrs. GREEN APPLE
@@ -288,7 +288,7 @@ Blowin' in the Mindも聴けて嬉しかったです！
 1:38:10 08.ビタミンSUMMER! / Liella!
 1:44:51 09.青と夏 / Mrs. GREEN APPLE
 1:51:49 10.夏の花は向日葵だけじゃない / 櫻坂46
-2:08:34 11.secret base 〜君がくれたもの〜 / ZONE
+2:08:34 11.secret base ~君がくれたもの~ / ZONE
 
 
 おつがぶでした〜
