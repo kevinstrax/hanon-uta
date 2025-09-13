@@ -282,7 +282,9 @@ function validSong(song: Song): boolean {
     return true;
 }
 
-const timeRegex = /^((?:\d+:\d{2}:\d{2})(?:\s*~\s*\d+:\d{2}:\d{2})?)(?:[;；]\s*(?:\d+:\d{2}:\d{2})(?:\s*~\s*\d+:\d{2}:\d{2})?)*\s+(.+)/;
+const timeRegex =
+    /^((?:\d{1,2}:\d{2}(?::\d{2})?)(?:\s*~\s*\d{1,2}:\d{2}(?::\d{2})?)?)(?:[;；]\s*(?:\d{1,2}:\d{2}(?::\d{2})?)(?:\s*~\s*\d{1,2}:\d{2}(?::\d{2})?)?)*\s+(.+)/;
+
 
 function parseSongTimeline(timelineStr: string): any {
     const lines = timelineStr.split('\n').filter(line => line.trim() !== '');
@@ -304,7 +306,7 @@ function parseSongTimeline(timelineStr: string): any {
 
         // Remove duration timestamp and anything after it from artist
         if (artist) {
-            artist = artist.replace(/\s*~?\d+:\d{2}:\d{2}.*$/, '').trim();
+            artist = artist.replace(/\s*~?\d{1,2}:\d{2}(?::\d{2})?.*$/, '').trim();
         }
 
         songs.push({

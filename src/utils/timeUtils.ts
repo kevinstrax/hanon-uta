@@ -15,8 +15,20 @@ export function parseTs(dateStr: string): number {
 }
 
 export function timeToSeconds(timeStr: string): number {
-    const [hours, minutes, seconds] = timeStr.split(':').map(Number);
-    return hours * 3600 + minutes * 60 + seconds;
+    const parts = timeStr.split(':').map(Number);
+    if (parts.some(isNaN)) return NaN;
+
+    if (parts.length === 2) {
+        // mm:ss
+        const [minutes, seconds] = parts;
+        return minutes * 60 + seconds;
+    } else if (parts.length === 3) {
+        // hh:mm:ss
+        const [hours, minutes, seconds] = parts;
+        return hours * 3600 + minutes * 60 + seconds;
+    } else {
+        return NaN;
+    }
 }
 
 export function checkAndFormatTime(timeStr: string) {
