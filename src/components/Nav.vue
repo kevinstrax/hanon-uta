@@ -21,7 +21,7 @@ const currentRouteTitle = computed(() => {
 </script>
 
 <template>
-  <div class="dropdown float-start mt-4 me-2">
+  <nav class="dropdown float-start mt-4 me-2">
     <button
         class="btn dropdown-toggle"
         :class="isDark ? 'btn-dark border' : 'btn-light'"
@@ -42,7 +42,7 @@ const currentRouteTitle = computed(() => {
         </router-link>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>
 
 <style scoped>

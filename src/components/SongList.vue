@@ -7,8 +7,8 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 </script>
 
 <template>
-  <div class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2">
-    <div v-for="(song, index) in props.paginatedSongs" :key="index">
+  <section class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2">
+    <article v-for="(song, index) in props.paginatedSongs" :key="index">
       <div class="card h-100 hover-bg-light ">
         <div class="card-img-top ratio ratio-16x9 position-relative">
 
@@ -16,7 +16,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
             <img v-lazy="{
                   src: song.ref_video_thumbnail_url,
                   loading: song.ref_video_thumbnail_lqip_url
-                }" :alt="song.song_title" :title="song.song_title" class="img-fluid w-100"/>
+                }" :alt="song.song_title" :title="song.song_title" loading="lazy" class="img-fluid w-100"/>
 
           </a>
 
@@ -61,8 +61,8 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
           </p>
         </div>
       </div>
-    </div>
-  </div>
+    </article>
+  </section>
 </template>
 
 <style scoped>

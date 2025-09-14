@@ -172,7 +172,7 @@ onBeforeUnmount(() => {
 
 <template>
 
-  <div class="d-flex justify-content-between align-items-center">
+  <nav class="d-flex justify-content-between align-items-center">
     <!-- Button trigger modal -->
     <div class="position-relative">
       <button class="btn" :class="isDark ? 'btn-dark border' : 'btn-light'" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button" @click="redPointRead = true">
@@ -184,7 +184,7 @@ onBeforeUnmount(() => {
     <div class="dropdown my-4">
       <button class="btn dropdown-toggle" :class="isDark ? 'btn-dark border' : 'btn-light'" id="dropdownMenuReadme" data-bs-toggle="dropdown" type="button">
         <i class="iconfont me-1">&#xef1f;</i>
-        <!--      説明書-->
+        <span class="visually-hidden">説明書</span>
       </button>
       <ul class="dropdown-menu dropdown-menu-end">
         <li>
@@ -201,14 +201,14 @@ onBeforeUnmount(() => {
         </li>
       </ul>
     </div>
-  </div>
+  </nav>
 
   <SongMetaListModal
       :song-meta-groups="songMetaGroups" v-model:search-query="searchQuery"
   />
 
   <!-- search box -->
-  <div class="row my-4 mt-0 clearfix">
+  <section class="row my-4 mt-0 clearfix">
     <div class="input-group">
       <label for="searchInput" class="input-group-text bg-light" :class="isDark ? 'bg-dark' : 'bg-light'">
         <i class="iconfont">&#xe7ec;</i>
@@ -222,16 +222,17 @@ onBeforeUnmount(() => {
         @input="currentPage = goToPage = 1"
       >
     </div>
-  </div>
+  </section>
 
   <!-- a list of songs -->
   <SongList :paginated-songs="paginatedSongs"/>
 
   <!-- displays the current page number and total -->
-  <div v-if="totalPages > 1"
+  <nav v-if="totalPages > 1"
        class="text-center text-muted small mt-4 mb-2 d-flex justify-content-center align-items-center gap-2">
     <input
         :class="[{ disabled: currentPage === 1 }, isDark ? 'btn-dark border' : 'btn-light']"
+        :disabled="currentPage === 1"
         aria-label="前のページ"
         class="btn rounded-end-0 responsive-width"
         style="min-width: 55px"
@@ -259,13 +260,14 @@ onBeforeUnmount(() => {
     />
     <input
         :class="[{ disabled: currentPage === totalPages }, isDark ? 'btn-dark border' : 'btn-light']"
+        :disabled="currentPage === totalPages"
         aria-label="次のページ"
         class="btn rounded-start-0 responsive-width"
         style="min-width: 55px"
         type="button"
         value="&rsaquo;"
         @click.prevent="changePage(currentPage + 1)"/>
-  </div>
+  </nav>
 
   <p class="text-center mb-4">
     <small>{{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件</small>
