@@ -23,7 +23,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
         </div>
         <span v-tooltip="timestampToDate(song.ref_video_publish_date_ts)"
               :style="'background-color: ' + timestampColor(song.ref_video_publish_date_ts)"
-              class="card-tag d-inline-block card-datetime position-absolute badge rounded-1 small">
+              class="card-tag d-inline-block position-absolute top-0 end-0 m-1 badge rounded-1 small">
               <small>{{ timestampToDate(song.ref_video_publish_date_ts) }}</small>
             </span>
 
@@ -69,6 +69,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 /* Your existing styles remain the same */
 .multi-line-ellipsis-2 {
   display: -webkit-box;
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -77,10 +78,6 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 
 .card {
   padding: 0;
-}
-.card-datetime {
-  top: 3px;
-  right: 3px;
 }
 .card-tags{
   transform: translateY(-100%);

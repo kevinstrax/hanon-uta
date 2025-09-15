@@ -32,8 +32,8 @@ onMounted(async () => {
       songs.value = await loadSongsByApi(props.vtuber);
     } else {
       songs.value = await loadSongs(props.vtuber);
-      songMetaGroups.value = getGroupedSongMetas(songs.value);
     }
+    songMetaGroups.value = getGroupedSongMetas(songs.value);
   } finally {
     loadingStore.completeLoading();
   }
@@ -203,10 +203,6 @@ onBeforeUnmount(() => {
     </div>
   </nav>
 
-  <SongMetaListModal
-      :song-meta-groups="songMetaGroups" v-model:search-query="searchQuery"
-  />
-
   <!-- search box -->
   <section class="row my-4 mt-0 clearfix">
     <div class="input-group">
@@ -275,6 +271,9 @@ onBeforeUnmount(() => {
 
   <QuickSearches />
   <UpdateHintToast />
+  <SongMetaListModal
+    :song-meta-groups="songMetaGroups" v-model:search-query="searchQuery"
+  />
 </template>
 
 <style scoped>
