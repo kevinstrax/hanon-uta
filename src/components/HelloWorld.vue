@@ -2,7 +2,7 @@
 import type { Song } from '@/types/song'
 import type { SongMetaGroup } from "@/types/song-meta";
 import { storeToRefs } from "pinia";
-import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { computed, onBeforeMount, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { getGroupedSongMetas, loadSongs, loadSongsByApi } from '@/utils/loadSongs';
 import { generateMeta } from "@/utils/meta";
 import { useLoadingStore } from '@/stores/loading'
@@ -24,6 +24,7 @@ const route = useRoute();
 const router = useRouter();
 
 const { isDark } = storeToRefs(useColorModeStore())
+
 
 onMounted(async () => {
   try {
@@ -137,7 +138,6 @@ const paginatedSongs = computed(() => {
   const end = start + itemsPerPage.value
   return filteredSongs.value.slice(start, end)
 })
-
 // total number of pages
 const totalPages = computed(() => {
   return Math.ceil(filteredSongs.value.length / itemsPerPage.value)
@@ -153,24 +153,61 @@ const changePage = (page: number) => {
   const validatedPage = Math.max(1, Math.min(page, totalPages.value));
   currentPage.value = goToPage.value = validatedPage;
 }
-const isSmallScreen = ref(false)
 
+const isMobile = ref(false)
+const showBackTop = ref(false)
+onBeforeMount(() => {
+  isMobile.value = window.innerWidth < 768
+})
+
+const loadedSongs = ref<Song[]>([])
+watch([isMobile, filteredSongs], () => {
+  if (isMobile.value) {
+    // The first page is loaded on mobile
+    loadedSongs.value = filteredSongs.value.slice(0, itemsPerPage.value)
+  }
+})
+
+const observerTarget = ref<HTMLElement | null>(null)
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && isMobile.value) {
+      loadMore()
+    }
+  })
+  if (observerTarget.value) {
+    observer.observe(observerTarget.value)
+  }
+})
+const loadMore = () => {
+  const nextLength = loadedSongs.value.length + itemsPerPage.value
+  loadedSongs.value = filteredSongs.value.slice(0, nextLength)
+}
+function backToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" })
+}
+
+const isSmallScreen = ref(false)
 const checkScreenSize = () => {
   isSmallScreen.value = window.innerWidth <= 370
 }
-
+function handleScroll() {
+  showBackTop.value = window.scrollY > 808
+}
 onMounted(() => {
   checkScreenSize()
   window.addEventListener('resize', checkScreenSize)
+  isMobile && window.addEventListener('scroll', handleScroll)
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', checkScreenSize)
+  isMobile && window.removeEventListener('scroll', handleScroll)
 })
 
 </script>
 
-<template>
+ <template>
 
   <nav class="d-flex justify-content-between align-items-center">
     <!-- Button trigger modal -->
@@ -221,12 +258,31 @@ onBeforeUnmount(() => {
   </section>
 
   <!-- a list of songs -->
-  <SongList :paginated-songs="paginatedSongs"/>
-
-  <!-- displays the current page number and total -->
-  <nav v-if="totalPages > 1"
-       class="text-center text-muted small mt-4 mb-2 d-flex justify-content-center align-items-center gap-2">
-    <input
+  <template v-if="isMobile">
+    <SongList :paginated-songs="loadedSongs"/>
+    <div ref="observerTarget" class="mb-5" >
+        <p class="text-center mb-4" v-if="loadedSongs.length < filteredSongs.length">読み込み中...</p>
+        <template v-else>
+          <p class="text-center mb-4">
+            <small>全て読み込みました、全 {{ filteredSongs.length }} 件</small>
+          </p>
+          <QuickSearches />
+        </template>
+    </div>
+    <button
+      v-show="showBackTop"
+      @click="backToTop"
+      class="btn btn-lg border position-fixed end-0 bottom-0 me-4 mb-5 opacity-75"
+      :class="isDark ? 'btn-dark border' : 'btn-light'">
+      <i class="iconfont">&#xe781;</i>
+    </button>
+  </template>
+  <template v-else>
+    <SongList :paginated-songs="paginatedSongs"/>
+    <!-- displays the current page number and total -->
+    <nav v-if="totalPages > 1"
+         class="text-center text-muted small mt-4 mb-2 d-flex justify-content-center align-items-center gap-2">
+      <input
         :class="[{ disabled: currentPage === 1 }, isDark ? 'btn-dark border' : 'btn-light']"
         :disabled="currentPage === 1"
         aria-label="前のページ"
@@ -235,8 +291,8 @@ onBeforeUnmount(() => {
         type="button"
         value="&lsaquo;"
         @click.prevent="changePage(currentPage - 1)"/>
-    <!-- page jump -->
-    <input
+      <!-- page jump -->
+      <input
         v-model.number="goToPage"
         class="form-control"
         :class="[{ 'form-control-sm': isSmallScreen }, isDark ? 'btn-dark border' : 'btn-light']"
@@ -245,16 +301,16 @@ onBeforeUnmount(() => {
         :style="{ width: isSmallScreen ? '60px' : '70px' }"
         type="number"
         @keyup.enter="changePage(goToPage)"
-    >
-    <span class="text-muted text-nowrap" :class="[{'small': isSmallScreen}]">/ {{ totalPages }}<span class="d-none d-xxs-inline">ページ</span></span>
-    <input
+      >
+      <span class="text-muted text-nowrap" :class="[{'small': isSmallScreen}]">/ {{ totalPages }}<span class="d-none d-xxs-inline">ページ</span></span>
+      <input
         type="button"
         class="btn"
         :class="isDark ? 'btn-dark border' : 'btn-light'"
         @click="changePage(goToPage)"
         value="移動"
-    />
-    <input
+      />
+      <input
         :class="[{ disabled: currentPage === totalPages }, isDark ? 'btn-dark border' : 'btn-light']"
         :disabled="currentPage === totalPages"
         aria-label="次のページ"
@@ -263,13 +319,15 @@ onBeforeUnmount(() => {
         type="button"
         value="&rsaquo;"
         @click.prevent="changePage(currentPage + 1)"/>
-  </nav>
+    </nav>
 
-  <p class="text-center mb-4">
-    <small>{{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件</small>
-  </p>
+    <p class="text-center mb-4">
+      <small>{{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件</small>
+    </p>
 
-  <QuickSearches />
+    <QuickSearches />
+  </template>
+
   <UpdateHintToast />
   <SongMetaListModal
     :song-meta-groups="songMetaGroups" v-model:search-query="searchQuery"

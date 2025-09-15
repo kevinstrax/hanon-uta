@@ -5,7 +5,7 @@
   "homepage": "https://kevinstrax.github.io/hanon-uta",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
