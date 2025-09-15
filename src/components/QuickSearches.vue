@@ -10,23 +10,20 @@ const baseUrl = import.meta.env.BASE_URL; // get the base path
 </script>
 <template>
   <footer class="mb-4">
-    <p class="quick-searches">クイック検索:
-      <template v-for="(item, _) in quickSearches" :key="item.query">
+    <p class="d-flex flex-wrap gap-2">クイック検索:
+      <template v-for="(item, idx) in quickSearches" :key="item.query">
         <a
             :href="`${baseUrl}?search=${encodeURIComponent(item.query)}`"
-            class="text-nowrap"
+
         >
           {{ item.text }}
         </a>
+        <span class="text-secondary" v-if="idx != quickSearches.length - 1">|</span>
       </template>
     </p>
   </footer>
 </template>
 
 <style scoped>
-.quick-searches a:not(:last-child)::after {
-  content: "|";
-  color: var(--bs-secondary);
-  margin: 0 0.44rem;
-}
+
 </style>
