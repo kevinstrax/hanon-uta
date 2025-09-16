@@ -269,18 +269,18 @@ onBeforeUnmount(() => {
           <QuickSearches />
         </template>
     </div>
-    <div class="btn-group-vertical position-fixed end-0 bottom-0 me-4 mb-5 opacity-75" role="group" aria-label="Vertical button group" v-show="showBackTop">
-      <label for="searchInput" class="btn btn-lg" :class="isDark ? 'bg-dark' : 'bg-light'">
+    <div class="btn-group-vertical position-fixed end-0 bottom-0 me-4 mb-5 opacity-808" role="group" aria-label="Vertical button group" v-show="showBackTop">
+      <label for="searchInput" class="btn btn-lg border" :class="isDark ? 'bg-dark' : 'bg-light'">
         <i class="iconfont">&#xe7ec;</i>
       </label>
-      <button class="btn btn-lg" :class="isDark ? 'btn-dark border' : 'btn-light'" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button" @click="redPointRead = true">
+      <button class="btn btn-lg border-start border-end" :class="isDark ? 'btn-dark' : 'btn-light'" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button" @click="redPointRead = true">
         <i class="iconfont">&#xe66f;</i> <span class="visually-hidden">楽曲リスト</span>
       </button>
       <button
           v-show="showBackTop"
           @click="backToTop"
-          class="btn btn-lg"
-          :class="isDark ? 'btn-dark border' : 'btn-light'">
+          class="btn btn-lg border"
+          :class="isDark ? 'btn-dark' : 'btn-light'">
         <i class="iconfont">&#xe781;</i>
       </button>
     </div>
