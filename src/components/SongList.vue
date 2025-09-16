@@ -23,7 +23,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
         </div>
         <span v-tooltip="timestampToDate(song.ref_video_publish_date_ts)"
               :style="'background-color: ' + timestampColor(song.ref_video_publish_date_ts)"
-              class="card-tag d-inline-block position-absolute top-0 end-0 m-1 badge rounded-1 small">
+              class="d-inline-block position-absolute top-0 end-0 m-1 badge rounded-1 opacity-868 small">
               <small>{{ timestampToDate(song.ref_video_publish_date_ts) }}</small>
             </span>
 
@@ -32,7 +32,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
           <div v-if="song.tags.length > 0" class="card-tags position-absolute top-0 start-0 flex-wrap flex-wrap-reverse">
             <template v-for="tag in song.tags">
                 <span :style="'background-color: ' + nameColor(tag)"
-                      class="card-tag badge rounded-1 small m-1">
+                      class="badge rounded-1 small m-1 opacity-868">
                     <small>{{ tag }}</small>
                 </span>
             </template>
@@ -82,9 +82,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 .card-tags{
   transform: translateY(-100%);
 }
-.card-tag {
-  opacity: .868;
-}
+
 .card-img-top a {
   display: block;
   overflow: hidden;

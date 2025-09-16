@@ -269,7 +269,7 @@ onBeforeUnmount(() => {
           <QuickSearches />
         </template>
     </div>
-    <div class="btn-group-vertical position-fixed end-0 bottom-0 me-4 mb-5 opacity-808" role="group" aria-label="Vertical button group" v-show="showBackTop">
+    <div class="btn-group-vertical position-fixed end-0 bottom-0 me-4 mb-5 opacity-868" role="group" aria-label="Vertical button group" v-show="showBackTop">
       <label for="searchInput" class="btn btn-lg border" :class="isDark ? 'bg-dark' : 'bg-light'">
         <i class="iconfont">&#xe7ec;</i>
       </label>
