@@ -8,6 +8,7 @@ const props = defineProps<{
 const emit = defineEmits(['update:searchQuery']);
 const updateSearchQuery = (title: string) => {
   emit('update:searchQuery', title);
+  window.scrollTo({ top: 0, behavior: "smooth" })
 };
 
 </script>
