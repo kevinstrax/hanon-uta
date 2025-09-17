@@ -1319,7 +1319,7 @@ STAND-ALONE良い曲ですねえ\r
 00:13:44 ハノンを嫁にする、養う
 00:20:30 ジェムカンのワンマンライブの話
 00:22:51 スパチャの話
-00:31:19 Laughter / Official髭男dism （サビだけ）
+00:31:19 Laughter / Official髭男dism #{=サビだけ}
 00:35:54 未来予想図II / DREAMS COME TRUE
 00:44:15 服の話
 01:08:00 宙船 / TOKIO
