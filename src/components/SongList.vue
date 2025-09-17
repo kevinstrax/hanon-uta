@@ -16,8 +16,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
             <img v-lazy="{
                   src: song.ref_video_thumbnail_url,
                   loading: song.ref_video_thumbnail_lqip_url
-                }" :alt="song.song_title" :title="song.song_title" :src="song.ref_video_thumbnail_lqip_url"
-                 width="640" height="320" loading="lazy" class="img-fluid w-100"/>
+                }" :alt="song.song_title" :title="song.song_title" :src="song.ref_video_thumbnail_lqip_url" loading="lazy" class="img-fluid w-100"/>
 
           </a>
 
