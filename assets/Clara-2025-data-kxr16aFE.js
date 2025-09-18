@@ -1,4 +1,4 @@
-const t="✧︎*.〖 歌枠 〗ボカロ縛り💙 プリンボイスとの化学反応なるかっ⁉⋆꙳〖#暁月クララ┊︎#パレプロ〗",e="暁月クララ / Akatsuki Clara【パレプロ】",n="iavuOMwYjpg",i="2025-04-09",o=`＜セトリ＞
+const e="✧︎*.〖 歌枠 〗ボカロ縛り💙 プリンボイスとの化学反応なるかっ⁉⋆꙳〖#暁月クララ┊︎#パレプロ〗",t="暁月クララ / Akatsuki Clara【パレプロ】",n="iavuOMwYjpg",i="2025-04-09",o=`＜セトリ＞
 0:08:53 キャットフード/doriko
 0:17:23 おこちゃま戦争/ギガP
 0:24:43 いかないで/想太
@@ -17,7 +17,7 @@ const t="✧︎*.〖 歌枠 〗ボカロ縛り💙 プリンボイスとの化�
 1:46:13 Alice in Musicland/OSTER project
 
 Alice in Musiclandがくーちゃんの歌声で聞けて嬉しかったです
-物語を聞いているようでした！`,gt={video_title:t,video_artist:e,video_id:n,video_publish_date_str:i,song_timeline:o},It=Object.freeze(Object.defineProperty({__proto__:null,default:gt,song_timeline:o,video_artist:e,video_id:n,video_publish_date_str:i,video_title:t},Symbol.toStringTag,{value:"Module"})),_="✧︎*.〖 #ぽかぽかあったか歌枠リレー ☀〗プリンボイスで幸せ気分をお届けします💗⋆꙳〖#暁月クララ┊︎#パレプロ〗",s="暁月クララ / Akatsuki Clara【パレプロ】",d="5DcGXMCVIk8",l="2025-04-25",r=`＜セトリ＞
+物語を聞いているようでした！`,ke={video_title:e,video_artist:t,video_id:n,video_publish_date_str:i,song_timeline:o},Be=Object.freeze(Object.defineProperty({__proto__:null,default:ke,song_timeline:o,video_artist:t,video_id:n,video_publish_date_str:i,video_title:e},Symbol.toStringTag,{value:"Module"})),_="✧︎*.〖 #ぽかぽかあったか歌枠リレー ☀〗プリンボイスで幸せ気分をお届けします💗⋆꙳〖#暁月クララ┊︎#パレプロ〗",s="暁月クララ / Akatsuki Clara【パレプロ】",d="5DcGXMCVIk8",l="2025-04-25",r=`＜セトリ＞
 00:02:03 僕らは今のなかで/μ's
 00:09:04 明日も/MUSH&Co. 
 00:13:16 ラムのラブソング/松谷祐子
@@ -25,7 +25,7 @@ Alice in Musiclandがくーちゃんの歌声で聞けて嬉しかったです
 00:25:03 光の惑星/Sputrip　※オリジナルソング
 
 Wishingの歌い方すごく良かったです
-オリジナルソング歌ったのビックリしました！`,mt={video_title:_,video_artist:s,video_id:d,video_publish_date_str:l,song_timeline:r},Tt=Object.freeze(Object.defineProperty({__proto__:null,default:mt,song_timeline:r,video_artist:s,video_id:d,video_publish_date_str:l,video_title:_},Symbol.toStringTag,{value:"Module"})),a="✧︎*.〖 ＃フレッシュカラー歌枠リレー 〗プリンボイスで心HAPPY✨一緒に楽しもうねっ💗⋆꙳〖#暁月クララ┊︎#パレプロ〗",v="暁月クララ / Akatsuki Clara【パレプロ】",u="Y8wqMykVkbk",c="2025-05-02",p=`＜セトリ＞
+オリジナルソング歌ったのビックリしました！`,ye={video_title:_,video_artist:s,video_id:d,video_publish_date_str:l,song_timeline:r},ze=Object.freeze(Object.defineProperty({__proto__:null,default:ye,song_timeline:r,video_artist:s,video_id:d,video_publish_date_str:l,video_title:_},Symbol.toStringTag,{value:"Module"})),a="✧︎*.〖 ＃フレッシュカラー歌枠リレー 〗プリンボイスで心HAPPY✨一緒に楽しもうねっ💗⋆꙳〖#暁月クララ┊︎#パレプロ〗",v="暁月クララ / Akatsuki Clara【パレプロ】",c="Y8wqMykVkbk",u="2025-05-02",p=`＜セトリ＞
 0:02:17 チェリボム/SILENT SIREN
 0:09:33 Booo!/ TOKOTOKO（西沢さんP） 
 0:12:48 シル・ヴ・プレジデント/P丸様。
@@ -33,7 +33,7 @@ Wishingの歌い方すごく良かったです
 0:24:17 キミイロクロニクル/PaletteProject　※オリジナル曲
 
 盛り上がる曲いっぱいでとっても楽しくフレッシュでした！
-オリジナル曲も良かったです！`,$t={video_title:a,video_artist:v,video_id:u,video_publish_date_str:c,song_timeline:p},Ct=Object.freeze(Object.defineProperty({__proto__:null,default:$t,song_timeline:p,video_artist:v,video_id:u,video_publish_date_str:c,video_title:a},Symbol.toStringTag,{value:"Module"})),b="💐.₊3DLIVE┊︎#暁月クララ生誕祭2025 『 Fleurette 』₊.*〖#パレプロ┊︎Palette Project〗",g="Palette Project Channel",m="L-tS5VZJUBk",$="2025-05-10",S=`🍮タイムスタンプ🍮
+オリジナル曲も良かったです！`,fe={video_title:a,video_artist:v,video_id:c,video_publish_date_str:u,song_timeline:p},Ge=Object.freeze(Object.defineProperty({__proto__:null,default:fe,song_timeline:p,video_artist:v,video_id:c,video_publish_date_str:u,video_title:a},Symbol.toStringTag,{value:"Module"})),b="💐.₊3DLIVE┊︎#暁月クララ生誕祭2025 『 Fleurette 』₊.*〖#パレプロ┊︎Palette Project〗",g="Palette Project Channel",m="L-tS5VZJUBk",$="2025-05-10",S=`🍮タイムスタンプ🍮
 0:00:00 OP
 0:01:05 影ナレ
 0:02:41 01. 花は桜 君は美し / いきものがかり
@@ -62,10 +62,10 @@ Wishingの歌い方すごく良かったです
 可愛い、カッコいい、しっとりをプリンボイスで見事に歌い分けていてさすがです！！
 
 フリージアと愛をこめて花束は事前に予想していましたが、予想通り泣いてしまいました😭😭😭
-本当に最高でした！！`,St={video_title:b,video_artist:g,video_id:m,video_publish_date_str:$,song_timeline:S},Nt=Object.freeze(Object.defineProperty({__proto__:null,default:St,song_timeline:S,video_artist:g,video_id:m,video_publish_date_str:$,video_title:b},Symbol.toStringTag,{value:"Module"})),A="✧︎*.〖 誕生日配信🎂 〗お歌もあり✨先着販売見守ったり昔を振り返ったりプリン食べたり💗#暁月クララ生誕祭2025 ⋆꙳〖#暁月クララ┊︎#パレプロ〗",k="暁月クララ / Akatsuki Clara【パレプロ】",y="1R8T0yz1K3w",f="2025-05-11",h=`おつくららでした！
+本当に最高でした！！`,he={video_title:b,video_artist:g,video_id:m,video_publish_date_str:$,song_timeline:S},Ke=Object.freeze(Object.defineProperty({__proto__:null,default:he,song_timeline:S,video_artist:g,video_id:m,video_publish_date_str:$,video_title:b},Symbol.toStringTag,{value:"Module"})),A="✧︎*.〖 誕生日配信🎂 〗お歌もあり✨先着販売見守ったり昔を振り返ったりプリン食べたり💗#暁月クララ生誕祭2025 ⋆꙳〖#暁月クララ┊︎#パレプロ〗",k="暁月クララ / Akatsuki Clara【パレプロ】",y="1R8T0yz1K3w",f="2025-05-11",h=`おつくららでした！
 お誕生日おめでとうございます！特別な日に歌う曲、聞けて嬉しいです！
 
-1:45:15 ファンサ/mona(夏川椎菜)`,At={video_title:A,video_artist:k,video_id:y,video_publish_date_str:f,song_timeline:h},Rt=Object.freeze(Object.defineProperty({__proto__:null,default:At,song_timeline:h,video_artist:k,video_id:y,video_publish_date_str:f,video_title:A},Symbol.toStringTag,{value:"Module"})),P="✧︎*.〖 #めちゃすぷ 〗Palette Project オリジナル曲縛り歌枠🎨神曲見つけちゃいませんかっ？✨✨⋆꙳〖#常磐カナメ #香鳴ハノン #暁月クララ┊︎#パレプロ〗",O="暁月クララ / Akatsuki Clara【パレプロ】",M="LOwJ3XEJYus",j="2025-05-22",E=`0:02:47 こんばんは〜！
+1:45:15 ファンサ/mona(夏川椎菜)`,Pe={video_title:A,video_artist:k,video_id:y,video_publish_date_str:f,song_timeline:h},De=Object.freeze(Object.defineProperty({__proto__:null,default:Pe,song_timeline:h,video_artist:k,video_id:y,video_publish_date_str:f,video_title:A},Symbol.toStringTag,{value:"Module"})),P="✧︎*.〖 #めちゃすぷ 〗Palette Project オリジナル曲縛り歌枠🎨神曲見つけちゃいませんかっ？✨✨⋆꙳〖#常磐カナメ #香鳴ハノン #暁月クララ┊︎#パレプロ〗",O="暁月クララ / Akatsuki Clara【パレプロ】",j="LOwJ3XEJYus",M="2025-05-22",E=`0:02:47 こんばんは〜！
 
 0:05:53 01. トイ×トイ☆パーティ / Sputrip
 0:12:22 02. トイ×トイ☆パーティ / Sputrip
@@ -88,7 +88,7 @@ Wishingの歌い方すごく良かったです
 2:11:55 本日の感想、告知など
 2:20:04 スパチャ読み
 2:23:37 ありがとうございました！
-2:23:52 END`,kt={video_title:P,video_artist:O,video_id:M,video_publish_date_str:j,song_timeline:E},Lt=Object.freeze(Object.defineProperty({__proto__:null,default:kt,song_timeline:E,video_artist:O,video_id:M,video_publish_date_str:j,video_title:P},Symbol.toStringTag,{value:"Module"})),I="✧︎*.〖 #サンリオ楽曲歌枠リレー 〗あの感動を少しでも私も届けられますように✨KAWAIIプリンボイスでお送りします💗⋆꙳〖#暁月クララ┊︎#パレプロ〗",T="暁月クララ / Akatsuki Clara【パレプロ】",C="zS4_yJe4byM",N="2025-07-26",R=`@tomfukuとむふく
+2:23:52 END`,Oe={video_title:P,video_artist:O,video_id:j,video_publish_date_str:M,song_timeline:E},we=Object.freeze(Object.defineProperty({__proto__:null,default:Oe,song_timeline:E,video_artist:O,video_id:j,video_publish_date_str:M,video_title:P},Symbol.toStringTag,{value:"Module"})),I="✧︎*.〖 #サンリオ楽曲歌枠リレー 〗あの感動を少しでも私も届けられますように✨KAWAIIプリンボイスでお送りします💗⋆꙳〖#暁月クララ┊︎#パレプロ〗",T="暁月クララ / Akatsuki Clara【パレプロ】",N="zS4_yJe4byM",R="2025-07-26",C=`@tomfukuとむふく
 ＜セトリ＞
 11:09 KAWAII FESTIVAL/みんななかよく
 18:30 ダイジョーブ/はぴだんぶい
@@ -101,7 +101,11 @@ Wishingの歌い方すごく良かったです
 
 KAWAII FESTIVALとってもかわいい！
 サンリオさんのキャラクターの思いが聞けて良かったです
-トラブル対応もさすがでした！`,yt={video_title:I,video_artist:T,video_id:C,video_publish_date_str:N,song_timeline:R},Bt=Object.freeze(Object.defineProperty({__proto__:null,default:yt,song_timeline:R,video_artist:T,video_id:C,video_publish_date_str:N,video_title:I},Symbol.toStringTag,{value:"Module"})),L="✧︎*.〖 歌枠 〗夏曲縛り🌻✨夏のプリンボイス聞いてって✨✨⋆꙳〖#暁月クララ┊︎#パレプロ〗",B="暁月クララ / Akatsuki Clara【パレプロ】",z="HUtZ22SHYd4",G="2025-08-07",D=`@tomfukuとむふく
+トラブル対応もさすがでした！`,je={video_title:I,video_artist:T,video_id:N,video_publish_date_str:R,song_timeline:C},He=Object.freeze(Object.defineProperty({__proto__:null,default:je,song_timeline:C,video_artist:T,video_id:N,video_publish_date_str:R,video_title:I},Symbol.toStringTag,{value:"Module"})),L="✧︎*.〖 #元気はじけるっ歌枠リレー 〗3番手はプリンボイス🍮💗君の笑顔を引き出しちゃう！⋆꙳〖#暁月クララ┊︎#パレプロ〗",B="暁月クララ / Akatsuki Clara【パレプロ】",z="j6Hdb5ZJY2w",G="2025-08-03",K=`@つき-ms06
+4:27　　ポニーテールとシュシュ / AKB48
+12:41　  八月の夜 / SILENT SIREN
+19:10　  夏ゆきトキメキ High Tension! /Palette Project
+23:12 　イケナイ太陽/ORANGE RANGE`,Me={video_title:L,video_artist:B,video_id:z,video_publish_date_str:G,song_timeline:K},Je=Object.freeze(Object.defineProperty({__proto__:null,default:Me,song_timeline:K,video_artist:B,video_id:z,video_publish_date_str:G,video_title:L},Symbol.toStringTag,{value:"Module"})),D="✧︎*.〖 歌枠 〗夏曲縛り🌻✨夏のプリンボイス聞いてって✨✨⋆꙳〖#暁月クララ┊︎#パレプロ〗",w="暁月クララ / Akatsuki Clara【パレプロ】",H="HUtZ22SHYd4",J="2025-08-07",F=`@tomfukuとむふく
 ＜セトリ＞
 0:08:46 夏祭り/Whiteberry
 0:14:37 青と夏/Mrs. GREEN APPLE
@@ -119,7 +123,7 @@ KAWAII FESTIVALとってもかわいい！
 1:56:08 Fire◎Flower/ halyosy　#{=途中中断あり}
 
 いろんな夏曲をありがとう！
-個人的にサマータイムラブがまた聴けて嬉しかったです！`,ft={video_title:L,video_artist:B,video_id:z,video_publish_date_str:G,song_timeline:D},zt=Object.freeze(Object.defineProperty({__proto__:null,default:ft,song_timeline:D,video_artist:B,video_id:z,video_publish_date_str:G,video_title:L},Symbol.toStringTag,{value:"Module"})),K="✧︎*.〖 歌枠 〗涙を誘う💧エモ楽曲縛りで感情たっぷり歌っていきます💗⋆꙳〖#暁月クララ┊︎#パレプロ〗",w="暁月クララ / Akatsuki Clara【パレプロ】",J="eU_MB0Dk1bM",H="2025-08-11",F=`@tomfukuとむふく
+個人的にサマータイムラブがまた聴けて嬉しかったです！`,Ee={video_title:D,video_artist:w,video_id:H,video_publish_date_str:J,song_timeline:F},Fe=Object.freeze(Object.defineProperty({__proto__:null,default:Ee,song_timeline:F,video_artist:w,video_id:H,video_publish_date_str:J,video_title:D},Symbol.toStringTag,{value:"Module"})),Y="✧︎*.〖 歌枠 〗涙を誘う💧エモ楽曲縛りで感情たっぷり歌っていきます💗⋆꙳〖#暁月クララ┊︎#パレプロ〗",V="暁月クララ / Akatsuki Clara【パレプロ】",U="eU_MB0Dk1bM",W="2025-08-11",X=`@tomfukuとむふく
 ＜セトリ＞
 0:07:52 夏恋花火/40mP
 0:14:02 レオ/優里
@@ -138,7 +142,7 @@ KAWAII FESTIVALとってもかわいい！
 2:12:48 いのちの名前/木村弓
 
 さよならのかわりに、すごく良かったです。
-他にも感情を込めた歌がいっぱいですごく聞きほれました！`,ht={video_title:K,video_artist:w,video_id:J,video_publish_date_str:H,song_timeline:F},Gt=Object.freeze(Object.defineProperty({__proto__:null,default:ht,song_timeline:F,video_artist:w,video_id:J,video_publish_date_str:H,video_title:K},Symbol.toStringTag,{value:"Module"})),V="✧︎*.〖 歌枠 〗ショタボに挑戦🔥プリンボイス卒業!? かっこよく歌いたいよおお⋆꙳〖#暁月クララ┊︎#パレプロ〗",Y="暁月クララ / Akatsuki Clara【パレプロ】",U="vahPg8l12Ps",W="2025-08-18",X=`@tomfukuとむふく
+他にも感情を込めた歌がいっぱいですごく聞きほれました！`,Ie={video_title:Y,video_artist:V,video_id:U,video_publish_date_str:W,song_timeline:X},Ye=Object.freeze(Object.defineProperty({__proto__:null,default:Ie,song_timeline:X,video_artist:V,video_id:U,video_publish_date_str:W,video_title:Y},Symbol.toStringTag,{value:"Module"})),Z="✧︎*.〖 歌枠 〗ショタボに挑戦🔥プリンボイス卒業!? かっこよく歌いたいよおお⋆꙳〖#暁月クララ┊︎#パレプロ〗",q="暁月クララ / Akatsuki Clara【パレプロ】",Q="vahPg8l12Ps",x="2025-08-18",ee=`@tomfukuとむふく
 ＜セトリ＞
 0:13:53 ultra soul/B'z
 0:21:17 女々しくて/ゴールデンボンバー
@@ -162,7 +166,7 @@ KAWAII FESTIVALとってもかわいい！
 2:42:33 月光花/Janne Da Arc　 #{=アンコール}
 
 Just a game、とってもカッコよかったです！
-Ｋもまた挑戦待ってます！`,Pt={video_title:V,video_artist:Y,video_id:U,video_publish_date_str:W,song_timeline:X},Dt=Object.freeze(Object.defineProperty({__proto__:null,default:Pt,song_timeline:X,video_artist:Y,video_id:U,video_publish_date_str:W,video_title:V},Symbol.toStringTag,{value:"Module"})),q="✧︎*.〖 歌枠 〗午後も頑張れる✨元気いっぱいクララパワー堪能しちゃって！⋆꙳〖#暁月クララ┊︎#パレプロ〗#shorts",Q="暁月クララ / Akatsuki Clara【パレプロ】",Z="ohSNwe2PmFY",x="2025-08-19",tt=`@tomfukuとむふく
+Ｋもまた挑戦待ってます！`,Te={video_title:Z,video_artist:q,video_id:Q,video_publish_date_str:x,song_timeline:ee},Ve=Object.freeze(Object.defineProperty({__proto__:null,default:Te,song_timeline:ee,video_artist:q,video_id:Q,video_publish_date_str:x,video_title:Z},Symbol.toStringTag,{value:"Module"})),te="✧︎*.〖 歌枠 〗午後も頑張れる✨元気いっぱいクララパワー堪能しちゃって！⋆꙳〖#暁月クララ┊︎#パレプロ〗#shorts",ne="暁月クララ / Akatsuki Clara【パレプロ】",ie="ohSNwe2PmFY",oe="2025-08-19",_e=`@tomfukuとむふく
 ＜セトリ＞
 0:07:27 金曜日のおはよう ‐love story‐/HoneyWorks
 0:14:26 Everyday、カチューシャ/AKB48
@@ -175,7 +179,7 @@ Just a game、とってもカッコよかったです！
 1:13:43 初恋サイダー/Buono!　#{=アンコール}
 
 歌枠お疲れ様でした！
-アンコール入れてくれるのすごく良いです！`,Ot={video_title:q,video_artist:Q,video_id:Z,video_publish_date_str:x,song_timeline:tt},Kt=Object.freeze(Object.defineProperty({__proto__:null,default:Ot,song_timeline:tt,video_artist:Q,video_id:Z,video_publish_date_str:x,video_title:q},Symbol.toStringTag,{value:"Module"})),et="✧︎*.〖 歌枠 〗7周年✨ありがとうを伝えたいのっ💗懐かしの歌をうたうよ⋆꙳〖#暁月クララ┊︎#パレプロ〗",nt="暁月クララ / Akatsuki Clara【パレプロ】",it="ESBkKLNvuwc",ot="2025-08-23",_t=`@tomfukuとむふく
+アンコール入れてくれるのすごく良いです！`,Ne={video_title:te,video_artist:ne,video_id:ie,video_publish_date_str:oe,song_timeline:_e},Ue=Object.freeze(Object.defineProperty({__proto__:null,default:Ne,song_timeline:_e,video_artist:ne,video_id:ie,video_publish_date_str:oe,video_title:te},Symbol.toStringTag,{value:"Module"})),se="✧︎*.〖 歌枠 〗7周年✨ありがとうを伝えたいのっ💗懐かしの歌をうたうよ⋆꙳〖#暁月クララ┊︎#パレプロ〗",de="暁月クララ / Akatsuki Clara【パレプロ】",le="ESBkKLNvuwc",re="2025-08-23",ae=`@tomfukuとむふく
 ＜セトリ＞
 0:13:16 メランコリック/Junky
 0:24:58 ロキ/みきとP
@@ -198,7 +202,7 @@ Just a game、とってもカッコよかったです！
 お疲れ様でした
 くーちゃんの今までの歌みたから今までの活動のこれまでを
 そして最後に今とこれからの思いも聞けました
-これからもよろしくお願いします！`,Mt={video_title:et,video_artist:nt,video_id:it,video_publish_date_str:ot,song_timeline:_t},wt=Object.freeze(Object.defineProperty({__proto__:null,default:Mt,song_timeline:_t,video_artist:nt,video_id:it,video_publish_date_str:ot,video_title:et},Symbol.toStringTag,{value:"Module"})),st="✧︎*.〖 歌枠 〗のんびりチルタイム💗夜に合う楽曲で999％癒しモード⋆꙳〖#暁月クララ┊︎#パレプロ〗",dt="暁月クララ / Akatsuki Clara【パレプロ】",lt="TzTPYK5qXL0",rt="2025-09-02",at=`＜セトリ＞
+これからもよろしくお願いします！`,Re={video_title:se,video_artist:de,video_id:le,video_publish_date_str:re,song_timeline:ae},We=Object.freeze(Object.defineProperty({__proto__:null,default:Re,song_timeline:ae,video_artist:de,video_id:le,video_publish_date_str:re,video_title:se},Symbol.toStringTag,{value:"Module"})),ve="✧︎*.〖 歌枠 〗のんびりチルタイム💗夜に合う楽曲で999％癒しモード⋆꙳〖#暁月クララ┊︎#パレプロ〗",ce="暁月クララ / Akatsuki Clara【パレプロ】",ue="TzTPYK5qXL0",pe="2025-09-02",be=`＜セトリ＞
 0:06:55 プラネタリウム/大塚愛
 0:17:34 words/Aimer
 0:27:20 雪の華/中島美嘉
@@ -218,7 +222,7 @@ Just a game、とってもカッコよかったです！
 2:30:03 栄光の架橋/ゆず
 
 お疲れ様でした！
-たしかなことや栄光の架橋など懐かしい名曲がいっぱいで良かったです！`,jt={video_title:st,video_artist:dt,video_id:lt,video_publish_date_str:rt,song_timeline:at},Jt=Object.freeze(Object.defineProperty({__proto__:null,default:jt,song_timeline:at,video_artist:dt,video_id:lt,video_publish_date_str:rt,video_title:st},Symbol.toStringTag,{value:"Module"})),vt="✧︎*.〖 #Sputrip24時間┊︎３枠目 〗豪華ゲストさんと共に過ごすラスト枠✨ 歌も企画もトークも!! 楽しんでいってね💗 ⋆꙳〖#常磐カナメ #香鳴ハノン #暁月クララ┊︎#パレプロ〗",ut="暁月クララ / Akatsuki Clara【パレプロ】",ct="ICilwO-VDOQ",pt="2025-09-07",bt=`0:03:05 Sputrip映像集
+たしかなことや栄光の架橋など懐かしい名曲がいっぱいで良かったです！`,Ce={video_title:ve,video_artist:ce,video_id:ue,video_publish_date_str:pe,song_timeline:be},Xe=Object.freeze(Object.defineProperty({__proto__:null,default:Ce,song_timeline:be,video_artist:ce,video_id:ue,video_publish_date_str:pe,video_title:ve},Symbol.toStringTag,{value:"Module"})),ge="✧︎*.〖 #Sputrip24時間┊︎３枠目 〗豪華ゲストさんと共に過ごすラスト枠✨ 歌も企画もトークも!! 楽しんでいってね💗 ⋆꙳〖#常磐カナメ #香鳴ハノン #暁月クララ┊︎#パレプロ〗",me="暁月クララ / Akatsuki Clara【パレプロ】",$e="ICilwO-VDOQ",Se="2025-09-07",Ae=`0:03:05 Sputrip映像集
 
 0:21:30 凸待ち歌枠（出演：Sputrip）
 0:27:49 ゲスト①：和央パリンさん
@@ -281,4 +285,4 @@ Just a game、とってもカッコよかったです！
 6:30:01 全通特典スタンプ作り（出演：暁月クララ）
 
 6:50:58 閉会式（出演：Sputrip）
-`,Et={video_title:vt,video_artist:ut,video_id:ct,video_publish_date_str:pt,song_timeline:bt},Ht=Object.freeze(Object.defineProperty({__proto__:null,default:Et,song_timeline:bt,video_artist:ut,video_id:ct,video_publish_date_str:pt,video_title:vt},Symbol.toStringTag,{value:"Module"}));export{It as _,Tt as a,Ct as b,Nt as c,Rt as d,Lt as e,Bt as f,zt as g,Gt as h,Dt as i,Kt as j,wt as k,Jt as l,Ht as m};
+`,Le={video_title:ge,video_artist:me,video_id:$e,video_publish_date_str:Se,song_timeline:Ae},Ze=Object.freeze(Object.defineProperty({__proto__:null,default:Le,song_timeline:Ae,video_artist:me,video_id:$e,video_publish_date_str:Se,video_title:ge},Symbol.toStringTag,{value:"Module"}));export{Be as _,ze as a,Ge as b,Ke as c,De as d,we as e,He as f,Je as g,Fe as h,Ye as i,Ve as j,Ue as k,We as l,Xe as m,Ze as n};
