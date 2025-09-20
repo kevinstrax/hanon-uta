@@ -1,0 +1,1 @@
+import{H as e}from"./HelloWorld-BPtUU4ar.js";import{d as o,D as r,l as a,u as n,G as t}from"./bootstrap.esm-DyS0rx4p.js";import"./index-ae2QAYl6.js";const c=o({__name:"Hanon",setup(s){return(l,m)=>(a(),r(e,{vtuber:n(t).KANARU_HANON.name},null,8,["vtuber"]))}});export{c as default};
