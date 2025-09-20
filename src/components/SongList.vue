@@ -7,9 +7,10 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 </script>
 
 <template>
-  <section class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2">
-    <article v-for="(song, index) in props.paginatedSongs" :key="index">
-      <div class="card h-100 hover-bg-light ">
+  <TransitionGroup tag="section" name="fade-only" mode="out-in"
+                   class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2">
+    <article v-for="(song, _) in props.paginatedSongs" :key="song.ref_video_url">
+      <div class="card h-100 hover-bg-light">
         <div class="card-img-top ratio ratio-16x9 position-relative">
 
           <a :href="song.ref_video_url" class="d-flex align-items-center justify-content-center" target="_blank">
@@ -62,7 +63,7 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
         </div>
       </div>
     </article>
-  </section>
+  </TransitionGroup>
 </template>
 
 <style scoped>
@@ -169,6 +170,22 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 
 .card-title:hover .iconfont {
   animation: titleIconShake 1s ease 1s infinite alternate;
+}
+.fade-only-enter-active {
+  transition: opacity .808s ease;
+}
+.fade-only-leave-active {
+  display: none;
+}
+
+.fade-only-enter-from,
+.fade-only-leave-to {
+  opacity: 0;
+}
+
+.fade-only-enter-to,
+.fade-only-leave-from {
+  opacity: 1;
 }
 
 </style>
