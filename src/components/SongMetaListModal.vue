@@ -11,6 +11,30 @@ const updateSearchQuery = (title: string) => {
   window.scrollTo({ top: 0, behavior: "smooth" })
 };
 
+// Get a random song title with uniform probability
+const randomSongName = (): string | null => {
+  if (!props.songMetaGroups?.length) return null;
+
+  // Flatten all song titles into a single array
+  const allTitles = props.songMetaGroups.flatMap(group =>
+      group.song_metas?.map(song => song.title).filter(Boolean) || []
+  );
+
+  if (!allTitles.length) return null;
+
+  // Select random title with uniform distribution
+  const randomIndex = Math.floor(Math.random() * allTitles.length);
+  return allTitles[randomIndex];
+};
+
+// Select random song and update search query
+const selectRandomSong = () => {
+  const randomTitle = randomSongName();
+  if (randomTitle) {
+    updateSearchQuery(randomTitle);
+  }
+};
+
 </script>
 
 <template>
@@ -47,7 +71,11 @@ const updateSearchQuery = (title: string) => {
             </div>
           </div>
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer d-flex justify-content-between">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @click="selectRandomSong()">
+            <i class="iconfont">&#xe87a;</i>
+            ランダム
+          </button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
         </div>
       </div>
