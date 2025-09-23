@@ -44,7 +44,6 @@ const searchQuery = ref(route.query.search as string || '');
 const currentPage = ref(1);
 const itemsPerPage = ref(DEFAULT_PAGE_SIZE) // each page displays 10 items
 const goToPage = ref(1);
-const redPointRead = ref(false)
 
 watch(
     () => route.query.search,
@@ -208,40 +207,8 @@ onBeforeUnmount(() => {
 </script>
 
  <template>
-
-  <nav class="d-flex justify-content-between align-items-center">
-    <!-- Button trigger modal -->
-    <div class="position-relative">
-      <button class="btn" :class="isDark ? 'btn-dark border' : 'btn-light'" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button" @click="redPointRead = true">
-        <i class="iconfont">&#xe66f;</i> <span class="d-none d-xxs2-inline">楽曲リスト</span>
-        <span v-if="!redPointRead" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger z-1">New</span>
-      </button>
-    </div>
-
-    <div class="dropdown my-4">
-      <button class="btn dropdown-toggle" :class="isDark ? 'btn-dark border' : 'btn-light'" id="dropdownMenuReadme" data-bs-toggle="dropdown" type="button">
-        <i class="iconfont me-1">&#xef1f;</i>
-        <span class="visually-hidden">説明書</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end">
-        <li>
-          <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README.md" target="_blank" rel="noopener noreferrer">
-            <i class="iconfont me-1">&#xe648;</i>
-            日本語
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README_zh-CN.md" target="_blank" rel="noopener noreferrer">
-            <i class="iconfont me-1">&#xe648;</i>
-            简体中文
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
   <!-- search box -->
-  <section class="row my-4 mt-0 clearfix">
+  <section class="row my-4 mt-0">
     <div class="input-group">
       <label for="searchInput" class="input-group-text bg-light" :class="isDark ? 'bg-dark' : 'bg-light'">
         <i class="iconfont">&#xe7ec;</i>
@@ -338,29 +305,12 @@ onBeforeUnmount(() => {
 
 <style scoped>
 
-.card-img-top a {
-  display: block;
-  overflow: hidden;
-}
-
-.card-img-top img {
-  transform: scale(1.01);
-  transition: transform 0.3s ease;
-}
-
-.hover-bg-light:hover img {
-  transform: scale(1.05);
-}
 @media (min-width: 365px) {
   .d-xxs-inline {
     display: inline !important;
   }
 }
-@media (min-width: 400px) {
-  .d-xxs2-inline {
-    display: inline !important;
-  }
-}
+
 .responsive-width {
   width: 100%; /* Default is 100% */
 }
