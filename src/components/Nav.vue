@@ -62,23 +62,22 @@ const redPointRead = ref(false)
           <span class="visually-hidden">説明書</span>
         </button>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuReadme">
-          <li>
-            <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README.md" target="_blank" rel="noopener noreferrer">
-              <i class="iconfont me-1">&#xe648;</i>
-              日本語
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README_zh-CN.md" target="_blank" rel="noopener noreferrer">
-              <i class="iconfont me-1">&#xe648;</i>
-              简体中文
-            </a>
+          <li class="dropdown-item cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            歌唱統計
           </li>
           <li><hr class="dropdown-divider"></li>
-          <!-- Button trigger modal -->
-          <li class="dropdown-item cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-            Launch demo modal
+          <li>
+            <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+              <!--              <i class="iconfont me-1">&#xe648;</i>-->
+              このサイドについて
+            </a>
           </li>
+          <!--          <li>-->
+          <!--            <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README_zh-CN.md" target="_blank" rel="noopener noreferrer">-->
+          <!--              <i class="iconfont me-1">&#xe648;</i>-->
+          <!--              简体中文-->
+          <!--            </a>-->
+          <!--          </li>-->
         </ul>
       </div>
     </div>
