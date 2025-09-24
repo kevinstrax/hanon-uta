@@ -36,3 +36,8 @@ export type VtuberValues = Vtubers[VtuberKeys]['name']; // "hanon" | "Gabu" | "C
 
 export const VTUBER_KEYS: string[] = Object.entries(VTUBERS).map(([key, _]) => key)
 export const VTUBER_URIS: string[] = Object.entries(VTUBERS).map(([_, value]) => value.uri)
+
+export const VTUBER_NAME_TO_JA: Record<VtuberValues, string> = Object.values(VTUBERS).reduce((acc, vtuber) => {
+    acc[vtuber.name as VtuberValues] = vtuber.name_ja;
+    return acc;
+}, {} as Record<VtuberValues, string>);

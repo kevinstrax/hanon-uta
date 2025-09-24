@@ -35,7 +35,7 @@ Chart.register(
   Legend
 );
 
-const props = defineProps<{ allSongs: Song[] }>();
+const props = defineProps<{ allSongs: Song[], vtuber: string }>();
 const { isDark } = storeToRefs(useColorModeStore())
 
 // Reactive references
@@ -442,7 +442,7 @@ onMounted(() => {
     <div class="modal-dialog modal-xl modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 id="exampleModalLabel2" class="modal-title fs-5">VTuber歌唱統計</h1>
+          <h1 id="exampleModalLabel2" class="modal-title fs-5">{{vtuber}}ちゃん歌唱統計</h1>
           <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
         </div>
         <div class="modal-body">
