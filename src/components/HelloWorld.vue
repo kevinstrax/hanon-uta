@@ -302,7 +302,7 @@ onBeforeUnmount(() => {
   <SongMetaListModal
     :song-meta-groups="songMetaGroups" v-model:search-query="searchQuery"
   />
-  <SongStats />
+  <SongStats v-if="!loadingStore.$state.isInitialLoad" :all-songs="songs" />
 </template>
 
 <style scoped>
