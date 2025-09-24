@@ -15,6 +15,7 @@ import QuickSearches from "@/components/QuickSearches.vue";
 import SongMetaListModal from "@/components/SongMetaListModal.vue";
 import { useColorModeStore } from "@/stores/color-mode.ts";
 import UpdateHintToast from "@/components/UpdateHintToast.vue";
+import SongStats from "@/components/SongStats.vue";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
@@ -301,6 +302,7 @@ onBeforeUnmount(() => {
   <SongMetaListModal
     :song-meta-groups="songMetaGroups" v-model:search-query="searchQuery"
   />
+  <SongStats />
 </template>
 
 <style scoped>

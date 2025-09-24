@@ -74,6 +74,11 @@ const redPointRead = ref(false)
               简体中文
             </a>
           </li>
+          <li><hr class="dropdown-divider"></li>
+          <!-- Button trigger modal -->
+          <li class="dropdown-item cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Launch demo modal
+          </li>
         </ul>
       </div>
     </div>
