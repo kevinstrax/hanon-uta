@@ -2,6 +2,7 @@ import { computed, type ComputedRef, type Ref } from 'vue'
 import type { Song } from '@/types/song'
 
 export const generateMeta = (
+    favicon: ComputedRef<string> | string,
     pageTitle: ComputedRef<string> | string,
     pageDescription: ComputedRef<string> | string,
     filteredSongs: Ref<Song[]>
@@ -16,6 +17,25 @@ export const generateMeta = (
 
     return {
         title: pageTitle,
+        link: [
+            {
+                rel: 'apple-touch-icon',
+                href: favicon,
+                sizes: '180x180'
+            },
+            {
+                rel: 'icon',
+                href: favicon,
+                sizes: '32x32',
+                type: 'image/png'
+            },
+            {
+                rel: 'icon',
+                href: favicon,
+                sizes: '16x16',
+                type: 'image/png'
+            }
+        ],
         meta: [
             // Standard meta
             { name: 'description', content: pageDescription },

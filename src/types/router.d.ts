@@ -4,6 +4,7 @@ import { RouteMeta, RouteRecordRaw } from 'vue-router'
 declare module 'vue-router' {
     interface RouteMeta {
         title: string,
+        favicon?: string,
         mark?: string,
         disabled?: boolean
     }

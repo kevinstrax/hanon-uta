@@ -10,6 +10,7 @@ const routes: AppRouteRecordRaw[] = Object.entries(VTUBERS).map(([key, vtuber]) 
     meta: {
         title: vtuber.name_ja,
         mark: vtuber.mark,
+        favicon: vtuber.favicon,
     }
 }))
 
@@ -20,7 +21,8 @@ routes.push({
     component: () => import((`@/views/${ VTUBERS.KANARU_HANON.name }.vue`)),
     meta: {
         title: VTUBERS.KANARU_HANON.name_ja,
-        mark: VTUBERS.KANARU_HANON.mark
+        mark: VTUBERS.KANARU_HANON.mark,
+        favicon: VTUBERS.KANARU_HANON.favicon,
     }
 })
 

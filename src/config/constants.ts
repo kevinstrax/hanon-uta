@@ -11,18 +11,21 @@ export const VTUBERS  = {
         name: 'Hanon',
         name_ja: '香鳴ハノン',
         mark: '🎀🎶',
+        favicon: '/favhn.png',
         uri: '/'
     },
     SAOTOME_GABU: {
         name: 'Gabu',
         name_ja: '鎖乙女がぶ',
         mark: '🐺🩰',
+        favicon: '/favgb.png',
         uri: '/saotomegabu'
     },
     AKATSUKI_CLARA: {
         name: 'Clara',
         name_ja: '暁月クララ',
         mark: '🎠💛',
+        favicon: '/favcl.png',
         uri: '/akatsukiclara'
     }
 } as const;

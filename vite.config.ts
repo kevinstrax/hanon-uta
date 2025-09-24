@@ -19,8 +19,9 @@ const generateDynamicRoutes = () => {
     });
 };
 const defaultData : any = {
-    vtuber: '香鳴ハノン',
-    cover: 'https://img.youtube.com/vi/V8gg1yrTzsw/maxresdefault.jpg'
+    vtuber: VTUBERS.KANARU_HANON.name_ja,
+    cover: 'https://img.youtube.com/vi/V8gg1yrTzsw/maxresdefault.jpg',
+    favicon: VTUBERS.KANARU_HANON.favicon,
 };
 // https://vite.dev/config/
 export default defineConfig({
@@ -56,15 +57,17 @@ export default defineConfig({
                     {
                         outputPath: 'saotomegabu/index.html',
                         data: {
-                            vtuber: '鎖乙女がぶ',
-                            cover: 'https://img.youtube.com/vi/nMmWVciVOgk/maxresdefault.jpg'
+                            vtuber: VTUBERS.SAOTOME_GABU.name_ja,
+                            cover: 'https://img.youtube.com/vi/nMmWVciVOgk/maxresdefault.jpg',
+                            favicon: VTUBERS.SAOTOME_GABU.favicon
                         }
                     },
                     {
                         outputPath: 'akatsukiclara/index.html',
                         data: {
-                            vtuber: '暁月クララ',
-                            cover: 'https://img.youtube.com/vi/iavuOMwYjpg/maxresdefault.jpg'
+                            vtuber: VTUBERS.AKATSUKI_CLARA.name_ja,
+                            cover: 'https://img.youtube.com/vi/iavuOMwYjpg/maxresdefault.jpg',
+                            favicon: VTUBERS.AKATSUKI_CLARA.favicon
                         }
                     },
                 ]

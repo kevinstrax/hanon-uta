@@ -129,7 +129,7 @@ const pageDescription = computed(() => {
 });
 
 // share head
-useHead(generateMeta(pageTitle, pageDescription, filteredSongs))
+useHead(generateMeta(route.meta.favicon??'favhn.png', pageTitle, pageDescription, filteredSongs))
 
 // paginated data
 const paginatedSongs = computed(() => {
