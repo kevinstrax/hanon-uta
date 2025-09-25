@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import type { Song } from "@/types/song";
-import SongStats from "@/components/SongStats.vue";
 import { storeToRefs } from "pinia";
 import { useStatsInitStore } from "@/stores/stats-init.ts";
+import { defineAsyncComponent } from "vue";
+
+const SongStats = defineAsyncComponent(() => import("@/components/SongStats.vue"))
 
 const props = defineProps<{ allSongs: Song[], vtuber: string }>();
 const { isStatsInit } = storeToRefs(useStatsInitStore())
-
 </script>
 
 <template>
