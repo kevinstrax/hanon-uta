@@ -8,13 +8,14 @@ import { generateMeta } from "@/utils/meta";
 import { useLoadingStore } from '@/stores/loading'
 import { useRoute, useRouter } from 'vue-router';
 import { useHead } from '@vueuse/head'
-import type { VtuberValues } from '@/config/constants';
+import { VTUBER_NAME_TO_JA, type VtuberValues } from '@/config/constants';
 import { DEFAULT_PAGE_SIZE, SITE_BRAND, SITE_DESC, SITE_SUFFIX } from '@/config/constants';
 import SongList from "@/components/SongList.vue";
 import QuickSearches from "@/components/QuickSearches.vue";
 import SongMetaListModal from "@/components/SongMetaListModal.vue";
 import { useColorModeStore } from "@/stores/color-mode.ts";
 import UpdateHintToast from "@/components/UpdateHintToast.vue";
+import SongStatsModal from "@/components/SongStatsModal.vue";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
@@ -24,7 +25,7 @@ const route = useRoute();
 const router = useRouter();
 
 const { isDark } = storeToRefs(useColorModeStore())
-
+const { isInitialLoad } = storeToRefs(loadingStore);
 
 onMounted(async () => {
   try {
@@ -298,9 +299,14 @@ onBeforeUnmount(() => {
   </template>
 
   <UpdateHintToast />
-  <SongMetaListModal
-    :song-meta-groups="songMetaGroups" v-model:search-query="searchQuery"
+  <SongMetaListModal :song-meta-groups="songMetaGroups"
+                     v-model:search-query="searchQuery"
   />
+  <SongStatsModal v-if="!isInitialLoad"
+             :all-songs="songs"
+             :vtuber="VTUBER_NAME_TO_JA[props.vtuber]"
+  />
+
 </template>
 
 <style scoped>
