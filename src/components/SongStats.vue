@@ -229,11 +229,11 @@ const initializeCharts = async () => {
           }
         },
         y: {
-          title: {
+          /*title: {
             display: true,
             text: '曲名',
             color: textColor
-          },
+          },*/
           grid: {
             color: gridColor
           },
@@ -251,10 +251,10 @@ const initializeCharts = async () => {
     }
   });
 
-// 2. Line Chart - Monthly Song Counts - 淡红色填充
+// 2. Line Chart - Monthly Song Counts - reddish filling
   const lineChartGradient = isDark.value
-    ? 'rgba(255, 107, 107, 0.3)'  // 暗黑模式下稍深的淡红色
-    : 'rgba(255, 107, 107, 0.2)'; // 明亮模式下的淡红色
+    ? 'rgba(255, 107, 107, 0.3)'
+    : 'rgba(255, 107, 107, 0.2)';
 
   lineChart = new Chart(lineChartRef.value, {
     type: 'line',
@@ -263,9 +263,9 @@ const initializeCharts = async () => {
       datasets: [{
         label: '歌曲数',
         data: monthlyData.value.counts,
-        borderColor: colorPalettes.lineChart, // 主线条保持红色
+        borderColor: colorPalettes.lineChart,
         backgroundColor: lineChartGradient,
-        tension: 0.4, // 稍微增加曲率让线条更平滑
+        tension: 0.4,
         fill: true,
         pointBackgroundColor: colorPalettes.lineChart,
         pointBorderColor: isDark.value ? '#000000' : '#ffffff',
@@ -335,7 +335,7 @@ const initializeCharts = async () => {
       },
       elements: {
         line: {
-          borderWidth: 3 // 增加线条宽度让红色更明显
+          borderWidth: 3
         }
       }
     }
@@ -438,87 +438,72 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="exampleModal2" aria-hidden="true" aria-labelledby="exampleModalLabel2" class="modal fade" tabindex="-2">
-    <div class="modal-dialog modal-xl modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 id="exampleModalLabel2" class="modal-title fs-5">{{vtuber}}ちゃん歌唱統計</h1>
-          <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+  <!-- Charts Row 1 -->
+  <div class="row">
+    <div class="col-12 mb-4">
+      <div class="card">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <h6 class="card-title mb-0">トップ30曲</h6>
+          <label class="form-label visually-hidden" for="yearSelect">年度選択</label>
+          <select id="yearSelect" v-model="selectedYear" class="form-select w-auto">
+            <option value="all">全期間</option>
+            <option v-for="year in availableYears" :key="year" :value="year.toString()">
+              {{ year }}年
+            </option>
+          </select>
         </div>
-        <div class="modal-body">
-          <!-- Charts Row 1 -->
-          <div class="row">
-            <div class="col-12 mb-4">
-              <div class="card">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                  <h6 class="card-title mb-0">トップ30曲</h6>
-                  <label class="form-label visually-hidden" for="yearSelect">年度選択</label>
-                  <select id="yearSelect" v-model="selectedYear" class="form-select w-auto">
-                    <option value="all">全期間</option>
-                    <option v-for="year in availableYears" :key="year" :value="year.toString()">
-                      {{ year }}年
-                    </option>
-                  </select>
-                </div>
-                <div class="card-body">
-                  <div class="chart-container">
-                    <canvas ref="barChartRef"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 mb-4">
-              <div class="card">
-                <div class="card-header">
-                  <h6 class="card-title mb-0 py-2" style="margin: 3px 0 3px 0">月別歌曲数推移</h6>
-                </div>
-                <div class="card-body">
-                  <div class="chart-container">
-                    <canvas ref="lineChartRef"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas ref="barChartRef"></canvas>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 mb-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title mb-0 py-2" style="margin: 3px 0 3px 0">月別歌曲数推移</h6>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas ref="lineChartRef"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          <!-- Charts Row 2 -->
-          <div class="row">
-            <div class="col-xl-6 col-lg-12 mb-4">
-              <div class="card">
-                <div class="card-header">
-                  <h6 class="card-title mb-0 py-2" style="margin: 3px 0 3px 0">年間歌曲数比較</h6>
-                </div>
-                <div class="card-body">
-                  <div class="chart-container">
-                    <canvas ref="pieChartRef"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-12 mb-4">
-              <div class="card">
-                <div class="card-header d-flex align-items-center justify-content-between">
-                  <h6 class="card-title mb-0 d-inline-block">季節別歌曲数分布</h6>
-                  <label class="form-label visually-hidden" for="seasonYearSelect">年度選択</label>
-                  <select id="seasonYearSelect" v-model="selectedSeasonYear" class="form-select w-auto">
-                    <option value="all">全期間</option>
-                    <option v-for="year in availableYears" :key="year" :value="year.toString()">
-                      {{ year }}年
-                    </option>
-                  </select>
-                </div>
-                <div class="card-body">
-                  <div class="chart-container">
-                    <canvas ref="doughnutChartRef"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <!-- Charts Row 2 -->
+  <div class="row">
+    <div class="col-xl-6 col-lg-12 mb-4">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title mb-0 py-2" style="margin: 3px 0 3px 0">年間歌曲数比較</h6>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas ref="pieChartRef"></canvas>
           </div>
         </div>
-<!--        <div class="modal-footer">-->
-<!--          <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">閉じる</button>-->
-<!--        </div>-->
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-12 mb-4">
+      <div class="card">
+        <div class="card-header d-flex align-items-center justify-content-between">
+          <h6 class="card-title mb-0 d-inline-block">季節別歌曲数分布</h6>
+          <label class="form-label visually-hidden" for="seasonYearSelect">年度選択</label>
+          <select id="seasonYearSelect" v-model="selectedSeasonYear" class="form-select w-auto">
+            <option value="all">全期間</option>
+            <option v-for="year in availableYears" :key="year" :value="year.toString()">
+              {{ year }}年
+            </option>
+          </select>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas ref="doughnutChartRef"></canvas>
+          </div>
+        </div>
       </div>
     </div>
   </div>

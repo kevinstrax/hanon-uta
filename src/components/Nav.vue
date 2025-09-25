@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { VTUBER_KEYS } from "@/config/constants.ts";
 import { useColorModeStore } from "@/stores/color-mode.ts";
+import { useStatsInitStore } from "@/stores/stats-init.ts";
 import { storeToRefs } from "pinia";
 
 const router = useRouter()
@@ -62,7 +63,7 @@ const redPointRead = ref(false)
           <span class="visually-hidden">説明書</span>
         </button>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuReadme">
-          <li class="dropdown-item cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          <li class="dropdown-item cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal2" @click="useStatsInitStore().triggerInit()">
             歌唱統計
           </li>
           <li><hr class="dropdown-divider"></li>
