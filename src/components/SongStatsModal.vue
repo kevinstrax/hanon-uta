@@ -8,6 +8,7 @@ import LoadingSpinner from "@/components/LoadingSpinner.vue";
 const SongStats = defineAsyncComponent({
   loader: () => import("@/components/SongStats.vue"),
   loadingComponent: LoadingSpinner,
+  delay: 200,
 })
 
 const props = defineProps<{ allSongs: Song[], vtuber: string }>();
