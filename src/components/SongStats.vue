@@ -47,16 +47,16 @@ const barChartRef = ref<HTMLCanvasElement>();
 const lineChartRef = ref<HTMLCanvasElement>();
 const pieChartRef = ref<HTMLCanvasElement>();
 const doughnutChartRef = ref<HTMLCanvasElement>();
-// Ref for Top 10 by Season chart
-const top10ChartRef = ref<HTMLCanvasElement>();
+// Ref for Top 30 by Season chart
+const seasonTop30ChartRef = ref<HTMLCanvasElement>();
 
 // Chart instances
 let barChart: Chart | null = null;
 let lineChart: Chart | null = null;
 let pieChart: Chart | null = null;
 let doughnutChart: Chart | null = null;
-// Instance for Top 10 by Season chart
-let top10Chart: Chart | null = null;
+// Instance for Top 30 by Season chart
+let seasonTop30Chart: Chart | null = null;
 
 // Available years for dropdown
 const availableYears = computed(() => {
@@ -68,7 +68,7 @@ const availableYears = computed(() => {
   return Array.from(years).sort((a, b) => b - a);
 });
 
-// Fixed 4 seasons for Top 10 chart dropdown (no 'all' option)
+// Fixed 4 seasons for Top 30 chart dropdown (no 'all' option)
 const seasons = ref(['春', '夏', '秋', '冬']);
 
 // Function to get season from month
@@ -89,11 +89,7 @@ const colorPalettes = {
     '#F79F1F', '#A3CB38', '#1289A7', '#D980FA', '#B53471',
     '#FFC312', '#C4E538', '#12CBC4', '#FDA7DF', '#ED4C67'
   ],
-  // Color palette for Seasonal Top 10 Chart (matches first chart style)
-  top10Chart: [
-    '#FF7675', '#74B9FF', '#00B894', '#FDCB6E', '#A29BFE',
-    '#E17055', '#00CEC9', '#F8C471', '#8E44AD', '#E74C3C'
-  ],
+
   seasonal: ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4'], // Spring, Summer, Autumn, Winter
   yearly: [
     '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FECA57',
@@ -186,8 +182,8 @@ const seasonalData = computed(() => {
   };
 });
 
-// 5. Top 10 songs by selected season (Bar Chart) - New Chart
-const top10SongsData = computed(() => {
+// 5. Top 30 songs by selected season (Bar Chart) - New Chart
+const seasonTop30SongsData = computed(() => {
   // Filter songs that match the selected season
   const filteredSongs = props.allSongs.filter(song => {
     const publishDate = new Date(song.ref_video_publish_date_ts * 1000);
@@ -202,18 +198,18 @@ const top10SongsData = computed(() => {
     songCounts[song.song_title] = (songCounts[song.song_title] || 0) + 1;
   });
 
-  // Sort by play count (descending) and take top 10
-  const top10Songs = Object.entries(songCounts)
+  // Sort by play count (descending) and take top 30
+  const top30Songs = Object.entries(songCounts)
       .sort(([, countA], [, countB]) => countB - countA)
-      .slice(0, 10);
+      .slice(0, 30);
 
   return {
-    labels: top10Songs.map(([title]) => title), // Song titles
-    counts: top10Songs.map(([, count]) => count) // Corresponding play counts
+    labels: top30Songs.map(([title]) => title), // Song titles
+    counts: top30Songs.map(([, count]) => count) // Corresponding play counts
   };
 });
 
-// Initialize all charts (including new Top 10 chart)
+// Initialize all charts (including new Top 30 chart)
 const initializeCharts = async () => {
   await nextTick();
 
@@ -221,7 +217,7 @@ const initializeCharts = async () => {
   if (
       !barChartRef.value || !lineChartRef.value ||
       !pieChartRef.value || !doughnutChartRef.value ||
-      !top10ChartRef.value
+      !seasonTop30ChartRef.value
   ) return;
 
   // Destroy existing chart instances to prevent duplication
@@ -229,7 +225,7 @@ const initializeCharts = async () => {
   if (lineChart) lineChart.destroy();
   if (pieChart) pieChart.destroy();
   if (doughnutChart) doughnutChart.destroy();
-  if (top10Chart) top10Chart.destroy();
+  if (seasonTop30Chart) seasonTop30Chart.destroy();
 
   // Get dark/light mode colors for consistent styling
   const textColor = isDark.value ? '#dee2e6' : '#666666';
@@ -403,15 +399,15 @@ const initializeCharts = async () => {
     }
   });
 
-  // 5. Bar Chart - Top 10 Songs by Season (New Chart with style matching first chart)
-  top10Chart = new Chart(top10ChartRef.value, {
+  // 5. Bar Chart - Top 30 Songs by Season (New Chart with style matching first chart)
+  seasonTop30Chart = new Chart(seasonTop30ChartRef.value, {
     type: 'bar',
     data: {
-      labels: top10SongsData.value.labels,
+      labels: seasonTop30SongsData.value.labels,
       datasets: [{
         label: '歌唱回数',
-        data: top10SongsData.value.counts,
-        backgroundColor: colorPalettes.top10Chart.slice(0, top10SongsData.value.labels.length),
+        data: seasonTop30SongsData.value.counts,
+        backgroundColor: colorPalettes.barChart.slice(0, seasonTop30SongsData.value.labels.length),
         borderColor: isDark.value ? 'rgba(255, 255, 255, 0.2)' : 'rgba(0,0,0,0.1)',
         borderWidth: 1
       }]
@@ -459,7 +455,7 @@ const initializeCharts = async () => {
 // Watch for data changes
 watch(
     [
-      topSongsData, monthlyData, yearlyData, seasonalData, top10SongsData,
+      topSongsData, monthlyData, yearlyData, seasonalData, seasonTop30SongsData,
       selectedYear, selectedSeasonYear, selectedSeason, isDark
     ],
     () => {
@@ -544,12 +540,12 @@ onMounted(() => {
     </div>
   </div>
 
-  <!-- Charts Row 3 - Top 10 Songs by Season (style matched to first chart) -->
+  <!-- Charts Row 3 - Top 30 Songs by Season (style matched to first chart) -->
   <div class="row">
     <div class="col-12 mb-4">
       <div class="card">
         <div class="card-header d-flex align-items-center justify-content-between">
-          <h6 class="card-title mb-0">季節別トップ10曲</h6>
+          <h6 class="card-title mb-0">季節別トップ30曲</h6>
           <label class="form-label visually-hidden" for="seasonSelect">季節選択</label>
           <select id="seasonSelect" v-model="selectedSeason" class="form-select w-auto">
             <option v-for="season in seasons" :key="season" :value="season">
@@ -559,7 +555,7 @@ onMounted(() => {
         </div>
         <div class="card-body">
           <div class="chart-container">
-            <canvas ref="top10ChartRef"></canvas>
+            <canvas ref="seasonTop30ChartRef"></canvas>
           </div>
         </div>
       </div>
