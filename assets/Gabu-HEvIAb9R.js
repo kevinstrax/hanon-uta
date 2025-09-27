@@ -1,0 +1,1 @@
+import{H as e}from"./HelloWorld-CvV2TKYC.js";import{e as r,G as o,u as a,m as t,H as n}from"./bootstrap.esm-C8HwTkrF.js";import"./index-Dv6zDd2H.js";const l=r({__name:"Gabu",setup(s){return(m,u)=>(t(),o(e,{vtuber:a(n).SAOTOME_GABU.name},null,8,["vtuber"]))}});export{l as default};
