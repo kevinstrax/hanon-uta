@@ -54,8 +54,10 @@ export function debounceFn<T extends AnyFn>(fn: T, delay = 868) {
 }
 
 function refocusInput(searchInput: Ref<HTMLInputElement | null>) {
-    searchInput.value?.blur()
-    searchInput.value?.focus()
+    if (searchInput.value === document.activeElement) {
+        searchInput.value?.blur()
+        searchInput.value?.focus()
+    }
 }
 
 function updateSearchPlaceHoldersInner(searchQuery: string, filteredSongs: Song[], placeHolders: Ref<string[]>, searchInput: Ref<HTMLInputElement | null>) {
@@ -75,9 +77,7 @@ function updateSearchPlaceHoldersInner(searchQuery: string, filteredSongs: Song[
         placeHolders.value = results
     } else {
         placeHolders.value = []
-        if (searchInput.value === document.activeElement) {
-            refocusInput(searchInput);
-        }
+        refocusInput(searchInput);
     }
 }
 
