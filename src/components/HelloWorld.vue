@@ -8,14 +8,21 @@ import { generateMeta } from "@/utils/meta";
 import { useLoadingStore } from '@/stores/loading'
 import { useRoute, useRouter } from 'vue-router';
 import { useHead } from '@vueuse/head'
-import { VTUBER_NAME_TO_JA, type VtuberValues } from '@/config/constants';
-import { DEFAULT_PAGE_SIZE, SITE_BRAND, SITE_DESC, SITE_SUFFIX } from '@/config/constants';
+import {
+  DEFAULT_PAGE_SIZE,
+  SITE_BRAND,
+  SITE_DESC,
+  SITE_SUFFIX,
+  VTUBER_NAME_TO_JA,
+  type VtuberValues
+} from '@/config/constants';
 import SongList from "@/components/SongList.vue";
 import QuickSearches from "@/components/QuickSearches.vue";
 import SongMetaListModal from "@/components/SongMetaListModal.vue";
 import { useColorModeStore } from "@/stores/color-mode.ts";
 import UpdateHintToast from "@/components/UpdateHintToast.vue";
 import SongStatsModal from "@/components/SongStatsModal.vue";
+import { debounceFn, updateSearchPlaceHolders } from "@/utils/placeholderUtils.ts";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
@@ -46,17 +53,18 @@ const currentPage = ref(1);
 const itemsPerPage = ref(DEFAULT_PAGE_SIZE) // each page displays 10 items
 const goToPage = ref(1);
 
-watch(
-    () => route.query.search,
-    (newSearchQuery) => {
-      searchQuery.value = newSearchQuery as string || '';
-    }
-);
+watch(() => route.query.search,
+  (newSearchQuery) => { searchQuery.value = newSearchQuery as string || ''; });
+
+function updateSearchQueryInURL(query: string) {
+  router.replace({
+    name: route.name,
+    query: { search: query || undefined }
+  })
+}
+const updateSearchQueryInURLDeb = debounceFn(updateSearchQueryInURL, 523);
 watch(searchQuery, (newSearchQuery) => {
-    router.replace({
-      name: route.name, // Use route names to avoid hardcoding paths
-      query: { search: newSearchQuery || undefined }
-    });
+    updateSearchQueryInURLDeb(newSearchQuery);
     if (newSearchQuery && newSearchQuery.trim() !== '') {
       currentPage.value = goToPage.value = 1;
     }
@@ -161,30 +169,15 @@ onBeforeMount(() => {
 })
 
 const loadedSongs = ref<Song[]>([])
-const placeHolders = ref<string[]>([])
-watch([isMobile, filteredSongs], () => {
+const searchInput = ref<HTMLInputElement | null>(null)
+const searchPlaceHolders = ref<string[]>([])
+
+watch([isMobile, filteredSongs, searchQuery], () => {
   if (isMobile.value) {
     // The first page is loaded on mobile
     loadedSongs.value = filteredSongs.value.slice(0, itemsPerPage.value)
   }
-  if (searchQuery.value && searchQuery.value.trim() !== '') {
-    if (filteredSongs.value.some(song => song.song_title === searchQuery.value)) {
-      placeHolders.value = [];
-      return;
-    }
-    placeHolders.value = Array.from(
-      new Set(
-        filteredSongs.value
-          .map(song => song.song_title)
-          .filter(songName =>
-            songName.toLowerCase().startsWith(searchQuery.value.toLowerCase())
-            && songName !== searchQuery.value
-          )
-      )
-    ).slice(0, 10);
-  } else {
-    placeHolders.value = []
-  }
+  updateSearchPlaceHolders(searchQuery.value, filteredSongs.value, searchInput, searchPlaceHolders);
 })
 
 const observerTarget = ref<HTMLElement | null>(null)
@@ -235,18 +228,19 @@ onBeforeUnmount(() => {
       </label>
       <input
         id="searchInput"
+        ref="searchInput"
         v-model="searchQuery"
         class="form-control shadow-none"
         placeholder="曲名またはアーティスト名で検索..."
         type="search"
         list="nameList"
-        :autocomplete="placeHolders.length > 0 ? 'off' : 'on'"
+        :autocomplete="searchPlaceHolders.length > 0 ? 'off' : 'on'"
         autocapitalize="off"
         spellcheck="false"
         @input="currentPage = goToPage = 1"
       >
-      <datalist id="nameList" v-if="placeHolders.length > 0">
-        <option v-for="placeHolder in placeHolders" :value="placeHolder"></option>
+      <datalist id="nameList" v-if="searchPlaceHolders.length > 0">
+        <option v-for="placeHolder in searchPlaceHolders" :value="placeHolder"></option>
       </datalist>
     </div>
   </section>
