@@ -81,7 +81,7 @@ function updateSearchPlaceHoldersInner(searchQuery: string, filteredSongs: Song[
     }
 }
 
-const updateSearchPlaceHoldersDeb = debounceFn(updateSearchPlaceHoldersInner)
+const updateSearchPlaceHoldersDeb = debounceFn(updateSearchPlaceHoldersInner, 1234)
 export function updateSearchPlaceHolders(searchQuery: string, filteredSongs: Song[], searchInput: Ref<HTMLInputElement | null>, placeHolders: Ref<string[]>) {
     if (searchQuery && searchQuery.trim() !== '' && filteredSongs.some(song => song.song_title === searchQuery)) {
         updateSearchPlaceHoldersDeb.cancel?.();

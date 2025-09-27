@@ -62,7 +62,7 @@ function updateSearchQueryInURL(query: string) {
     query: { search: query || undefined }
   })
 }
-const updateSearchQueryInURLDeb = debounceFn(updateSearchQueryInURL, 523);
+const updateSearchQueryInURLDeb = debounceFn(updateSearchQueryInURL);
 watch(searchQuery, (newSearchQuery) => {
     updateSearchQueryInURLDeb(newSearchQuery);
     if (newSearchQuery && newSearchQuery.trim() !== '') {
