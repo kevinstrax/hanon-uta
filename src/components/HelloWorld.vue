@@ -177,7 +177,7 @@ watch([isMobile, filteredSongs, searchQuery], () => {
     // The first page is loaded on mobile
     loadedSongs.value = filteredSongs.value.slice(0, itemsPerPage.value)
   }
-  updateSearchPlaceHolders(searchQuery.value, filteredSongs.value, searchInput, searchPlaceHolders);
+  updateSearchPlaceHolders(searchQuery.value, filteredSongs.value, searchPlaceHolders, searchInput);
 })
 
 const observerTarget = ref<HTMLElement | null>(null)

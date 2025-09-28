@@ -35,7 +35,7 @@ export function debounceFn<T extends AnyFn>(fn: T, delay = 868) {
         // Create a new timer
         const timer = window.setTimeout(() => {
             fn(...args)
-            timerMap.delete(fn) // 执行完删除
+            timerMap.delete(fn)
         }, delay)
 
         timerMap.set(fn, timer)
@@ -60,7 +60,8 @@ function refocusInput(searchInput: Ref<HTMLInputElement | null>) {
     }
 }
 
-function updateSearchPlaceHoldersInner(searchQuery: string, filteredSongs: Song[], placeHolders: Ref<string[]>, searchInput: Ref<HTMLInputElement | null>) {
+function updateSearchPlaceHoldersInner(searchQuery: string, filteredSongs: Song[], placeHolders: Ref<string[]>,
+                                       searchInput: Ref<HTMLInputElement | null>) {
     if (searchQuery && searchQuery.trim() !== '') {
         const results: string[] = []
         const seen = new Set<string>()
@@ -82,7 +83,8 @@ function updateSearchPlaceHoldersInner(searchQuery: string, filteredSongs: Song[
 }
 
 const updateSearchPlaceHoldersDeb = debounceFn(updateSearchPlaceHoldersInner, 1234)
-export function updateSearchPlaceHolders(searchQuery: string, filteredSongs: Song[], searchInput: Ref<HTMLInputElement | null>, placeHolders: Ref<string[]>) {
+export function updateSearchPlaceHolders(searchQuery: string, filteredSongs: Song[], placeHolders: Ref<string[]>,
+                                         searchInput: Ref<HTMLInputElement | null>) {
     if (searchQuery && searchQuery.trim() !== '' && filteredSongs.some(song => song.song_title === searchQuery)) {
         updateSearchPlaceHoldersDeb.cancel?.();
         placeHolders.value = []
