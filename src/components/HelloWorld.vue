@@ -8,14 +8,21 @@ import { generateMeta } from "@/utils/meta";
 import { useLoadingStore } from '@/stores/loading'
 import { useRoute, useRouter } from 'vue-router';
 import { useHead } from '@vueuse/head'
-import { VTUBER_NAME_TO_JA, type VtuberValues } from '@/config/constants';
-import { DEFAULT_PAGE_SIZE, SITE_BRAND, SITE_DESC, SITE_SUFFIX } from '@/config/constants';
+import {
+  DEFAULT_PAGE_SIZE,
+  SITE_BRAND,
+  SITE_DESC,
+  SITE_SUFFIX,
+  VTUBER_NAME_TO_JA,
+  type VtuberValues
+} from '@/config/constants';
 import SongList from "@/components/SongList.vue";
 import QuickSearches from "@/components/QuickSearches.vue";
 import SongMetaListModal from "@/components/SongMetaListModal.vue";
 import { useColorModeStore } from "@/stores/color-mode.ts";
 import UpdateHintToast from "@/components/UpdateHintToast.vue";
 import SongStatsModal from "@/components/SongStatsModal.vue";
+import { debounceFn, updateSearchPlaceHolders } from "@/utils/placeholderUtils.ts";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
@@ -46,17 +53,18 @@ const currentPage = ref(1);
 const itemsPerPage = ref(DEFAULT_PAGE_SIZE) // each page displays 10 items
 const goToPage = ref(1);
 
-watch(
-    () => route.query.search,
-    (newSearchQuery) => {
-      searchQuery.value = newSearchQuery as string || '';
-    }
-);
+watch(() => route.query.search,
+  (newSearchQuery) => { searchQuery.value = newSearchQuery as string || ''; });
+
+function updateSearchQueryInURL(query: string) {
+  router.replace({
+    name: route.name,
+    query: { search: query || undefined }
+  })
+}
+const updateSearchQueryInURLDeb = debounceFn(updateSearchQueryInURL);
 watch(searchQuery, (newSearchQuery) => {
-    router.push({
-      name: route.name, // Use route names to avoid hardcoding paths
-      query: { search: newSearchQuery || undefined }
-    });
+    updateSearchQueryInURLDeb(newSearchQuery);
     if (newSearchQuery && newSearchQuery.trim() !== '') {
       currentPage.value = goToPage.value = 1;
     }
@@ -130,7 +138,7 @@ const pageDescription = computed(() => {
 });
 
 // share head
-useHead(generateMeta(route.meta.favicon??'favhn.png', pageTitle, pageDescription, filteredSongs))
+useHead(generateMeta(route.meta.favicon??'favicon.png', pageTitle, pageDescription, filteredSongs))
 
 // paginated data
 const paginatedSongs = computed(() => {
@@ -161,11 +169,15 @@ onBeforeMount(() => {
 })
 
 const loadedSongs = ref<Song[]>([])
-watch([isMobile, filteredSongs], () => {
+const searchInput = ref<HTMLInputElement | null>(null)
+const searchPlaceHolders = ref<string[]>([])
+
+watch([isMobile, filteredSongs, searchQuery], () => {
   if (isMobile.value) {
     // The first page is loaded on mobile
     loadedSongs.value = filteredSongs.value.slice(0, itemsPerPage.value)
   }
+  updateSearchPlaceHolders(searchQuery.value, filteredSongs.value, searchPlaceHolders, searchInput);
 })
 
 const observerTarget = ref<HTMLElement | null>(null)
@@ -216,12 +228,20 @@ onBeforeUnmount(() => {
       </label>
       <input
         id="searchInput"
+        ref="searchInput"
         v-model="searchQuery"
         class="form-control shadow-none"
         placeholder="曲名またはアーティスト名で検索..."
         type="search"
+        list="nameList"
+        :autocomplete="searchPlaceHolders.length > 0 ? 'off' : 'on'"
+        autocapitalize="off"
+        spellcheck="false"
         @input="currentPage = goToPage = 1"
       >
+      <datalist id="nameList" v-if="searchPlaceHolders.length > 0">
+        <option v-for="placeHolder in searchPlaceHolders" :value="placeHolder"></option>
+      </datalist>
     </div>
   </section>
 

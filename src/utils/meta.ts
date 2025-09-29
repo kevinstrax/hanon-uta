@@ -1,6 +1,11 @@
 import { computed, type ComputedRef, type Ref } from 'vue'
 import type { Song } from '@/types/song'
 
+function getCurrentFavicon(): string | null {
+    const el = document.querySelector<HTMLLinkElement>('link[rel="icon"]')
+    return el?.href ?? null
+}
+
 export const generateMeta = (
     favicon: ComputedRef<string> | string,
     pageTitle: ComputedRef<string> | string,
@@ -15,27 +20,8 @@ export const generateMeta = (
         typeof pageDescription === 'string' ? pageDescription : pageDescription.value?.replace(/非公式ファンサービス/, 'ファン制作応援ツール') ?? ''
     )
 
-    return {
+    let res : any = {
         title: pageTitle,
-        link: [
-            {
-                rel: 'apple-touch-icon',
-                href: favicon,
-                sizes: '180x180'
-            },
-            {
-                rel: 'icon',
-                href: favicon,
-                sizes: '32x32',
-                type: 'image/png'
-            },
-            {
-                rel: 'icon',
-                href: favicon,
-                sizes: '16x16',
-                type: 'image/png'
-            }
-        ],
         meta: [
             // Standard meta
             { name: 'description', content: pageDescription },
@@ -63,4 +49,13 @@ export const generateMeta = (
             }
         ]
     }
+
+    const newFavicon = typeof favicon === 'string' ? favicon : favicon.value
+    if (getCurrentFavicon() !== newFavicon) {
+        res.link = [
+            { rel: 'apple-touch-icon', href: favicon, sizes: '180x180' },
+            { rel: 'icon', href: favicon, sizes: '32x32', type: 'image/png' },
+        ]
+    }
+    return res;
 }
