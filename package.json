@@ -16,6 +16,7 @@
     "axios": "^1.9.0",
     "bootstrap": "^5.3.5",
     "chart.js": "^4.5.0",
+    "he": "^1.2.0",
     "pinia": "^3.0.2",
     "vue": "^3.5.13",
     "vue-lazyload": "^3.0.0",
@@ -36,5 +37,6 @@
     "vite-plugin-html": "^3.2.2",
     "vite-plugin-sitemap": "^0.7.1",
     "vue-tsc": "^2.2.4"
-  }
+  },
+  "packageManager": "pnpm@10.4.0+sha512.6b849d0787d97f8f4e1f03a9b8ff8f038e79e153d6f11ae539ae7c435ff9e796df6a862c991502695c7f9e8fac8aeafc1ac5a8dab47e36148d183832d886dd52"
 }
