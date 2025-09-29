@@ -60,38 +60,39 @@ function refocusInput(searchInput: Ref<HTMLInputElement | null>) {
     }
 }
 
-function updateSearchPlaceHoldersInner(searchQuery: string, filteredSongs: Song[], placeHolders: Ref<string[]>,
-                                       searchInput: Ref<HTMLInputElement | null>) {
-    if (searchQuery && searchQuery.trim() !== '') {
-        const results: string[] = []
-        const seen = new Set<string>()
-        const query = searchQuery.toLowerCase()
+function updateSearchPlaceHoldersInner(searchQuery: string, filteredSongs: Song[], placeHolders: Ref<string[]>) {
+    const results: string[] = []
+    const seen = new Set<string>()
+    const query = searchQuery.toLowerCase()
 
-        for (const song of filteredSongs) {
-            const title = String(song.song_title || '')
-            if (title.toLowerCase().includes(query) && title !== searchQuery && !seen.has(title)) {
-                results.push(title)
-                seen.add(title)
-                if (results.length >= 10) break
-            }
+    for (const song of filteredSongs) {
+        const title = String(song.song_title || '')
+        if (title.toLowerCase().includes(query) && title !== searchQuery && !seen.has(title)) {
+            results.push(title)
+            seen.add(title)
+            if (results.length >= 10) break
         }
-        placeHolders.value = results
-    } else {
-        placeHolders.value = []
-        refocusInput(searchInput);
     }
+    placeHolders.value = results
 }
 
 const updateSearchPlaceHoldersDeb = debounceFn(updateSearchPlaceHoldersInner, 1234)
+
 export function updateSearchPlaceHolders(searchQuery: string, filteredSongs: Song[], placeHolders: Ref<string[]>,
                                          searchInput: Ref<HTMLInputElement | null>) {
     if (searchQuery && searchQuery.trim() !== '' && filteredSongs.some(song => song.song_title === searchQuery)) {
-        updateSearchPlaceHoldersDeb.cancel?.();
-        placeHolders.value = []
-        refocusInput(searchInput)
+        resetPlaceHolders(placeHolders, searchInput);
         return;
     }
-    updateSearchPlaceHoldersDeb(searchQuery, filteredSongs, placeHolders, searchInput);
+    if (searchQuery && searchQuery.trim() !== '') {
+        updateSearchPlaceHoldersDeb(searchQuery, filteredSongs, placeHolders);
+    } else {
+        resetPlaceHolders(placeHolders, searchInput);
+    }
 }
 
-
+function resetPlaceHolders(placeHolders: Ref<string[]>, searchInput: Ref<HTMLInputElement | null>) {
+    updateSearchPlaceHoldersDeb.cancel?.();
+    placeHolders.value = []
+    refocusInput(searchInput)
+}
