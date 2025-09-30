@@ -234,7 +234,7 @@ Brave Shineのサビすごく良かったです！`,to={video_title:pt,video_art
 42:19　　ドライフラワー/優里 
 52:22　　丸の内サディスティック/椎名林檎
 1:00:23　シル・ヴ・プレジデント/P丸様。
-1:07:11　KING/Kanaria　いろんな歌い方Ver
+1:07:11　KING/Kanaria　#{=いろんな歌い方Ver}
 1:16:53　Rising Hope/LiSA
 1:26:15　粉雪/レミオロメン
 
