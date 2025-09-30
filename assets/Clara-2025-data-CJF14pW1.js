@@ -166,7 +166,7 @@ const e="✧︎*.〖 歌枠 〗うたいはじめ✨✨明るいJ-POP楽曲で�
 別の人の彼女になったよも切なすぎてヤバいです...`,rn={video_title:U,video_artist:F,video_id:J,video_publish_date_str:W,song_timeline:q},Zn=Object.freeze(Object.defineProperty({__proto__:null,default:rn,song_timeline:q,video_artist:F,video_id:J,video_publish_date_str:W,video_title:U},Symbol.toStringTag,{value:"Module"})),Q="✧︎*.〖 #Vアイドルが歌う2次元アイドル歌枠リレー 〗プリンボイスのお歌できゃわわな時間過ごそっ🍮💗⋆꙳〖#暁月クララ┊︎#パレプロ〗",X="暁月クララ / Akatsuki Clara【パレプロ】",Z="je3Y_EZteXA",x="2025-03-01",ee=`@tomfukuとむふく
 ＜セトリ＞
 01:32 ハッピータイフーン/KiRaRe
-08:12 ぶる～べりぃ♡とれいん/南ことり(内田彩) 
+08:12 ぶる〜べりぃ♡とれいん/南ことり(内田彩) 
 12:09 スペードのQ/永吉昴(斉藤佑圭)、双海亜美(下田麻美)、エミリー スチュアート(郁原ゆう)、北沢志保(雨宮天)
 18:38 笑って！ /天海春香(中村繪里子) 
 23:34 憧れをいっぱい/倉本千奈(伊藤舞音) 
@@ -271,7 +271,7 @@ Alice in Musiclandがくーちゃんの歌声で聞けて嬉しかったです
 6:56 START:DASH!!/μ's
 12:03 輝夜の城で踊りたい/μ's
 18:00 soldier game/μ's
-25:59 ぶる～べりぃ♡とれいん/南 ことり（CV.内田 彩）
+25:59 ぶる〜べりぃ♡とれいん/南 ことり（CV.内田 彩）
 30:02 Cutie Panther/BiBi
 36:16 春情ロマンティック/lily white
 43:07 ありふれた悲しみの果て/南條愛乃
@@ -284,7 +284,7 @@ Alice in Musiclandがくーちゃんの歌声で聞けて嬉しかったです
 1:49:44 微熱からMystery/lily white
 1:57:30 夏色えがおで1, 2, Jump!/μ's
 2:09:44 Mermaid festa vol.1/μ's
-2:16:21 sweet＆sweet holiday/Printemps～高坂穂乃果(CV.新田恵海)、南ことり(CV.内田 彩)、小泉花陽(CV.久保ユリカ) from μ's～
+2:16:21 sweet&sweet holiday/Printemps～高坂穂乃果(CV.新田恵海)、南ことり(CV.内田 彩)、小泉花陽(CV.久保ユリカ) from μ's～
 2:21:37 Daring!!/Pile
 2:25:50 Hello,星を数えて/星空 凛(CV.飯田里穂)、西木野真姫(CV.Pile)、小泉花陽(CV.久保ユリカ)`,$n={video_title:ze,video_artist:Le,video_id:Ke,video_publish_date_str:Ge,song_timeline:De},lo=Object.freeze(Object.defineProperty({__proto__:null,default:$n,song_timeline:De,video_artist:Le,video_id:Ke,video_publish_date_str:Ge,video_title:ze},Symbol.toStringTag,{value:"Module"})),we="✧︎*.〖 #ぽかぽかあったか歌枠リレー ☀〗プリンボイスで幸せ気分をお届けします💗⋆꙳〖#暁月クララ┊︎#パレプロ〗",He="暁月クララ / Akatsuki Clara【パレプロ】",Ve="5DcGXMCVIk8",Ye="2025-04-25",Ue=`＜セトリ＞
 00:02:03 僕らは今のなかで/μ's
@@ -431,7 +431,7 @@ Wishingの歌い方すごく良かったです
 1:44:49 レオ/優里
 
 1:52:22 茜色の約束/いきものがかり
-1:57:27 secret base ~君がくれたもの~/ZONE  #{=SILENT SIRENカバーVer.}
+1:57:27 secret base 〜君がくれたもの〜/ZONE  #{=SILENT SIRENカバーVer.}
 
 しっとりな選曲ですごく良かったです！さよならのかわりにからのレオの流れ素敵でした
 しびれとの戦い、マッサージスパチャなど歌以外にも楽しかったです！`,En={video_title:Nt,video_artist:It,video_id:Bt,video_publish_date_str:Rt,song_timeline:zt},$o=Object.freeze(Object.defineProperty({__proto__:null,default:En,song_timeline:zt,video_artist:It,video_id:Bt,video_publish_date_str:Rt,video_title:Nt},Symbol.toStringTag,{value:"Module"})),Lt="✧︎*.〖 歌枠 〗AKB48さん関連楽曲💗みぃちゃん推しプリンボイスが歌います！⋆꙳〖#暁月クララ┊︎#パレプロ〗",Kt="暁月クララ / Akatsuki Clara【パレプロ】",Gt="vTu0DkChZlI",Dt="2025-07-11",wt=`@tomfukuとむふく
@@ -467,7 +467,7 @@ Answerとっても良かったですにゃん！
 00:00:00 STARTING
 00:06:45 恋愛サーキュレーション / 千石撫子(花澤香菜)
 00:15:33 花ハ踊レヤいろはにほ / チーム“ハナヤマタ”
-00:27:57 告白日和、です! / 南ことり(内田彩)&小泉花陽(久保ユリカ)
+00:27:57 告白日和、です！ / 南ことり(内田彩)&小泉花陽(久保ユリカ)
 00:37:25 ふわふわ時間 / 放課後ティータイム
 00:47:17 アイドル / YOASOBI
 00:59:58 ふ・れ・ん・ど・し・た・い / 学園生活部
@@ -537,7 +537,7 @@ KAWAII FESTIVALとってもかわいい！
 0:42:15 Black Cherry/Acid Black Cherry
 0:50:52 イエス/Acid Black Cherry
 
-1:01:40 ジョジョ~その血の運命~/富永TOMMY弘明
+1:01:40 ジョジョ～その血の運命～/富永TOMMY弘明
 1:11:15 ドレミファロンド/40mP
 1:19:26 K&sol;BUMP OF CHICKEN
 1:26:50  月光花/Janne Da Arc

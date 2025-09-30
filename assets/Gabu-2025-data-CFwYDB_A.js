@@ -252,7 +252,7 @@ Blowin' in the Mindも聴けて嬉しかったです！
 1:44:39  ただ君に晴れ/ヨルシカ
 1:49:52  少女レイ/みきとP
 2:02:52  花に亡霊/ヨルシカ
-2:18:21  怪獣のバラード#{=アカペラ}/-
+2:18:21  怪獣のバラード#{=アカペラ}/SEBASTIAN X
 1:15:01  カメラモードで遊ぶがぶちゃん可愛いからみんな見ていって〜！`,Ht={video_title:ye,video_artist:Pe,video_id:Me,video_publish_date_str:Re,song_timeline:je},hi=Object.freeze(Object.defineProperty({__proto__:null,default:Ht,song_timeline:je,video_artist:Pe,video_id:Me,video_publish_date_str:Re,video_title:ye},Symbol.toStringTag,{value:"Module"})),Ne="【歌枠/Karaoke】マクロス縛り歌枠！私の歌を聴けぇええ！【#鎖乙女がぶ /#パレプロ研究生 】",Le="鎖乙女がぶ / Saotome Gabu 【パレプロ研究生】",Ie="wz7f_dIilLM",Ge="2025-07-13",ze=`【🐺🩰セトリ🐺💜🎶】
 00:12:41 トライアングラー / 坂本真綾
 00:23:20 星間飛行 〜Freyja Ver.〜 / ワルキューレ
