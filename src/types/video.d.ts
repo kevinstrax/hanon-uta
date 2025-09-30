@@ -5,4 +5,5 @@ export interface Video {
     video_id: string;
     video_publish_date_str: string;
     song_timeline: string;
+    sd_cover: boolean | null
 }
