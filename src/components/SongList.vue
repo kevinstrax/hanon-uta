@@ -39,20 +39,20 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
             </template>
           </div>
 
-          <h6 v-tooltip="song.song_title" class="card-title hover-text-light text-truncate d-flex">
+          <h6 v-tooltip="song.song_title" class="card-title hover-text-light rounded-1 text-truncate d-flex">
             <i class="iconfont" style="margin-right: 1.5px">&#xe892;</i>
             {{ song.song_title }}
           </h6>
-          <p class="card-text hover-text-light"><small v-tooltip="song.song_origin_artist"
+          <p class="card-text hover-text-light rounded-1"><small v-tooltip="song.song_origin_artist"
                                                        class="text-muted d-block text-truncate">{{
               song.song_origin_artist
             }}</small></p>
-          <p class="card-text hover-text-light">
+          <p class="card-text hover-text-light rounded-1">
             <small v-tooltip="song.ref_video_title" class="text-muted card-subtitle multi-line-ellipsis-2 ">
               {{ song.ref_video_title }}
             </small>
           </p>
-          <p class="card-text hover-text-light">
+          <p class="card-text hover-text-light rounded-1">
             <small class="text-muted">
               <a :href="song.ref_video_url" :title="song.song_title" class="text-decoration-none text-secondary d-block"
                  target="_blank">
@@ -129,7 +129,6 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 }
 
 .hover-text-light {
-  border-radius: 5px;
   transition: background-color .5s ease;
 }
 
