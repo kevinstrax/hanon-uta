@@ -22,7 +22,7 @@ import SongMetaListModal from "@/components/SongMetaListModal.vue";
 import { useColorModeStore } from "@/stores/color-mode.ts";
 import UpdateHintToast from "@/components/UpdateHintToast.vue";
 import SongStatsModal from "@/components/SongStatsModal.vue";
-import { debounceFn, updateSearchPlaceHolders } from "@/utils/placeholderUtils.ts";
+import { debounceFn, toHalfWidth, updateSearchPlaceHolders } from "@/utils/placeholderUtils.ts";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
@@ -74,13 +74,13 @@ watch(searchQuery, (newSearchQuery) => {
 const filteredSongs = computed(() => {
   if (!searchQuery.value) return songs.value;
 
-  const query = searchQuery.value.trim().toLowerCase();
+  const query = toHalfWidth(searchQuery.value.trim().toLowerCase());
   if (query === '') return songs.value;
 
   // Score matches based on relevance
   const scoredSongs = songs.value.map(song => {
-    const title = song.song_title.toLowerCase();
-    const artist = song.song_origin_artist.toLowerCase();
+    const title = toHalfWidth(song.song_title.toLowerCase());
+    const artist = toHalfWidth(song.song_origin_artist.toLowerCase());
 
     let score = 0;
 

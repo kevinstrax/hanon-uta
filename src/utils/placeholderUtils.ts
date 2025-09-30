@@ -63,11 +63,11 @@ function refocusInput(searchInput: Ref<HTMLInputElement | null>) {
 function updateSearchPlaceHoldersInner(searchQuery: string, filteredSongs: Song[], placeHolders: Ref<string[]>) {
     const results: string[] = []
     const seen = new Set<string>()
-    const query = searchQuery.toLowerCase()
+    const query = toHalfWidth(searchQuery.toLowerCase())
 
     for (const song of filteredSongs) {
         const title = String(song.song_title || '')
-        if (title.toLowerCase().includes(query) && title !== searchQuery && !seen.has(title)) {
+        if (toHalfWidth(title).toLowerCase().includes(query) && title !== searchQuery && !seen.has(title)) {
             results.push(title)
             seen.add(title)
             if (results.length >= 10) break
@@ -80,7 +80,7 @@ const updateSearchPlaceHoldersDeb = debounceFn(updateSearchPlaceHoldersInner, 12
 
 export function updateSearchPlaceHolders(searchQuery: string, filteredSongs: Song[], placeHolders: Ref<string[]>,
                                          searchInput: Ref<HTMLInputElement | null>) {
-    if (searchQuery && searchQuery.trim() !== '' && filteredSongs.some(song => song.song_title === searchQuery)) {
+    if (searchQuery && searchQuery.trim() !== '' && filteredSongs.some(song => toHalfWidth(song.song_title) === toHalfWidth(searchQuery))) {
         resetPlaceHolders(placeHolders, searchInput);
         return;
     }
@@ -95,4 +95,11 @@ function resetPlaceHolders(placeHolders: Ref<string[]>, searchInput: Ref<HTMLInp
     updateSearchPlaceHoldersDeb.cancel?.();
     placeHolders.value = []
     refocusInput(searchInput)
+}
+
+
+export function toHalfWidth(str: string): string {
+    return str.replace(/[\uFF01-\uFF5E]/g, ch =>
+        String.fromCharCode(ch.charCodeAt(0) - 0xFEE0)
+    ).replace(/\u3000/g, ' '); // Full-width spaces are converted into half-width spaces
 }
