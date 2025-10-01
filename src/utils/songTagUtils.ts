@@ -11,7 +11,8 @@ const characterColors =
         '暁月クララ': '#FA7D09',
         '香鳴ハノン': '#4FC0EC',
         '藤宮コトハ': '#FF99FF',
-        '今羽にこ': '#42A5F5'
+        '今羽にこ': '#42A5F5',
+        '水科葵': colors[8]
     }
 
 
@@ -35,6 +36,9 @@ export function nameColor(name: string): string {
     }
     if (name.includes('藤宮コトハ')) {
         return characterColors['藤宮コトハ']
+    }
+    if (name.includes('水科葵')) {
+        return characterColors['水科葵']
     }
     const hash = hashString(name);
     const index = Math.abs(hash) % colors.length;
