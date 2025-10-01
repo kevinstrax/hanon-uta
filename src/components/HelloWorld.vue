@@ -277,7 +277,9 @@ onBeforeUnmount(() => {
 
   <!-- a list of songs -->
   <template v-if="isMobile">
-    <SongList :paginated-songs="loadedSongs" />
+    <SongList :paginated-songs="loadedSongs"
+              v-model:filter-video-id="filterVideoId"
+              v-model:search-query="searchQuery" />
     <div ref="observerTarget" class="mb-5" >
         <p class="text-center mb-4" v-if="loadedSongs.length < filteredSongs.length">読み込み中...</p>
         <template v-else>

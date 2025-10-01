@@ -70,7 +70,7 @@ const updateFilterVideoId = (videoId: string) => {
               <li><h3 class="h6 dropdown-header fw-normal text-wrap p-2"
                       :class="isDark ? 'text-light' : ''">{{song.ref_video_title}}</h3></li>
               <li class="text-end small">
-                <a class="d-block text-end m-2 mt-0" href="#" @click="updateFilterVideoId(song.ref_video_id)" role="button">&gt; 配信全曲一覧</a>
+                <a class="d-inline-block text-end m-2 mt-0" href="#" @click="updateFilterVideoId(song.ref_video_id)" role="button">&gt; 配信全曲一覧</a>
               </li>
             </ul>
           </div>
