@@ -478,7 +478,7 @@ Beauty and the Beast、とっても良かったです！`,Uo={video_title:dt,vid
 
 トップバッターおつくららでした！
 いろんなジャンルの曲で楽しかったです！`,Zo={video_title:ai,video_artist:ri,video_id:vi,video_publish_date_str:ui,song_timeline:ci},ts=Object.freeze(Object.defineProperty({__proto__:null,default:Zo,song_timeline:ci,video_artist:ri,video_id:vi,video_publish_date_str:ui,video_title:ai},Symbol.toStringTag,{value:"Module"})),bi="✧︎*.〖 蒼羽未音×暁月クララ 〗前編♡二人の歌声の化学反応で、君を包み込む夜🌙✨#くらみお⋆꙳〖#UniVIRTUAL #パレプロ 〗",gi="暁月クララ / Akatsuki Clara【パレプロ】",$i="C1mgfZiPwn4",pi="2024-09-30 08:20:03",mi="未找到时间轴评论",Qo={video_title:bi,video_artist:gi,video_id:$i,video_publish_date_str:pi,song_timeline:mi},is=Object.freeze(Object.defineProperty({__proto__:null,default:Qo,song_timeline:mi,video_artist:gi,video_id:$i,video_publish_date_str:pi,video_title:bi},Symbol.toStringTag,{value:"Module"})),fi="✧︎*.〖 耐久歌枠 〗同接200名様目指して歌うプリンボイスの女の子です🍮見つけてくれてありがとう💗⋆꙳〖#暁月クララ┊︎#パレプロ〗",hi="暁月クララ / Akatsuki Clara【パレプロ】",Si="AJEXUSIid5w",Oi="2024-10-04 07:21:30",Ai=`＜セトリ＞
-00:05:08　少女レイ/みきとP
+00:06:08　少女レイ/みきとP
 00:15:05　青と夏/Mrs. GREEN APPLE
 00:23:09　レオ/優里
 00:31:11　さよならエレジー/菅田将暉
