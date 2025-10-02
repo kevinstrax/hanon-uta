@@ -1,9 +1,28 @@
 import { computed, type ComputedRef, type Ref } from 'vue'
 import type { Song } from '@/types/song'
 
+const baseUrl = import.meta.env.BASE_URL;
+
 function getCurrentFavicon(): string | null {
     const el = document.querySelector<HTMLLinkElement>('link[rel="icon"]')
-    return el?.href ?? null
+    if (!el?.href) return null
+    try {
+        const url = new URL(el.href)
+        return url.pathname
+    } catch {
+        return el.href
+    }
+}
+
+function updateFavicon(href: string) {
+    let iconLink = document.querySelector<HTMLLinkElement>('link[rel="icon"]')
+    if (!iconLink) return;
+    iconLink.href = href
+
+    let appleLink = document.querySelector<HTMLLinkElement>('link[rel="apple-touch-icon"]')
+    if (!appleLink) return;
+    appleLink.href = href
+    console.log(appleLink.href)
 }
 
 export const generateMeta = (
@@ -49,13 +68,10 @@ export const generateMeta = (
             }
         ]
     }
-
-    const newFavicon = typeof favicon === 'string' ? favicon : favicon.value
+    const normalizedBaseUrl = baseUrl.replace(/\/$/, '');
+    const newFavicon = normalizedBaseUrl + (typeof favicon === 'string' ? favicon : favicon.value)
     if (getCurrentFavicon() !== newFavicon) {
-        res.link = [
-            { rel: 'apple-touch-icon', href: favicon, sizes: '180x180' },
-            { rel: 'icon', href: favicon, sizes: '32x32', type: 'image/png' },
-        ]
+        updateFavicon(newFavicon)
     }
     return res;
 }
