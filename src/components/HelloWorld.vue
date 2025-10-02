@@ -49,33 +49,57 @@ onMounted(async () => {
 })
 
 const searchQuery = ref(route.query.search as string || '');
+const filterVideoId = ref(route.query.v as string || '');
 const currentPage = ref(1);
 const itemsPerPage = ref(DEFAULT_PAGE_SIZE) // each page displays 10 items
 const goToPage = ref(1);
 
 watch(() => route.query.search,
   (newSearchQuery) => { searchQuery.value = newSearchQuery as string || ''; });
+watch(() => route.query.v,
+  (newFilterVideoId) => { filterVideoId.value = newFilterVideoId as string || ''; });
 
-function updateSearchQueryInURL(query: string) {
+function updateQueryParam(key: string, value: string | undefined) {
   router.replace({
     name: route.name,
-    query: { search: query || undefined }
-  })
+    query: {
+      ...route.query,
+      [key]: value || undefined
+    }
+  });
+}
+
+function updateSearchQueryInURL(query: string) {
+  updateQueryParam('search', query);
 }
 const updateSearchQueryInURLDeb = debounceFn(updateSearchQueryInURL);
 watch(searchQuery, (newSearchQuery) => {
-    updateSearchQueryInURLDeb(newSearchQuery);
-    if (newSearchQuery && newSearchQuery.trim() !== '') {
-      currentPage.value = goToPage.value = 1;
-    }
+  updateSearchQueryInURLDeb(newSearchQuery);
+  if (newSearchQuery && newSearchQuery.trim() !== '') {
+    currentPage.value = goToPage.value = 1;
+  }
 });
+watch(filterVideoId, (newFilterVideoId) => {
+  updateQueryParam('v', newFilterVideoId);
+  if (newFilterVideoId && newFilterVideoId.trim() !== '') {
+    currentPage.value = goToPage.value = 1;
+  }
+})
 
+function filterSongByVideoId(songs: Song[]) {
+  return songs.filter(song => {
+    if (filterVideoId.value && filterVideoId.value !== '') {
+      return filterVideoId.value === song.ref_video_id;
+    }
+    return true;
+  })
+}
 // search function
 const filteredSongs = computed(() => {
-  if (!searchQuery.value) return songs.value;
+  if (!searchQuery.value) return filterSongByVideoId(songs.value);
 
   const query = toHalfWidth(searchQuery.value.trim().toLowerCase());
-  if (query === '') return songs.value;
+  if (query === '') return filterSongByVideoId(songs.value);
 
   // Score matches based on relevance
   const scoredSongs = songs.value.map(song => {
@@ -113,7 +137,7 @@ const filteredSongs = computed(() => {
       return a.song_title.localeCompare(b.song_title, 'ja');
     });
 
-  return result.map(({ _matchScore, ...song }) => song); // Remove temporary score
+  return filterSongByVideoId(result.map(({ _matchScore, ...song }) => song)); // Remove temporary score
 });
 
 const pageTitle = computed(() => {
@@ -245,9 +269,17 @@ onBeforeUnmount(() => {
     </div>
   </section>
 
+   <div v-if="filterVideoId && filterVideoId !== ''"
+        class="alert alert-light alert-dismissible fade show d-inline-block small py-1 ps-3 pe-2 mb-4" role="alert">
+     {{filterVideoId}}
+     <button type="button" class="btn-close small py-2 pe-0 position-relative" data-bs-dismiss="alert" aria-label="Close" @click="filterVideoId = ''"></button>
+   </div>
+
   <!-- a list of songs -->
   <template v-if="isMobile">
-    <SongList :paginated-songs="loadedSongs"/>
+    <SongList :paginated-songs="loadedSongs"
+              v-model:filter-video-id="filterVideoId"
+              v-model:search-query="searchQuery" />
     <div ref="observerTarget" class="mb-5" >
         <p class="text-center mb-4" v-if="loadedSongs.length < filteredSongs.length">読み込み中...</p>
         <template v-else>
@@ -268,7 +300,9 @@ onBeforeUnmount(() => {
 
   </template>
   <template v-else>
-    <SongList :paginated-songs="paginatedSongs"/>
+    <SongList :paginated-songs="paginatedSongs"
+              v-model:filter-video-id="filterVideoId"
+              v-model:search-query="searchQuery"/>
     <!-- displays the current page number and total -->
     <nav v-if="totalPages > 1"
          class="text-center text-muted small mt-4 mb-2 d-flex justify-content-center align-items-center gap-2">

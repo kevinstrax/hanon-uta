@@ -2,8 +2,18 @@
 import type { Song } from '@/types/song'
 import { timestampToDate } from "@/utils/timeUtils.ts";
 import { nameColor, timestampColor } from "@/utils/songTagUtils.ts";
+import { storeToRefs } from "pinia";
+import { useColorModeStore } from "@/stores/color-mode.ts";
 
 const props = defineProps<{ paginatedSongs: Song[] }>();
+const { isDark } = storeToRefs(useColorModeStore())
+
+const emit = defineEmits(['update:filterVideoId', 'update:searchQuery']);
+const updateFilterVideoId = (videoId: string) => {
+  emit('update:filterVideoId', videoId);
+  emit('update:searchQuery', '');
+};
+
 </script>
 
 <template>
@@ -39,19 +49,31 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
             </template>
           </div>
 
-          <h6 v-tooltip="song.song_title" class="card-title hover-text-light rounded-1 text-truncate d-flex">
+          <h2 v-tooltip="song.song_title" class="card-title hover-text-light rounded-1 text-truncate d-flex h6">
             <i class="iconfont" style="margin-right: 1.5px">&#xe892;</i>
             {{ song.song_title }}
-          </h6>
-          <p class="card-text hover-text-light rounded-1"><small v-tooltip="song.song_origin_artist"
-                                                       class="text-muted d-block text-truncate">{{
-              song.song_origin_artist
-            }}</small></p>
+          </h2>
           <p class="card-text hover-text-light rounded-1">
-            <small v-tooltip="song.ref_video_title" class="text-muted card-subtitle multi-line-ellipsis-2 ">
-              {{ song.ref_video_title }}
+            <small v-tooltip="song.song_origin_artist" class="text-muted d-block text-truncate">
+              {{song.song_origin_artist }}
             </small>
           </p>
+          <div class="dropdown dropup card-text hover-text-light rounded-1 mb-2">
+            <button class="btn text-wrap text-start p-0 dropdown-toggle drop border-0 no-arrow" data-bs-toggle="dropdown"
+                    data-bs-offset="0,10" aria-expanded="false" >
+              <!--data-bs-auto-close="outside"-->
+              <small class="text-muted card-subtitle multi-line-ellipsis-2">
+                {{song.ref_video_title}}
+              </small>
+            </button>
+            <ul class="dropdown-menu p-0">
+              <li><h3 class="h6 dropdown-header fw-normal text-wrap p-3"
+                      :class="isDark ? 'text-light' : ''">{{song.ref_video_title}}</h3></li>
+              <li class="text-end small">
+                <a class="d-inline-block text-end m-3 mt-0" href="#" @click="updateFilterVideoId(song.ref_video_id)" role="button">&gt; 配信全曲一覧</a>
+              </li>
+            </ul>
+          </div>
           <p class="card-text hover-text-light rounded-1">
             <small class="text-muted">
               <a :href="song.ref_video_url" :title="song.song_title" class="text-decoration-none text-secondary d-block"
@@ -185,6 +207,9 @@ const props = defineProps<{ paginatedSongs: Song[] }>();
 .fade-only-enter-to,
 .fade-only-leave-from {
   opacity: 1;
+}
+.no-arrow:after {
+  display: none !important;
 }
 
 </style>

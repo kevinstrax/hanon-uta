@@ -7,6 +7,7 @@ export interface Song {
     ref_video_thumbnail_url: string;
     ref_video_thumbnail_lqip_url: string;
     ref_video_publish_date_ts: number;
+    ref_video_id: string;
     video_offset_ts: number,
     song_title: string,
     song_origin_artist: string,
