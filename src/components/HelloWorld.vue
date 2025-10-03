@@ -1,337 +1,131 @@
-<script setup lang="ts">
-import {
-  DEFAULT_PAGE_SIZE,
-  SITE_BRAND,
-  SITE_DESC,
-  SITE_SUFFIX,
-  VTUBER_NAME_TO_JA,
-  type VtuberValues
-} from '@/config/constants';
-import type { Song } from '@/types/song'
-import type { SongMetaGroup } from "@/types/song-meta";
-import { useHead } from '@vueuse/head'
+<script lang="ts" setup>
+import { DEFAULT_PAGE_SIZE, VTUBER_NAME_TO_JA, type VtuberValues } from '@/config/constants';
 import { storeToRefs } from "pinia";
-import { generateMeta } from "@/utils/meta";
-import { useStorageStore } from "@/stores/storage-store.ts";
 import { useLoadingStore } from '@/stores/loading.ts'
 import { useColorModeStore } from "@/stores/color-mode.ts";
-import { useRoute, useRouter } from 'vue-router';
-import { getGroupedSongMetas, loadSongs } from '@/utils/loadSongs';
-import { computed, onBeforeMount, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { debounceFn, toHalfWidth, updateSearchPlaceHolders } from "@/utils/placeholderUtils.ts";
+import { useRoute } from 'vue-router';
+import { ref } from 'vue'
 import SongList from "@/components/SongList.vue";
 import QuickSearches from "@/components/QuickSearches.vue";
 import SongMetaListModal from "@/components/SongMetaListModal.vue";
 import UpdateHintToast from "@/components/UpdateHintToast.vue";
 import SongStatsModal from "@/components/SongStatsModal.vue";
+import { useSongData } from "@/composables/useSongData.ts";
+import { useSongFilter } from "@/composables/useSongFilter.ts";
+import { useHeadMeta } from "@/composables/useHeadMeta.ts";
+import { usePagination } from "@/composables/usePagination.ts";
+import { useScreenSize } from "@/composables/useScreenSize.ts";
+import { useBackTop } from "@/composables/useBackTop.ts";
+import { usePlaceholder } from "@/composables/usePlaceholder.ts";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
-const songs = ref<Song[]>([]);
-const songMetaGroups = ref<SongMetaGroup[]>([]);
-const loadingStore = useLoadingStore()
+
 const route = useRoute();
-const router = useRouter();
+const loadingStore = useLoadingStore()
 
 const { isDark } = storeToRefs(useColorModeStore())
 const { isInitialLoad } = storeToRefs(loadingStore);
-const storage = useStorageStore();
-
-onMounted(async () => {
-  try {
-    loadingStore.startSongsLoading();
-    const [songsResult, _] = await Promise.all([
-      loadSongs(props.vtuber),
-      storage.loadFavorites()
-    ]);
-    songs.value = songsResult;
-    songMetaGroups.value = getGroupedSongMetas(songs.value);
-  } finally {
-    loadingStore.completeLoading();
-  }
-})
 
 const searchQuery = ref(route.query.search as string || '');
-const filterVideoId = ref(route.query.v as string || '');
 const filterOption = ref(route.query.filter as string || '');
+const filterVideoId = ref(route.query.v as string || '');
+
+const { songs, songMetaGroups } = useSongData(props.vtuber);
+
 const currentPage = ref(1);
-const itemsPerPage = ref(DEFAULT_PAGE_SIZE) // each page displays 10 items
 const goToPage = ref(1);
+const itemsPerPage = ref(DEFAULT_PAGE_SIZE) // each page displays 10 items
+const {
+  filteredSongs,
+  isApplyFavoriteFilter,
+  isApplyVideoIdFilter
+} = useSongFilter(songs, searchQuery, filterVideoId, filterOption, currentPage, goToPage);
 
-watch(() => route.query.search,
-  (newSearchQuery) => { searchQuery.value = newSearchQuery as string || ''; });
-watch(() => route.query.v,
-  (newFilterVideoId) => { filterVideoId.value = newFilterVideoId as string || ''; });
-watch(() => route.query.filter,
-  (newFilterOption) => { filterOption.value = newFilterOption as string || ''; })
+const { searchInput, searchPlaceHolders } = usePlaceholder(searchQuery, filteredSongs);
 
-function updateQueryParam(key: string, value: string | undefined) {
-  router.replace({
-    name: route.name,
-    query: {
-      ...route.query,
-      [key]: value || undefined
-    }
-  });
-}
+const { isMobile, isSmallScreen } = useScreenSize();
+const {
+  // PC
+  changePage,
+  paginatedSongs,
+  totalPages,
+  // Mobile
+  loadedSongs,
+  observerTarget
+} = usePagination(isMobile, filteredSongs, currentPage, itemsPerPage, goToPage)
 
-function updateSearchQueryInURL(query: string) {
-  updateQueryParam('search', query);
-}
-const updateSearchQueryInURLDeb = debounceFn(updateSearchQueryInURL);
-watch(searchQuery, (newSearchQuery) => {
-  updateSearchQueryInURLDeb(newSearchQuery);
-  if (newSearchQuery && newSearchQuery.trim() !== '') {
-    currentPage.value = goToPage.value = 1;
-  }
-});
-watch(filterVideoId, (newFilterVideoId) => {
-  updateQueryParam('v', newFilterVideoId);
-  if (newFilterVideoId && newFilterVideoId.trim() !== '') {
-    currentPage.value = goToPage.value = 1;
-  }
-})
-watch(filterOption, (newFilterOption) => {
-  updateQueryParam('filter', newFilterOption);
-  if (newFilterOption && newFilterOption.trim() !== '') {
-    currentPage.value = goToPage.value = 1;
-  }
-})
-
-function applyFavoriteFilter() {
-  return filterOption.value && filterOption.value.toLowerCase() === 'favorite';
-}
-
-function applyVideoIdFilter() {
-  return filterVideoId.value && filterVideoId.value !== '';
-}
-
-function filterSongByOptions(songs: Song[]) {
-  return songs.filter(song => {
-    if (applyVideoIdFilter()) {
-      return filterVideoId.value === song.ref_video_id;
-    }
-    return true;
-  }).filter(song => {
-    if (applyFavoriteFilter()) {
-      return storage.favoritesSet.has(song.song_id)
-    }
-    return true;
-  })
-}
-// search function
-const filteredSongs = computed(() => {
-  if (!searchQuery.value) return filterSongByOptions(songs.value);
-
-  const query = toHalfWidth(searchQuery.value.trim().toLowerCase());
-  if (query === '') return filterSongByOptions(songs.value);
-
-  // Score matches based on relevance
-  const scoredSongs = songs.value.map(song => {
-    const title = toHalfWidth(song.song_title.toLowerCase());
-    const artist = toHalfWidth(song.song_origin_artist.toLowerCase());
-
-    let score = 0;
-
-    // Exact match gets highest priority
-    if (title === query || artist === query) score += 100;
-
-    // Beginning matches score higher
-    if (title.startsWith(query)) score += 50;
-    if (artist.startsWith(query)) score += 30;
-
-    // Contains matches
-    if (title.includes(query)) score += 30;
-    if (artist.includes(query)) score += 20;
-
-    // Additional scoring factors could be added here
-    // (e.g., word boundary matches, partial matches, etc.)
-
-    return { ...song, _matchScore: score };
-  });
-
-  // Filter out non-matches and sort by score (descending)
-  const result = scoredSongs
-    .filter(song => song._matchScore > 0)
-    .sort((a, b) => {
-      // First by match score (higher first)
-      if (a._matchScore !== b._matchScore) {
-        return b._matchScore - a._matchScore;
-      }
-      // Then fall back to name sorting for equal scores
-      return a.song_title.localeCompare(b.song_title, 'ja');
-    });
-
-  return filterSongByOptions(result.map(({ _matchScore, ...song }) => song)); // Remove temporary score
-});
-
-const pageTitle = computed(() => {
-  const vtuber = `${ route.meta.title ?? SITE_BRAND }`;
-  const baseTitle = `${ vtuber }${ SITE_SUFFIX }`;
-
-  if (searchQuery.value && searchQuery.value.trim() !== '' && filteredSongs.value.length > 0) {
-    // Search results page
-    return `${ searchQuery.value.trim() }｜${ vtuber }が歌った回を一覧`;
-  }
-  return baseTitle;
-});
-
-const pageDescription = computed(() => {
-  const vtuber = `${ route.meta.title ?? SITE_BRAND }`;
-  if (searchQuery.value && searchQuery.value.trim() !== '' && filteredSongs.value.length > 0) {
-    // Search results page (with song title)
-    return `「${ searchQuery.value.trim() }」を${ vtuber }さんが歌った配信回を完全網羅。YouTube該当時間へ直接ジャンプできる非公式ファンサービス。`;
-  }
-  // Home/Default Page
-  return `${ vtuber }${ SITE_DESC }`;
-});
-
-// share head
-useHead(generateMeta(route.meta.favicon??'favicon.png', pageTitle, pageDescription, filteredSongs))
-
-// paginated data
-const paginatedSongs = computed(() => {
-  const start = (currentPage.value - 1) * itemsPerPage.value
-  const end = start + itemsPerPage.value
-  return filteredSongs.value.slice(start, end)
-})
-// total number of pages
-const totalPages = computed(() => {
-  return Math.ceil(filteredSongs.value.length / itemsPerPage.value)
-})
-
-// change the page number
-const changePage = (page: number) => {
-  if (currentPage.value === page) {
-    return;
-  }
-
-  // Boundary checks
-  const validatedPage = Math.max(1, Math.min(page, totalPages.value));
-  currentPage.value = goToPage.value = validatedPage;
-}
-
-const isMobile = ref(false)
-const showBackTop = ref(false)
-onBeforeMount(() => {
-  isMobile.value = window.innerWidth < 768
-})
-
-const loadedSongs = ref<Song[]>([])
-const searchInput = ref<HTMLInputElement | null>(null)
-const searchPlaceHolders = ref<string[]>([])
-
-watch([isMobile, filteredSongs, searchQuery], () => {
-  if (isMobile.value) {
-    // The first page is loaded on mobile
-    loadedSongs.value = filteredSongs.value.slice(0, itemsPerPage.value)
-  }
-  updateSearchPlaceHolders(searchQuery.value, filteredSongs.value, searchPlaceHolders, searchInput);
-})
-
-const observerTarget = ref<HTMLElement | null>(null)
-onMounted(() => {
-  const observer = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting && isMobile.value) {
-      loadMore()
-    }
-  })
-  if (observerTarget.value) {
-    observer.observe(observerTarget.value)
-  }
-})
-const loadMore = () => {
-  const nextLength = loadedSongs.value.length + itemsPerPage.value
-  loadedSongs.value = filteredSongs.value.slice(0, nextLength)
-}
-function backToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" })
-}
-
-const isSmallScreen = ref(false)
-const checkScreenSize = () => {
-  isSmallScreen.value = window.innerWidth <= 370
-}
-function handleScroll() {
-  showBackTop.value = window.scrollY > 808
-}
-onMounted(() => {
-  checkScreenSize()
-  window.addEventListener('resize', checkScreenSize)
-  isMobile && window.addEventListener('scroll', handleScroll)
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener('resize', checkScreenSize)
-  isMobile && window.removeEventListener('scroll', handleScroll)
-})
+const { showBackTop, backToTop } = useBackTop(isMobile);
+useHeadMeta(filteredSongs, searchQuery)
 
 </script>
 
- <template>
+<template>
   <!-- search box -->
   <section class="row my-4 mt-0">
     <div class="input-group">
-      <label for="searchInput" class="input-group-text bg-light" :class="isDark ? 'bg-dark' : 'bg-light'">
+      <label :class="isDark ? 'bg-dark' : 'bg-light'" class="input-group-text bg-light" for="searchInput">
         <i class="iconfont">&#xe7ec;</i>
       </label>
       <input
         id="searchInput"
         ref="searchInput"
         v-model="searchQuery"
-        class="form-control shadow-none"
-        placeholder="曲名またはアーティスト名で検索..."
-        type="search"
-        list="nameList"
         :autocomplete="searchPlaceHolders.length > 0 ? 'off' : 'on'"
         autocapitalize="off"
+        class="form-control shadow-none"
+        list="nameList"
+        placeholder="曲名またはアーティスト名で検索..."
         spellcheck="false"
+        type="search"
         @input="currentPage = goToPage = 1"
       >
-      <datalist id="nameList" v-if="searchPlaceHolders.length > 0">
+      <datalist v-if="searchPlaceHolders.length > 0" id="nameList">
         <option v-for="placeHolder in searchPlaceHolders" :value="placeHolder"></option>
       </datalist>
     </div>
   </section>
 
-   <div v-if="applyFavoriteFilter()"
-        class="alert alert-light alert-dismissible fade show d-inline-block small py-1 ps-3 pe-2 mb-4 me-2" role="alert">
-     ファボリスト
-     <button type="button" class="btn-close small py-2 pe-0 position-relative" data-bs-dismiss="alert" aria-label="Close" @click="filterOption = ''"></button>
-   </div>
-   <div v-if="applyVideoIdFilter()"
-        class="alert alert-light alert-dismissible fade show d-inline-block small py-1 ps-3 pe-2 mb-4" role="alert">
-     {{filterVideoId}}
-     <button type="button" class="btn-close small py-2 pe-0 position-relative" data-bs-dismiss="alert" aria-label="Close" @click="filterVideoId = ''"></button>
-   </div>
+  <div v-if="isApplyFavoriteFilter"
+       class="alert alert-light alert-dismissible fade show d-inline-block small py-1 ps-3 pe-2 mb-4 me-2" role="alert">
+    ファボリスト
+    <button aria-label="Close" class="btn-close small py-2 pe-0 position-relative" data-bs-dismiss="alert" type="button"
+            @click="filterOption = ''"></button>
+  </div>
+  <div v-if="isApplyVideoIdFilter"
+       class="alert alert-light alert-dismissible fade show d-inline-block small py-1 ps-3 pe-2 mb-4" role="alert">
+    {{ filterVideoId }}
+    <button aria-label="Close" class="btn-close small py-2 pe-0 position-relative" data-bs-dismiss="alert" type="button"
+            @click="filterVideoId = ''"></button>
+  </div>
 
   <!-- a list of songs -->
   <template v-if="isMobile">
-    <SongList :paginated-songs="loadedSongs"
-              v-model:filter-video-id="filterVideoId"
-              v-model:search-query="searchQuery" />
-    <div ref="observerTarget" class="mb-5" >
-        <p class="text-center mb-4" v-if="loadedSongs.length < filteredSongs.length">読み込み中...</p>
-        <template v-else>
-          <p class="text-center mb-4">
-            <small>全て読み込みました、全 {{ filteredSongs.length }} 件</small>
-          </p>
-          <QuickSearches />
-        </template>
+    <SongList v-model:filter-video-id="filterVideoId"
+              v-model:search-query="searchQuery"
+              :paginated-songs="loadedSongs"/>
+    <div ref="observerTarget" class="mb-5">
+      <p v-if="loadedSongs.length < filteredSongs.length" class="text-center mb-4">読み込み中...</p>
+      <template v-else>
+        <p class="text-center mb-4">
+          <small>全て読み込みました、全 {{ filteredSongs.length }} 件</small>
+        </p>
+        <QuickSearches/>
+      </template>
     </div>
     <button
-        v-show="showBackTop"
-        @click="backToTop"
-        class="btn btn-lg border position-fixed end-0 bottom-0 me-4 mb-5 opacity-868"
-        :class="isDark ? 'btn-dark' : 'btn-light'">
+      v-show="showBackTop"
+      :class="isDark ? 'btn-dark' : 'btn-light'"
+      class="btn btn-lg border position-fixed end-0 bottom-0 me-4 mb-5 opacity-868"
+      @click="backToTop">
       <i class="iconfont">&#xe781;</i>
       <span class="visually-hidden">トップに戻る</span>
     </button>
 
   </template>
   <template v-else>
-    <SongList :paginated-songs="paginatedSongs"
-              v-model:filter-video-id="filterVideoId"
-              v-model:search-query="searchQuery"/>
+    <SongList v-model:filter-video-id="filterVideoId"
+              v-model:search-query="searchQuery"
+              :paginated-songs="paginatedSongs"/>
     <!-- displays the current page number and total -->
     <nav v-if="totalPages > 1"
          class="text-center text-muted small mt-4 mb-2 d-flex justify-content-center align-items-center gap-2">
@@ -347,21 +141,22 @@ onBeforeUnmount(() => {
       <!-- page jump -->
       <input
         v-model.number="goToPage"
-        class="form-control"
         :class="[{ 'form-control-sm': isSmallScreen }, isDark ? 'btn-dark border' : 'btn-light']"
-        min="1"
         :max="totalPages"
         :style="{ width: isSmallScreen ? '60px' : '70px' }"
+        class="form-control"
+        min="1"
         type="number"
         @keyup.enter="changePage(goToPage)"
       >
-      <span class="text-muted text-nowrap" :class="[{'small': isSmallScreen}]">/ {{ totalPages }}<span class="d-none d-xxs-inline">ページ</span></span>
+      <span :class="[{'small': isSmallScreen}]" class="text-muted text-nowrap">/ {{ totalPages }}<span
+        class="d-none d-xxs-inline">ページ</span></span>
       <input
-        type="button"
-        class="btn"
         :class="isDark ? 'btn-dark border' : 'btn-light'"
-        @click="changePage(goToPage)"
+        class="btn"
+        type="button"
         value="移動"
+        @click="changePage(goToPage)"
       />
       <input
         :class="[{ disabled: currentPage === totalPages }, isDark ? 'btn-dark border' : 'btn-light']"
@@ -375,19 +170,20 @@ onBeforeUnmount(() => {
     </nav>
 
     <p class="text-center mb-4">
-      <small>{{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }} 件を表示 / 全 {{ filteredSongs.length }} 件</small>
+      <small>{{ (currentPage - 1) * itemsPerPage + 1 }}～{{ Math.min(currentPage * itemsPerPage, filteredSongs.length) }}
+        件を表示 / 全 {{ filteredSongs.length }} 件</small>
     </p>
 
-    <QuickSearches />
+    <QuickSearches/>
   </template>
 
-  <UpdateHintToast />
-  <SongMetaListModal :song-meta-groups="songMetaGroups"
-                     v-model:search-query="searchQuery"
+  <UpdateHintToast/>
+  <SongMetaListModal v-model:search-query="searchQuery"
+                     :song-meta-groups="songMetaGroups"
   />
   <SongStatsModal v-if="!isInitialLoad"
-             :all-songs="songs"
-             :vtuber="VTUBER_NAME_TO_JA[props.vtuber]"
+                  :all-songs="songs"
+                  :vtuber="VTUBER_NAME_TO_JA[props.vtuber]"
   />
 
 </template>
@@ -404,7 +200,8 @@ onBeforeUnmount(() => {
   width: 100%; /* Default is 100% */
 }
 
-@media (min-width: 576px) { /* sm breakpoint */
+@media (min-width: 576px) {
+  /* sm breakpoint */
   .responsive-width {
     width: auto !important; /* sm and above restore the auto width */
   }
