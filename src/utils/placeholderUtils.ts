@@ -78,7 +78,7 @@ function updateSearchPlaceHoldersInner(searchQuery: string, filteredSongs: Song[
 
 const updateSearchPlaceHoldersDeb = debounceFn(updateSearchPlaceHoldersInner, 1234)
 
-export function updateSearchPlaceHolders(searchQuery: string, filteredSongs: Song[], placeHolders: Ref<string[]>,
+export function updateSearchPlaceholders(searchQuery: string, filteredSongs: Song[], placeHolders: Ref<string[]>,
                                          searchInput: Ref<HTMLInputElement | null>) {
     if (searchQuery && searchQuery.trim() !== '' && filteredSongs.some(song => toHalfWidth(song.song_title) === toHalfWidth(searchQuery))) {
         resetPlaceHolders(placeHolders, searchInput);
