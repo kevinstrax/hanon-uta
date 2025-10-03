@@ -9,6 +9,7 @@ export interface Song {
     ref_video_publish_date_ts: number;
     ref_video_id: string;
     video_offset_ts: number,
+    song_id: string,
     song_title: string,
     song_origin_artist: string,
     song_start_time: string,

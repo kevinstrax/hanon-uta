@@ -67,9 +67,9 @@ body {
 
 @font-face {
     font-family: 'iconfont';
-    src: url('iconfont/iconfont.woff2?t=1758507564195') format('woff2'),
-    url('iconfont/iconfont.woff?t=1758507564195') format('woff'),
-    url('iconfont/iconfont.ttf?t=1758507564195') format('truetype');
+    src: url('iconfont/iconfont.woff2?t=1759474673059') format('woff2'),
+    url('iconfont/iconfont.woff?t=1759474673059') format('woff'),
+    url('iconfont/iconfont.ttf?t=1759474673059') format('truetype');
     font-display: swap;
 }
 
@@ -85,4 +85,12 @@ body {
 }
 .cursor-pointer {
     cursor: pointer;
+}
+.text-danger-hover {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+        @extend .text-danger;
+    }
 }

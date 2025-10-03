@@ -1,13 +1,4 @@
 <script setup lang="ts">
-import type { Song } from '@/types/song'
-import type { SongMetaGroup } from "@/types/song-meta";
-import { storeToRefs } from "pinia";
-import { computed, onBeforeMount, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { getGroupedSongMetas, loadSongs, loadSongsByApi } from '@/utils/loadSongs';
-import { generateMeta } from "@/utils/meta";
-import { useLoadingStore } from '@/stores/loading'
-import { useRoute, useRouter } from 'vue-router';
-import { useHead } from '@vueuse/head'
 import {
   DEFAULT_PAGE_SIZE,
   SITE_BRAND,
@@ -16,13 +7,23 @@ import {
   VTUBER_NAME_TO_JA,
   type VtuberValues
 } from '@/config/constants';
+import type { Song } from '@/types/song'
+import type { SongMetaGroup } from "@/types/song-meta";
+import { useHead } from '@vueuse/head'
+import { storeToRefs } from "pinia";
+import { generateMeta } from "@/utils/meta";
+import { useStorageStore } from "@/stores/storage-store.ts";
+import { useLoadingStore } from '@/stores/loading.ts'
+import { useColorModeStore } from "@/stores/color-mode.ts";
+import { useRoute, useRouter } from 'vue-router';
+import { getGroupedSongMetas, loadSongs } from '@/utils/loadSongs';
+import { computed, onBeforeMount, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { debounceFn, toHalfWidth, updateSearchPlaceHolders } from "@/utils/placeholderUtils.ts";
 import SongList from "@/components/SongList.vue";
 import QuickSearches from "@/components/QuickSearches.vue";
 import SongMetaListModal from "@/components/SongMetaListModal.vue";
-import { useColorModeStore } from "@/stores/color-mode.ts";
 import UpdateHintToast from "@/components/UpdateHintToast.vue";
 import SongStatsModal from "@/components/SongStatsModal.vue";
-import { debounceFn, toHalfWidth, updateSearchPlaceHolders } from "@/utils/placeholderUtils.ts";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 const songs = ref<Song[]>([]);
@@ -33,15 +34,16 @@ const router = useRouter();
 
 const { isDark } = storeToRefs(useColorModeStore())
 const { isInitialLoad } = storeToRefs(loadingStore);
+const storage = useStorageStore();
 
 onMounted(async () => {
   try {
     loadingStore.startSongsLoading();
-    if (window.location.host.includes('aquac.cc')) {
-      songs.value = await loadSongsByApi(props.vtuber);
-    } else {
-      songs.value = await loadSongs(props.vtuber);
-    }
+    const [songsResult, _] = await Promise.all([
+      loadSongs(props.vtuber),
+      storage.loadFavorites()
+    ]);
+    songs.value = songsResult;
     songMetaGroups.value = getGroupedSongMetas(songs.value);
   } finally {
     loadingStore.completeLoading();
@@ -50,6 +52,7 @@ onMounted(async () => {
 
 const searchQuery = ref(route.query.search as string || '');
 const filterVideoId = ref(route.query.v as string || '');
+const filterOption = ref(route.query.filter as string || '');
 const currentPage = ref(1);
 const itemsPerPage = ref(DEFAULT_PAGE_SIZE) // each page displays 10 items
 const goToPage = ref(1);
@@ -58,6 +61,8 @@ watch(() => route.query.search,
   (newSearchQuery) => { searchQuery.value = newSearchQuery as string || ''; });
 watch(() => route.query.v,
   (newFilterVideoId) => { filterVideoId.value = newFilterVideoId as string || ''; });
+watch(() => route.query.filter,
+  (newFilterOption) => { filterOption.value = newFilterOption as string || ''; })
 
 function updateQueryParam(key: string, value: string | undefined) {
   router.replace({
@@ -85,21 +90,40 @@ watch(filterVideoId, (newFilterVideoId) => {
     currentPage.value = goToPage.value = 1;
   }
 })
+watch(filterOption, (newFilterOption) => {
+  updateQueryParam('filter', newFilterOption);
+  if (newFilterOption && newFilterOption.trim() !== '') {
+    currentPage.value = goToPage.value = 1;
+  }
+})
 
-function filterSongByVideoId(songs: Song[]) {
+function applyFavoriteFilter() {
+  return filterOption.value && filterOption.value.toLowerCase() === 'favorite';
+}
+
+function applyVideoIdFilter() {
+  return filterVideoId.value && filterVideoId.value !== '';
+}
+
+function filterSongByOptions(songs: Song[]) {
   return songs.filter(song => {
-    if (filterVideoId.value && filterVideoId.value !== '') {
+    if (applyVideoIdFilter()) {
       return filterVideoId.value === song.ref_video_id;
+    }
+    return true;
+  }).filter(song => {
+    if (applyFavoriteFilter()) {
+      return storage.favoritesSet.has(song.song_id)
     }
     return true;
   })
 }
 // search function
 const filteredSongs = computed(() => {
-  if (!searchQuery.value) return filterSongByVideoId(songs.value);
+  if (!searchQuery.value) return filterSongByOptions(songs.value);
 
   const query = toHalfWidth(searchQuery.value.trim().toLowerCase());
-  if (query === '') return filterSongByVideoId(songs.value);
+  if (query === '') return filterSongByOptions(songs.value);
 
   // Score matches based on relevance
   const scoredSongs = songs.value.map(song => {
@@ -137,7 +161,7 @@ const filteredSongs = computed(() => {
       return a.song_title.localeCompare(b.song_title, 'ja');
     });
 
-  return filterSongByVideoId(result.map(({ _matchScore, ...song }) => song)); // Remove temporary score
+  return filterSongByOptions(result.map(({ _matchScore, ...song }) => song)); // Remove temporary score
 });
 
 const pageTitle = computed(() => {
@@ -269,7 +293,12 @@ onBeforeUnmount(() => {
     </div>
   </section>
 
-   <div v-if="filterVideoId && filterVideoId !== ''"
+   <div v-if="applyFavoriteFilter()"
+        class="alert alert-light alert-dismissible fade show d-inline-block small py-1 ps-3 pe-2 mb-4 me-2" role="alert">
+     ファボリスト
+     <button type="button" class="btn-close small py-2 pe-0 position-relative" data-bs-dismiss="alert" aria-label="Close" @click="filterOption = ''"></button>
+   </div>
+   <div v-if="applyVideoIdFilter()"
         class="alert alert-light alert-dismissible fade show d-inline-block small py-1 ps-3 pe-2 mb-4" role="alert">
      {{filterVideoId}}
      <button type="button" class="btn-close small py-2 pe-0 position-relative" data-bs-dismiss="alert" aria-label="Close" @click="filterVideoId = ''"></button>

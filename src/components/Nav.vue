@@ -21,6 +21,11 @@ const currentRouteTitle = computed(() => {
 })
 
 const redPointRead = ref(false)
+
+function favoriteUrl() {
+  return `${ import.meta.env.BASE_URL.replace(/\/$/, '') }${router.currentRoute.value.path}?filter=favorite`
+}
+
 </script>
 
 <template>
@@ -56,7 +61,6 @@ const redPointRead = ref(false)
           <span v-if="!redPointRead" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger z-1">New</span>
         </button>
       </div>
-
       <div class="dropdown">
         <button class="btn dropdown-toggle" :class="isDark ? 'btn-dark border' : 'btn-light'" id="dropdownMenuReadme" data-bs-toggle="dropdown" type="button">
           <i class="iconfont me-1">&#xef1f;</i>
@@ -65,6 +69,9 @@ const redPointRead = ref(false)
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuReadme">
           <li class="dropdown-item cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal2" @click="useStatsInitStore().triggerInit()">
             歌唱統計
+          </li>
+          <li >
+            <a class="dropdown-item" :href="favoriteUrl()">ファボリスト</a>
           </li>
           <li><hr class="dropdown-divider"></li>
           <li>

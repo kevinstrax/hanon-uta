@@ -15,7 +15,6 @@ const characterColors =
         '水科葵': colors[8]
     }
 
-
 export function timestampColor(timestamp: number): string {
     return nameColor(timestamp + "");
 }
@@ -55,4 +54,8 @@ function hashString(str: string): number {
         hash = hash & hash; // 转换为32位整数
     }
     return Math.abs(hash);
+}
+
+export function genSongId(videoId : string, songName : string, start: string): string {
+    return `${videoId}_${songName}_${start}`;
 }

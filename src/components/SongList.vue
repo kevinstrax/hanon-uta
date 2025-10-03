@@ -4,6 +4,7 @@ import { timestampToDate } from "@/utils/timeUtils.ts";
 import { nameColor, timestampColor } from "@/utils/songTagUtils.ts";
 import { storeToRefs } from "pinia";
 import { useColorModeStore } from "@/stores/color-mode.ts";
+import FavoriteIcon from "@/components/FavoriteIcon.vue";
 
 const props = defineProps<{ paginatedSongs: Song[] }>();
 const { isDark } = storeToRefs(useColorModeStore())
@@ -74,13 +75,14 @@ const updateFilterVideoId = (videoId: string) => {
               </li>
             </ul>
           </div>
-          <p class="card-text hover-text-light rounded-1">
+          <p class="card-text hover-text-light rounded-1 d-flex align-items-center justify-content-between">
             <small class="text-muted">
               <a :href="song.ref_video_url" :title="song.song_title" class="text-decoration-none text-secondary d-block"
                  target="_blank">
                 <i class="iconfont" style="font-size: 12px">&#xe66e;</i>
                 <span class="ms-1" style="vertical-align: text-top">{{ song.song_start_time }}</span></a>
             </small>
+            <FavoriteIcon :song-id="song.song_id" />
           </p>
         </div>
       </div>
@@ -154,9 +156,9 @@ const updateFilterVideoId = (videoId: string) => {
   transition: background-color .5s ease;
 }
 
-.hover-text-light:hover {
+/*.hover-text-light:hover {
   background-color: var(--bs-secondary-bg) !important;
-}
+}*/
 
 .hover-text-light small a {
   transition: transform 0.3s ease;
