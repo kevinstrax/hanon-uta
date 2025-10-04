@@ -6,6 +6,7 @@ import { useColorModeStore } from "@/stores/color-mode.ts";
 import { useStatsInitStore } from "@/stores/stats-init.ts";
 import { storeToRefs } from "pinia";
 import { replaceQueryParam } from "@/utils/routerUtils.ts";
+import UserInfo from "@/components/UserInfo.vue";
 
 const router = useRouter();
 const route = useRoute();
@@ -65,11 +66,13 @@ const redPointRead = ref(false)
           <span class="visually-hidden">説明書</span>
         </button>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuReadme">
-          <li class="dropdown-item cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal2" @click="useStatsInitStore().triggerInit()">
-            歌唱統計
-          </li>
+          <user-info />
+          <li><hr class="dropdown-divider"></li>
           <li >
             <button class="dropdown-item" @click="replaceQueryParam(router, route, 'filter', 'favorite')">ファボリスト</button>
+          </li>
+          <li class="dropdown-item cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal2" @click="useStatsInitStore().triggerInit()">
+            歌唱統計
           </li>
           <li><hr class="dropdown-divider"></li>
           <li>
