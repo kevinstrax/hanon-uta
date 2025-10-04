@@ -1,0 +1,1 @@
+import{H as e}from"./HelloWorld-D6cgA9Dx.js";import{e as r,H as a,u as o,p as t,J as n}from"./bootstrap.esm-B236LrKe.js";import"./index-CwKHatCi.js";const c=r({__name:"Clara",setup(s){return(p,l)=>(t(),a(e,{vtuber:o(n).AKATSUKI_CLARA.name},null,8,["vtuber"]))}});export{c as default};
