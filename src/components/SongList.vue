@@ -5,15 +5,14 @@ import { nameColor, timestampColor } from "@/utils/songTagUtils.ts";
 import { storeToRefs } from "pinia";
 import { useColorModeStore } from "@/stores/color-mode.ts";
 import FavoriteIcon from "@/components/FavoriteIcon.vue";
+import { replaceQueryParam } from "@/utils/routerUtils.ts";
+import { useRoute, useRouter } from "vue-router";
 
 const props = defineProps<{ paginatedSongs: Song[] }>();
 const { isDark } = storeToRefs(useColorModeStore())
 
-const emit = defineEmits(['update:filterVideoId', 'update:searchQuery']);
-const updateFilterVideoId = (videoId: string) => {
-  emit('update:filterVideoId', videoId);
-  emit('update:searchQuery', '');
-};
+const router = useRouter();
+const route = useRoute();
 
 </script>
 
@@ -24,12 +23,11 @@ const updateFilterVideoId = (videoId: string) => {
       <div class="card h-100 hover-bg-light">
         <div class="card-img-top ratio ratio-16x9 position-relative">
 
-          <a :href="song.ref_video_url" class="d-flex align-items-center justify-content-center" target="_blank">
+          <a :href="song.ref_video_url" class="d-flex align-items-center justify-content-center" target="_blank" rel="noopener noreferrer">
             <img v-lazy="{
                   src: song.ref_video_thumbnail_url,
                   loading: song.ref_video_thumbnail_lqip_url
                 }" :alt="song.song_title" :title="song.song_title" loading="lazy" class="img-fluid w-100"/>
-
           </a>
 
         </div>
@@ -71,14 +69,15 @@ const updateFilterVideoId = (videoId: string) => {
               <li><h3 class="h6 dropdown-header fw-normal text-wrap p-3"
                       :class="isDark ? 'text-light' : ''">{{song.ref_video_title}}</h3></li>
               <li class="text-end small">
-                <a class="d-inline-block text-end m-3 mt-0" href="#" @click="updateFilterVideoId(song.ref_video_id)" role="button">&gt; 配信全曲一覧</a>
+                <a class="d-inline-block text-end m-3 mt-0" href="javascript:void(0);"
+                   @click="replaceQueryParam(router, route, 'v', song.ref_video_id)" role="button">&gt; 配信全曲一覧</a>
               </li>
             </ul>
           </div>
           <p class="card-text hover-text-light rounded-1 d-flex align-items-center justify-content-between">
             <small class="text-muted">
               <a :href="song.ref_video_url" :title="song.song_title" class="text-decoration-none text-secondary d-block"
-                 target="_blank">
+                 target="_blank" rel="noopener noreferrer">
                 <i class="iconfont iconfont-sm icon-bofang"></i>
                 <span class="ms-1" style="vertical-align: text-top">{{ song.song_start_time }}</span></a>
             </small>

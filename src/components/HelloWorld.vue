@@ -100,9 +100,7 @@ useHeadMeta(filteredSongs, searchQuery)
 
   <!-- a list of songs -->
   <template v-if="isMobile">
-    <SongList v-model:filter-video-id="filterVideoId"
-              v-model:search-query="searchQuery"
-              :paginated-songs="loadedSongs"/>
+    <SongList :paginated-songs="loadedSongs"/>
     <div ref="observerTarget" class="mb-5">
       <p v-if="loadedSongs.length < filteredSongs.length" class="text-center mb-4">読み込み中...</p>
       <template v-else>
@@ -123,9 +121,7 @@ useHeadMeta(filteredSongs, searchQuery)
 
   </template>
   <template v-else>
-    <SongList v-model:filter-video-id="filterVideoId"
-              v-model:search-query="searchQuery"
-              :paginated-songs="paginatedSongs"/>
+    <SongList :paginated-songs="paginatedSongs"/>
     <!-- displays the current page number and total -->
     <nav v-if="totalPages > 1"
          class="text-center text-muted small mt-4 mb-2 d-flex justify-content-center align-items-center gap-2">

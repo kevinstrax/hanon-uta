@@ -1,12 +1,14 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { VTUBER_KEYS } from "@/config/constants.ts";
 import { useColorModeStore } from "@/stores/color-mode.ts";
 import { useStatsInitStore } from "@/stores/stats-init.ts";
 import { storeToRefs } from "pinia";
+import { replaceQueryParam } from "@/utils/routerUtils.ts";
 
-const router = useRouter()
+const router = useRouter();
+const route = useRoute();
 const { isDark } = storeToRefs(useColorModeStore())
 
 const menuRoutes = computed(() => {
@@ -21,10 +23,6 @@ const currentRouteTitle = computed(() => {
 })
 
 const redPointRead = ref(false)
-
-function favoriteUrl() {
-  return `${ import.meta.env.BASE_URL.replace(/\/$/, '') }${router.currentRoute.value.path}?filter=favorite`
-}
 
 </script>
 
@@ -71,7 +69,7 @@ function favoriteUrl() {
             歌唱統計
           </li>
           <li >
-            <a class="dropdown-item" :href="favoriteUrl()">ファボリスト</a>
+            <button class="dropdown-item" @click="replaceQueryParam(router, route, 'filter', 'favorite')">ファボリスト</button>
           </li>
           <li><hr class="dropdown-divider"></li>
           <li>

@@ -3,6 +3,7 @@ import { computed, type Ref, watch } from 'vue';
 import type { Song } from "@/types/song";
 import { useStorageStore } from "@/stores/storage-store.ts";
 import { useRoute, useRouter } from "vue-router";
+import { updateQueryParam, updateQueryParams } from "@/utils/routerUtils.ts";
 
 export const useSongFilter = (songs: Ref<Song[]>, searchQuery: Ref<string>, filterVideoId: Ref<string>, filterOption: Ref<string>,
                               currentPage: Ref<number>, goToPage: Ref<number>) => {
@@ -10,47 +11,64 @@ export const useSongFilter = (songs: Ref<Song[]>, searchQuery: Ref<string>, filt
     const router = useRouter();
     const route = useRoute();
 
-    watch(() => route.query.search, (newSearchQuery) => {
-        searchQuery.value = newSearchQuery as string || '';
-    });
-    watch(() => route.query.v, (newFilterVideoId) => {
-        filterVideoId.value = newFilterVideoId as string || '';
-    });
-    watch(() => route.query.filter, (newFilterOption) => {
-        filterOption.value = newFilterOption as string || '';
-    })
-
-    function updateQueryParam(key: string, value: string | undefined) {
-        router.replace({
-            name: route.name, query: {
-                ...route.query, [key]: value || undefined
+    watch(
+        () => ({
+            search: route.query.search as string || '',
+            v: route.query.v as string || '',
+            filter: route.query.filter as string || '',
+        }),
+        (newVals) => {
+            if (searchQuery.value !== newVals.search) {
+                searchQuery.value = newVals.search;
             }
-        });
-    }
+            if (filterVideoId.value !== newVals.v) {
+                filterVideoId.value = newVals.v;
+            }
+            if (filterOption.value !== newVals.filter) {
+                filterOption.value = newVals.filter;
+            }
+        },
+        { immediate: true }
+    );
 
     function updateSearchQueryInURL(query: string) {
-        updateQueryParam('search', query);
+        updateQueryParam(router, route, 'search', query);
     }
 
     const updateSearchQueryInURLDeb = debounceFn(updateSearchQueryInURL);
-    watch(searchQuery, (newSearchQuery) => {
-        updateSearchQueryInURLDeb(newSearchQuery);
-        if (newSearchQuery && newSearchQuery.trim() !== '') {
+
+    watch(
+        () => ({
+            search: searchQuery.value,
+            v: filterVideoId.value,
+            filter: filterOption.value,
+        }),
+        (newVals, oldVals) => {
+            const paramsToUpdate: Record<string, string | undefined> = {};
+
+            const changedKeys = Object.keys(newVals).filter(
+                key => newVals[key as keyof typeof newVals] !== oldVals?.[key as keyof typeof oldVals]
+            );
+
+            // Deal with it on a case-by-case basis
+            if (changedKeys.length === 1 && changedKeys[0] === 'search') {
+                // Only searchQuery changes, using debounceFn
+                updateSearchQueryInURLDeb(newVals.search);
+            } else if (changedKeys.length > 0) {
+                // Multiple variations or non-searchQuery, update the URL directly
+                changedKeys.forEach(key => {
+                    const val = newVals[key as keyof typeof newVals];
+                    paramsToUpdate[key] = val;
+                });
+                if (changedKeys.includes('search')) {
+                    updateSearchQueryInURLDeb.cancel?.();
+                }
+                updateQueryParams(router, route, paramsToUpdate);
+            }
             currentPage.value = goToPage.value = 1;
-        }
-    });
-    watch(filterVideoId, (newFilterVideoId) => {
-        updateQueryParam('v', newFilterVideoId);
-        if (newFilterVideoId && newFilterVideoId.trim() !== '') {
-            currentPage.value = goToPage.value = 1;
-        }
-    })
-    watch(filterOption, (newFilterOption) => {
-        updateQueryParam('filter', newFilterOption);
-        if (newFilterOption && newFilterOption.trim() !== '') {
-            currentPage.value = goToPage.value = 1;
-        }
-    })
+        },
+        { immediate: true }
+    );
 
     const storage = useStorageStore();
 
