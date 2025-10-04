@@ -79,7 +79,7 @@ const updateFilterVideoId = (videoId: string) => {
             <small class="text-muted">
               <a :href="song.ref_video_url" :title="song.song_title" class="text-decoration-none text-secondary d-block"
                  target="_blank">
-                <i class="iconfont"></i>
+                <i class="iconfont iconfont-sm icon-bofang"></i>
                 <span class="ms-1" style="vertical-align: text-top">{{ song.song_start_time }}</span></a>
             </small>
             <FavoriteIcon :song-id="song.song_id" />
