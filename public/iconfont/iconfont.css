@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.woff2?t=1759474673050') format('woff2'),
+  url('iconfont.woff?t=1759474673050') format('woff'),
+  url('iconfont.ttf?t=1759474673050') format('truetype');
+  font-display: swap;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
