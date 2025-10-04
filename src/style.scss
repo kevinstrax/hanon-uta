@@ -65,21 +65,6 @@ body {
     -moz-appearance: textfield;
 }
 
-@font-face {
-    font-family: 'iconfont';
-    src: url('iconfont/iconfont.woff2?t=1759474673059') format('woff2'),
-    url('iconfont/iconfont.woff?t=1759474673059') format('woff'),
-    url('iconfont/iconfont.ttf?t=1759474673059') format('truetype');
-    font-display: swap;
-}
-
-.iconfont {
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 .opacity-868 {
     opacity: .868 !important;
 }

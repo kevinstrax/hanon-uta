@@ -22,6 +22,7 @@ const defaultData : any = {
     vtuber: VTUBERS.KANARU_HANON.name_ja,
     cover: 'https://img.youtube.com/vi/V8gg1yrTzsw/maxresdefault.jpg',
     favicon: VTUBERS.KANARU_HANON.favicon,
+    t: new Date().getTime(),
 };
 // https://vite.dev/config/
 export default defineConfig({
@@ -35,7 +36,7 @@ export default defineConfig({
                     template: 'index.html',
                     injectOptions: {
                         data: defaultData,
-                    }
+                    },
                 },
             ]
         }),
