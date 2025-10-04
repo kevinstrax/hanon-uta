@@ -33,7 +33,7 @@ export const useStorageStore = defineStore("storage", {
                 this.favorites = new Set(this.favorites);
 
                 this.favoriteRemoving.delete(songId);
-                this._debouncedRemove.get(songId)!.cancel();
+                this._debouncedRemove.get(songId)!.cancel?.();
                 this._debouncedRemove.delete(songId);
             }
         },

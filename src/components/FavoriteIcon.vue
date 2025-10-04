@@ -30,7 +30,7 @@ function startLikeAnimation() {
 </script>
 
 <template>
-  <div class="like-container like-heart me-1" :class="{ 'like-animation': isAnimating }">
+  <div class="like-container like-heart z-0 me-1" :class="{ 'like-animation': isAnimating }">
     <i v-if="storage.favorites.has(props.songId)"
        class="iconfont text-secondary text-danger cursor-pointer fw-bold"
 
