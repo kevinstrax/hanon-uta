@@ -1,0 +1,72 @@
+{
+  "id": "4917318",
+  "name": "hanon-uta",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1303358",
+      "name": "功能开关",
+      "font_class": "gongnengkaiguan",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "32168195",
+      "name": "歌曲列表",
+      "font_class": "gequliebiao",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "2076193",
+      "name": "喜欢2",
+      "font_class": "xihuan",
+      "unicode": "e86f",
+      "unicode_decimal": 59503
+    },
+    {
+      "icon_id": "2076194",
+      "name": "喜欢",
+      "font_class": "xihuan1",
+      "unicode": "e870",
+      "unicode_decimal": 59504
+    },
+    {
+      "icon_id": "44311580",
+      "name": "随机播放",
+      "font_class": "suijibofang",
+      "unicode": "e87a",
+      "unicode_decimal": 59514
+    },
+    {
+      "icon_id": "14494488",
+      "name": "回到顶部1_fill",
+      "font_class": "back-top1_fill",
+      "unicode": "e781",
+      "unicode_decimal": 59265
+    },
+    {
+      "icon_id": "15617051",
+      "name": "music",
+      "font_class": "music",
+      "unicode": "e892",
+      "unicode_decimal": 59538
+    },
+    {
+      "icon_id": "6263352",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "16921559",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e7ec",
+      "unicode_decimal": 59372
+    }
+  ]
+}

@@ -57,13 +57,13 @@ function favoriteUrl() {
     <div class="d-flex justify-content-between gap-2">
       <div class="position-relative">
         <button class="btn" :class="isDark ? 'btn-dark border' : 'btn-light'" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button" @click="redPointRead = true">
-          <i class="iconfont">&#xe66f;</i> <span class="d-none d-xxs2-inline">楽曲リスト</span>
+          <i class="iconfont icon-gequliebiao"></i> <span class="d-none d-xxs2-inline">曲リスト</span>
           <span v-if="!redPointRead" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger z-1">New</span>
         </button>
       </div>
       <div class="dropdown">
         <button class="btn dropdown-toggle" :class="isDark ? 'btn-dark border' : 'btn-light'" id="dropdownMenuReadme" data-bs-toggle="dropdown" type="button">
-          <i class="iconfont me-1">&#xef1f;</i>
+          <i class="iconfont icon-gongnengkaiguan"></i>
           <span class="visually-hidden">説明書</span>
         </button>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuReadme">
@@ -76,16 +76,9 @@ function favoriteUrl() {
           <li><hr class="dropdown-divider"></li>
           <li>
             <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README.md" target="_blank" rel="noopener noreferrer">
-              <!--              <i class="iconfont me-1">&#xe648;</i>-->
               このサイドについて
             </a>
           </li>
-          <!--          <li>-->
-          <!--            <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README_zh-CN.md" target="_blank" rel="noopener noreferrer">-->
-          <!--              <i class="iconfont me-1">&#xe648;</i>-->
-          <!--              简体中文-->
-          <!--            </a>-->
-          <!--          </li>-->
         </ul>
       </div>
     </div>

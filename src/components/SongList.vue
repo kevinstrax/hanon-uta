@@ -19,7 +19,7 @@ const updateFilterVideoId = (videoId: string) => {
 
 <template>
   <TransitionGroup tag="section" name="fade-only" mode="out-in"
-                   class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-2">
+                   class="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-2 g-2">
     <article v-for="(song, _) in props.paginatedSongs" :key="song.ref_video_url">
       <div class="card h-100 hover-bg-light">
         <div class="card-img-top ratio ratio-16x9 position-relative">
@@ -51,7 +51,7 @@ const updateFilterVideoId = (videoId: string) => {
           </div>
 
           <h2 v-tooltip="song.song_title" class="card-title hover-text-light rounded-1 text-truncate d-flex h6">
-            <i class="iconfont" style="margin-right: 1.5px">&#xe892;</i>
+            <i class="iconfont icon-music" style="margin-right: 1.5px"></i>
             {{ song.song_title }}
           </h2>
           <p class="card-text hover-text-light rounded-1">
@@ -59,8 +59,8 @@ const updateFilterVideoId = (videoId: string) => {
               {{song.song_origin_artist }}
             </small>
           </p>
-          <div class="dropdown dropup card-text hover-text-light rounded-1 mb-2">
-            <button class="btn text-wrap text-start p-0 dropdown-toggle drop border-0 no-arrow" data-bs-toggle="dropdown"
+          <div class="dropdown dropup-center card-text hover-text-light rounded-1 mb-2">
+            <button class="btn user-select-text text-wrap text-start p-0 dropdown-toggle drop border-0 no-arrow" data-bs-toggle="dropdown"
                     data-bs-offset="0,10" aria-expanded="false" >
               <!--data-bs-auto-close="outside"-->
               <small class="text-muted card-subtitle multi-line-ellipsis-2">
@@ -79,7 +79,7 @@ const updateFilterVideoId = (videoId: string) => {
             <small class="text-muted">
               <a :href="song.ref_video_url" :title="song.song_title" class="text-decoration-none text-secondary d-block"
                  target="_blank">
-                <i class="iconfont" style="font-size: 12px">&#xe66e;</i>
+                <i class="iconfont"></i>
                 <span class="ms-1" style="vertical-align: text-top">{{ song.song_start_time }}</span></a>
             </small>
             <FavoriteIcon :song-id="song.song_id" />

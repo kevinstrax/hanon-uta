@@ -43,7 +43,7 @@ const selectRandomSong = () => {
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">楽曲リスト</h1>
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">曲リスト</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -73,7 +73,7 @@ const selectRandomSong = () => {
         </div>
         <div class="modal-footer d-flex justify-content-between">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @click="selectRandomSong()">
-            <i class="iconfont">&#xe87a;</i>
+            <i class="iconfont icon-suijibofang"></i>
             ランダム
           </button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>

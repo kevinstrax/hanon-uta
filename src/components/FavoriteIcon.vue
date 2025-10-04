@@ -31,14 +31,12 @@ function startLikeAnimation() {
 
 <template>
   <div class="like-container like-heart z-0 me-1" :class="{ 'like-animation': isAnimating }">
-    <i v-if="storage.favorites.has(props.songId)"
-       class="iconfont text-secondary text-danger cursor-pointer fw-bold"
-
-       @click="toggleFavorite(props.songId)">&#xe86f;</i>
-    <i v-else
-       class="iconfont text-secondary text-danger-hover cursor-pointer fw-bold"
-
-       @click="toggleFavorite(props.songId)">&#xe870;</i>
+    <b v-if="storage.favorites.has(props.songId)"
+       class="iconfont icon-xihuan text-secondary text-danger cursor-pointer"
+       @click="toggleFavorite(props.songId)"></b>
+    <b v-else
+       class="iconfont icon-xihuan1 text-secondary text-danger-hover cursor-pointer"
+       @click="toggleFavorite(props.songId)"></b>
 
     <!-- Explosion ring effect -->
     <div v-if="isAnimating" class="explosion-rings">
@@ -51,14 +49,13 @@ function startLikeAnimation() {
 
 <style scoped>
 .like-container {
-  position: relative;
   display: inline-block;
 }
 
 .like-heart {
   transition: all 0.3s ease;
   position: relative;
-  transform: scale(1.2);
+  transform: scale(1.20003141592653589793238462643383279);
   z-index: 10;
 }
 

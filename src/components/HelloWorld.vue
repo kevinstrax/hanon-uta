@@ -64,7 +64,7 @@ useHeadMeta(filteredSongs, searchQuery)
   <section class="row my-4 mt-0">
     <div class="input-group">
       <label :class="isDark ? 'bg-dark' : 'bg-light'" class="input-group-text bg-light" for="searchInput">
-        <i class="iconfont">&#xe7ec;</i>
+        <i class="iconfont icon-sousuo"></i>
       </label>
       <input
         id="searchInput"
@@ -117,7 +117,7 @@ useHeadMeta(filteredSongs, searchQuery)
       :class="isDark ? 'btn-dark' : 'btn-light'"
       class="btn btn-lg border position-fixed end-0 bottom-0 me-4 mb-5 opacity-868"
       @click="backToTop">
-      <i class="iconfont">&#xe781;</i>
+      <i class="iconfont icon-back-top1_fill"></i>
       <span class="visually-hidden">トップに戻る</span>
     </button>
 
