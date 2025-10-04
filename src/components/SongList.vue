@@ -14,6 +14,11 @@ const { isDark } = storeToRefs(useColorModeStore())
 const router = useRouter();
 const route = useRoute();
 
+function showVideoList(videoId: string) {
+  replaceQueryParam(router, route, 'v', videoId);
+  window.scrollTo({ top: 0, behavior: "smooth" })
+}
+
 </script>
 
 <template>
@@ -60,7 +65,6 @@ const route = useRoute();
           <div class="dropdown dropup-center card-text hover-text-light rounded-1 mb-2">
             <button class="btn user-select-text text-wrap text-start p-0 dropdown-toggle drop border-0 no-arrow" data-bs-toggle="dropdown"
                     data-bs-offset="0,10" aria-expanded="false" >
-              <!--data-bs-auto-close="outside"-->
               <small class="text-muted card-subtitle multi-line-ellipsis-2">
                 {{song.ref_video_title}}
               </small>
@@ -70,7 +74,7 @@ const route = useRoute();
                       :class="isDark ? 'text-light' : ''">{{song.ref_video_title}}</h3></li>
               <li class="text-end small">
                 <a class="d-inline-block text-end m-3 mt-0" href="javascript:void(0);"
-                   @click="replaceQueryParam(router, route, 'v', song.ref_video_id)" role="button">&gt; 配信全曲一覧</a>
+                   @click="showVideoList(song.ref_video_id)" role="button">&gt; 配信全曲一覧</a>
               </li>
             </ul>
           </div>
