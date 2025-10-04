@@ -37,7 +37,7 @@
 
 ## 🚀 オンラインデモ
 GitHub Pagesにデプロイ済み、すぐにアクセス可能：
-→ [https://kevinstrax.github.io/hanon-uta/](https://kevinstrax.github.io/hanon-uta/)
+→ [https://hanon-uta.github.io/](https://hanon-uta.github.io/)
 
 ## 🛠️ 技術スタック
 - **Frontend**: Vue 3 + Vite
@@ -52,7 +52,7 @@ GitHub Pagesにデプロイ済み、すぐにアクセス可能：
 
 ## 📦 インストール方法
 ```bash
-git clone https://github.com/kevinstrax/hanon-uta.git
+git clone https://github.com/hanon-uta/hanon-uta.github.io.git
 
 cd hanon-uta
 
@@ -89,7 +89,7 @@ npm run dev
 ## ❓ お問い合わせ
 
 バグ報告や機能要望は以下まで:
-- GitHub Issues: [https://github.com/kevinstrax/hanon-uta/issues](https://github.com/kevinstrax/hanon-uta/issues)
+- GitHub Issues: [https://github.com/hanon-uta/hanon-uta.github.io/issues](https://github.com/hanon-uta/hanon-uta.github.io/issues)
 - X(旧Twitter): [@dtkviolin](https://x.com/dtkviolin)
 
 [香鳴ハノン YouTubeチャンネル](https://www.youtube.com/@kanaruhanon) |

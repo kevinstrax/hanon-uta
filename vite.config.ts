@@ -10,7 +10,7 @@ import { VTUBERS } from './src/config/constants.ts';
 const vtubers = Object.values(VTUBERS).map(v => v.name);
 
 const isProduction = process.env.NODE_ENV === 'production'
-const base = isProduction ? '/hanon-uta/' : '/'
+const base = isProduction ? '/' : '/'
 
 const generateDynamicRoutes = () => {
     return Object.values(VTUBERS).map(vtuber => {
@@ -40,7 +40,7 @@ export default defineConfig({
             ]
         }),
         Sitemap({
-            hostname: `https://kevinstrax.github.io${base}`,
+            hostname: `https://hanon-uta.github.io${base}`,
             dynamicRoutes: generateDynamicRoutes(), // Your list of routes
             exclude: [ // Excluded routes
                 '/',

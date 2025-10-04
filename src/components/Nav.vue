@@ -73,7 +73,7 @@ const redPointRead = ref(false)
           </li>
           <li><hr class="dropdown-divider"></li>
           <li>
-            <a class="dropdown-item" href="https://github.com/kevinstrax/hanon-uta/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+            <a class="dropdown-item" href="https://github.com/hanon-uta/hanon-uta.github.io/blob/main/README.md" target="_blank" rel="noopener noreferrer">
               このサイドについて
             </a>
           </li>

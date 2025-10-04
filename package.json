@@ -2,7 +2,7 @@
   "name": "hanon-uta",
   "private": true,
   "version": "1.2.2",
-  "homepage": "https://kevinstrax.github.io/hanon-uta",
+  "homepage": "https://hanon-uta.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
