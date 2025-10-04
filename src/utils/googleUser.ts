@@ -1,7 +1,8 @@
 import axios from "axios";
 import { getToken } from "./googleAuth.ts";
+import type { GoogleUserInfo } from "@/types/google-user";
 
-export async function getGoogleUserInfo() {
+export async function getGoogleUserInfo() : Promise<GoogleUserInfo> {
     const token = getToken();
     if (!token) throw new Error("Not signed in");
 

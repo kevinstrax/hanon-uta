@@ -30,4 +30,5 @@ export function getToken(): string | null {
 export function logout() {
     const authStore = useAuthStore();
     authStore.clearToken();
+    authStore.clearUserInfo();
 }
