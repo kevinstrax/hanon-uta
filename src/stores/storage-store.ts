@@ -1,8 +1,8 @@
 // stores/storage-store.ts
-import { defineStore } from "pinia";
+import { defineStore, storeToRefs } from "pinia";
 import { debounceFn } from "@/utils/placeholderUtils.ts";
 import { uploadFavorites, downloadFavorites, mergeFavorites, type FavoriteData } from "@/utils/syncFavorites";
-import { isLogin } from "@/utils/googleAuth.ts";
+import { useAuthStore } from "@/stores/auth-store.ts";
 
 interface StorageState {
     favorites: Set<string>;
@@ -39,8 +39,9 @@ export const useStorageStore = defineStore("storage", {
 
             // 尝试云端合并（若没有登录或网络错误则跳过）
             try {
-                let login = await isLogin();
-                if (!login) {
+                let authStore = useAuthStore();
+                const { isLoggedIn } = storeToRefs(authStore);
+                if (!isLoggedIn.value) {
                     return;
                 }
                 const remote = await downloadFavorites(); // 可能为 null

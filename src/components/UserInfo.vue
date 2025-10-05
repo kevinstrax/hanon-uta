@@ -15,23 +15,13 @@ const userInfo = ref<GoogleUserInfo | null>(null);
 // After logging in successfully, the user information is pulled
 async function loadUser() {
   try {
-    if (!isLoggedIn.value) {
+    if (!isLoggedIn?.value) {
       return;
     }
     if (!authStore.userInfo) {
       authStore.setUserInfo(await getGoogleUserInfo());
     }
     userInfo.value = authStore.userInfo;
-  } catch (err) {
-    console.error(err);
-  }
-}
-
-// Click the Login button
-async function handleSignIn() {
-  try {
-    await signIn();
-    await loadUser();
   } catch (err) {
     console.error(err);
   }
@@ -54,15 +44,15 @@ watch(isLoggedIn, async (val) => {
 
 // Attempt to pull user information when the page refreshes
 onMounted(async () => {
-  if (isLoggedIn.value) {
-    await loadUser();
+  if (isLoggedIn?.value) {
+    loadUser().then();
   }
 });
 
 </script>
 
 <template>
-  <li v-if="!isLoggedIn" class="dropdown-item cursor-pointer" @click="handleSignIn()">
+  <li v-if="!isLoggedIn" class="dropdown-item cursor-pointer" @click="signIn()">
     ログイン
   </li>
   <template v-else>

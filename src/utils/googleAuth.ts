@@ -1,17 +1,10 @@
 // utils/googleAuth.ts
-import { useAuthStore } from "@/stores/auth-store.ts";
 import axios from "axios";
+import { useAuthStore } from "@/stores/auth-store.ts";
+import { storeToRefs } from "pinia";
+import type { TokenInfo } from "@/types/token-info";
 
 declare const google: any;
-interface TokenInfo {
-    issued_to: string;
-    audience: string;
-    user_id: string;
-    scope: string;
-    expires_in: number;
-    email?: string;
-    verified_email?: boolean;
-}
 
 export async function signIn() {
     const authStore = useAuthStore();
@@ -24,8 +17,15 @@ export async function signIn() {
                 if (response.error) {
                     reject(response);
                 } else {
-                    authStore.setToken(response.access_token);
-                    resolve();
+                    verifyToken(response.access_token).then((tokenInfo) => {
+                        if (tokenInfo) {
+                            authStore.setToken({
+                                access_token: response.access_token,
+                                expires_in: Number.parseInt(tokenInfo.exp),
+                            });
+                        }
+                        resolve();
+                    })
                 }
             }
         }).requestAccessToken();
@@ -34,16 +34,8 @@ export async function signIn() {
 
 export function getToken(): string | null {
     const authStore = useAuthStore();
-    return authStore.token;
-}
-
-export async function isLogin() : Promise<boolean> {
-    let token = getToken();
-    if (!token) {
-        return new Promise<boolean>(() => false)
-    }
-    return verifyToken(token)
-        .then((tokenInfo) => tokenInfo !== null);
+    const { isLoggedIn } = storeToRefs(authStore);
+    return isLoggedIn.value ? authStore.token?.access_token??null : null;
 }
 
 async function verifyToken(token: string): Promise<TokenInfo | null> {
