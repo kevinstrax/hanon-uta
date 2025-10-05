@@ -64,7 +64,7 @@ export async function uploadFavorites(data: FavoriteCloud, fileId: string | null
     }
 
     if (fileId) {
-        // 更新已有文件（简单 media 上传）
+        // Update existing files (simple media upload)
         await uploadAxios.patch(`/files/${fileId}`, data, {
             params: { uploadType: "media" },
             headers: new AxiosHeaders().set("Content-Type", "application/json"),
