@@ -67,8 +67,8 @@ onMounted(async () => {
   </li>
   <template v-else>
     <li v-if="userInfo" class="dropdown-item cursor-pointer">
-      <img :alt="userInfo.name" :src="userInfo.picture || '/favicon.png'" class="img-fluid rounded-circle user-picture me-1"/>
-      <span class="align-middle">@{{ userInfo.name }}</span>
+      <img :alt="userInfo.name" :src="userInfo.picture || '/favicon.png'" class="img-fluid rounded-circle user-picture me-2"/>
+      <span class="align-middle">{{ userInfo.name }}</span>
     </li>
     <li class="dropdown-item cursor-pointer" @click="handleLogout()">
       <span>ログアウト</span>

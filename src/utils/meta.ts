@@ -22,7 +22,6 @@ function updateFavicon(href: string) {
     let appleLink = document.querySelector<HTMLLinkElement>('link[rel="apple-touch-icon"]')
     if (!appleLink) return;
     appleLink.href = href
-    console.log(appleLink.href)
 }
 
 export const generateMeta = (

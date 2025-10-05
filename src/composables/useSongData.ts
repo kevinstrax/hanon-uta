@@ -15,8 +15,9 @@ export const useSongData = (vtuber: VtuberValues) => {
     onMounted(async () => {
         try {
             loadingStore.startSongsLoading();
-            const [ songsResult, _ ] = await Promise.all([ loadSongs(vtuber), storage.loadFavorites() ]);
-            songs.value = songsResult;
+            await loadSongs(vtuber)
+            storage.loadFavorites().then(() => {})
+            songs.value = await loadSongs(vtuber);
             songMetaGroups.value = getGroupedSongMetas(songs.value);
         } finally {
             loadingStore.completeLoading();

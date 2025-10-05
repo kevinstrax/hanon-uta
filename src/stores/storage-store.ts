@@ -1,11 +1,15 @@
 // stores/storage-store.ts
 import { defineStore } from "pinia";
 import { debounceFn } from "@/utils/placeholderUtils.ts";
+import { uploadFavorites, downloadFavorites, mergeFavorites, type FavoriteData } from "@/utils/syncFavorites";
+import { isLogin } from "@/utils/googleAuth.ts";
 
 interface StorageState {
     favorites: Set<string>;
     favoriteRemoving: Set<string>;
-    _debouncedRemove: Map<string, ReturnType<typeof debounceFn>>,
+    _debouncedRemove: Map<string, ReturnType<typeof debounceFn>>;
+    _debouncedUpload: ReturnType<typeof debounceFn> | null;
+    lastSyncAt: number | null;
 }
 
 export const useStorageStore = defineStore("storage", {
@@ -13,6 +17,8 @@ export const useStorageStore = defineStore("storage", {
         favorites: new Set(),
         favoriteRemoving: new Set(),
         _debouncedRemove: new Map(),
+        _debouncedUpload: null,
+        lastSyncAt: null,
     }),
 
     getters: {
@@ -22,14 +28,40 @@ export const useStorageStore = defineStore("storage", {
     actions: {
         async loadFavorites() {
             const data = localStorage.getItem("favorites");
-            this.favorites = data ? new Set(JSON.parse(data)) : new Set();
+            const localUpdatedAt = Number(localStorage.getItem("favorites_updatedAt")) || Date.now();
+
+            const local: FavoriteData = {
+                updatedAt: localUpdatedAt,
+                favorites: data ? JSON.parse(data) : [],
+            };
+
+            this.favorites = new Set(local.favorites);
+
+            // 尝试云端合并（若没有登录或网络错误则跳过）
+            try {
+                let login = await isLogin();
+                if (!login) {
+                    return;
+                }
+                const remote = await downloadFavorites(); // 可能为 null
+                const finalData = mergeFavorites(local, remote);
+                // 写回本地 & 更新时间戳
+                this.favorites = new Set(finalData.favorites);
+                localStorage.setItem("favorites", JSON.stringify(finalData.favorites));
+                localStorage.setItem("favorites_updatedAt", String(finalData.updatedAt));
+
+                // 上传合并结果（确保云端与本地一致）
+                await uploadFavorites(finalData);
+                this.lastSyncAt = Date.now();
+            } catch (e) {
+                console.warn("Drive sync skipped:", e);
+            }
         },
 
         async addFavorite(songId: string) {
             if (!this.favorites.has(songId)) {
                 this.favorites.add(songId);
                 await this.saveFavorites();
-                // Replace the trigger responsive
                 this.favorites = new Set(this.favorites);
 
                 this.favoriteRemoving.delete(songId);
@@ -58,6 +90,25 @@ export const useStorageStore = defineStore("storage", {
 
         async saveFavorites() {
             localStorage.setItem("favorites", JSON.stringify([...this.favorites]));
+            const updatedAt = Date.now();
+            localStorage.setItem("favorites_updatedAt", String(updatedAt));
+
+            if (!this._debouncedUpload) {
+                this._debouncedUpload = debounceFn(
+                    async () => {
+                        try {
+                            const payload: FavoriteData = { updatedAt, favorites: [...this.favorites] };
+                            await uploadFavorites(payload);
+                            this.lastSyncAt = Date.now();
+                        } catch (e) {
+                            console.warn("Upload failed:", e);
+                        }
+                    },
+                    3000
+                );
+            }
+
+            this._debouncedUpload();
         },
     },
 });
