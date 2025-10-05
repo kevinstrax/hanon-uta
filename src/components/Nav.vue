@@ -67,7 +67,6 @@ const redPointRead = ref(false)
         </button>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuReadme">
           <user-info />
-          <li><hr class="dropdown-divider"></li>
           <li >
             <button class="dropdown-item" @click="replaceQueryParam(router, route, 'filter', 'favorite')">ファボリスト</button>
           </li>

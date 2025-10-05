@@ -6,6 +6,8 @@ import { storeToRefs } from "pinia";
 import { onMounted, ref, watch } from "vue";
 import { getGoogleUserInfo } from "@/utils/googleUser.ts";
 import type { GoogleUserInfo } from "@/types/google-user";
+import { useStorageStore } from "@/stores/storage-store.ts";
+import { showToast } from "@/utils/updateToast.ts";
 
 const authStore = useAuthStore();
 const { isLoggedIn } = storeToRefs(authStore);
@@ -18,10 +20,16 @@ async function loadUser() {
     if (!isLoggedIn?.value) {
       return;
     }
-    if (!authStore.userInfo) {
-      authStore.setUserInfo(await getGoogleUserInfo());
-    }
+
     userInfo.value = authStore.userInfo;
+    if (userInfo.value) {
+      return;
+    }
+
+    getGoogleUserInfo().then((googleUserInfo) => {
+      authStore.setUserInfo(googleUserInfo);
+      userInfo.value = authStore.userInfo;
+    })
   } catch (err) {
     console.error(err);
   }
@@ -30,12 +38,20 @@ async function loadUser() {
 // Click the logout button
 function handleLogout() {
   logout();
+  window.location.reload();
+}
+
+async function syncFavorites(toast: boolean) {
+  await useStorageStore().loadFavorites().then(() => {
+    toast && showToast()
+  })
 }
 
 // Listen for changes in login status
 watch(isLoggedIn, async (val) => {
   if (val) {
     await loadUser();
+    await syncFavorites(false);
   } else {
     authStore.clearUserInfo();
     userInfo.value = null;
@@ -44,9 +60,7 @@ watch(isLoggedIn, async (val) => {
 
 // Attempt to pull user information when the page refreshes
 onMounted(async () => {
-  if (isLoggedIn?.value) {
-    loadUser().then();
-  }
+  isLoggedIn?.value && loadUser()
 });
 
 </script>
@@ -56,14 +70,15 @@ onMounted(async () => {
     ログイン
   </li>
   <template v-else>
-    <li v-if="userInfo" class="dropdown-item cursor-pointer">
-      <img :alt="userInfo.name" :src="userInfo.picture || '/favicon.png'" class="img-fluid rounded-circle user-picture me-2"/>
+    <li v-if="userInfo" class="dropdown-item cursor-pointer" @click="syncFavorites()">
+      <img :alt="userInfo.name" :src="userInfo.picture" class="img-fluid rounded-circle user-picture me-2"/>
       <span class="align-middle">{{ userInfo.name }}</span>
     </li>
     <li class="dropdown-item cursor-pointer" @click="handleLogout()">
       <span>ログアウト</span>
     </li>
   </template>
+  <li><hr class="dropdown-divider"></li>
 </template>
 
 <style scoped>

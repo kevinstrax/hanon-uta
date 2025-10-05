@@ -7,8 +7,12 @@ import type { TokenInfo } from "@/types/token-info";
 declare const google: any;
 
 export async function signIn() {
-    const authStore = useAuthStore();
+    if (!isGoogleLoaded()) {
+        console.warn("Google is not ready yet")
+        return;
+    }
 
+    const authStore = useAuthStore();
     return new Promise<void>((resolve, reject) => {
         google.accounts.oauth2.initTokenClient({
             client_id: "524317271155-976mchu33udh6c4ihgi9884env3kb3mp.apps.googleusercontent.com",
@@ -30,6 +34,11 @@ export async function signIn() {
             }
         }).requestAccessToken();
     });
+}
+
+function isGoogleLoaded(): boolean {
+    return typeof google !== 'undefined' &&
+        google?.accounts?.oauth2 !== undefined;
 }
 
 export function getToken(): string | null {
