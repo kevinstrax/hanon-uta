@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "41061026",
+      "name": "更新",
+      "font_class": "gengxin",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "16780734",
+      "name": "登录-用户名",
+      "font_class": "denglu-yonghuming",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "40948241",
+      "name": "登出",
+      "font_class": "dengchu",
+      "unicode": "e83d",
+      "unicode_decimal": 59453
+    },
+    {
       "icon_id": "1303358",
       "name": "功能开关",
       "font_class": "gongnengkaiguan",

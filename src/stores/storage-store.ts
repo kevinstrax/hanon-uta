@@ -11,7 +11,7 @@ interface StorageState {
     favoriteRemoving: Set<string>;
     _debouncedRemove: Map<string, ReturnType<typeof debounceFn>>;
     _debouncedUpload: ReturnType<typeof debounceFn> | null;
-    lastSyncAt: number | null;
+    isFavoriteSyncing: boolean;
 }
 
 function initOrGetFavoriteLocal() : FavoriteData {
@@ -30,7 +30,7 @@ export const useStorageStore = defineStore("storage", {
         favoriteRemoving: new Set(),
         _debouncedRemove: new Map(),
         _debouncedUpload: null,
-        lastSyncAt: null,
+        isFavoriteSyncing: false,
     }),
 
     getters: {
@@ -38,10 +38,10 @@ export const useStorageStore = defineStore("storage", {
     },
 
     actions: {
-        async loadFavorites() {
+        async loadFavorites() : Promise<number> {
             const local = initOrGetFavoriteLocal();
             this.favorites = new Set([...local.ids]);
-            await this.trySync(local);
+            return this.trySync(local);
         },
 
         async addFavorite(songId: string) {
@@ -82,23 +82,27 @@ export const useStorageStore = defineStore("storage", {
             this._debouncedUpload = debounceFn(() => this.trySync(local), 3000);
             this._debouncedUpload();
         },
-        async trySync(local : FavoriteData) {
+        async trySync(local : FavoriteData) : Promise<number> {
+            if (this.isFavoriteSyncing) {
+                return 0;
+            }
+            this.isFavoriteSyncing = true;
             try {
-                // 同步前先保存一次
+                // Save once before syncing
                 localStorage.setItem("favorites", JsonUtils.toJson(local));
 
-                // 尝试云端合并（若没有登录或网络错误则跳过）
+                // Try cloud merge (skip if no login or network error)
                 let authStore = useAuthStore();
                 const { isLoggedIn } = storeToRefs(authStore);
                 if (!isLoggedIn.value) {
-                    return;
+                    return -1;
                 }
                 const remote = await downloadFavorites();
 
-                // 执行同步
+                // Perform synchronization
                 const syncResult = FavoriteSync.sync(local, remote);
                 if (syncResult.needUpdateCloud) {
-                    await uploadFavorites(syncResult.cloud).then(() => {
+                    await uploadFavorites(syncResult.cloud, remote.fileId).then(() => {
                         localStorage.setItem("favorites", JsonUtils.toJson(syncResult.local));
                         this.favorites = new Set(syncResult.local.ids);
                     })
@@ -106,8 +110,12 @@ export const useStorageStore = defineStore("storage", {
                     localStorage.setItem("favorites", JsonUtils.toJson(syncResult.local));
                     this.favorites = new Set(syncResult.local.ids);
                 }
+                return 1;
             } catch (e) {
                 console.warn("Drive sync skipped:", e);
+                return -1;
+            } finally {
+                this.isFavoriteSyncing = false;
             }
         }
     },

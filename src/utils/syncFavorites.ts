@@ -8,7 +8,7 @@ export const FILE_NAME = "hanon-uta-favorites.json";
 const API_BASE = "https://www.googleapis.com/drive/v3";
 const UPDATE_BASE = "https://www.googleapis.com/upload/drive/v3";
 
-// 创建带自动 Authorization 的 axios 实例
+// Create an axios instance with automatic authorization
 function createDriveAxios(baseURL: string) {
     const instance = axios.create({ baseURL });
     instance.interceptors.request.use((config) => {
@@ -32,7 +32,7 @@ function createDriveAxios(baseURL: string) {
 export const driveAxios = createDriveAxios(API_BASE);
 export const uploadAxios = createDriveAxios(UPDATE_BASE);
 
-// 查找文件
+// Find the file
 async function findFavoriteFile(): Promise<string | null> {
     const q = `name='${FILE_NAME}' and 'appDataFolder' in parents`;
     const res = await driveAxios.get("/files", {
@@ -41,12 +41,12 @@ async function findFavoriteFile(): Promise<string | null> {
     return res.data?.files?.[0]?.id ?? null;
 }
 
-// 下载
+// download
 export async function downloadFavorites(): Promise<FavoriteCloud> {
     const fileId = await findFavoriteFile();
     if (!fileId) {
         return {
-            updateMs: 0, ids: [], version: 0
+            updateMs: 0, ids: [], version: 0, fileId: null
         }
     }
     const res = await driveAxios.get(`/files/${fileId}`, { params: { alt: "media" } });
@@ -54,12 +54,14 @@ export async function downloadFavorites(): Promise<FavoriteCloud> {
     const updateMs = Number(raw.updateMs ?? 0);
     const ids = raw.ids ? raw.ids : [];
     const version = raw.version ?? 0;
-    return { updateMs, ids, version };
+    return { updateMs, ids, version, fileId };
 }
 
-// 上传（新增或更新）
-export async function uploadFavorites(data: FavoriteCloud): Promise<void> {
-    const fileId = await findFavoriteFile();
+// Upload (new or updated)
+export async function uploadFavorites(data: FavoriteCloud, fileId: string | null): Promise<void> {
+    if (!fileId) {
+        fileId = await findFavoriteFile();
+    }
 
     if (fileId) {
         // 更新已有文件（简单 media 上传）
@@ -70,7 +72,7 @@ export async function uploadFavorites(data: FavoriteCloud): Promise<void> {
         return;
     }
 
-    // 创建新文件（multipart 上传）
+    // Create a new file (multipart upload)
     const metadata = { name: FILE_NAME, parents: ["appDataFolder"] };
     const boundary = "hanon-chan-big-love";
     const multipartBody =
@@ -87,7 +89,7 @@ export async function uploadFavorites(data: FavoriteCloud): Promise<void> {
     });
 }
 
-// 更健壮的同步策略
+// A more robust synchronization strategy
 export interface SyncResult {
     local: FavoriteData;
     cloud: FavoriteCloud;
@@ -97,27 +99,27 @@ export interface SyncResult {
 export class FavoriteSync {
 
     static sync(local: FavoriteData, cloud: FavoriteCloud): SyncResult {
-        // 本地从未操作，从未同步，使用云端
+        // Never operated locally, never synced, using the cloud
         if (local.updateMs === 0 && local.syncMs === 0) {
             return this.usingCloud(cloud);
         }
-        // 本地有操作，从未同步
+        // There are operations locally, never synced
         if (local.updateMs > 0 && local.syncMs === 0) {
             return this.smartMergeStrategy(local, cloud);
         }
-        // 本地数据异常，云端直接覆盖
+        // Local data is abnormal and directly covered by the cloud
         if (local.updateMs === 0 && local.syncMs > 0) {
             return this.usingCloud(cloud);
         }
-        // 本地数据异常，云端直接覆盖
+        // Local data is abnormal and directly covered by the cloud
         if (local.updateMs < local.syncMs) {
             return this.usingCloud(cloud);
         }
-        // 本地有更新未同步
+        // There are local updates that are not synchronized
         if (local.updateMs > local.syncMs) {
             return this.handleLocalUpdate(local, cloud);
         }
-        // 本地没操作，看看云端是不是有更新
+        // There is no operation locally, see if there is an update in the cloud
         if (local.updateMs === local.syncMs) {
             if (local.version < cloud.version) {
                 return this.usingCloud(cloud);
@@ -125,7 +127,7 @@ export class FavoriteSync {
                 return this.smartMergeStrategy(local, cloud);
             }
         }
-        // 默认返回本地数据（无变化）
+        // Returns local data by default (no change)
         return { local, cloud, needUpdateCloud: false };
     }
 
@@ -145,11 +147,11 @@ export class FavoriteSync {
 
     private static handleLocalUpdate(local: FavoriteData, cloud: FavoriteCloud): SyncResult {
         if (local.version > cloud.version) {
-            // 这确实不应该发生，记录日志并merge
+            // This really shouldn't happen, log and merge
             console.warn('Unexpected version state, using merge strategy');
             return this.smartMergeStrategy(local, cloud);
         } else if (local.version === cloud.version) {
-            // 本地有修改，版本一致，本地覆盖云端
+            // There are local modifications, the version is consistent, and the local cloud is covered
             const now = Date.now();
             return {
                 local: { ...local,
@@ -160,25 +162,26 @@ export class FavoriteSync {
                 cloud: {
                     updateMs: now,
                     version: Math.max(local.version, cloud.version) + 1,
-                    ids: [...local.ids]
+                    ids: [...local.ids],
+                    fileId: null,
                 },
                 needUpdateCloud: true
             };
         } else { // local.version < cloud.version
-            // 冲突情况：建议采用更智能的合并策略
+            // Conflict Scenarios: A smarter merge strategy is recommended
             return this.smartMergeStrategy(local, cloud);
         }
     }
 
     private static smartMergeStrategy(local: FavoriteData, cloud: FavoriteCloud): SyncResult {
-        // 更智能的合并策略：
-        // 1. 优先保留双方新增的项
-        // 2. 如果同一项在两边状态不同，根据时间戳决定
+        // Smarter Merge Strategy:
+        // 1. Priority will be given to retaining new items from both parties
+        // 2. If the same item is in different states on both sides, it is determined by the timestamp
         const mergedSet = new Set<string>();
 
-        // 添加云端的所有项
+        // Add everything in the cloud
         cloud.ids.forEach(id => mergedSet.add(id));
-        // 添加本地的所有项（自动去重）
+        // Add everything locally (auto-deduplication)
         local.ids.forEach(id => mergedSet.add(id));
 
         const ids = Array.from(mergedSet);
@@ -194,7 +197,8 @@ export class FavoriteSync {
             cloud: {
                 updateMs: now,
                 version: cloud.version + 1,
-                ids: ids
+                ids: ids,
+                fileId: null,
             },
             needUpdateCloud: true
         };

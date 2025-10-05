@@ -66,9 +66,9 @@ const redPointRead = ref(false)
           <span class="visually-hidden">説明書</span>
         </button>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuReadme">
-          <user-info />
+          <UserInfo />
           <li >
-            <button class="dropdown-item" @click="replaceQueryParam(router, route, 'filter', 'favorite')">ファボリスト</button>
+            <button class="dropdown-item" @click="replaceQueryParam(router, route, 'filter', 'favorite')">お気に入りの曲</button>
           </li>
           <li class="dropdown-item cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal2" @click="useStatsInitStore().triggerInit()">
             歌唱統計

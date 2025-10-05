@@ -6,8 +6,7 @@ import { storeToRefs } from "pinia";
 import { onMounted, ref, watch } from "vue";
 import { getGoogleUserInfo } from "@/utils/googleUser.ts";
 import type { GoogleUserInfo } from "@/types/google-user";
-import { useStorageStore } from "@/stores/storage-store.ts";
-import { showToast } from "@/utils/updateToast.ts";
+import { useSyncFavorite } from "@/composables/useSyncFavorite.ts";
 
 const authStore = useAuthStore();
 const { isLoggedIn } = storeToRefs(authStore);
@@ -41,11 +40,7 @@ function handleLogout() {
   window.location.reload();
 }
 
-async function syncFavorites(toast: boolean) {
-  await useStorageStore().loadFavorites().then(() => {
-    toast && showToast()
-  })
-}
+const { syncFavorites } = useSyncFavorite();
 
 // Listen for changes in login status
 watch(isLoggedIn, async (val) => {
@@ -70,15 +65,20 @@ onMounted(async () => {
     ログイン
   </li>
   <template v-else>
-    <li v-if="userInfo" class="dropdown-item cursor-pointer" @click="syncFavorites()">
+    <li v-if="userInfo" class="dropdown-item cursor-pointer" @click="syncFavorites(false)">
       <img :alt="userInfo.name" :src="userInfo.picture" class="img-fluid rounded-circle user-picture me-2"/>
       <span class="align-middle">{{ userInfo.name }}</span>
+    </li>
+    <li class="dropdown-item cursor-pointer" @click="syncFavorites(true)">
+      <span>シンク</span>
     </li>
     <li class="dropdown-item cursor-pointer" @click="handleLogout()">
       <span>ログアウト</span>
     </li>
   </template>
   <li><hr class="dropdown-divider"></li>
+
+
 </template>
 
 <style scoped>

@@ -17,6 +17,9 @@ import { usePagination } from "@/composables/usePagination.ts";
 import { useScreenSize } from "@/composables/useScreenSize.ts";
 import { useBackTop } from "@/composables/useBackTop.ts";
 import { usePlaceholder } from "@/composables/usePlaceholder.ts";
+import { useStorageStore } from "@/stores/storage-store.ts";
+import SyncFavoriteResToast from "@/components/SyncFavoriteResToast.vue";
+import { useSyncFavorite } from "@/composables/useSyncFavorite.ts";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
 
@@ -57,6 +60,9 @@ const {
 const { showBackTop, backToTop } = useBackTop(isMobile);
 useHeadMeta(filteredSongs, searchQuery)
 
+const storageStore = useStorageStore();
+const { isFavoriteSyncing } = storeToRefs(storageStore);
+const { syncFavorites } = useSyncFavorite();
 </script>
 
 <template>
@@ -87,7 +93,11 @@ useHeadMeta(filteredSongs, searchQuery)
 
   <div v-if="isApplyFavoriteFilter"
        class="alert alert-light alert-dismissible fade show d-inline-block small py-1 ps-3 pe-2 mb-4 me-2" role="alert">
-    ファボリスト
+    <i class="iconfont iconfont-sm icon-gengxin me-2 cursor-pointer d-inline-block"
+       v-tooltip="'シンク'"
+       @click="syncFavorites(true)"
+       :class="isFavoriteSyncing ? 'rotation-animate' : ''" ></i>
+    <span>お気に入りの曲</span>
     <button aria-label="Close" class="btn-close small py-2 pe-0 position-relative" data-bs-dismiss="alert" type="button"
             @click="filterOption = ''"></button>
   </div>
@@ -174,6 +184,7 @@ useHeadMeta(filteredSongs, searchQuery)
   </template>
 
   <UpdateHintToast/>
+  <SyncFavoriteResToast />
   <SongMetaListModal v-model:search-query="searchQuery"
                      :song-meta-groups="songMetaGroups"
   />
@@ -201,6 +212,19 @@ useHeadMeta(filteredSongs, searchQuery)
   .responsive-width {
     width: auto !important; /* sm and above restore the auto width */
   }
+}
+
+@keyframes infinite-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation-animate {
+  animation: infinite-rotate 2s linear infinite;
 }
 
 </style>
