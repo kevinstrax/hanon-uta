@@ -21,6 +21,8 @@ const baseUrl = import.meta.env.BASE_URL; // get the base path
         <span class="text-secondary" v-if="idx != quickSearches.length - 1">|</span>
       </template>
     </p>
+
+    © 2025 Hanon Uta · <a href="/privacy.html" target="_blank">Privacy Policy</a>
   </footer>
 </template>
 
