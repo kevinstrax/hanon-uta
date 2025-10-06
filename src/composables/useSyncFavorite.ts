@@ -1,4 +1,4 @@
-import { useStorageStore } from "@/stores/storage-store.ts";
+import { useFavoriteStore } from "@/stores/favorite-store.ts";
 import { useAuthStore } from "@/stores/auth-store.ts";
 import { storeToRefs } from "pinia";
 import { realTimeCheckLogin, signIn } from "@/utils/googleAuth.ts";
@@ -7,7 +7,7 @@ import { useMessageToast } from "@/composables/useMessageToast.ts";
 export const useSyncFavorite = () => {
     const authStore = useAuthStore();
     const { isLoggedIn } = storeToRefs(authStore);
-    const storageStore = useStorageStore();
+    const storageStore = useFavoriteStore();
 
     async function syncFavorites(toast: boolean) {
         await realTimeCheckLogin();

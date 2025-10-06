@@ -8,7 +8,6 @@ import { ref } from 'vue'
 import SongList from "@/components/SongList.vue";
 import QuickSearches from "@/components/QuickSearches.vue";
 import SongMetaListModal from "@/components/SongMetaListModal.vue";
-import UpdateHintToast from "@/components/UpdateHintToast.vue";
 import SongStatsModal from "@/components/SongStatsModal.vue";
 import { useSongData } from "@/composables/useSongData.ts";
 import { useSongFilter } from "@/composables/useSongFilter.ts";
@@ -17,7 +16,7 @@ import { usePagination } from "@/composables/usePagination.ts";
 import { useScreenSize } from "@/composables/useScreenSize.ts";
 import { useBackTop } from "@/composables/useBackTop.ts";
 import { usePlaceholder } from "@/composables/usePlaceholder.ts";
-import { useStorageStore } from "@/stores/storage-store.ts";
+import { useFavoriteStore } from "@/stores/favorite-store.ts";
 import MessageToast from "@/components/MessageToast.vue";
 import { useSyncFavorite } from "@/composables/useSyncFavorite.ts";
 
@@ -60,7 +59,7 @@ const {
 const { showBackTop, backToTop } = useBackTop(isMobile);
 useHeadMeta(filteredSongs, searchQuery)
 
-const storageStore = useStorageStore();
+const storageStore = useFavoriteStore();
 const { isFavoriteSyncing } = storeToRefs(storageStore);
 const { syncFavorites } = useSyncFavorite();
 </script>
@@ -183,16 +182,9 @@ const { syncFavorites } = useSyncFavorite();
     <QuickSearches/>
   </template>
 
-  <UpdateHintToast/>
   <MessageToast />
-  <SongMetaListModal v-model:search-query="searchQuery"
-                     :song-meta-groups="songMetaGroups"
-  />
-  <SongStatsModal v-if="!isInitialLoad"
-                  :all-songs="songs"
-                  :vtuber="VTUBER_NAME_TO_JA[props.vtuber]"
-  />
-
+  <SongMetaListModal v-model:search-query="searchQuery" :song-meta-groups="songMetaGroups"/>
+  <SongStatsModal v-if="!isInitialLoad" :all-songs="songs" :vtuber="VTUBER_NAME_TO_JA[props.vtuber]"/>
 </template>
 
 <style scoped>

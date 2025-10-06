@@ -24,7 +24,7 @@ function initOrGetFavoriteLocal() : FavoriteData {
     }
 }
 
-export const useStorageStore = defineStore("storage", {
+export const useFavoriteStore = defineStore("favorite-storage", {
     state: (): StorageState => ({
         favorites: new Set(),
         favoriteRemoving: new Set(),

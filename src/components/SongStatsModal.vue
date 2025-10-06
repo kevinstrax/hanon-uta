@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Song } from "@/types/song";
 import { storeToRefs } from "pinia";
-import { useStatsInitStore } from "@/stores/stats-init.ts";
+import { useModalInitStore } from "@/stores/modal-init.ts";
 import { defineAsyncComponent } from "vue";
 import LoadingSpinner from "@/components/LoadingSpinner.vue";
 
@@ -12,7 +12,7 @@ const SongStats = defineAsyncComponent({
 })
 
 const props = defineProps<{ allSongs: Song[], vtuber: string }>();
-const { isStatsInit } = storeToRefs(useStatsInitStore())
+const { isStatsInit } = storeToRefs(useModalInitStore())
 </script>
 
 <template>
@@ -24,12 +24,8 @@ const { isStatsInit } = storeToRefs(useStatsInitStore())
           <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
         </div>
         <div class="modal-body position-relative">
-<!--          <LoadingSpinner />-->
           <SongStats v-if="isStatsInit" :all-songs="props.allSongs" :vtuber="props.vtuber" />
         </div>
-        <!--        <div class="modal-footer">-->
-        <!--          <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">閉じる</button>-->
-        <!--        </div>-->
       </div>
     </div>
   </div>

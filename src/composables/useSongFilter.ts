@@ -1,7 +1,7 @@
 import { debounceFn, toHalfWidth } from "@/utils/placeholderUtils.ts";
 import { computed, type Ref, watch } from 'vue';
 import type { Song } from "@/types/song";
-import { useStorageStore } from "@/stores/storage-store.ts";
+import { useFavoriteStore } from "@/stores/favorite-store.ts";
 import { useRoute, useRouter } from "vue-router";
 import { updateQueryParam, updateQueryParams } from "@/utils/routerUtils.ts";
 
@@ -70,7 +70,7 @@ export const useSongFilter = (songs: Ref<Song[]>, searchQuery: Ref<string>, filt
         { immediate: true }
     );
 
-    const storage = useStorageStore();
+    const favoriteStore = useFavoriteStore();
 
     function filterSongByOptions(songs: Song[]) {
         return songs.filter(song => {
@@ -80,7 +80,7 @@ export const useSongFilter = (songs: Ref<Song[]>, searchQuery: Ref<string>, filt
             return true;
         }).filter(song => {
             if (applyFavoriteFilter()) {
-                return storage.favoritesSet.has(song.song_id)
+                return favoriteStore.favoritesSet.has(song.song_id)
             }
             return true;
         })

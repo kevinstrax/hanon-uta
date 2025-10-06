@@ -1,7 +1,7 @@
 {
   "name": "hanon-uta",
   "private": true,
-  "version": "1.2.2",
+  "version": "1.2.4",
   "homepage": "https://hanon-uta.github.io",
   "type": "module",
   "scripts": {

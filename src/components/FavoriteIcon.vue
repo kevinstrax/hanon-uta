@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import { useStorageStore } from "@/stores/storage-store.ts";
+import { useFavoriteStore } from "@/stores/favorite-store.ts";
 import { ref } from "vue";
 
 const props = defineProps<{ songId: string }>();
-const storage = useStorageStore();
+const favoriteStore = useFavoriteStore();
 const isAnimating = ref(false);
 
 
 function toggleFavorite(songId: string) {
-  if (storage.favorites.has(songId)) {
-    storage.removeFavorite(songId);
+  if (favoriteStore.favorites.has(songId)) {
+    favoriteStore.removeFavorite(songId);
   } else {
-    storage.addFavorite(songId);
+    favoriteStore.addFavorite(songId);
     // Trigger the like animation
     startLikeAnimation();
   }
@@ -31,7 +31,7 @@ function startLikeAnimation() {
 
 <template>
   <div class="like-container like-heart z-0 me-1" :class="{ 'like-animation': isAnimating }">
-    <b v-if="storage.favorites.has(props.songId)"
+    <b v-if="favoriteStore.favorites.has(props.songId)"
        class="iconfont icon-xihuan text-secondary text-danger cursor-pointer"
        @click="toggleFavorite(props.songId)"></b>
     <b v-else

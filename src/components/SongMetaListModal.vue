@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import type { SongMetaGroup } from "@/types/song-meta";
+import { useModalInitStore } from "@/stores/modal-init.ts";
+import { storeToRefs } from "pinia";
 
 const props = defineProps<{
   songMetaGroups: SongMetaGroup[],
@@ -35,13 +37,15 @@ const selectRandomSong = () => {
   }
 };
 
+const modalInitStore = useModalInitStore();
+const { isSongMetaListInit } = storeToRefs(modalInitStore);
 </script>
 
 <template>
   <!-- Modal -->
   <section class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
+      <div class="modal-content" v-if="isSongMetaListInit">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="staticBackdropLabel">曲リスト</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
