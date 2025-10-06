@@ -18,7 +18,7 @@ import { useScreenSize } from "@/composables/useScreenSize.ts";
 import { useBackTop } from "@/composables/useBackTop.ts";
 import { usePlaceholder } from "@/composables/usePlaceholder.ts";
 import { useStorageStore } from "@/stores/storage-store.ts";
-import SyncFavoriteResToast from "@/components/SyncFavoriteResToast.vue";
+import MessageToast from "@/components/MessageToast.vue";
 import { useSyncFavorite } from "@/composables/useSyncFavorite.ts";
 
 const props = defineProps<{ vtuber: VtuberValues }>();
@@ -184,7 +184,7 @@ const { syncFavorites } = useSyncFavorite();
   </template>
 
   <UpdateHintToast/>
-  <SyncFavoriteResToast />
+  <MessageToast />
   <SongMetaListModal v-model:search-query="searchQuery"
                      :song-meta-groups="songMetaGroups"
   />
