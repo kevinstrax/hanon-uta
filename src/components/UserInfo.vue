@@ -45,7 +45,7 @@ const { syncFavorites } = useSyncFavorite();
 // Listen for changes in login status
 watch(isLoggedIn, async (val) => {
   if (val) {
-    await loadUser();
+    await loadUser().then(() => authStore.startAutoCheck());
     await syncFavorites(false);
   } else {
     authStore.clearUserInfo();
@@ -55,7 +55,7 @@ watch(isLoggedIn, async (val) => {
 
 // Attempt to pull user information when the page refreshes
 onMounted(async () => {
-  isLoggedIn?.value && loadUser()
+  isLoggedIn?.value && loadUser().then(() => authStore.startAutoCheck())
 });
 
 </script>

@@ -248,7 +248,7 @@ function parseSong(videos: Video[]): Song[] {
                 ref_video_thumbnail_lqip_url: `https://img.youtube.com/vi/${ video.video_id }/mqdefault.jpg`,
                 ref_video_publish_date_ts: parseTs(video.video_publish_date_str),
                 ref_video_id: video.video_id,
-                song_id: genSongId(video.video_id, songMeta.song_title, songMeta.time),
+                song_id: genSongId(video.video_id, songMeta.time),
                 song_origin_artist: he.decode(songMeta.artist),
                 song_title: he.decode(songMeta.title),
                 song_start_time: songMeta.time,
@@ -258,7 +258,7 @@ function parseSong(videos: Video[]): Song[] {
             if (validSong(song)) {
                 song.song_start_time = checkAndFormatTime(song.song_start_time)
                 // regen song id by formatted time
-                song.song_id = genSongId(song.ref_video_id, song.song_title, song.song_start_time)
+                song.song_id = genSongId(song.ref_video_id, song.song_start_time)
                 fillInSongTags(song);
                 songs.push(song);
             } else {

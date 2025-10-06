@@ -1,3 +1,4 @@
+import { timeToSeconds } from "@/utils/timeUtils.ts";
 
 const colors = [
     '#FF6B8B', '#FF8282', '#E57373',
@@ -51,11 +52,11 @@ function hashString(str: string): number {
     for (let i = 0; i < str.length; i++) {
         const char = str.charCodeAt(i);
         hash = ((hash << 5) - hash) + char;
-        hash = hash & hash; // 转换为32位整数
+        hash = hash & hash; // Convert to a 32-bit integer
     }
     return Math.abs(hash);
 }
 
-export function genSongId(videoId : string, songName : string, start: string): string {
-    return `${videoId}_${songName}_${start}`;
+export function genSongId(videoId : string, start: string): string {
+    return `${videoId}_${timeToSeconds(start)}`;
 }

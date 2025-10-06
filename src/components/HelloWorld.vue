@@ -93,11 +93,11 @@ const { syncFavorites } = useSyncFavorite();
 
   <div v-if="isApplyFavoriteFilter"
        class="alert alert-light alert-dismissible fade show d-inline-block small py-1 ps-3 pe-2 mb-4 me-2" role="alert">
-    <i class="iconfont iconfont-sm icon-gengxin me-2 cursor-pointer d-inline-block"
+    <i class="iconfont iconfont-sm icon-gengxin cursor-pointer d-inline-block"
        v-tooltip="'シンク'"
        @click="syncFavorites(true)"
        :class="isFavoriteSyncing ? 'rotation-animate' : ''" ></i>
-    <span>お気に入りの曲</span>
+    <span class="ms-2">お気に入りの曲</span>
     <button aria-label="Close" class="btn-close small py-2 pe-0 position-relative" data-bs-dismiss="alert" type="button"
             @click="filterOption = ''"></button>
   </div>

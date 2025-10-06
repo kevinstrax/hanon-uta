@@ -3,7 +3,7 @@ import { debounceFn } from "@/utils/placeholderUtils.ts";
 import { useStorageStore } from "@/stores/storage-store.ts";
 import { useAuthStore } from "@/stores/auth-store.ts";
 import { storeToRefs } from "pinia";
-import { signIn } from "@/utils/googleAuth.ts";
+import { signIn, realTimeCheckLogin } from "@/utils/googleAuth.ts";
 
 export const useSyncFavorite = () => {
     const authStore = useAuthStore();
@@ -11,6 +11,7 @@ export const useSyncFavorite = () => {
     const storageStore = useStorageStore();
 
     async function syncFavorites(toast: boolean) {
+        await realTimeCheckLogin();
         if (!isLoggedIn.value) {
             await signIn();
         }

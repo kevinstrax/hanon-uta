@@ -66,3 +66,17 @@ export function logout() {
     authStore.clearToken();
     authStore.clearUserInfo();
 }
+
+
+export async function realTimeCheckLogin() {
+    const authStore = useAuthStore();
+    authStore.refreshTime();
+    if (!authStore.token?.access_token || !authStore.token?.expires_in) {
+        logout();
+        await signIn();
+    }
+    if ((authStore.token?.expires_in??0) < (authStore._time / 1000)) {
+        logout();
+        await signIn();
+    }
+}
